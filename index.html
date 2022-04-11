@@ -157,14 +157,19 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
@@ -197,6 +202,126 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/11/clash%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="小阿鸣">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="一个生物狗的学习笔记">
+      <meta itemprop="description" content="知者不惑，仁者不忧，勇者不惧">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 一个生物狗的学习笔记">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/04/11/clash%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">clash配置方法</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-04-11 12:31:02 / 修改时间：13:14:47" itemprop="dateCreated datePublished" datetime="2022-04-11T12:31:02+08:00">2022-04-11</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">计算机网络相关</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">评论数：</span>
+  
+    <a title="waline" href="/2022/04/11/clash%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95/#waline-comments" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" id="/2022/04/11/clash%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95/" data-xid="/2022/04/11/clash%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span id="/2022/04/11/clash%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95/" class="post-meta-item leancloud_visitors" data-flag-title="clash配置方法" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <ol>
+<li>从github下载安装包，或者不嫌弃版本<a href="/resources/">点这里</a>。（因为浏览器安全原因可能不能正常安装，如果那样的话就自己去github搜一个下载）<br></li>
+<li>安装exe文件。<br><br><img src="/2022/04/11/clash%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95/clash%E7%95%8C%E9%9D%A2.png" alt="clash界面"><center>clash界面</center></li>
+<li>从youtube上找一个分享订阅文件的视频，搜索关键词“clash”“机场”“订阅”等。</li>
+<li>把yml格式的配置文件或者订阅链接导入clash左边的“profiles”界面里面。</li>
+<li>从“Proxies”界面里选择一个节点。上方“Global”模式表示所有网页都走代理，Rule模式表示只有墙外网页走代理。可以自己设置什么网站，这里不介绍。</li>
+<li>回到主界面“General”，点开倒数第二行的“System Proxy”。这时候就可以上网了，可以搜索google.com试一下。</li>
+<li>clash的Service Mode和TUN mode的作用是，除了浏览器可以访问外网，使命令行和其他软件也能访问外网，这个我还不会。</li>
+<li>高级一点点的操作：打开“General”中第二行的“Allow LAN”，这样其他处于同一路由器覆盖的设备就可以把刚才配置好的电脑本机作为代理源了，达到的效果是，只要电脑上开了clash，手机和平板也可以连接墙外，只要处于同一个wifi下。<ol>
+<li>打开“General”中第二行的“Allow LAN”，同时改上面的端口“Port”，默认是7890，不改也行。</li>
+<li>打开手机，找到wifi修改设置。“代理”改为手动，输入服务器主机名（鼠标放在clash的“Allow LAN”那一行可以看到IP地址，输入即可）和端口（刚才改好的Port），确认就可以了。手机打开google.com测试一下。</li>
+<li>一个问题是，路由器每次给电脑的IP地址可能是会变的。这样下次上网时，比如过了一天，IP地址变了，手机就找不到代理的主机了。所以需要打开路由器设置一下，每次给电脑分配一个固定的静态IP地址。设置方法如下：<ol>
+<li>看一下路由器背面的“管理地址”，也是IP地址格式。在电脑上打开，进入路由器管理界面。</li>
+<li>不同路由器界面不同，以华为为例。在“更多功能”→“局域网”页面，最底下有个“静态IP地址绑定”，填好里面的信息。“设备名称”指的是计算机本机的设备MAC地址，可以在路由器管理主页“终端设备”查找到。IP地址就写刚才clash里查到的。可能会出现“IP已经被占用”的提示。这时只要修改IP地址最后一个点后面的数字，直到通过。之后需要把手机上的代理重新设置为这个IP，并重启clash。就可以了。</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>再高级一点点的操作：刚才手机上选的是“手动”代理，也可以选择“自动”代理。需要输入PAC文件的url地址。PAC文件是干什么的可以百度一下，很好理解。我们自己新建一个txt文件，写好想要的PAC代码，保存为.pac格式，然后上传到服务器（或者知道手机和平板本地文件怎么得到url地址也行），再代理界面填入url就可以了。</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -268,6 +393,14 @@
     </a>
   </span>
   
+  
+    <span id="/2022/04/09/%E4%B8%8E%E5%AE%8B%E5%90%8C%E5%AD%A6%E7%9A%84%E5%91%8A%E5%88%AB%E8%B0%88%E8%AF%9D/" class="post-meta-item leancloud_visitors" data-flag-title="与宋同学的毕业告别谈话" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
   
 </div>
 
@@ -378,6 +511,14 @@
   </span>
   
   
+    <span id="/2022/04/07/20%E7%A7%8D%E6%B0%A8%E5%9F%BA%E9%85%B8%E6%80%A7%E8%B4%A8/" class="post-meta-item leancloud_visitors" data-flag-title="20种氨基酸性质" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+  
 </div>
 
         </div>
@@ -470,6 +611,14 @@
   </span>
   
   
+    <span id="/2022/04/07/%E5%AF%86%E7%A0%81%E5%AD%90%E8%A1%A8/" class="post-meta-item leancloud_visitors" data-flag-title="密码子表" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+  
 </div>
 
         </div>
@@ -555,7 +704,7 @@
 
 
 
-<script class="next-config" data-name="waline" type="application/json">{"lang":null,"enable":true,"serverURL":"https://walineserver-9vqryp3l9-eamonnku.vercel.app","placeholder":"欢迎批评指正","pageSize":10,"visitor":false,"comment_count":true,"requiredMeta":[],"copyright":true,"allowUploadImage":true,"meta":["nick","mail","link"],"qiniuDebug":false,"qiniuDomain":null,"qiniuTokenUrl":null,"avatar":"mm","requiredFields":[],"el":"#waline-comments","libUrl":"https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js","path":"/","login":"","dark":"auto"}</script>
+<script class="next-config" data-name="waline" type="application/json">{"lang":null,"enable":true,"serverURL":"https://walineserver-9vqryp3l9-eamonnku.vercel.app","placeholder":"欢迎批评指正","pageSize":10,"visitor":true,"comment_count":true,"requiredMeta":[],"copyright":true,"allowUploadImage":true,"meta":["nick","mail","link"],"qiniuDebug":false,"qiniuDomain":null,"qiniuTokenUrl":null,"avatar":"mm","requiredFields":[],"el":"#waline-comments","libUrl":"https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js","path":"/","login":"","dark":"auto"}</script>
 <script>
 document.addEventListener('page:loaded', () => {
   if(!CONFIG.waline.allowUploadImage) {
