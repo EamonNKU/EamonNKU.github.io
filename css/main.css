@@ -2748,7 +2748,7 @@ body {
 body {
   background-image: url("/images/3cfe4fed81e01031247eb963e0f8e5d.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
 }
