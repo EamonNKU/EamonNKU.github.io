@@ -2742,13 +2742,33 @@ body {
   background-attachment: fixed;
   background-position: 50% 50%;
 }
+.header {
+  position: relative;
+  left: -10em;
+  width: 20em;
+}
 .header-inner {
+  position: sticky;
+  top: 0em;
+  width: 100%;
   border-radius: 5px 5px 5px 5px;
   box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+  background: url("/images/redhair.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.site-brand-container {
+  background: transparent;
+  padding: 0px 0px 0px 0px;
+}
+.sidebar {
+  top: 25em;
+  width: 100%;
 }
 .sidebar-inner {
   border-radius: 5px 5px 5px 5px;
   box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+  background: rgba(255,255,255,0);
 }
 .pagination {
   border-radius: 3px 3px 3px 3px;
@@ -2762,7 +2782,7 @@ body {
   padding: 0px 40px 40px 40px;
 }
 .post-block {
-  background-color: rgba(255,255,255,0.91);
+  background-color: rgba(255,255,255,0.8);
   margin-top: 5px;
   margin-bottom: 24px;
   padding: 20px 20px 20px 20px;
@@ -2793,4 +2813,17 @@ body {
 }
 .sidebar-nav {
   font-weight: bold;
+}
+.site-nav {
+  padding: 10em 0px 0px 0px;
+}
+.site-meta {
+  text-align: left;
+}
+.brand {
+  background: rgba(47,86,141,0.5);
+  border-radius: 5px;
+}
+.main-menu.menu {
+  background: rgba(255,255,255,0.6);
 }
