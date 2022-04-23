@@ -2738,23 +2738,15 @@ body {
 body {
   background-image: url("/images/TB2SNROX4eEJuJjy1XaXXXPhVXa_!!0-martrix_bbs.jpg");
 }
-.header {
-  position: relative;
-  left: 0em;
-  width: 20em;
-}
 .header-inner {
   position: sticky;
+  left: 0;
   top: 0em;
-  width: 100%;
   border-radius: 5px 5px 5px 5px;
   box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
-  background: url("/images/redhair.png");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .site-brand-container {
-  background: transparent;
+  background-image: linear-gradient(#5f8db9, #f8bf90);
   padding: 0px 0px 0px 0px;
 }
 .pace-done.site-nav-on .site-brand-container {
@@ -2780,13 +2772,13 @@ body {
 }
 .main-inner {
   background-color: rgba(255,255,255,0);
-  padding: 0px 40px 40px 40px;
+  padding: 0px 0px 0px 0px;
 }
 .post-block {
   background-color: rgba(255,255,235,0.5);
   margin-top: 5px;
   margin-bottom: 24px;
-  padding: 20px 20px 20px 20px;
+  padding: 2em 2em 2em 2em;
   border-radius: 5px 5px 5px 5px;
   box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
   width: 100%;
@@ -2816,7 +2808,8 @@ body {
   font-weight: bold;
 }
 .site-nav {
-  padding: 10em 0px 0px 0px;
+  padding: 0em 0px 0px 0px;
+  background-image: linear-gradient(#f7bf90, #cedcff);
 }
 .site-meta {
   text-align: left;
@@ -2831,5 +2824,8 @@ body {
   font-family: STHupo, STCaiyun;
 }
 .main-menu.menu {
-  background: rgba(255,255,255,0.6);
+  background: url("/images/redhair.png");
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: 100% 100%;
 }
