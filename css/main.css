@@ -2737,7 +2737,7 @@ body {
 }
 @font-face {
   font-family: 'stxingkairegular';
-  src: url("/font/huawenxingkai.woff2") format('woff2'), url("/font/huawenxingkai.woff") format('woff'), url("/font/huawenxingkai.ttf") format('truetype'), url("/font/huawenxingkai.eot") format('embedded-opentype'), url("/font/huawenxingkai.svg#STXingkai") format('svg');
+  src: url("/font/huawenxingkai.woff2") format('woff2'), url("/font/huawenxingkai.woff") format('woff'), url("/font/huawenxingkai.ttf") format('truetype'), url("/font/huawenxingkai.eot") format('embedded-opentype'), url("/font/huawenxingkai.svg/#STXingkai") format('svg');
   font-weight: normal;
   font-style: normal;
 }
