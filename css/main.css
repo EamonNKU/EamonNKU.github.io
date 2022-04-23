@@ -2736,11 +2736,7 @@ body {
   }
 }
 body {
-  background-color: #f6f6f6;
-  background-size: cover;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
+  background-image: url("/images/TB2SNROX4eEJuJjy1XaXXXPhVXa_!!0-martrix_bbs.jpg");
 }
 .header {
   position: relative;
@@ -2782,7 +2778,7 @@ body {
   padding: 0px 40px 40px 40px;
 }
 .post-block {
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255,255,235,0.5);
   margin-top: 5px;
   margin-bottom: 24px;
   padding: 20px 20px 20px 20px;
@@ -2819,10 +2815,15 @@ body {
 }
 .site-meta {
   text-align: left;
+  margin-left: 2em;
 }
-.brand {
-  background: rgba(47,86,141,0.5);
-  border-radius: 5px;
+.brand .site-title {
+  color: #000;
+  font-family: STLiti, FZShuTi, STCaiyun, STXingkai;
+}
+.site-subtitle {
+  color: #2d333f;
+  font-family: STHupo, STCaiyun;
 }
 .main-menu.menu {
   background: rgba(255,255,255,0.6);
