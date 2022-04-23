@@ -2840,4 +2840,5 @@ body {
 }
 .menu-item a.menu-item-active {
   background: rgba(254,235,233,0.5);
+  color: #9400d3;
 }
