@@ -2736,14 +2736,14 @@ body {
   }
 }
 @font-face {
-  font-family: 'stlitiregular';
-  src: url("/font/stliti-webfont.woff2") format('woff2'), url("/font/stliti-webfont.woff") format('woff'), url("/font/STLITI.ttf") format('truetype');
+  font-family: 'stxingkairegular';
+  src: url("/font/huawenxingkai.woff2") format('woff2'), url("/font/huawenxingkai.woff") format('woff'), url("/font/huawenxingkai.ttf") format('truetype'), url("/font/huawenxingkai.eot");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'stxingkairegular';
-  src: url("/font/stxingkai-webfont.woff2") format('woff2'), url("/font/stxingkai-webfont.woff") format('woff'), url("/font/STXingkai.ttf") format('truetype');
+  font-family: 'stlitiregular';
+  src: url("/font/stliti-webfont.woff2") format('woff2'), url("/font/stliti-webfont.woff") format('woff'), url("/font/STLITI.ttf") format('truetype'), url("/font/STLITI.eot");
   font-weight: normal;
   font-style: normal;
 }
@@ -2828,11 +2828,11 @@ body {
 }
 .brand .site-title {
   color: #4b0082;
-  font-family: stlitiregular, FZShuTi, STLiti, STCaiyun, STXingkai;
+  font-family: stlitiregular;
 }
 .site-subtitle {
   color: #4b0082;
-  font-family: stxingkairegular, stlitiregular, STXingkai, MingLiU, STLiti, STHupo, STCaiyun;
+  font-family: stxingkairegular;
 }
 .site-nav .main-menu.menu {
   background: url("/images/redhair.png");
