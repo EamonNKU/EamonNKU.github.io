@@ -2832,7 +2832,7 @@ body {
 }
 .site-subtitle {
   color: #4b0082;
-  font-family: stxingkairegular, STXingkai, MingLiU, STLiti, STHupo, STCaiyun;
+  font-family: stxingkairegular, stlitiregular, STXingkai, MingLiU, STLiti, STHupo, STCaiyun;
 }
 .site-nav .main-menu.menu {
   background: url("/images/redhair.png");
