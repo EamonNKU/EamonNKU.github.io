@@ -2757,6 +2757,11 @@ body {
   background: transparent;
   padding: 0px 0px 0px 0px;
 }
+.pace-done.site-nav-on .site-brand-container {
+  border-style: none;
+  background: transparent;
+  box-shadow: none;
+}
 .sidebar {
   top: 25em;
   width: 100%;
