@@ -2737,13 +2737,13 @@ body {
 }
 @font-face {
   font-family: 'stxingkairegular';
-  src: url("/font/huawenxingkai.woff2") format('woff2'), url("/font/huawenxingkai.woff") format('woff'), url("/font/huawenxingkai.ttf") format('truetype'), url("/font/huawenxingkai.eot");
+  src: url("/font/huawenxingkai.woff2") format('woff2'), url("/font/huawenxingkai.woff") format('woff'), url("/font/huawenxingkai.ttf") format('truetype'), url("/font/huawenxingkai.eot") format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'stlitiregular';
-  src: url("/font/stliti-webfont.woff2") format('woff2'), url("/font/stliti-webfont.woff") format('woff'), url("/font/STLITI.ttf") format('truetype'), url("/font/STLITI.eot");
+  src: url("/font/stliti-webfont.woff2") format('woff2'), url("/font/stliti-webfont.woff") format('woff'), url("/font/STLITI.ttf") format('truetype'), url("/font/STLITI.eot") format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
