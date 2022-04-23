@@ -2751,7 +2751,7 @@ body {
 }
 .pace-done.site-nav-on .site-brand-container {
   border-style: none;
-  background: transparent;
+  background-image: linear-gradient(#f00, #ff0);
   box-shadow: none;
 }
 .sidebar {
@@ -2781,7 +2781,6 @@ body {
   padding: 2em 2em 2em 2em;
   border-radius: 5px 5px 5px 5px;
   box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
-  width: 100%;
 }
 .main-inner.archive.posts-collapse .post-block .post-content .post-header {
   margin: 0px;
@@ -2808,6 +2807,7 @@ body {
   font-weight: bold;
 }
 .site-nav {
+  animation-duration: 0s;
   padding: 0em 0px 0px 0px;
   background-image: linear-gradient(#f7bf90, #cedcff);
 }
@@ -2823,9 +2823,15 @@ body {
   color: #2d333f;
   font-family: STHupo, STCaiyun;
 }
-.main-menu.menu {
+.site-nav .main-menu.menu {
   background: url("/images/redhair.png");
   background-repeat: no-repeat;
   background-size: 75%;
+  background-position: 100% 100%;
+}
+.pace-done.site-nav-on .main-menu.menu {
+  background: url("/images/nav-on-bg.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
   background-position: 100% 100%;
 }
