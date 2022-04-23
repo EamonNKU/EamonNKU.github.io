@@ -2815,12 +2815,12 @@ body {
   margin-left: 2em;
 }
 .brand .site-title {
-  color: #000;
+  color: #4b0082;
   font-family: STLiti, FZShuTi, STCaiyun, STXingkai;
 }
 .site-subtitle {
-  color: #2d333f;
-  font-family: STHupo, STCaiyun;
+  color: #4b0082;
+  font-family: STXingkai, MingLiU, STLiti, STHupo, STCaiyun;
 }
 .site-nav .main-menu.menu {
   background: url("/images/redhair.png");
@@ -2833,4 +2833,11 @@ body {
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: 100% 100%;
+}
+.menu-item a:hover {
+  color: #9400d3;
+  background: rgba(254,235,233,0.5);
+}
+.menu-item a.menu-item-active {
+  background: rgba(254,235,233,0.5);
 }
