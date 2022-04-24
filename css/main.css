@@ -2759,12 +2759,12 @@ body {
   box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
 }
 .site-brand-container {
-  background-image: linear-gradient(#5f8db9, #f8bf90);
+  background-image: linear-gradient(to right, #fddbff 0%, #d1fdff 100%);
   padding: 0px 0px 0px 0px;
 }
 .pace-done.site-nav-on .site-brand-container {
   border-style: none;
-  background-image: linear-gradient(#f00, #ff0);
+  background-image: linear-gradient(to bottom right, #ee82ee, #00bfff 100%);
   box-shadow: none;
 }
 .sidebar {
@@ -2821,7 +2821,7 @@ body {
 .site-nav {
   animation-duration: 0s;
   padding: 0em 0px 0px 0px;
-  background-image: linear-gradient(#f7bf90, #cedcff);
+  background-image: linear-gradient(to bottom, #242d4d, #373658, #524169, #a85e86, #db6b8f, #eb8197, #ee9f9f, #eabca3);
 }
 .site-meta {
   text-align: left;
@@ -2830,10 +2830,21 @@ body {
 .brand .site-title {
   color: #4b0082;
   font-family: stlitiregular, huawenxingkai, STXingkai;
+  background-image: -webkit-linear-gradient(left, #00f, #6ff 10%, #c0f 20%, #c0c 30%, #ccf 40%, #0ff 50%, #ccf 60%, #c0c 70%, #c0f 80%, #6ff 90%, #00f 100%);
+  -webkit-text-fill-color: transparent; /* 将字体设置成透明色 */
+  -webkit-background-clip: text; /* 裁剪背景图，使文字作为裁剪区域向外裁剪 */
+  -webkit-background-size: 200% 100%;
+  -webkit-animation: masked-animation 6s linear infinite;
 }
-.site-subtitle {
+p.site-subtitle {
+  display: inline-block;
   color: #4b0082;
   font-family: huawenxingkai;
+  background-image: -webkit-linear-gradient(left, #00f, #c0f 20%, #c0c 30%, #ccf 40%, #0ff 50%, #ccf 60%, #c0c 70%, #c0f 80%, #6ff 90%, #00f 100%);
+  -webkit-text-fill-color: transparent; /* 将字体设置成透明色 */
+  -webkit-background-clip: text; /* 裁剪背景图，使文字作为裁剪区域向外裁剪 */
+  -webkit-background-size: 200% 100%;
+  -webkit-animation: masked-animation 6s linear infinite;
 }
 .site-nav .main-menu.menu {
   background: url("/images/redhair.png");
@@ -2847,11 +2858,46 @@ body {
   background-size: 50%;
   background-position: 100% 100%;
 }
+.menu-item a {
+  color: #00f;
+}
 .menu-item a:hover {
-  color: #9400d3;
+  color: #65fbff;
   background: rgba(254,235,233,0.5);
 }
 .menu-item a.menu-item-active {
   background: rgba(254,235,233,0.5);
   color: #9400d3;
+}
+@-moz-keyframes masked-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+@-webkit-keyframes masked-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+@-o-keyframes masked-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+@keyframes masked-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
 }
