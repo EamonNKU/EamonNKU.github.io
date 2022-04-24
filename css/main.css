@@ -2736,7 +2736,7 @@ body {
   }
 }
 @font-face {
-  font-family: 'STXingkai';
+  font-family: 'stxingkairegular';
   src: url("/font/huawenxingkai_subset.woff2") format('woff2'), url("/font/huawenxingkai_subset.woff") format('woff'), url("/font/huawenxingkai_subset.ttf") format('truetype'), url("/font/huawenxingkai_subset.eot") format('embedded-opentype'), url("/font/huawenxingkai_subset.svg#STXingkai") format('svg');
   font-weight: normal;
   font-style: normal;
@@ -2832,7 +2832,7 @@ body {
 }
 .site-subtitle {
   color: #4b0082;
-  font-family: STXingkai;
+  font-family: stxingkairegular;
 }
 .site-nav .main-menu.menu {
   background: url("/images/redhair.png");
