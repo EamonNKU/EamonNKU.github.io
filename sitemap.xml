@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://fanyiming.life/resources/index.html</loc>
+    
+    <lastmod>2022-04-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://fanyiming.life/googlee6c53d44ede07b97.html</loc>
     
     <lastmod>2022-04-24</lastmod>
@@ -425,15 +434,6 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/resources/index.html</loc>
-    
-    <lastmod>2022-04-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://fanyiming.life/2022/04/18/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%E6%B5%8B%E8%AF%95/</loc>
     
     <lastmod>2022-04-18</lastmod>
@@ -618,13 +618,6 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/tags/R%E5%87%BD%E6%95%B0/</loc>
-    <lastmod>2022-04-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://fanyiming.life/tags/SD%E5%BA%8F%E5%88%97/</loc>
     <lastmod>2022-04-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -633,6 +626,13 @@
   
   <url>
     <loc>https://fanyiming.life/tags/%E5%85%B1%E6%9C%89%E5%BA%8F%E5%88%97/</loc>
+    <lastmod>2022-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://fanyiming.life/tags/R%E5%87%BD%E6%95%B0/</loc>
     <lastmod>2022-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -744,6 +744,13 @@
   </url>
   
   <url>
+    <loc>https://fanyiming.life/tags/%E9%B8%A1%E6%B1%A4/</loc>
+    <lastmod>2022-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://fanyiming.life/tags/%E5%AE%9E%E9%AA%8C%E7%BB%86%E8%8A%82/</loc>
     <lastmod>2022-04-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -759,13 +766,6 @@
   
   <url>
     <loc>https://fanyiming.life/tags/%E7%94%9F%E7%89%A9%E7%89%A9%E7%90%86%E6%89%80/</loc>
-    <lastmod>2022-04-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://fanyiming.life/tags/%E9%B8%A1%E6%B1%A4/</loc>
     <lastmod>2022-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
