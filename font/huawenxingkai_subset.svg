@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20201107 at Sun Sep 16 21:30:13 1956
+ By Webmaster
+Copyright (c) 1991-1998, Changzhou SinoType Technology Co., Ltd.  All rights reserved.
+</metadata>
+<defs>
+<font id="STXingkai" horiz-adv-x="1000" >
+  <font-face 
+    font-family="STXingkai"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="1000"
+    panose-1="2 1 8 0 4 1 1 1 1 1"
+    ascent="800"
+    descent="-200"
+    bbox="85 228 617 609"
+    underline-thickness="20"
+    underline-position="-143"
+    unicode-range="U+0001-007E"
+  />
+<missing-glyph 
+ />
+    <glyph glyph-name=".notdef" 
+ />
+    <glyph glyph-name="quotesingle" unicode="'" horiz-adv-x="219" 
+d="M132 493v116h72v-116l-12 -131h-45z" />
+    <glyph glyph-name="asciitilde" unicode="~" horiz-adv-x="667" 
+d="M113 228h-28q4 77 38 117.5t88 40.5q36 0 87.5 -18t150.5 -61q25 -11 50 -11q37 0 61 22t29 68h28q-3 -78 -41 -118t-92 -40q-28 0 -62 11.5t-84 32.5q-64 27 -89.5 35.5t-52.5 8.5q-68 0 -83 -88z" />
+  </font>
+</defs></svg>

@@ -2737,13 +2737,13 @@ body {
 }
 @font-face {
   font-family: 'STXingkai';
-  src: url("/font/huawenxingkai.woff2") format('woff2'), url("/font/huawenxingkai.woff") format('woff'), url("/font/huawenxingkai.ttf") format('truetype'), url("/font/huawenxingkai.eot") format('embedded-opentype'), url("/font/huawenxingkai.svg#STXingkai") format('svg');
+  src: url("/font/huawenxingkai_subset.woff2") format('woff2'), url("/font/huawenxingkai_subset.woff") format('woff'), url("/font/huawenxingkai_subset.ttf") format('truetype'), url("/font/huawenxingkai_subset.eot") format('embedded-opentype'), url("/font/huawenxingkai_subset.svg#STXingkai") format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'stlitiregular';
-  src: url("/font/stliti-webfont.woff2") format('woff2'), url("/font/stliti-webfont.woff") format('woff'), url("/font/STLITI.ttf") format('truetype'), url("/font/STLITI.eot") format('embedded-opentype');
+  src: url("/font/STLITI_subset.woff2") format('woff2'), url("/font/STLITI_subset.woff") format('woff'), url("/font/STLITI_subset.ttf") format('truetype'), url("/font/STLITI_subset.eot") format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
