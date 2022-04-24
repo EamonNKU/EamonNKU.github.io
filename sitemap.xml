@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://fanyiming.life/2022/04/11/clash%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95/</loc>
+    <loc>https://fanyiming.life/2022/04/24/html%E5%AD%97%E4%BD%93%E5%86%85%E5%B5%8C/</loc>
     
     <lastmod>2022-04-24</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/2022/04/24/html%E5%AD%97%E4%BD%93%E5%86%85%E5%B5%8C/</loc>
+    <loc>https://fanyiming.life/2022/04/11/clash%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95/</loc>
     
     <lastmod>2022-04-24</lastmod>
     
@@ -676,6 +676,13 @@
   </url>
   
   <url>
+    <loc>https://fanyiming.life/tags/linux%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2022-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://fanyiming.life/tags/html/</loc>
     <lastmod>2022-04-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -705,13 +712,6 @@
   
   <url>
     <loc>https://fanyiming.life/tags/hexo/</loc>
-    <lastmod>2022-04-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://fanyiming.life/tags/linux%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2022-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
