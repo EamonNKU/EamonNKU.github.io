@@ -2736,10 +2736,11 @@ body {
   }
 }
 @font-face {
-  font-family: 'stxingkairegular';
-  src: url("/font/huawenxingkai_subset.woff2") format('woff2'), url("/font/huawenxingkai_subset.woff") format('woff'), url("/font/huawenxingkai_subset.ttf") format('truetype'), url("/font/huawenxingkai_subset.eot") format('embedded-opentype'), url("/font/huawenxingkai_subset.svg#STXingkai") format('svg');
-  font-weight: normal;
+  font-family: "huawenxingkai";
+  src: url("/font/huawenxingkai.eot"); /* IE9 */
+  src: url("/font/huawenxingkai.eot?#iefix") format("embedded-opentype"), url("/font/huawenxingkai.woff") format("woff"), url("/font/huawenxingkai.ttf") format("truetype"), url("/font/huawenxingkai.svg#huawenxingkai") format("svg"); /* iOS 4.1- */
   font-style: normal;
+  font-weight: normal;
 }
 @font-face {
   font-family: 'stlitiregular';
@@ -2828,11 +2829,11 @@ body {
 }
 .brand .site-title {
   color: #4b0082;
-  font-family: stlitiregular, stxingkairegular, STXingkai;
+  font-family: stlitiregular, huawenxingkai, STXingkai;
 }
 .site-subtitle {
   color: #4b0082;
-  font-family: stxingkairegular;
+  font-family: huawenxingkai;
 }
 .site-nav .main-menu.menu {
   background: url("/images/redhair.png");
