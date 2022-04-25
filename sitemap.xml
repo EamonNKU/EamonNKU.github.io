@@ -555,6 +555,20 @@
   </url>
   
   <url>
+    <loc>https://fanyiming.life/tags/dataframe/</loc>
+    <lastmod>2022-04-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://fanyiming.life/tags/list/</loc>
+    <lastmod>2022-04-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://fanyiming.life/tags/R%E5%8C%85/</loc>
     <lastmod>2022-04-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -569,28 +583,7 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/tags/dataframe/</loc>
-    <lastmod>2022-04-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://fanyiming.life/tags/data-frame/</loc>
-    <lastmod>2022-04-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://fanyiming.life/tags/list/</loc>
-    <lastmod>2022-04-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://fanyiming.life/tags/%E6%8E%92%E5%BA%8F/</loc>
     <lastmod>2022-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -605,6 +598,13 @@
   
   <url>
     <loc>https://fanyiming.life/tags/rda/</loc>
+    <lastmod>2022-04-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://fanyiming.life/tags/%E6%8E%92%E5%BA%8F/</loc>
     <lastmod>2022-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
