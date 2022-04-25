@@ -2742,6 +2742,13 @@ body {
   font-weight: normal;
 }
 @font-face {
+  font-family: "STLITI";
+  src: url("/font/STLITI.eot"); /* IE9 */
+  src: url("/font/STLITI.eot?#iefix") format("embedded-opentype"), url("/font/STLITI.woff") format("woff"), url("/font/STLITI.ttf") format("truetype"), url("/font/STLITI.svg#STLITI") format("svg"); /* iOS 4.1- */
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
   font-family: 'stlitiregular';
   src: url("/font/STLITI_subset.woff2") format('woff2'), url("/font/STLITI_subset.woff") format('woff'), url("/font/STLITI_subset.ttf") format('truetype'), url("/font/STLITI_subset.eot") format('embedded-opentype');
   font-weight: normal;
@@ -2839,7 +2846,7 @@ body {
 }
 .brand .site-title {
   color: #4b0082;
-  font-family: stlitiregular, huawenxingkai, STXingkai;
+  font-family: STLITI, stlitiregular, huawenxingkai, STXingkai;
   background-image: -webkit-linear-gradient(left, #00f, #6ff 10%, #c0f 20%, #c0c 30%, #ccf 40%, #0ff 50%, #ccf 60%, #c0c 70%, #c0f 80%, #6ff 90%, #00f 100%);
   -webkit-text-fill-color: transparent; /* 将字体设置成透明色 */
   -webkit-background-clip: text; /* 裁剪背景图，使文字作为裁剪区域向外裁剪 */
@@ -2890,7 +2897,7 @@ p.site-subtitle {
   background: linear-gradient(135deg, rgba(229,112,231,0.35) 0%, #79f1fc 100%);
   box-sizing: border-box;
   text-align: center;
-  font-family: stlitiregular, roboto, helvetica;
+  font-family: STLITI, stlitiregular, roboto, helvetica;
   font-weight: 200;
   text-decoration: none;
   box-shadow: 0 2px 0px rgba(0,0,0,0.3);
