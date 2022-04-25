@@ -2849,13 +2849,16 @@ p.site-subtitle {
   -webkit-background-size: 200% 100%;
   -webkit-animation: masked-animation 6s linear infinite;
 }
-.site-nav .main-menu.menu {
+.main-menu.menu {
   background: url("/images/redhair.png");
   background-repeat: no-repeat;
   background-size: 75%;
   background-position: 100% 100%;
+  transition-property: background;
+  transition-delay: 0.2s;
 }
-.pace-done.site-nav-on .main-menu.menu {
+.site-nav-on .main-menu.menu {
+  transition: none;
   background: url("/images/nav-on-bg.png");
   background-repeat: no-repeat;
   background-size: 50%;
