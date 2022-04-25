@@ -590,7 +590,7 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/tags/%E6%8E%92%E5%BA%8F/</loc>
+    <loc>https://fanyiming.life/tags/linux/</loc>
     <lastmod>2022-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -611,7 +611,7 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/tags/linux/</loc>
+    <loc>https://fanyiming.life/tags/%E6%8E%92%E5%BA%8F/</loc>
     <lastmod>2022-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -772,14 +772,14 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/tags/%E9%B8%A1%E6%B1%A4/</loc>
+    <loc>https://fanyiming.life/tags/%E5%9F%BA%E5%9B%A0%E7%BB%84/</loc>
     <lastmod>2022-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://fanyiming.life/tags/%E5%9F%BA%E5%9B%A0%E7%BB%84/</loc>
+    <loc>https://fanyiming.life/tags/%E9%B8%A1%E6%B1%A4/</loc>
     <lastmod>2022-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

@@ -2784,10 +2784,17 @@ body {
 .main-inner {
   background-color: rgba(255,255,255,0);
   padding: 0px 0px 0px 0px;
-  z-index: 0;
 }
-.header {
+.search-active .main-inner {
+  z-index: -1;
+}
+.main .header-inner {
   z-index: 1;
+  background: #000;
+}
+.toggle {
+  line-height: 0;
+  cursor: pointer;
 }
 .post-block {
   background-color: rgba(255,255,235,0.5);
