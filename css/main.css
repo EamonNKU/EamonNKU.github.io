@@ -2869,6 +2869,42 @@ p.site-subtitle {
   background: rgba(254,235,233,0.5);
   color: #9400d3;
 }
+.button_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  width: 200px;
+  margin: auto;
+}
+*[data-animation="ripple"] {
+  display: inline-block;
+  padding: 0 20px;
+  color: #fff;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, rgba(229,112,231,0.5) 0%, #79f1fc 100%);
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 2;
+  font-family: roboto, helvetica;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-decoration: none;
+  box-shadow: 0 2px 1px rgba(0,0,0,0.3);
+  cursor: pointer;
+/*border-radius: 50px;*/
+  -webkit-tap-highlight-color: transparent;
+  border-radius: 2px;
+}
+*[data-animation="ripple"]:focus {
+  outline: none;
+}
+*[data-animation="ripple"]::selection {
+  background: transparent;
+  pointer-events: none;
+}
 @-moz-keyframes masked-animation {
   0% {
     background-position: 0 0;
