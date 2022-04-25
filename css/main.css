@@ -2909,6 +2909,13 @@ p.site-subtitle {
 .v .vpower {
   display: none;
 }
+#waline-comments.comments .vcards {
+  background-image: url("/images/skelatal_weave.png");
+  border-radius: 0.2em;
+}
+#waline-comments.comments .vcards .vitem {
+  background: transparent;
+}
 @-moz-keyframes masked-animation {
   0% {
     background-position: 0 0;
