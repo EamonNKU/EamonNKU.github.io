@@ -2799,6 +2799,9 @@ body {
   z-index: 1;
   background: #000;
 }
+.search-active #app .timenode {
+  z-index: -1;
+}
 .toggle {
   line-height: 0;
   cursor: pointer;
