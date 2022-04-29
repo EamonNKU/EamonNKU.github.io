@@ -2934,6 +2934,9 @@ p.site-subtitle {
 .category-all-page .category-list-child {
   list-style: none;
 }
+#app .timenode img {
+  max-width: 20em;
+}
 @-moz-keyframes masked-animation {
   0% {
     background-position: 0 0;

@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://fanyiming.life/bb/index.html</loc>
-    
-    <lastmod>2022-04-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://fanyiming.life/2022/04/29/%E7%9C%9F%E6%A0%B8%E7%94%9F%E7%89%A9splicing%E5%8F%91%E7%94%9F%E7%9A%84%E6%97%B6%E9%97%B4/</loc>
     
     <lastmod>2022-04-29</lastmod>
@@ -634,6 +625,13 @@
   </url>
   
   <url>
+    <loc>https://fanyiming.life/tags/list/</loc>
+    <lastmod>2022-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://fanyiming.life/tags/R%E5%8C%85/</loc>
     <lastmod>2022-04-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -648,21 +646,7 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/tags/list/</loc>
-    <lastmod>2022-04-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://fanyiming.life/tags/data-frame/</loc>
-    <lastmod>2022-04-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://fanyiming.life/tags/%E6%8E%92%E5%BA%8F/</loc>
     <lastmod>2022-04-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -677,6 +661,13 @@
   
   <url>
     <loc>https://fanyiming.life/tags/rda/</loc>
+    <lastmod>2022-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://fanyiming.life/tags/%E6%8E%92%E5%BA%8F/</loc>
     <lastmod>2022-04-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -802,14 +793,14 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/tags/polyA/</loc>
+    <loc>https://fanyiming.life/tags/%E6%B3%A8%E9%87%8A/</loc>
     <lastmod>2022-04-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://fanyiming.life/tags/%E6%B3%A8%E9%87%8A/</loc>
+    <loc>https://fanyiming.life/tags/polyA/</loc>
     <lastmod>2022-04-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -970,6 +961,13 @@
   </url>
   
   <url>
+    <loc>https://fanyiming.life/tags/splicing/</loc>
+    <lastmod>2022-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://fanyiming.life/tags/mRNA/</loc>
     <lastmod>2022-04-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -992,13 +990,6 @@
   
   <url>
     <loc>https://fanyiming.life/tags/%E5%89%AA%E6%8E%A5%E4%BD%93/</loc>
-    <lastmod>2022-04-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://fanyiming.life/tags/splicing/</loc>
     <lastmod>2022-04-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
