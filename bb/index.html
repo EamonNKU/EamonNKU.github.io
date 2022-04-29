@@ -358,7 +358,10 @@
       <p v-html='item.attributes.content'></p>
     </div>
   </div>
-  
+  <div class="load-ctn">
+        <a class="btn btn-success" data-animation="ripple" role="button" v-on:click="loadMore" v-if="contents" v-cloak>再翻翻</a>
+        <p class="tip" v-else>别急，加载呢</p>
+        </div>
 </main>
 
 <script src="https://cdn.bootcss.com/vue/2.6.11/vue.min.js"></script>
