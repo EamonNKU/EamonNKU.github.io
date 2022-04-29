@@ -2970,53 +2970,52 @@ p.site-subtitle {
   }
 }
 /*文本内弹窗补充说明的css样式*/
-        .tcbtn-pop{   <!-- class选择器btn-pop添加样式 -->
-            background-color: #ffd475;  <!-- 设置背景颜色 -->
-            border-radius: 10px;    <!-- 按钮设置个圆角 -->
-            border:0px; <!-- 去掉边框 -->
-            zoom:200%;  <!-- 按钮变大两倍 -->
- 
+        .tctxt:hover{color:red;}
+        #background-tcpop{
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+	  z-index: 999;
         }
-        #background-tcpop{    <!-- id选择器background-pop添加样式 -->
-            display: none;  <!-- 设置隐藏 -->
-            position: fixed;    <!-- 相对于浏览器窗口的绝对定位，absolute 相对于屏幕 -->
-            left: 0;    <!-- 窗口距离右端 -->
-            top: 0; <!-- 窗口距离顶部 -->
-            width: 100%;   <!-- 宽  100% 填充整个窗口 -->
-            height: 100%;   <!-- 高  -->
-            background-color: rgba(0,0,0,0.5);  <!-- 设置北京颜色(red,green,blue alpha)  -->
+        .div-tcpop{
+            background:#ffffff;
+	  position: fixed;
+	  left: 0;
+	  right: 0;
+	  top: 0;
+	  bottom: 0;
+            width:50%;
+	  height: 15em;
+            z-index: 1;
+            margin: 12% auto;
+           // overflow: auto;
         }
-        #div-tcpop{   <!-- id选择器 -->
-            background:#ffffff; <!-- 背景色 -->
-            width:30%;  <!-- 宽 -->
-            z-index: 1; <!-- 设置堆叠顺序，参数大的在前，默认为0 -->
-            margin: 12% auto;   <!-- 外边距 -->
-            overflow: auto; <!-- 超过设置大小固定时，超过时，以滚动条显示 -->
+        .div-tctop{
+            width: 100%;
+            height: 2em;
+            background-color: #28a3e7;
+            color: #ffffff;
+	  overflow: hidden;
         }
-        .div-tctop{   <!-- class选择器div-top -->
-            width: 100%;    <!-- 宽 -->
-            height: auto;   <!-- 高 默认高度随内部元素高度变化 -->
-            background-color: #28a3e7; <!-- 背景颜色 -->
-            color: #ffffff; <!-- 字体颜色 -->
+        .div-tctop div{
+            //padding: 3px 5px 5px 8px;
         }
-        .div-tctop div{   <!-- class选择器div-top 中的div设置样式 -->
-            padding: 3px 5px 5px 8px; <!-- 内边距 ：上 右 下 左， -->
+        #close-tcbutton{
+	  position: absolute;
+   	  right: 0;
         }
-        span{   <!-- span标签添加样式 -->
-            color: white;   <!-- 颜色 -->
-            margin-bottom: 10px ;   <!-- 底部外边距 -->
-            margin-left: 20px ; <!-- 左侧外边距 -->
-            cursor: pointer;    <!-- 鼠标指到此处显示为手行 -->
-            float: right;   <!-- 浮动：靠右 -->
+        .div-tccontent{
+            width: auto;
+            height: auto;
+            overflow: auto;
         }
-        .div-content{   <!-- class选择器div-content -->
-            width: auto;    <!-- 宽 -->
-            height: 200px;  <!-- 高 固定值 -->
-            overflow: auto; <!-- 加滚动 -->
-        }
-        .div-footer{    <!-- class选择器 -->
-            text-align: center; <!-- 文字居中 -->
-            background-color: darkgray; <!-- 背景色 -->
+        .div-tcfooter{
+            text-align: center;
+            background-color: darkgray;
         }
 /* bb样式 */
 div.timenode {
