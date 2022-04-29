@@ -2970,6 +2970,7 @@ p.site-subtitle {
   }
 }
 /*文本内弹窗补充说明的css样式*/
+        .tctxt{color: blue;}
         .tctxt:hover{color:red;}
         #background-tcpop{
             display: none;
@@ -2988,11 +2989,12 @@ p.site-subtitle {
 	  right: 0;
 	  top: 0;
 	  bottom: 0;
-            width:50%;
+            width:100%;
+	  max-width: 50em;
 	  height: 15em;
             z-index: 1;
             margin: 12% auto;
-           // overflow: auto;
+            overflow: auto;
         }
         .div-tctop{
             width: 100%;
