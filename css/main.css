@@ -2757,6 +2757,7 @@ body {
   background-image: url("/images/TB2SNROX4eEJuJjy1XaXXXPhVXa_!!0-martrix_bbs.jpg");
 }
 .header-inner {
+  position: relative;
   left: 0;
   top: 0em;
   border-radius: 5px 5px 5px 5px;
