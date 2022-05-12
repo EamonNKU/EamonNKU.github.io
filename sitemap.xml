@@ -11,6 +11,24 @@
   </url>
   
   <url>
+    <loc>https://fanyiming.life/2022/03/25/NW-align%E7%9A%84c%E8%89%B9%E5%AE%9E%E7%8E%B0/</loc>
+    
+    <lastmod>2022-05-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://fanyiming.life/2022/05/12/HMM-Viterbi%E7%AE%97%E6%B3%95/</loc>
+    
+    <lastmod>2022-05-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://fanyiming.life/2022/05/11/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%B1%87%E6%80%BB/</loc>
     
     <lastmod>2022-05-11</lastmod>
@@ -210,15 +228,6 @@
   
   <url>
     <loc>https://fanyiming.life/2022/04/15/windows%E7%AA%97%E5%8F%A3%E5%B9%B6%E6%8E%92%E6%98%BE%E7%A4%BAwin%E5%8A%A0Z/</loc>
-    
-    <lastmod>2022-04-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://fanyiming.life/2022/03/25/NW-align%E7%9A%84c%E8%89%B9%E5%AE%9E%E7%8E%B0/</loc>
     
     <lastmod>2022-04-28</lastmod>
     
@@ -685,6 +694,13 @@
   </url>
   
   <url>
+    <loc>https://fanyiming.life/tags/%E9%9A%90%E9%A9%AC%E5%B0%94%E6%9F%AF%E5%A4%AB%E6%A8%A1%E5%9E%8B/</loc>
+    <lastmod>2022-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://fanyiming.life/tags/%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9/</loc>
     <lastmod>2022-05-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -909,14 +925,14 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/tags/%E6%B3%A8%E9%87%8A/</loc>
+    <loc>https://fanyiming.life/tags/polyA/</loc>
     <lastmod>2022-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://fanyiming.life/tags/polyA/</loc>
+    <loc>https://fanyiming.life/tags/%E6%B3%A8%E9%87%8A/</loc>
     <lastmod>2022-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -979,14 +995,14 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/tags/E-coli/</loc>
+    <loc>https://fanyiming.life/tags/%E5%9F%BA%E5%9B%A0%E7%BB%84/</loc>
     <lastmod>2022-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://fanyiming.life/tags/%E5%9F%BA%E5%9B%A0%E7%BB%84/</loc>
+    <loc>https://fanyiming.life/tags/E-coli/</loc>
     <lastmod>2022-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1147,7 +1163,14 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/tags/flag%E7%AB%8B%E7%9A%84%E9%A3%9E%E8%B5%B7/</loc>
+    <loc>https://fanyiming.life/tags/%E8%9B%99%E5%8D%B5%E5%88%86%E8%A3%82/</loc>
+    <lastmod>2022-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://fanyiming.life/tags/%E5%8F%97%E7%B2%BE%E5%8D%B5/</loc>
     <lastmod>2022-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1161,14 +1184,7 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/tags/%E8%9B%99%E5%8D%B5%E5%88%86%E8%A3%82/</loc>
-    <lastmod>2022-05-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://fanyiming.life/tags/%E5%8F%97%E7%B2%BE%E5%8D%B5/</loc>
+    <loc>https://fanyiming.life/tags/flag%E7%AB%8B%E7%9A%84%E9%A3%9E%E8%B5%B7/</loc>
     <lastmod>2022-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1212,6 +1228,13 @@
   </url>
   
   <url>
+    <loc>https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A5%9E%E7%BB%8F%E7%94%9F%E7%89%A9%E5%AD%A6/</loc>
+    <lastmod>2022-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%94%9F%E7%89%A9%E5%8C%96%E5%AD%A6/</loc>
     <lastmod>2022-05-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -1226,14 +1249,7 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/c/</loc>
-    <lastmod>2022-05-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A5%9E%E7%BB%8F%E7%94%9F%E7%89%A9%E5%AD%A6/</loc>
+    <loc>https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/C/</loc>
     <lastmod>2022-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
