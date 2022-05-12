@@ -168,7 +168,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">65</span>
+          <span class="site-state-item-count">66</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -179,7 +179,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">75</span>
+        <span class="site-state-item-count">77</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -304,7 +304,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <meta name="referrer" content="no-referrer" />
+        <p><meta name="referrer" content="no-referrer" /></p>
 <style> .post-body img{width: 100%;}</style>
 
 <p>有时我们想在网页中加入特殊的字体，但客户端的浏览器可能不支持这个字体，此时就会以浏览器的默认字体呈现，影响阅读效果。想把自定义字体加入网页，就需要<strong>告诉html去哪里寻找这个字体（即存放字体文件的url）</strong>，并<strong>在字体中检索用到的字符</strong>，返回字体样式。对于英文来说，字符总数很少，“检索”步骤花费的时间很短。但中文的字符数很庞大，“检索”过程就会很耗时，严重影响网页加载速度。于是，我们需要<font color='dark-red'>提取字体文件的子集，只保留网页需要用到的字符</font>。</p>
@@ -313,23 +313,20 @@
 <li>下载字体的ttf格式文件。</li>
 </ol>
 <p>网上随便找就有了。</p>
-<ol start="2">
+<ol>
 <li>在<a target="_blank" rel="noopener" href="https://github.com/ecomfe/fontmin-app/releases">Fontmin</a>中输入子集的字符，导出子集字体文件。</li>
 </ol>
-<img src='https://cdn.nlark.com/yuque/0/2022/png/27625712/1650793611596-dae9d93d-b661-479e-9400-f7a25764baa6.png'>
-
+<p><img src='https://cdn.nlark.com/yuque/0/2022/png/27625712/1650793611596-dae9d93d-b661-479e-9400-f7a25764baa6.png'></p>
 <p>结果中一共有4种字体文件格式<code>tff</code>, <code>woff</code>, <code>svg</code>和<code>eot</code>，还有两个css文件。</p>
-<img src='https://cdn.nlark.com/yuque/0/2022/png/27625712/1650793679398-8f4f23ee-d357-4c96-a1a1-ffa4e5f86211.png'>
-
-<ol start="3">
+<p><img src='https://cdn.nlark.com/yuque/0/2022/png/27625712/1650793679398-8f4f23ee-d357-4c96-a1a1-ffa4e5f86211.png'></p>
+<ol>
 <li>将这几个文件移动到所需目录下（四个文件最好都保留，以适应不同的浏览器。其中<code>svg</code>格式是移动端ios所需要的）。</li>
 <li>打开第一个css文件，复制其中所有内容（即<code>font-face</code>的声明）到自己的css文件中，把url改成刚才移动到的字体文件目录。</li>
 <li>然后在需要调用字体的地方用<code>font-family</code>调用即可。</li>
 </ol>
 <hr>
 <p>最终效果：</p>
-<img src='https://cdn.nlark.com/yuque/0/2022/png/27625712/1650793969316-4f23295f-cc84-411a-9a8a-f33a2479079f.png' style="width: 30%">
-
+<p><img src='https://cdn.nlark.com/yuque/0/2022/png/27625712/1650793969316-4f23295f-cc84-411a-9a8a-f33a2479079f.png' style="width: 30%"></p>
 <hr>
 <p>分享两个修改字体中的可能会用到的工具</p>
 <ul>
@@ -426,6 +423,12 @@
   
 
 
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"per_page":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
 
 
 
