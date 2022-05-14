@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"fanyiming.life","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.11.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":false}}</script><script src="/js/config.js"></script>
+
+<!-- 导入jquery -->
+<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+
+    <meta name="description" content="全局比对、局部比对、启发式算法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="生物信息学课程笔记-序列比对和数据库搜索">
+<meta property="og:url" content="https://fanyiming.life/2022/05/14/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0-%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93%E6%90%9C%E7%B4%A2/index.html">
+<meta property="og:site_name" content="Eamon &#39;s Blog">
+<meta property="og:description" content="全局比对、局部比对、启发式算法">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652534893240-264e8e4a-0182-4f41-b413-2a5b51b1b198.png#clientId=u6571a639-eece-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=281&amp;id=u3f74b532&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=351&amp;originWidth=641&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=57498&amp;status=done&amp;style=none&amp;taskId=uc70230ba-b0ec-41f3-baeb-5a3e08e868a&amp;title=&amp;width=512.8">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652534951261-032542b6-45c8-420b-8c37-74184a369cf7.png#clientId=u6571a639-eece-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=274&amp;id=u34d5263e&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=342&amp;originWidth=674&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=60063&amp;status=done&amp;style=none&amp;taskId=u2f0c5a32-3dc5-4b6b-8840-400826c4ea2&amp;title=&amp;width=539.2">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652534780065-d173a9c1-2407-4328-89a5-6c2c92ee5dba.png#clientId=u6571a639-eece-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=290&amp;id=uf37b6e5f&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=362&amp;originWidth=613&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=42228&amp;status=done&amp;style=none&amp;taskId=u15a2290d-5635-4141-b6b0-2a9d3725d93&amp;title=&amp;width=490.4">
+<meta property="article:published_time" content="2022-05-14T13:32:46.000Z">
+<meta property="article:modified_time" content="2022-05-14T14:24:46.809Z">
+<meta property="article:author" content="小阿鸣">
+<meta property="article:tag" content="生物信息学课程笔记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652534893240-264e8e4a-0182-4f41-b413-2a5b51b1b198.png#clientId=u6571a639-eece-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=281&amp;id=u3f74b532&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=351&amp;originWidth=641&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=57498&amp;status=done&amp;style=none&amp;taskId=uc70230ba-b0ec-41f3-baeb-5a3e08e868a&amp;title=&amp;width=512.8">
+
+
+<link rel="canonical" href="https://fanyiming.life/2022/05/14/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0-%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93%E6%90%9C%E7%B4%A2/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://fanyiming.life/2022/05/14/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0-%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93%E6%90%9C%E7%B4%A2/","path":"2022/05/14/生物信息学课程笔记-序列比对和数据库搜索/","title":"生物信息学课程笔记-序列比对和数据库搜索"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>生物信息学课程笔记-序列比对和数据库搜索 | Eamon 's Blog</title>
+  
+
+
+
+
+<link rel="dns-prefetch" href="https://walineserver-9vqryp3l9-eamonnku.vercel.app">
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Eamon 's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">生活嘛~那么矫情</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>文章</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-resources"><a href="/resources/" rel="section"><i class="fa fa-download fa-fw"></i>资源</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>留言</a></li><li class="menu-item menu-item-bbtime"><a href="/bb/" rel="section"><i class="fa fa-cloud fa-fw"></i>说说</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%A4%E4%B8%AA%E5%90%8E%E9%9D%A2%E7%94%A8%E5%88%B0%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="nav-number">1.</span> <span class="nav-text">两个后面用到的概念</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%BF%E6%8D%A2%E7%9F%A9%E9%98%B5-substitution-matrix"><span class="nav-number">1.1.</span> <span class="nav-text">替换矩阵(substitution matrix)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#PAM%E7%9F%A9%E9%98%B5"><span class="nav-number">1.1.1.</span> <span class="nav-text">PAM矩阵</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BLOSUM%E7%9F%A9%E9%98%B5-BLOcks-SUbstitution-Matrix"><span class="nav-number">1.1.2.</span> <span class="nav-text">BLOSUM矩阵(BLOcks SUbstitution Matrix)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A9%BA%E4%BD%8D%E7%BD%9A%E5%88%86-gap-penalty"><span class="nav-number">1.2.</span> <span class="nav-text">空位罚分(gap penalty)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%A8%E5%B1%80%E6%AF%94%E5%AF%B9-NW-align%E7%AE%97%E6%B3%95"><span class="nav-number">2.</span> <span class="nav-text">全局比对(NW-align算法)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B1%80%E9%83%A8%E6%AF%94%E5%AF%B9-SM-align%E7%AE%97%E6%B3%95"><span class="nav-number">3.</span> <span class="nav-text">局部比对(SM-align算法)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95"><span class="nav-number">4.</span> <span class="nav-text">启发式算法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#FASTA"><span class="nav-number">4.1.</span> <span class="nav-text">FASTA</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#BLAST"><span class="nav-number">4.2.</span> <span class="nav-text">BLAST</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">小阿鸣</p>
+  <div class="site-description" itemprop="description">知者不惑，仁者不忧，勇者不惧</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">69</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">79</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="/./about" title="E-Mail → .&#x2F;about"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://fanyiming.life/2022/05/14/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0-%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93%E6%90%9C%E7%B4%A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="小阿鸣">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Eamon 's Blog">
+      <meta itemprop="description" content="知者不惑，仁者不忧，勇者不惧">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="生物信息学课程笔记-序列比对和数据库搜索 | Eamon 's Blog">
+      <meta itemprop="description" content="全局比对、局部比对、启发式算法">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          生物信息学课程笔记-序列比对和数据库搜索
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-05-14 21:32:46 / 修改时间：22:24:46" itemprop="dateCreated datePublished" datetime="2022-05-14T21:32:46+08:00">2022-05-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">生物信息学</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/%E5%85%B6%E4%BB%96/" itemprop="url" rel="index"><span itemprop="name">其他</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">评论数：</span>
+  
+    <a title="waline" href="/2022/05/14/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0-%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93%E6%90%9C%E7%B4%A2/#waline-comments" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" id="/2022/05/14/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0-%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93%E6%90%9C%E7%B4%A2/" data-xid="/2022/05/14/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0-%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93%E6%90%9C%E7%B4%A2/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span id="/2022/05/14/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0-%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93%E6%90%9C%E7%B4%A2/" class="post-meta-item leancloud_visitors" data-flag-title="生物信息学课程笔记-序列比对和数据库搜索" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+  
+</div>
+
+            <div class="post-description">全局比对、局部比对、启发式算法</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p><meta name="referrer" content="no-referrer" /></p>
+<style> .post-body img{width: 100%; max-width: 40em;}</style>
+
+<p>想要系统学习序列比对一定要读这本经典作品，写得很通俗易懂：<br><a href="https://fanyiming.life/resources/pdf/Biological_Sequence_Analysis.pdf">Richard Durbin.<strong>Biological Sequence Analysis </strong>Probabilistic Models of Proteins and Nucleic Acids (1998)</a></p>
+<h1 id="两个后面用到的概念"><a href="#两个后面用到的概念" class="headerlink" title="两个后面用到的概念"></a>两个后面用到的概念</h1><h2 id="替换矩阵-substitution-matrix"><a href="#替换矩阵-substitution-matrix" class="headerlink" title="替换矩阵(substitution matrix)"></a>替换矩阵(substitution matrix)</h2><p>为了比较两个序列之间的进化距离远近，需要引入一套打分系统，用一个分值来表示两个序列的进化距离。这样如果序列A和序列B之间的分值大于A和C之间的分值，就可以说A和B的进化距离比A和C的进化距离要近。</p>
+<p>这个分怎么定义呢？用序列对出现的概率来表示。假设有一个随机生成的氨基酸序列$x$，那么生成它的概率就是每个氨基酸随机出现的概率的乘积，即$P(x|R)=\Pi_iq_{x_i}$，这里$\Pi$表示连乘，$q_{x_i}$表示每个氨基酸随机出现的概率，R表示随机。同理，序列y出现的概率是$P(y|R)=\Pi_iq_{y_i}$，假设x和y是独立的，那么它们同时出现的概率是：</p>
+<center>$P(x,y|R)=\Pi_iq_{x_i}\Pi_jq_{y_j}$</center>
+
+<p>序列比对的基础是假定一个事实，即突变的程度和进化距离有关。对于DNA，就看ACTG四种碱基的突变；对于蛋白质，就看20种氨基酸的突变。突变分为3种情况，替换、增添、删除。后两种情况都会在比对中引入gap，先只考虑一个氨基酸突变成另一个氨基酸的情况，这时序列x和y是等长的。整个alignment出现的概率是：</p>
+<p><center>$P(x,y|M)=\Pi_ip_{x_iy_i}$</center><br>这里$P_{x_iy_i}$表示氨基酸对联合出现的概率，为什么它不等于$q_{x_i}\times q_{y_i}$呢？因为氨基酸序列之间或远或近都存在同源关系，那么alignment中残疾对出现的联合概率一定不等于随机概率的乘积。我们用$P(x,y|M)$除以$P(x,y|R)$，得到$odds\ ratio$：<br>$odds \ ratio=\frac{P(x,y|M)}{P(x,y|R)}=\Pi_i\frac{p_{x_iy_i}}{q_{x_i}q_{y_i}}$<br>它的物理意义是序列x和y作为比对上的序列对，相对于随机两条序列，出现的概率。在具体计算比对问题时，我们假设一条氨基酸序列中氨基酸残基之间没有相互影响，它们各自的出现概率是独立的（这个假设当然不符合现实，但它在DNA或蛋白序列比对中影响不大，在RNA比对中影响很大）。把$odds \ radio$取对数，就能变乘法为加法，可以直接用每个氨基酸对之间的得分相加，得到整个alignment的得分。定义$log\ odds\ ratio$</p>
+<p><center>$S=\sum_is(x_i,y_i)$</center><br>其中：</p>
+<p><center>$s(a,b)=log(\frac{P_{ab}}{q_aq_b})$</center><br>现在我们就有了一个打分系统了，唯一的问题就是得到一个表格让我们随时能够查询$s(a,b)$的值了。这个表格就是所谓的“替换矩阵”，有两种经典的替换矩阵：PAM矩阵和BLOSUM矩阵。它们的横纵坐标均为20种氨基酸（以及一些代表两个氨基酸的字母表），两氨基酸进化关系越近，分就越高；越远，分就越低。</p>
+<h3 id="PAM矩阵"><a href="#PAM矩阵" class="headerlink" title="PAM矩阵"></a>PAM矩阵</h3><p><img src="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652534893240-264e8e4a-0182-4f41-b413-2a5b51b1b198.png#clientId=u6571a639-eece-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=281&amp;id=u3f74b532&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=351&amp;originWidth=641&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=57498&amp;status=done&amp;style=none&amp;taskId=uc70230ba-b0ec-41f3-baeb-5a3e08e868a&amp;title=&amp;width=512.8" alt="image.png"><br>构建过程：</p>
+<ul>
+<li><p>step1: Counting the number of mutations</p>
+<p>  得到原始矩阵$A_{ij}$</p>
+</li>
+<li><p>step2: Relative mutability of amino acid</p>
+<p>  $m_i=\frac{N_{mut}(i)}{N_{comp}(i)}, (1\le i \le 20)$</p>
+</li>
+<li><p>step3: Probability of mutations between amino acids</p>
+<p>  $M_{ij}=\begin{cases}<br>\lambda\frac{m_jA_{ij}}{\sum_{k=1}^{20}A_{kj}}&amp;1\le i,j \le20,i\ne j\\<br>1-\lambda m_j &amp;i=j<br>\end{cases}$<br>$A_{ij}: \text{observed number of mutations between }a_i \text{ and } a_j$<br>$m_j: \text{relative mutate probability of } a_j \text{ to all other amino acids}$<br>$\lambda: \text{a constant to decide the evolution distance}$<br>得到的突变概率矩阵称为PAM1</p>
+</li>
+<li><p>step4: PAM1→PAM2→PAM3→……PAM250</p>
+<p>  PAM1相当于所有氨基酸平均有1%发生了变化；<br>  PAM250: 表示一种进化距离，数字越大，进化距离越远<br>不对称<br>利用序列相似性高的家族进行构建<br>step4: 对数概率矩阵Log-odds of PAM250<br>$S_{ij}=10log_{10}\frac{M_{ij}}{P_i}$<br>$P_i$: probability of $a_i$in sequences<br>对数概率矩阵是对称的。</p>
+<h3 id="BLOSUM矩阵-BLOcks-SUbstitution-Matrix"><a href="#BLOSUM矩阵-BLOcks-SUbstitution-Matrix" class="headerlink" title="BLOSUM矩阵(BLOcks SUbstitution Matrix)"></a>BLOSUM矩阵(BLOcks SUbstitution Matrix)</h3><p><img src="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652534951261-032542b6-45c8-420b-8c37-74184a369cf7.png#clientId=u6571a639-eece-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=274&amp;id=u34d5263e&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=342&amp;originWidth=674&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=60063&amp;status=done&amp;style=none&amp;taskId=u2f0c5a32-3dc5-4b6b-8840-400826c4ea2&amp;title=&amp;width=539.2" alt="image.png"><br>直接利用多序列比对分析亲缘关系较远的蛋白质，而不是用近缘蛋白序列。总体上来说，BLOSUM矩阵比PAM矩阵更适合生物学关系的分析和局部相似性搜索。<br>Dataset: &gt;2000 blocks (蛋白质序列中的高度保守区，称为block)</p>
+</li>
+<li><p>step1: Count frequency table $f_{ij}$</p>
+</li>
+<li><p>step2: Calculate the observed occurrence probability $q_{ij}$</p>
+<p>  $q_{ij}=\frac{f_{ij}}{\sum_{i=1}^{20}\sum_{j=1}^if_{ij}},1\le{j}\le{i}\le20$</p>
+</li>
+<li><p>step3: Calculate the expected occurrence probability$e_{ij}$</p>
+<p>  每个氨基酸出现的概率为：<br>$p_i=q_{ii}+\frac12\sum_{j\neq{i}}q_{ij}$<br>按照上面的$p_i$，每个氨基酸对ij随机出现的可能性是：<br>$e_{ij}=\begin{cases}<br>p_{ij}^2&amp;i=j\\<br>2p_ip_j&amp;i\ne j<br>\end{cases}$</p>
+</li>
+<li><p>step4: Calculate the log-odds matrix $S_{ij}$</p>
+<p>  $S_{ij}=2log_2{\frac{q_{ij}}{e_{ij}}}, 1\le j\le i \le 20$<br>BLOSUM矩阵是对称的<br>BLOSUM62的意思是: Sequence identity of the blocks is at least 62%</p>
+</li>
+</ul>
+<p>PAM矩阵和BLOSUM矩阵的对比</p>
+<ul>
+<li>PAM是通过蛋白质序列全局比对得到的，而BLOSUM是从蛋白短序列推导出来的。</li>
+<li>产生矩阵的蛋白质家族及多肽链数目BLOSUM比PAM大约多20倍。</li>
+<li>PAM-N矩阵是通过外推得到的，BLOSUM-N则可以通过直接观察得到。</li>
+<li>PAM-N里面N越小表示氨基酸变异的可能性越小，相似的序列之间比较应该选用N值小的矩阵，不太相似的序列之间比较应该选用N值大的矩阵。BLOSUM-N则正相反。<h2 id="空位罚分-gap-penalty"><a href="#空位罚分-gap-penalty" class="headerlink" title="空位罚分(gap penalty)"></a>空位罚分(gap penalty)</h2>“突变”除了氨基酸的替换外还包括插入或删除一个或多个氨基酸，这时就会在alignment中引入gap，显然gap的出现应该扣分。扣多少分是人为定义的，一般又把gap分成gap opening和gap extension，前者表示只有一个残基的gap或大于一个残基的连续gap的第一个位置，后者表示多个残基的连续gap的第二个及以后位置。gap opening的罚分一般要比gap extension高。这很好理解，因为长片段的插入或缺失不应该按氨基酸残基单独gap来扣分，那样就扣分太多了。总之，gap penalty的定义如下：<br>$\gamma(g)=-d-(g-1)e$<br>其中，d是gap-open的罚分，e是gap-extension的罚分，g是gap的长度。<h1 id="全局比对-NW-align算法"><a href="#全局比对-NW-align算法" class="headerlink" title="全局比对(NW-align算法)"></a>全局比对(NW-align算法)</h1>就是动态规划，字太多不想写了。想不起来就去看课件<br>C++代码：<a href="https://fanyiming.life/2022/03/25/NW-align%E7%9A%84c%E8%89%B9%E5%AE%9E%E7%8E%B0/">https://fanyiming.life/2022/03/25/NW-align%E7%9A%84c%E8%89%B9%E5%AE%9E%E7%8E%B0/</a><h1 id="局部比对-SM-align算法"><a href="#局部比对-SM-align算法" class="headerlink" title="局部比对(SM-align算法)"></a>局部比对(SM-align算法)</h1>局部比对是在全局比对的基础上做一些改动，以鉴定到保守的局部结构域：</li>
+</ul>
+<ol>
+<li>当每个格子的分数最小值设置为0，相当于从这里重新开始一个比对。</li>
+<li>每个比对结束不一定是在最右下角了，而是从最大得分的格子开始回溯。<h1 id="启发式算法"><a href="#启发式算法" class="headerlink" title="启发式算法"></a>启发式算法</h1>启发式算法牺牲一部分准确度，但是极大提高比对效率，用于数据库搜索。BLAST和FASTA都是基于k-tub算法的。<br><img src="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652534780065-d173a9c1-2407-4328-89a5-6c2c92ee5dba.png#clientId=u6571a639-eece-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=290&amp;id=uf37b6e5f&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=362&amp;originWidth=613&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=42228&amp;status=done&amp;style=none&amp;taskId=u15a2290d-5635-4141-b6b0-2a9d3725d93&amp;title=&amp;width=490.4" alt="image.png"><h2 id="FASTA"><a href="#FASTA" class="headerlink" title="FASTA"></a>FASTA</h2>略<h2 id="BLAST"><a href="#BLAST" class="headerlink" title="BLAST"></a>BLAST</h2>step1: 拆分字段”words”，用BLOSUM62对这些字段与自己的完全匹配打分，构建高于阈值的索引表，”Word”的长度一般取：DNA11nt，蛋白质3aa<br>step2: 在数据库中用索引表中的”words”进行精准比对，比对后在两端进行延伸，得到HSP (high-scoring segment pair)<br>step3: 如果分数超过一个指定的分数阈值S，比对结果就会被输出。</li>
+</ol>
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div></div>
+  <button>
+    <i class="fa fa-qrcode fa-2x" style="line-height:35px;"></i>
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.png" alt="小阿鸣 微信支付">
+        <span>微信支付</span>
+      </div>
+
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" rel="tag"># 生物信息学课程笔记</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/05/12/HMM-Viterbi%E7%AE%97%E6%B3%95/" rel="prev" title="HMM Viterbi算法">
+                  <i class="fa fa-chevron-left"></i> HMM Viterbi算法
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/05/14/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0-%E7%BB%AA%E8%AE%BA/" rel="next" title="生物信息学课程笔记-绪论">
+                  生物信息学课程笔记-绪论 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="waline-comments"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小阿鸣</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/mybutton.js"></script> <script src="/js/utils.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"per_page":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+<script class="next-config" data-name="waline" type="application/json">{"lang":null,"enable":true,"serverURL":"https://walineserver-9vqryp3l9-eamonnku.vercel.app","placeholder":"在这个框里打字儿","pageSize":10,"visitor":true,"comment_count":true,"requiredMeta":[],"copyright":true,"allowUploadImage":true,"meta":["nick","mail","link"],"qiniuDebug":false,"qiniuDomain":null,"qiniuTokenUrl":null,"emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba"],"avatar":"mm","requiredFields":[],"el":"#waline-comments","libUrl":"/js/my_Waline.min.js","path":"/2022/05/14/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0-%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93%E6%90%9C%E7%B4%A2/","login":"","dark":"auto"}</script>
+<script>
+document.addEventListener('page:loaded', () => {
+  if(!CONFIG.waline.allowUploadImage) {
+    CONFIG.waline.uploadImage = false;
+  }
+  else if(CONFIG.waline.qiniuDomain && CONFIG.waline.qiniuTokenUrl) {
+    CONFIG.waline.uploadImage = qiniuUploadImage;
+  }
+  NexT.utils.loadComments(CONFIG.waline.el).then(() =>
+    NexT.utils.getScript(CONFIG.waline.libUrl, { condition: window.Waline })
+  ).then(() => {
+    new Waline(CONFIG.waline);
+  });
+});
+</script>
+
+</body>
+</html>
+
+<!-- 多级目录 -->
+  <script type="text/javascript" src="/js/category.js"></script>
+</body>

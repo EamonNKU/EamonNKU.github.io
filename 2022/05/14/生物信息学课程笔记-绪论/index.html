@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"fanyiming.life","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.11.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":false}}</script><script src="/js/config.js"></script>
+
+<!-- 导入jquery -->
+<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+
+    <meta name="description" content="这门课一共讲了三个方面的内容。第一是经典的序列比对，包括PAM和BLOSUM替换矩阵、全局比对NW算法、局部比对SM算法、启发式算法BLAST和FASTA、多序列比对的渐进算法ClustalW和迭代算法PSI-BLAST、进化树构建的UPMGA算法和邻接法等。第二是蛋白质结构比对和预测，这部分内容老师没自己讲，主要是让每周一组分享领域内经典论文（那种老论文），我没认真听，也没学会太多。罗列一下内容">
+<meta property="og:type" content="article">
+<meta property="og:title" content="生物信息学课程笔记-绪论">
+<meta property="og:url" content="https://fanyiming.life/2022/05/14/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0-%E7%BB%AA%E8%AE%BA/index.html">
+<meta property="og:site_name" content="Eamon &#39;s Blog">
+<meta property="og:description" content="这门课一共讲了三个方面的内容。第一是经典的序列比对，包括PAM和BLOSUM替换矩阵、全局比对NW算法、局部比对SM算法、启发式算法BLAST和FASTA、多序列比对的渐进算法ClustalW和迭代算法PSI-BLAST、进化树构建的UPMGA算法和邻接法等。第二是蛋白质结构比对和预测，这部分内容老师没自己讲，主要是让每周一组分享领域内经典论文（那种老论文），我没认真听，也没学会太多。罗列一下内容">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-05-14T13:32:50.000Z">
+<meta property="article:modified_time" content="2022-05-14T13:41:31.713Z">
+<meta property="article:author" content="小阿鸣">
+<meta property="article:tag" content="生物信息学课程笔记">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://fanyiming.life/2022/05/14/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0-%E7%BB%AA%E8%AE%BA/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://fanyiming.life/2022/05/14/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0-%E7%BB%AA%E8%AE%BA/","path":"2022/05/14/生物信息学课程笔记-绪论/","title":"生物信息学课程笔记-绪论"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>生物信息学课程笔记-绪论 | Eamon 's Blog</title>
+  
+
+
+
+
+<link rel="dns-prefetch" href="https://walineserver-9vqryp3l9-eamonnku.vercel.app">
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Eamon 's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">生活嘛~那么矫情</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>文章</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-resources"><a href="/resources/" rel="section"><i class="fa fa-download fa-fw"></i>资源</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>留言</a></li><li class="menu-item menu-item-bbtime"><a href="/bb/" rel="section"><i class="fa fa-cloud fa-fw"></i>说说</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">写在前面：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AF%BE%E4%BB%B6%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99%EF%BC%9A"><span class="nav-number">2.</span> <span class="nav-text">课件参考资料：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%95%99%E6%9D%90%EF%BC%9A"><span class="nav-number">3.</span> <span class="nav-text">参考教材：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E5%8F%82%E8%80%83%E6%95%B0%E7%9B%AE%EF%BC%9A"><span class="nav-number">4.</span> <span class="nav-text">其他参考数目：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AF%BE%E5%A4%96%E9%98%85%E8%AF%BB%EF%BC%9A"><span class="nav-number">5.</span> <span class="nav-text">课外阅读：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8E%A8%E8%8D%90%E7%BD%91%E8%AF%BE%EF%BC%9A"><span class="nav-number">6.</span> <span class="nav-text">推荐网课：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E7%9A%84%E4%B8%BB%E8%A6%81%E7%A0%94%E7%A9%B6%E5%86%85%E5%AE%B9"><span class="nav-number">7.</span> <span class="nav-text">生物信息学的主要研究内容</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">8.</span> <span class="nav-text">生物信息学的数据类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E7%9A%84%E7%A0%94%E7%A9%B6%E6%96%B9%E5%90%91"><span class="nav-number">9.</span> <span class="nav-text">生物信息学的研究方向</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%97%A9%E6%9C%9F%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%8F%91%E5%B1%95%E7%9A%84%E4%B8%BB%E8%A6%81%E4%BA%8B%E4%BB%B6%EF%BC%9A"><span class="nav-number">10.</span> <span class="nav-text">早期生物信息学发展的主要事件：</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">小阿鸣</p>
+  <div class="site-description" itemprop="description">知者不惑，仁者不忧，勇者不惧</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">69</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">79</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="/./about" title="E-Mail → .&#x2F;about"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://fanyiming.life/2022/05/14/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0-%E7%BB%AA%E8%AE%BA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="小阿鸣">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Eamon 's Blog">
+      <meta itemprop="description" content="知者不惑，仁者不忧，勇者不惧">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="生物信息学课程笔记-绪论 | Eamon 's Blog">
+      <meta itemprop="description" content="这门课一共讲了三个方面的内容。第一是经典的序列比对，包括PAM和BLOSUM替换矩阵、全局比对NW算法、局部比对SM算法、启发式算法BLAST和FASTA、多序列比对的渐进算法ClustalW和迭代算法PSI-BLAST、进化树构建的UPMGA算法和邻接法等。第二是蛋白质结构比对和预测，这部分内容老师没自己讲，主要是让每周一组分享领域内经典论文（那种老论文），我没认真听，也没学会太多。罗列一下内容有：RMSD和TM-score、TM-align、PSI-PRED、同源建模法和从头预测法等等。第三部分讲了一下隐马尔柯夫模型的理论和应用，理论就是概率计算问题、解码问题和学习问题，重点介绍了前向算法、Viterbi算法和BW算法。此外还有一些小专题如基因组学、Z曲线（原核生物基因预测）、中国生信发展、人类起源、单细胞测序等。">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          生物信息学课程笔记-绪论
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-05-14 21:32:50 / 修改时间：21:41:31" itemprop="dateCreated datePublished" datetime="2022-05-14T21:32:50+08:00">2022-05-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">生物信息学</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/%E5%85%B6%E4%BB%96/" itemprop="url" rel="index"><span itemprop="name">其他</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">评论数：</span>
+  
+    <a title="waline" href="/2022/05/14/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0-%E7%BB%AA%E8%AE%BA/#waline-comments" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" id="/2022/05/14/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0-%E7%BB%AA%E8%AE%BA/" data-xid="/2022/05/14/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0-%E7%BB%AA%E8%AE%BA/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span id="/2022/05/14/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0-%E7%BB%AA%E8%AE%BA/" class="post-meta-item leancloud_visitors" data-flag-title="生物信息学课程笔记-绪论" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+  
+</div>
+
+            <div class="post-description">这门课一共讲了三个方面的内容。第一是经典的序列比对，包括PAM和BLOSUM替换矩阵、全局比对NW算法、局部比对SM算法、启发式算法BLAST和FASTA、多序列比对的渐进算法ClustalW和迭代算法PSI-BLAST、进化树构建的UPMGA算法和邻接法等。第二是蛋白质结构比对和预测，这部分内容老师没自己讲，主要是让每周一组分享领域内经典论文（那种老论文），我没认真听，也没学会太多。罗列一下内容有：RMSD和TM-score、TM-align、PSI-PRED、同源建模法和从头预测法等等。第三部分讲了一下隐马尔柯夫模型的理论和应用，理论就是概率计算问题、解码问题和学习问题，重点介绍了前向算法、Viterbi算法和BW算法。此外还有一些小专题如基因组学、Z曲线（原核生物基因预测）、中国生信发展、人类起源、单细胞测序等。</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p><meta name="referrer" content="no-referrer" /></p>
+<style> .post-body img{width: 100%; max-width: 40em;}</style>
+
+
+<h1 id="写在前面："><a href="#写在前面：" class="headerlink" title="写在前面："></a>写在前面：</h1><p>因为半年前开始做毕业设计开始接触生物信息学。之前在生物物理所的时候有过一个有趣的经历，组里有三个专门处理生信（一般是测序数据之类）的同学和老师，一次组会上MRZ师兄自己实验的结果和它的Chip-seq返回来的结果有了出入（可能描述不够准确，大体是这个意思），师兄跟朱老师争辩接下来的计划，大意就是自己也不懂Chip-seq的数据分析细节，结果也不是自己分析的，不会把生信的结果当成完全相信的事实，朱老师就一直拿Chip-seq的结果说事，两个人争了半天。所以数据处理这种东西，如果有可能，还是自己处理自己的湿实验数据比较好，两个人合作还说得过去，有时需要跨组和一个完全没见过面的人合作，这可就完全让人放不了心了。</p>
+<p>回学校后碰巧孙老师刚好入职学院，据我所知，应该是学院唯一的偏向数据分析应用的生物信息学方向的老师，然后看到他在年级大群里招做毕设的学生，就和wby一起报了名。大二的时候在生科院上过一门李密老师的生物信息学导论，可能是因为年级低的原因，那门课基础得像个科普课，到现在只记得在那门课上学了个引物设计。这个学期（大四下）听说数学学院有一门生物信息学本科生课程，就去上了，一共13次课，昨天刚考完试。</p>
+<p>这门课一共讲了三个方面的内容。第一是经典的序列比对，包括PAM和BLOSUM替换矩阵、全局比对NW算法、局部比对SM算法、启发式算法BLAST和FASTA、多序列比对的渐进算法ClustalW和迭代算法PSI-BLAST、进化树构建的UPMGA算法和邻接法等。第二是蛋白质结构比对和预测，这部分内容老师没自己讲，主要是让每周一组分享领域内经典论文（那种老论文），我没认真听，也没学会太多。罗列一下内容有：RMSD和TM-score、TM-align、PSI-PRED、同源建模法和从头预测法等等。第三部分讲了一下隐马尔柯夫模型的理论和应用，理论就是概率计算问题、解码问题和学习问题，重点介绍了前向算法、Viterbi算法和BW算法。此外还有一些小专题如基因组学、Z曲线（原核生物基因预测）、中国生信发展、人类起源、单细胞测序等。</p>
+<p>刚才整理课件看到参考材料里有清华大学鲁志老师的生物信息学课程（<a target="_blank" rel="noopener" href="https://www.ncrnalab.org/courses/#bioinfo3">https://www.ncrnalab.org/courses/#bioinfo3</a>），点进去看了一下课件什么的都是公开的，也是面向大三大四，内容跟我上的这门差别挺大，没有讲蛋白结构比对和预测，包括Linux入门、R入门、序列比对、基因预测（就是隐马尔柯夫模型）、二代测序（原理和mapping实操）、DNA测序和基因组分析、RNA-seq、Chip-seq、CLIP-seq、机器学习和RNA二级结构预测等，每个课件都100多页，感觉如果他们上这门课真是全都掌握了这些内容的话，那清华的学生是真的牛。现在南开生科院只有一门大二的导论课，之前很可惜一直没有专业对口的老师。偶听说孙老师想开设生物信息学课程，支持，虽然我粗浅地认为，他并不会把太多心思放在教学上。</p>
+<hr>
+<h1 id="课件参考资料："><a href="#课件参考资料：" class="headerlink" title="课件参考资料："></a>课件参考资料：</h1><ul>
+<li><a target="_blank" rel="noopener" href="http://xue.biocuckoo.org/course.html">http://xue.biocuckoo.org/course.html</a> （薛宇，华中科技大学）  </li>
+<li><a target="_blank" rel="noopener" href="https://liulab-dfci.github.io/bioinfo-combio/">https://liulab-dfci.github.io/bioinfo-combio/</a>（刘小乐，哈佛大学）</li>
+<li><a target="_blank" rel="noopener" href="http://readiab.org/introduction.html#">http://readiab.org/introduction.html#</a>（python脚本）</li>
+<li><a target="_blank" rel="noopener" href="https://www.ncrnalab.org/courses/#bioinfo3">https://www.ncrnalab.org/courses/#bioinfo3</a>（鲁志，清华大学）</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/ossu/bioinformatics">https://github.com/ossu/bioinformatics</a> （一些关于生信课程资源  ）</li>
+</ul>
+<h1 id="参考教材："><a href="#参考教材：" class="headerlink" title="参考教材："></a>参考教材：</h1><ul>
+<li>生物信息学（第二版），樊龙江，2021，科学出版社</li>
+<li>生物信息学：序列与基因组分析 （第二版），David Mount，2006， 科学出版社 </li>
+<li>生物序列分析：蛋白质和核酸的概 率论模型，Richard Durbin等， 清华大学出版社 #这本书看了英文版，写的很棒</li>
+<li>生物信息学（第2版），李霞等主编， 2016，人民卫生出版社 </li>
+<li>机器学习，周志华 著，2016，清华大学出版  </li>
+</ul>
+<h1 id="其他参考数目："><a href="#其他参考数目：" class="headerlink" title="其他参考数目："></a>其他参考数目：</h1><ul>
+<li>Python for bioinformatics, Sebastian Bassi, CRC Press </li>
+<li>统计学习方法，李航，清华大学出版社 深度学习，[美] 伊恩·古德费洛 等，人民邮电出版社 </li>
+<li>分子进化与系统发育, [美] Masatoshi Nei, Sudhir Kumar, 高 等教育出版社 </li>
+<li>生物统计学基础, [美] 伯纳德·罗斯纳，科学出版社 </li>
+<li>结构生物信息学, [美] P.E.波恩 &amp; H. 魏西希，化学工业出版社 </li>
+<li>生物信息学与功能基因组学，[美] 乔纳森·佩夫斯纳，化学工业出版社 </li>
+<li>生物信息学（第二版），陈铭 等译，科学出版 </li>
+</ul>
+<h1 id="课外阅读："><a href="#课外阅读：" class="headerlink" title="课外阅读："></a>课外阅读：</h1><ul>
+<li>人工智能简史，尼克，人民邮电出版社  </li>
+<li>生物信息学札记，樊龙江  </li>
+<li>女士品茶，萨尔斯伯格，中国统计出版社  </li>
+<li>生命是什么，[奥] 埃尔温·薛定谔 ，湖南科学技术出版社  </li>
+<li>自私的基因，道金斯，中信出版社  </li>
+<li>世界观：科学史与科学哲学导论，理查德·德威特，电子工业 出版社  </li>
+<li>生命科学史，[美] 洛伊斯·N·玛格纳，上海人民出版社  </li>
+<li>生命的语言，[美] 弗朗西斯·S.柯林斯，湖南科学技术出版社  </li>
+<li>生命的线索，约翰·苏尔斯顿 等，中信出版社  </li>
+<li>师从天才，[美] 罗伯特·卡尼格尔，上海科技教育出版社  </li>
+</ul>
+<h1 id="推荐网课："><a href="#推荐网课：" class="headerlink" title="推荐网课："></a>推荐网课：</h1><ul>
+<li>生物信息学：导论与方法  高歌、魏丽萍，北京大学（<a target="_blank" rel="noopener" href="https://www.coursera.org/learn/sheng-wu-xin-xi-xue">https://www.coursera.org/learn/sheng-wu-xin-xi-xue</a>）</li>
+<li>李宏毅2020机器学习深度学习 （<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1JE411g7XF">https://www.bilibili.com/video/BV1JE411g7XF</a>）</li>
+<li>吴恩达机器学习系列课程  （<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV164411b7dx">https://www.bilibili.com/video/BV164411b7dx</a>）</li>
+<li>Keras深度学习快速简明教程 （<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1gE411R7jd">https://www.bilibili.com/video/BV1gE411R7jd</a>）</li>
+</ul>
+<h1 id="生物信息学的主要研究内容"><a href="#生物信息学的主要研究内容" class="headerlink" title="生物信息学的主要研究内容"></a>生物信息学的主要研究内容</h1><ul>
+<li>（数据）开发、设计相关的数据库和工具，能够方便有效地获取、管理以及使用各种类型的数据和信息。</li>
+<li>（算法）开发新的算法及统计学方法来揭示大数据之间的联系。</li>
+<li>（应用）分析和解释各种类型的生物学数据，包括核酸、氨基酸序列、蛋白质功能结构域以及蛋白质三级结构等。</li>
+</ul>
+<h1 id="生物信息学的数据类型"><a href="#生物信息学的数据类型" class="headerlink" title="生物信息学的数据类型"></a>生物信息学的数据类型</h1><ul>
+<li>序列数据：DNA、RNA、蛋白质序列</li>
+<li>结构数据：NMR、X-ray、Cryo-EM/Cryo-ET</li>
+<li>遗传、进化距离数据</li>
+<li>谱数据：基因芯片、蛋白质-蛋白质相互作用</li>
+<li>影像数据：图像、视频（CT、MRI、超声）</li>
+<li>文本数据：科学文献、电子病历</li>
+<li>混合数据：二代测序数据（序列、谱）</li>
+</ul>
+<h1 id="生物信息学的研究方向"><a href="#生物信息学的研究方向" class="headerlink" title="生物信息学的研究方向"></a>生物信息学的研究方向</h1><ol>
+<li>基因组信息学</li>
+<li>转录组信息学</li>
+<li>表观组信息学</li>
+<li>蛋白质组信息学</li>
+<li>修饰组信息学</li>
+<li>结构信息学</li>
+<li>单细胞生物信息学</li>
+<li>三维基因组信息学</li>
+<li>微生物组信息学</li>
+<li>计算癌症基因组学</li>
+<li>计算系统生物学</li>
+<li>药物信息学</li>
+<li>人工生物系统的设计与控制</li>
+<li>生物信息数据挖掘方法</li>
+<li>生命与健康大数据科学</li>
+<li>精准健康信息学</li>
+<li>群体遗传与计算演化基因组学</li>
+<li>生物影像信息学</li>
+<li>植物信息学</li>
+<li>生物信息学研究新方向、新技术与新方法</li>
+<li>人工智能生物学</li>
+</ol>
+<h1 id="早期生物信息学发展的主要事件："><a href="#早期生物信息学发展的主要事件：" class="headerlink" title="早期生物信息学发展的主要事件："></a>早期生物信息学发展的主要事件：</h1><ul>
+<li>1962 Pauling 提出分子进化理论 </li>
+<li>1965 Dayhoff构建蛋白质序列数据库 </li>
+<li>1970 Needleman-Wunsch算法 </li>
+<li>1977 第一个基因组（吞噬体 ΦX174）被测序 </li>
+<li>1978 “bioinformatics” 出现 </li>
+<li>1981 Smith-Waterman算法 </li>
+<li>1982 GeneBank成立 </li>
+<li>1987 邻接法（进化方法） </li>
+<li>1988 NCBI，EMBnet创立</li>
+<li>1990 数据库搜索工具BLAST发布 </li>
+<li>1997 PSI-BLAST(BLAST系列程序之一）发布 </li>
+<li>1998 多细胞线虫基因组测序完成</li>
+<li>1999 果蝇基因组测序完成 </li>
+<li>2000 拟南芥基因组测序完成 </li>
+<li>2001 人类基因组草图公布 </li>
+<li>2002 UCSC Genome Browser </li>
+<li>2005 第二代高通量测序仪（454）面世 </li>
+<li>2007 ChIP-Seq 技术 </li>
+<li>2008 RNA-Seq技术 </li>
+<li>2010 第三代高通量测序仪（PacBio）面世  </li>
+</ul>
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div></div>
+  <button>
+    <i class="fa fa-qrcode fa-2x" style="line-height:35px;"></i>
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.png" alt="小阿鸣 微信支付">
+        <span>微信支付</span>
+      </div>
+
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" rel="tag"># 生物信息学课程笔记</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/05/14/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0-%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93%E6%90%9C%E7%B4%A2/" rel="prev" title="生物信息学课程笔记-序列比对和数据库搜索">
+                  <i class="fa fa-chevron-left"></i> 生物信息学课程笔记-序列比对和数据库搜索
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="waline-comments"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小阿鸣</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/mybutton.js"></script> <script src="/js/utils.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"per_page":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+<script class="next-config" data-name="waline" type="application/json">{"lang":null,"enable":true,"serverURL":"https://walineserver-9vqryp3l9-eamonnku.vercel.app","placeholder":"在这个框里打字儿","pageSize":10,"visitor":true,"comment_count":true,"requiredMeta":[],"copyright":true,"allowUploadImage":true,"meta":["nick","mail","link"],"qiniuDebug":false,"qiniuDomain":null,"qiniuTokenUrl":null,"emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba"],"avatar":"mm","requiredFields":[],"el":"#waline-comments","libUrl":"/js/my_Waline.min.js","path":"/2022/05/14/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0-%E7%BB%AA%E8%AE%BA/","login":"","dark":"auto"}</script>
+<script>
+document.addEventListener('page:loaded', () => {
+  if(!CONFIG.waline.allowUploadImage) {
+    CONFIG.waline.uploadImage = false;
+  }
+  else if(CONFIG.waline.qiniuDomain && CONFIG.waline.qiniuTokenUrl) {
+    CONFIG.waline.uploadImage = qiniuUploadImage;
+  }
+  NexT.utils.loadComments(CONFIG.waline.el).then(() =>
+    NexT.utils.getScript(CONFIG.waline.libUrl, { condition: window.Waline })
+  ).then(() => {
+    new Waline(CONFIG.waline);
+  });
+});
+</script>
+
+</body>
+</html>
+
+<!-- 多级目录 -->
+  <script type="text/javascript" src="/js/category.js"></script>
+</body>
