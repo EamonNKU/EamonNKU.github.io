@@ -2939,6 +2939,23 @@ p.site-subtitle {
 #app .timenode img {
   max-width: 20em;
 }
+table {
+  width: 100%; /*表格宽度*/
+  border: 2px solid #dedede; /*表格外边框设置*/
+  margin: 15px auto; /*外边距*/
+  border-collapse: collapse; /*使用单一线条的边框*/
+  empty-cells: show; /*单元格无内容依旧绘制边框*/
+  background: #fff; /*背景色*/
+}
+table th,
+table td {
+  border: 1px solid #dedede; /*内部边框样式*/
+}
+table th {
+  font-weight: bold; /*加粗*/
+  text-align: center; /*内容居中，加上 !important 避免被 Markdown 样式覆盖*/
+  background: rgba(158,188,226,0.4); /*背景色*/
+}
 @-moz-keyframes masked-animation {
   0% {
     background-position: 0 0;
