@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"fanyiming.life","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.11.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":false}}</script><script src="/js/config.js"></script>
+
+<!-- 导入jquery -->
+<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+
+    <meta name="description" content="RT">
+<meta property="og:type" content="article">
+<meta property="og:title" content="发育树构建和多序列比对">
+<meta property="og:url" content="https://fanyiming.life/2022/05/17/%E5%8F%91%E8%82%B2%E6%A0%91%E6%9E%84%E5%BB%BA%E5%92%8C%E5%A4%9A%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9/index.html">
+<meta property="og:site_name" content="Eamon &#39;s Blog">
+<meta property="og:description" content="RT">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652797704751-d60d9b09-4215-40aa-a2d1-2d0fa7f0c782.png#clientId=uf36dab10-4f88-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=402&amp;id=udfadfb0e&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=503&amp;originWidth=1042&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=71744&amp;status=done&amp;style=none&amp;taskId=u3900eeb4-2fa2-4c08-99ea-937c720ae75&amp;title=&amp;width=833.6">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652797732185-0fd9be3c-df7e-4442-bff6-4a5a56710370.png#clientId=uf36dab10-4f88-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=266&amp;id=uf9769a19&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=332&amp;originWidth=942&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=25794&amp;status=done&amp;style=none&amp;taskId=ud048b296-53f1-43c4-ba76-d64ffd0dbd5&amp;title=&amp;width=753.6">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652408948420-a7e307d8-64a4-41ae-bc2b-3c84a12de01f.png#clientId=u16101741-fe84-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=195&amp;id=ufe32969b&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=244&amp;originWidth=513&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=15161&amp;status=done&amp;style=none&amp;taskId=u9844a536-5780-49db-b36c-1729bac80de&amp;title=&amp;width=410.4">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652798738704-758a71f0-fcc7-44ac-981a-d7ff548efd08.png#clientId=uf36dab10-4f88-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=162&id=u01284f8b&margin=%5Bobject%20Object%5D&name=image.png">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652800078590-c8a5b4dd-ad4f-4a0b-a6ab-91c70956e5d2.png">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652800483555-5f27f3ee-fab6-42b7-b7c1-75f1efc6ad4f.png#clientId=uf36dab10-4f88-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=139&amp;id=udb63faea&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=174&amp;originWidth=600&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=41881&amp;status=done&amp;style=none&amp;taskId=u5de47a5a-9bcb-47d7-9296-7810a5e4da8&amp;title=&amp;width=480">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652800806379-7f9ccee2-d3e7-42be-80f3-b992a6cd9512.png#clientId=uf36dab10-4f88-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=446&amp;id=u362054b2&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=557&amp;originWidth=823&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=94745&amp;status=done&amp;style=none&amp;taskId=u7472babc-68a0-4560-b819-46b52b32332&amp;title=&amp;width=658.4">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652800833392-228d4d1b-b59c-4f4d-9c71-07fd7f2b69c4.png#clientId=uf36dab10-4f88-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=482&amp;id=u3943c3c3&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=602&amp;originWidth=1118&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=199420&amp;status=done&amp;style=none&amp;taskId=u50f790f0-2ab7-4aab-8eee-e55d2cb273c&amp;title=&amp;width=894.4">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652800868857-34bef63d-793b-4ce7-8d2a-3c7794f021a5.png#clientId=uf36dab10-4f88-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=506&amp;id=u52172ff0&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=633&amp;originWidth=686&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=193974&amp;status=done&amp;style=none&amp;taskId=u4697959c-e23f-4670-b607-f9aed84a1b6&amp;title=&amp;width=548.8">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652801166095-fe1d1a99-aed5-46cd-a995-b118936c77e6.png#clientId=uf36dab10-4f88-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=344&amp;id=uaabd3b4b&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=430&amp;originWidth=629&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=137399&amp;status=done&amp;style=none&amp;taskId=u38de750f-4245-45ce-a90a-cb545ff11fe&amp;title=&amp;width=503.2">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652411819042-00ae454d-8d00-42a7-b38d-763e2dbcbf08.png#clientId=u16101741-fe84-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=607&amp;id=u97fd4321&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=759&amp;originWidth=1503&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=257297&amp;status=done&amp;style=none&amp;taskId=uc722c25e-1eab-48dc-a792-81b21ad7393&amp;title=&amp;width=1202.4">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652802246050-fefdfb3b-96c5-40be-b763-11c04b36aabd.png#clientId=uf36dab10-4f88-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=370&amp;id=ue7e132e5&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=463&amp;originWidth=726&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=240314&amp;status=done&amp;style=none&amp;taskId=ub575f181-8c2f-4948-bd0f-448a8db1c3c&amp;title=&amp;width=580.8">
+<meta property="article:published_time" content="2022-05-17T15:59:54.000Z">
+<meta property="article:modified_time" content="2022-05-17T16:35:04.384Z">
+<meta property="article:author" content="小阿鸣">
+<meta property="article:tag" content="序列比对">
+<meta property="article:tag" content="生物信息学课程笔记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652797704751-d60d9b09-4215-40aa-a2d1-2d0fa7f0c782.png#clientId=uf36dab10-4f88-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=402&amp;id=udfadfb0e&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=503&amp;originWidth=1042&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=71744&amp;status=done&amp;style=none&amp;taskId=u3900eeb4-2fa2-4c08-99ea-937c720ae75&amp;title=&amp;width=833.6">
+
+
+<link rel="canonical" href="https://fanyiming.life/2022/05/17/%E5%8F%91%E8%82%B2%E6%A0%91%E6%9E%84%E5%BB%BA%E5%92%8C%E5%A4%9A%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://fanyiming.life/2022/05/17/%E5%8F%91%E8%82%B2%E6%A0%91%E6%9E%84%E5%BB%BA%E5%92%8C%E5%A4%9A%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9/","path":"2022/05/17/发育树构建和多序列比对/","title":"发育树构建和多序列比对"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>发育树构建和多序列比对 | Eamon 's Blog</title>
+  
+
+
+
+
+<link rel="dns-prefetch" href="https://walineserver-9vqryp3l9-eamonnku.vercel.app">
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Eamon 's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">生活嘛~那么矫情</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>文章</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-resources"><a href="/resources/" rel="section"><i class="fa fa-download fa-fw"></i>资源</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>留言</a></li><li class="menu-item menu-item-bbtime"><a href="/bb/" rel="section"><i class="fa fa-cloud fa-fw"></i>说说</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E5%8F%91%E8%82%B2%E6%A0%91"><span class="nav-number">1.</span> <span class="nav-text">系统发育树</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E5%8F%91%E8%82%B2%E6%A0%91%E9%87%8D%E5%BB%BA%E6%AD%A5%E9%AA%A4%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">系统发育树重建步骤：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BB%BA%E6%A0%91%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="nav-number">1.2.</span> <span class="nav-text">建树方法：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%9E%E5%8A%A0%E6%9D%83%E5%88%86%E7%BB%84%E5%B9%B3%E5%9D%87%E6%B3%95-Unweighted-Pair-Group-Method-using-arithmetic-Averages-UPGMA"><span class="nav-number">1.3.</span> <span class="nav-text">非加权分组平均法(Unweighted Pair Group Method using arithmetic Averages, UPGMA)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%82%BB%E6%8E%A5%E6%B3%95"><span class="nav-number">1.4.</span> <span class="nav-text">邻接法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#MSA%E6%9E%84%E5%BB%BA"><span class="nav-number">2.</span> <span class="nav-text">MSA构建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B8%90%E8%BF%9B%E6%96%B9%E6%B3%95ClustalW"><span class="nav-number">2.1.</span> <span class="nav-text">渐进方法ClustalW</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PSI-BLAST"><span class="nav-number">2.2.</span> <span class="nav-text">PSI-BLAST</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Sequence-profile"><span class="nav-number">3.</span> <span class="nav-text">Sequence profile</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89"><span class="nav-number">3.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Henikoff-amp-Henikoff-weight"><span class="nav-number">3.2.</span> <span class="nav-text">Henikoff &amp; Henikoff weight</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Profile-with-sequence-weight"><span class="nav-number">3.3.</span> <span class="nav-text">Profile with sequence weight</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#profile-profile-alignment"><span class="nav-number">4.</span> <span class="nav-text">profile-profile alignment</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">小阿鸣</p>
+  <div class="site-description" itemprop="description">知者不惑，仁者不忧，勇者不惧</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">75</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="/./about" title="E-Mail → .&#x2F;about"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://fanyiming.life/2022/05/17/%E5%8F%91%E8%82%B2%E6%A0%91%E6%9E%84%E5%BB%BA%E5%92%8C%E5%A4%9A%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="小阿鸣">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Eamon 's Blog">
+      <meta itemprop="description" content="知者不惑，仁者不忧，勇者不惧">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="发育树构建和多序列比对 | Eamon 's Blog">
+      <meta itemprop="description" content="RT">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          发育树构建和多序列比对
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-05-17 23:59:54" itemprop="dateCreated datePublished" datetime="2022-05-17T23:59:54+08:00">2022-05-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-05-18 00:35:04" itemprop="dateModified" datetime="2022-05-18T00:35:04+08:00">2022-05-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">生物信息学</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/%E5%85%B6%E4%BB%96/" itemprop="url" rel="index"><span itemprop="name">其他</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">评论数：</span>
+  
+    <a title="waline" href="/2022/05/17/%E5%8F%91%E8%82%B2%E6%A0%91%E6%9E%84%E5%BB%BA%E5%92%8C%E5%A4%9A%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9/#waline-comments" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" id="/2022/05/17/%E5%8F%91%E8%82%B2%E6%A0%91%E6%9E%84%E5%BB%BA%E5%92%8C%E5%A4%9A%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9/" data-xid="/2022/05/17/%E5%8F%91%E8%82%B2%E6%A0%91%E6%9E%84%E5%BB%BA%E5%92%8C%E5%A4%9A%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span id="/2022/05/17/%E5%8F%91%E8%82%B2%E6%A0%91%E6%9E%84%E5%BB%BA%E5%92%8C%E5%A4%9A%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9/" class="post-meta-item leancloud_visitors" data-flag-title="发育树构建和多序列比对" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+  
+</div>
+
+            <div class="post-description">RT</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p><meta name="referrer" content="no-referrer" /></p>
+<style> .post-body img{width: 100%; max-width: 40em;}</style>
+
+<h1 id="系统发育树"><a href="#系统发育树" class="headerlink" title="系统发育树"></a>系统发育树</h1><h2 id="系统发育树重建步骤："><a href="#系统发育树重建步骤：" class="headerlink" title="系统发育树重建步骤："></a>系统发育树重建步骤：</h2><ul>
+<li>多序列比对（自动比对，手工校对）</li>
+<li>选择建树方法以及替代模型</li>
+<li>建立进化树</li>
+<li><p>进化树评估</p>
+<h2 id="建树方法："><a href="#建树方法：" class="headerlink" title="建树方法："></a>建树方法：</h2></li>
+<li><p>距离法</p>
+</li>
+<li>最大简约法</li>
+<li>极大似然法</li>
+<li>贝叶斯方法<h2 id="非加权分组平均法-Unweighted-Pair-Group-Method-using-arithmetic-Averages-UPGMA"><a href="#非加权分组平均法-Unweighted-Pair-Group-Method-using-arithmetic-Averages-UPGMA" class="headerlink" title="非加权分组平均法(Unweighted Pair Group Method using arithmetic Averages, UPGMA)"></a>非加权分组平均法(Unweighted Pair Group Method using arithmetic Averages, UPGMA)</h2></li>
+</ul>
+<p>1.在距离矩阵中找到距离最小的元素</p>
+<blockquote>
+<p>距离矩阵取决于所使用的相似性矩阵，例如，蛋白质可以使用BLOSUM，PAM等。</p>
+</blockquote>
+<p>2.把此元素所对应的物种合并为一个节点。此节点我们认为是这两个物种的祖先，并且此节点到这个物种的距离是元素值的一半。<br>3.计算新节点到其他各个物种之间的距离（算术平均）。</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652797704751-d60d9b09-4215-40aa-a2d1-2d0fa7f0c782.png#clientId=uf36dab10-4f88-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=402&amp;id=udfadfb0e&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=503&amp;originWidth=1042&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=71744&amp;status=done&amp;style=none&amp;taskId=u3900eeb4-2fa2-4c08-99ea-937c720ae75&amp;title=&amp;width=833.6" alt="image.png"></p>
+<p>4.在新的距离矩阵中重复1-3，直到所有序列都进入进化树。</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652797732185-0fd9be3c-df7e-4442-bff6-4a5a56710370.png#clientId=uf36dab10-4f88-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=266&amp;id=uf9769a19&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=332&amp;originWidth=942&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=25794&amp;status=done&amp;style=none&amp;taskId=ud048b296-53f1-43c4-ba76-d64ffd0dbd5&amp;title=&amp;width=753.6" alt="image.png"></p>
+<p>UPGMA法构建了一颗有根树，它可能存在的错误是，将距离比较近的表兄弟错误构建成亲兄弟。<br><img src="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652408948420-a7e307d8-64a4-41ae-bc2b-3c84a12de01f.png#clientId=u16101741-fe84-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=195&amp;id=ufe32969b&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=244&amp;originWidth=513&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=15161&amp;status=done&amp;style=none&amp;taskId=u9844a536-5780-49db-b36c-1729bac80de&amp;title=&amp;width=410.4" alt="image.png"></p>
+<h2 id="邻接法"><a href="#邻接法" class="headerlink" title="邻接法"></a>邻接法</h2><p><strong>邻接法同样是基于距离的进化树构建方法，是目前最流行的基于距离的进化树构建方法。</strong></p>
+<ul>
+<li>构造了无根树</li>
+<li>不必假定分子钟</li>
+</ul>
+<p>构建方法：</p>
+<p>1.计算N条序列两两距离，得到距离矩阵。<br>2.每条序列当做一个节点，首先考虑星型结构，其中$D_{ij}$表示待分类节点$i$和$j$之间的距离。$L_{ab}$是节点$a$和$b$之间的枝长。</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652798738704-758a71f0-fcc7-44ac-981a-d7ff548efd08.png#clientId=uf36dab10-4f88-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=162&id=u01284f8b&margin=%5Bobject%20Object%5D&name=image.png" / style="max-width: 10em;"></p>
+<p>则最开始的这个星型结构的总枝长为：</p>
+<p>$S_0=\sum_{i=1}^NL_{ix}=\frac{\sum_{i &lt;j}^ND_{ij}}{N-1}$</p>
+<p>每一个枝被计算了N-1次，所以除以N-1。</p>
+<p>3.计算把任意两个节点合并成一个新节点，计算合并后的总枝长。</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652800078590-c8a5b4dd-ad4f-4a0b-a6ab-91c70956e5d2.png" / style="max-width: 15em;"><br>这里以合并节点1和2为例，可以把总枝长分为三部分，$L_{XY}，L_{1X}+L_{2X},L_{iY}(3\le 8)$</p>
+<p>其中：</p>
+<p>$L_{XY}=\frac1{2(N-2)}\bigg[\sum_{k=3}^N(D_{1k}+D_{2k})-(N-2)(L_{1X}+L_{2X})-2\sum_{i=3}^NL_{iY} \bigg]$</p>
+<p>$L_{1X}+L_{2X}=D_{12}$</p>
+<p>$\sum_{i=3}^NL_{iY}=\frac 1 {N-3}\sum_{3 \le i &lt;j}D_{ij}$</p>
+<p>把这三个加一块就是总枝长$S_{12}$了。</p>
+<p>$L_{1X}和L_{2X}$也是能算出来的，算完标在进化树上：</p>
+<center>$L_{1X}=\frac {D_{12}+D_{1Z}-D_{2Z}} 2$</center>
+<center>$L_{2X}=\frac {D_{12}+D_{2Z}-D_{1Z}} 2$</center>
+
+<p>其中，</p>
+<p>$D_{1Z}=\frac{\sum_{i=3}^ND_{1i}}{N-2},D_{2Z}=\frac{\sum_{i=3}^ND_{2i}}{N-2}$</p>
+<p>4.把所有可能的合并方式算完之后，选出那个合并后总枝长最小的两个节点，把它们俩合并，计算这两个节点的相关枝长。<br>5.计算合并邻居后，新节点到各节点之间的距离。</p>
+<p>由节点1和2合并成的新节点到节点$j$之间的距离为：</p>
+<center>$D_{(1,2)j}=\frac{D_{1j}+D_{2j}}2,(3\le j \le N)$</center>
+
+<p>6.重复上述步骤，直到外部待分类节点为3个时停止。此时便得到了一个无根树，即为所求。</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652800483555-5f27f3ee-fab6-42b7-b7c1-75f1efc6ad4f.png#clientId=uf36dab10-4f88-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=139&amp;id=udb63faea&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=174&amp;originWidth=600&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=41881&amp;status=done&amp;style=none&amp;taskId=u5de47a5a-9bcb-47d7-9296-7810a5e4da8&amp;title=&amp;width=480" alt="image.png"></p>
+<h1 id="MSA构建"><a href="#MSA构建" class="headerlink" title="MSA构建"></a>MSA构建</h1><h2 id="渐进方法ClustalW"><a href="#渐进方法ClustalW" class="headerlink" title="渐进方法ClustalW"></a>渐进方法ClustalW</h2><ol>
+<li>将所有序列两两比对，计算进化距离（差异）矩阵。</li>
+<li>使用邻接法(neighbor-joining)构建指导树(guide tree)。</li>
+<li>将进化距离最近的两条序列用全局动态规划算法进行比对；“渐进“地加上其它序列。<blockquote>
+<p>说实话我也没理解</p>
+</blockquote>
+</li>
+</ol>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652800806379-7f9ccee2-d3e7-42be-80f3-b992a6cd9512.png#clientId=uf36dab10-4f88-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=446&amp;id=u362054b2&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=557&amp;originWidth=823&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=94745&amp;status=done&amp;style=none&amp;taskId=u7472babc-68a0-4560-b819-46b52b32332&amp;title=&amp;width=658.4" alt="image.png"><br><img src="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652800833392-228d4d1b-b59c-4f4d-9c71-07fd7f2b69c4.png#clientId=uf36dab10-4f88-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=482&amp;id=u3943c3c3&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=602&amp;originWidth=1118&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=199420&amp;status=done&amp;style=none&amp;taskId=u50f790f0-2ab7-4aab-8eee-e55d2cb273c&amp;title=&amp;width=894.4" alt="image.png"></p>
+<h2 id="PSI-BLAST"><a href="#PSI-BLAST" class="headerlink" title="PSI-BLAST"></a>PSI-BLAST</h2><p>目的：从一个数据库中搜索出给定序列的同源序列，构建MSA<br><img src="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652800868857-34bef63d-793b-4ce7-8d2a-3c7794f021a5.png#clientId=uf36dab10-4f88-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=506&amp;id=u52172ff0&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=633&amp;originWidth=686&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=193974&amp;status=done&amp;style=none&amp;taskId=u4697959c-e23f-4670-b607-f9aed84a1b6&amp;title=&amp;width=548.8" alt="image.png"><br>步骤：</p>
+<ol>
+<li>Identification of words (or high-scoring segment pairs, HSP)</li>
+<li>Extension of HSP by dynamic programming</li>
+<li>Multiple sequence alignment</li>
+<li>Construction of profile</li>
+<li>返回第一步，迭代3次，进行profile-sequence alignment</li>
+</ol>
+<p>PSSM (Position-Specific Score Matrix) derivation</p>
+<h1 id="Sequence-profile"><a href="#Sequence-profile" class="headerlink" title="Sequence profile"></a>Sequence profile</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><blockquote>
+<p>If we list p(j,a) for all 20 possible amino acids at position j, we will get a L*20 matrix. This matrix is called sequence profile of the N sequences.</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652801166095-fe1d1a99-aed5-46cd-a995-b118936c77e6.png#clientId=uf36dab10-4f88-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=344&amp;id=uaabd3b4b&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=430&amp;originWidth=629&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=137399&amp;status=done&amp;style=none&amp;taskId=u38de750f-4245-45ce-a90a-cb545ff11fe&amp;title=&amp;width=503.2" alt="image.png"></p>
+<h2 id="Henikoff-amp-Henikoff-weight"><a href="#Henikoff-amp-Henikoff-weight" class="headerlink" title="Henikoff &amp; Henikoff weight"></a>Henikoff &amp; Henikoff weight</h2><p><img src="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652411819042-00ae454d-8d00-42a7-b38d-763e2dbcbf08.png#clientId=u16101741-fe84-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=607&amp;id=u97fd4321&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=759&amp;originWidth=1503&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=257297&amp;status=done&amp;style=none&amp;taskId=uc722c25e-1eab-48dc-a792-81b21ad7393&amp;title=&amp;width=1202.4" alt="image.png"><br>出现次数越多的氨基酸的权重越低，因为它包含了重复信息。</p>
+<h2 id="Profile-with-sequence-weight"><a href="#Profile-with-sequence-weight" class="headerlink" title="Profile with sequence weight"></a>Profile with sequence weight</h2><p>$\begin{eqnarray}<br>&amp; S(i,j)\\<br>&amp; =&amp;w_1B(A_i,A_{j1})+w_2B(A_i,A_{j2})+…+w_NB(A_i,A_{jN})\\<br>&amp; =&amp;\sum_{n=1}^{f_{jA}}w_nB(A_i,A)+\sum_{n=1}^{f_{jR}}w_nB(A_i,R)+…+\sum_{n=1}^{f_{jV}}w_nB(A_i,V)\\<br>&amp; =&amp;f’_{jA}B(A_j,A)+f’_{jR}B(A_j,R)+…+f’_{jV}B(A_j,V)\\<br>&amp; =&amp;\sum_{a=1}^{20}f’_{ja}B(A_i,a)\\<br>&amp; :=&amp;p(j,A_i)<br>\end{eqnarray}$</p>
+<h1 id="profile-profile-alignment"><a href="#profile-profile-alignment" class="headerlink" title="profile-profile alignment"></a>profile-profile alignment</h1><p><img src="https://cdn.nlark.com/yuque/0/2022/png/27625712/1652802246050-fefdfb3b-96c5-40be-b763-11c04b36aabd.png#clientId=uf36dab10-4f88-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=370&amp;id=ue7e132e5&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=463&amp;originWidth=726&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=240314&amp;status=done&amp;style=none&amp;taskId=ub575f181-8c2f-4948-bd0f-448a8db1c3c&amp;title=&amp;width=580.8" alt="image.png"><br>Score of aligning position i with position j:</p>
+<p>$\begin{eqnarray}<br>&amp; S(i,j)\\<br>&amp;=&amp;\sum_{k=1}^{N_1}\sum_{l=1}^{N_2}B(A_{ik},A_{jl})\\<br>&amp;=&amp;\sum_{k=1}^{N_1}\bigg[B(A_{ik},A_{j1})+B(A_{ik},A_{j2})+…+B(A_{ik},A_{jN_2}) \bigg]\\<br>&amp;=&amp;\sum_{k=1}^{N_1}\bigg[f_{jA}B(A_{ik},A)+f_{jR}B(A_{ik},R)+…+f_{jV}B(A_{ik},V) \bigg]\\<br>&amp;=&amp;\sum_{k=1}^{N_1}\sum_{b=1}^{20}f_{jb}B(A_{ik},b)\\<br>&amp;=&amp;\sum_{a=1}^{N_1}\sum_{b=1}^{N_2}f_{ia}f_{jb}B(a,b)\\<br>&amp;=&amp;\sum_{a=1}^{20}f_{ia}p(i,a)\\<br>&amp;=&amp;\vec{f}\cdot \vec{p}<br>\end{eqnarray}$</p>
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div></div>
+  <button>
+    <i class="fa fa-qrcode fa-2x" style="line-height:35px;"></i>
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.png" alt="小阿鸣 微信支付">
+        <span>微信支付</span>
+      </div>
+
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9/" rel="tag"># 序列比对</a>
+              <a href="/tags/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" rel="tag"># 生物信息学课程笔记</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/05/17/%E4%B8%80%E4%BA%9B%E8%87%AA%E9%97%AE%E8%87%AA%E7%AD%94/" rel="prev" title="一些自问自答">
+                  <i class="fa fa-chevron-left"></i> 一些自问自答
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="waline-comments"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小阿鸣</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/mybutton.js"></script> <script src="/js/utils.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"per_page":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+<script class="next-config" data-name="waline" type="application/json">{"lang":null,"enable":true,"serverURL":"https://walineserver-9vqryp3l9-eamonnku.vercel.app","placeholder":"在这个框里打字儿","pageSize":10,"visitor":true,"comment_count":true,"requiredMeta":[],"copyright":true,"allowUploadImage":true,"meta":["nick","mail","link"],"qiniuDebug":false,"qiniuDomain":null,"qiniuTokenUrl":null,"emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba"],"avatar":"mm","requiredFields":[],"el":"#waline-comments","libUrl":"/js/my_Waline.min.js","path":"/2022/05/17/%E5%8F%91%E8%82%B2%E6%A0%91%E6%9E%84%E5%BB%BA%E5%92%8C%E5%A4%9A%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9/","login":"","dark":"auto"}</script>
+<script>
+document.addEventListener('page:loaded', () => {
+  if(!CONFIG.waline.allowUploadImage) {
+    CONFIG.waline.uploadImage = false;
+  }
+  else if(CONFIG.waline.qiniuDomain && CONFIG.waline.qiniuTokenUrl) {
+    CONFIG.waline.uploadImage = qiniuUploadImage;
+  }
+  NexT.utils.loadComments(CONFIG.waline.el).then(() =>
+    NexT.utils.getScript(CONFIG.waline.libUrl, { condition: window.Waline })
+  ).then(() => {
+    new Waline(CONFIG.waline);
+  });
+});
+</script>
+
+</body>
+</html>
+
+<!-- 多级目录 -->
+  <script type="text/javascript" src="/js/category.js"></script>
+</body>
