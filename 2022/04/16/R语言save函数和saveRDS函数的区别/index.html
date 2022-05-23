@@ -22,7 +22,7 @@
 <script class="next-config" data-name="main" type="application/json">{"hostname":"fanyiming.life","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.11.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":false}}</script><script src="/js/config.js"></script>
 
 <!-- 导入jquery -->
-<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+<script src="/js/jquery-3.5.1.min.js"></script>
 
     <meta name="description" content="读入方法不同，前者用load，后者用readRDS">
 <meta property="og:type" content="article">
@@ -303,7 +303,7 @@
 
 <p>Rda与Rdata，前者是后者格式的缩写，在R里加载同样使用load()。<br><code>save</code>与<code>saveRDS</code>的区别在于，前者保存的数据文件格式为<code>.Rda</code>或<code>Rdata</code>，读入R使用<code>load()</code>，载入的数据名称为原数据名称，不可指定。<br>后者保存的数据文件格式为<code>.rds</code>，读入使用<code>readRDS</code>，读入的数据名称可指定：<code>name&lt;-readRDS(&#39;.rds&#39;)</code>。因此当保存单个对象时，推荐使用后者。<br><code>save</code>不仅可以保存数据，也可保存模型结果、函数等，可保存至<code>.rda</code>文件中。</p>
 <p>资料来源：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/JoAnnal/p/12396070.html">https://www.cnblogs.com/JoAnnal/p/12396070.html</a></p>
-<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
+<script type="text&#x2F;javascript" src="/js/kity.min.js"></script><script type="text&#x2F;javascript" src="/js/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="/js/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="/css/mindmap.min.css">
     </div>
 
     
@@ -395,7 +395,7 @@
 
 
 
-<script class="next-config" data-name="waline" type="application/json">{"lang":null,"enable":true,"serverURL":"https://walineserver-9vqryp3l9-eamonnku.vercel.app","placeholder":"在这个框里打字儿","pageSize":10,"visitor":true,"comment_count":true,"requiredMeta":[],"copyright":true,"allowUploadImage":true,"meta":["nick","mail","link"],"qiniuDebug":false,"qiniuDomain":null,"qiniuTokenUrl":null,"emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba"],"avatar":"mm","requiredFields":[],"el":"#waline-comments","libUrl":"/js/my_Waline.min.js","path":"/2022/04/16/R%E8%AF%AD%E8%A8%80save%E5%87%BD%E6%95%B0%E5%92%8CsaveRDS%E5%87%BD%E6%95%B0%E7%9A%84%E5%8C%BA%E5%88%AB/","login":"","dark":"auto"}</script>
+<script class="next-config" data-name="waline" type="application/json">{"lang":null,"enable":true,"serverURL":"https://walineserver-9vqryp3l9-eamonnku.vercel.app","placeholder":"在这个框里打字儿","pageSize":10,"visitor":true,"comment_count":true,"requiredMeta":[],"copyright":true,"allowUploadImage":true,"meta":["nick","mail","link"],"qiniuDebug":false,"qiniuDomain":null,"qiniuTokenUrl":null,"emoji":["https://fanyiming.life/emoji/weibo","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili","https://fanyiming.life/emoji/qq","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba"],"avatar":"mm","requiredFields":[],"el":"#waline-comments","libUrl":"/js/my_Waline.min.js","path":"/2022/04/16/R%E8%AF%AD%E8%A8%80save%E5%87%BD%E6%95%B0%E5%92%8CsaveRDS%E5%87%BD%E6%95%B0%E7%9A%84%E5%8C%BA%E5%88%AB/","login":"","dark":"auto"}</script>
 <script>
 document.addEventListener('page:loaded', () => {
   if(!CONFIG.waline.allowUploadImage) {
