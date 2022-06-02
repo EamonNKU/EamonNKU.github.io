@@ -483,11 +483,14 @@
 var my_date=new Date(dateTimeStamp);
 var my_year=my_date.getFullYear();
 var my_month=(my_date.getMonth()+1<10?('0'+(my_date.getMonth()+1)):my_date.getMonth()+1);
+monthEnglish: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Spt","Oct","Nov","Dec"]
+my_yuefen = this.monthEnglish[my_date.getMonth()];
+
 var my_day=(my_date.getDate() < 10 ? '0'+my_date.getDate() : my_date.getDate());
 var my_hours=(my_date.getHours() < 10 ? '0'+my_date.getHours() : my_date.getHours());
 var my_min=(my_date.getMinutes() < 10 ? '0'+my_date.getMinutes() : my_date.getMinutes());
 var my_sec=(my_date.getSeconds() < 10 ? '0'+my_date.getSeconds() : my_date.getSeconds());
-result = my_year + "-" + my_month + "-" + my_day + " " + my_hours + ":" + my_min + ":" + my_sec
+result = my_day + " " + my_yuefen + " " + my_year + "   " + my_hours + ":" + my_min
 return result;
 }
 //到这一行魔改结束，如果想改回去把这一行到上面删除即可。
