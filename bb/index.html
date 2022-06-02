@@ -482,7 +482,7 @@
 //这里改一下时间显示方式，原来的是几秒前，几分钟前，三个月前这种，想把它换成某年某月某日某时某分这种，直接把这里的return改掉
 var my_date=new Date(dateTimeStamp);
 var my_year=my_date.getFullYear();
-var month=(my_date.getMonth()+1<10?('0'+(my_date.getMonth()+1)):my_date.getMonth()+1);
+var my_month=(my_date.getMonth()+1<10?('0'+(my_date.getMonth()+1)):my_date.getMonth()+1);
 var my_day=(my_date.getDate() < 10 ? '0'+my_date.getDate() : my_date.getDate());
 var my_hours=(my_date.getHours() < 10 ? '0'+my_date.getHours() : my_date.getHours());
 var my_min=(my_date.getMinutes() < 10 ? '0'+my_date.getMinutes() : my_date.getMinutes());
