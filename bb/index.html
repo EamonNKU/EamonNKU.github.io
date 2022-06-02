@@ -413,6 +413,12 @@
 
 
 
+<article class="bbmessage">
+  <div class="bbmessage_body">
+    <p>好像手机显示不出来，电脑和pad可以，奇怪了</p>
+  </div>
+</article>
+
 
 <main id="app">
   <p class="tip">共计发送 {{count}} 条说说</p>
@@ -473,42 +479,54 @@
   }
   //友好地显示时间
   function timeago(dateTimeStamp) {
-    var minute = 1000 * 60; //把分，时，天，周，半个月，一个月用毫秒表示 
-    var hour = minute * 60;
-    var day = hour * 24;
-    var week = day * 7;
-    var month = day * 30;
-    var now = new Date().getTime(); //获取当前时间毫秒 
-    var diffValue = now - dateTimeStamp; //时间差 
-    if (diffValue < 0) {
-      return;
-    }
-    var minC = diffValue / minute; //计算时间差的分，时，天，周，月 
-    var hourC = diffValue / hour;
-    var dayC = diffValue / day;
-    var weekC = diffValue / week;
-    var monthC = diffValue / month;
-    if (monthC >= 1 && monthC <= 3) {
-      result = " " + parseInt(monthC) + " 月前"
-    } else if (weekC >= 1 && weekC <= 3) {
-      result = " " + parseInt(weekC) + " 周前"
-    } else if (dayC >= 1 && dayC <= 6) {
-      result = " " + parseInt(dayC) + " 天前"
-    } else if (hourC >= 1 && hourC <= 23) {
-      result = " " + parseInt(hourC) + " 小时前"
-    } else if (minC >= 1 && minC <= 59) {
-      result = " " + parseInt(minC) + " 分钟前"
-    } else if (diffValue >= 0 && diffValue <= minute) {
-      result = "刚刚"
-    } else {
-      var datetime = new Date();
-      datetime.setTime(dateTimeStamp);
-      var Nmonth = datetime.getMonth() + 1 < 10 ? "0" + (datetime.getMonth() + 1) : datetime.getMonth() + 1;
-      var Ndate = datetime.getDate() < 10 ? "0" + datetime.getDate() : datetime.getDate();
-      result = Nmonth + "-" + Ndate
-    }
-    return result;
-  }
+//这里改一下时间显示方式，原来的是几秒前，几分钟前，三个月前这种，想把它换成某年某月某日某时某分这种，直接把这里的return改掉
+var my_date=new Date(dateTimeStamp);
+var my_year=my_date.getFullYear();
+var month=(my_date.getMonth()+1<10?('0'+(my_date.getMonth()+1)):my_date.getMonth()+1);
+var my_day=(my_date.getDate() < 10 ? '0'+my_date.getDate() : my_date.getDate());
+var my_hours=(my_date.getHours() < 10 ? '0'+my_date.getHours() : my_date.getHours());
+var my_min=(my_date.getMinutes() < 10 ? '0'+my_date.getMinutes() : my_date.getMinutes());
+var my_sec=(my_date.getSeconds() < 10 ? '0'+my_date.getSeconds() : my_date.getSeconds());
+result = my_year + "-" + my_month + "-" + my_day + "-" + my_hours + "-" + my_min + "-" + my_sec
+return result;
+}
+//到这一行魔改结束，如果想改回去把这一行到上面删除即可。
+  //  var minute = 1000 * 60; //把分，时，天，周，半个月，一个月用毫秒表示 
+  //  var hour = minute * 60;
+   // var day = hour * 24;
+   // var week = day * 7;
+   // var month = day * 30;
+   // var now = new Date().getTime(); //获取当前时间毫秒 
+   // var diffValue = now - dateTimeStamp; //时间差 
+   // if (diffValue < 0) {
+   //   return;
+  //  }
+   // var minC = diffValue / minute; //计算时间差的分，时，天，周，月 
+   // var hourC = diffValue / hour;
+   // var dayC = diffValue / day;
+   // var weekC = diffValue / week;
+   // var monthC = diffValue / month;
+   // if (monthC >= 1 && monthC <= 3) {
+   //   result = " " + parseInt(monthC) + " 月前"
+   // } else if (weekC >= 1 && weekC <= 3) {
+   //   result = " " + parseInt(weekC) + " 周前"
+   // } else if (dayC >= 1 && dayC <= 6) {
+   //   result = " " + parseInt(dayC) + " 天前"
+   // } else if (hourC >= 1 && hourC <= 23) {
+   //   result = " " + parseInt(hourC) + " 小时前"
+ //   } else if (minC >= 1 && minC <= 59) {
+  //    result = " " + parseInt(minC) + " 分钟前"
+  //  } else if (diffValue >= 0 && diffValue <= minute) {
+ //     result = "刚刚"
+//    } else {
+//      var datetime = new Date();
+//     datetime.setTime(dateTimeStamp);
+//      var Nmonth = datetime.getMonth() + 1 < 10 ? "0" + (datetime.getMonth() + 1) : //datetime.getMonth() + 1;
+//      var Ndate = datetime.getDate() < 10 ? "0" + datetime.getDate() : datetime.getDate();
+//      result = Nmonth + "-" + Ndate
+//    }
+//    return result;
+//  }
 
 
   function getData(page = 0) {
