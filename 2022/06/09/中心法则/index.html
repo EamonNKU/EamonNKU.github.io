@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"fanyiming.life","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.11.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":false}}</script><script src="/js/config.js"></script>
+
+<!-- 导入jquery -->
+<script src="/js/jquery-3.5.1.min.js"></script>
+
+    <meta name="description" content="围绕中心法则的生物基础（面向数学学院大二大三的同学）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="中心法则">
+<meta property="og:url" content="https://fanyiming.life/2022/06/09/%E4%B8%AD%E5%BF%83%E6%B3%95%E5%88%99/index.html">
+<meta property="og:site_name" content="Eamon &#39;s Blog">
+<meta property="og:description" content="围绕中心法则的生物基础（面向数学学院大二大三的同学）">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747316089-fa27f9c8-e994-4863-bd05-8b4ce58c5a2b.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u40af8fd8&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%871.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=22082&amp;status=done&amp;style=none&amp;taskId=ubcbaac73-ef78-4fe0-8e2f-91d60332d71&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747316217-233b9501-c929-4e16-911b-59c49cc1a518.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u45b40a4e&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%872.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=165113&amp;status=done&amp;style=none&amp;taskId=u9da5d9d7-a148-4fc8-a897-ee3b0d39bde&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747316181-2db0d3be-71e2-41f4-bf77-eb84dfa749bf.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ufac62286&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%873.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=89121&amp;status=done&amp;style=none&amp;taskId=ucffde262-0048-4bf5-9bb5-082f3b79ff9&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747316181-9de8115f-5975-4775-a01b-664a7b473cf1.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uceee9f69&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%874.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=59290&amp;status=done&amp;style=none&amp;taskId=u8e4015c6-6739-42be-980c-91a462daa4a&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747316197-53a20094-2d23-43a3-b39b-ece2d5fc930b.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uacd92d1c&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%875.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=99311&amp;status=done&amp;style=none&amp;taskId=u1bd5290d-51a8-4413-a850-245d417b1d8&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747317210-77e2adb7-8475-4c58-94f2-747b394fb1cd.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uc0809044&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%876.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=108878&amp;status=done&amp;style=none&amp;taskId=u2d426bd3-4b1b-4c22-9f8e-8383786e1cc&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747317289-69ac2911-0baf-47ff-b703-7b821a256dfa.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u3775e7a3&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%877.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=121997&amp;status=done&amp;style=none&amp;taskId=u690cb6f1-7e08-4e05-bb78-f8bbea4ae25&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747317288-c85f2143-5bd4-4463-b2d2-4f04f89f2b12.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u769c7f41&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%878.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=105200&amp;status=done&amp;style=none&amp;taskId=ue080427d-40fb-4ec2-ab7b-485abe95432&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747317380-24fa72a1-b842-4345-b57d-8a598f2de45c.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ub9cd38ff&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%879.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=64206&amp;status=done&amp;style=none&amp;taskId=u44ffdf84-95cc-46db-b0dd-1a9348e1212&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747317418-50ca8539-0873-4767-86d5-29afab6f156f.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u39ff3993&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8710.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=60896&amp;status=done&amp;style=none&amp;taskId=u05b8f65f-6f8f-4a69-a4c1-99bd39e8907&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747318224-b0074aa0-c845-4b13-bac8-4c69e7dae153.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u8bccc8d2&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8711.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=62233&amp;status=done&amp;style=none&amp;taskId=u236eef1f-ea12-4a43-b5f7-175d9c63cd6&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747318322-d4207d77-844e-4d9b-80a2-68d354f6025f.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u7c3cf632&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8712.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=63397&amp;status=done&amp;style=none&amp;taskId=uce8ce0ce-4b4d-415c-baf6-85bc76eb4d4&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747318638-1aaa6d32-66c9-458a-9024-33ae371fcc65.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u4ebe585b&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8713.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=64634&amp;status=done&amp;style=none&amp;taskId=u2ae113d3-1873-4535-bd51-0ef8743250d&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747318753-571a8296-4cec-4eb2-a4c5-37a7affa8cd2.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u71db448b&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8714.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=65842&amp;status=done&amp;style=none&amp;taskId=u42089d6d-a220-496e-8cf8-84c4433cb31&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747319377-df7d7097-4eb5-4ccc-af23-81c6ebbb5745.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=udc8c815b&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8715.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=66977&amp;status=done&amp;style=none&amp;taskId=u0ed5a828-f898-42a9-b549-84c11c5dc0b&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747319425-a33967f7-856e-476d-9796-5fc2838b14da.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u6d914ae0&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8716.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=119030&amp;status=done&amp;style=none&amp;taskId=u8f6af72b-c583-43a2-9a74-ce2919f0a8e&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747319689-a9df29f8-6033-4195-85ec-9f0bfe95b994.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ub9c9a7c2&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8717.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=93936&amp;status=done&amp;style=none&amp;taskId=u012bb94b-bf47-40f7-b06a-24311a5be31&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747319874-1354815b-28d5-4127-9b92-01aba09611cb.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ub294b5d7&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8718.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=99021&amp;status=done&amp;style=none&amp;taskId=u9ae3670f-6548-4b4f-83fa-4c27bcece7a&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747320216-cf1d71ef-d3ff-4152-b1e8-373e80c7bcd6.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u14103a32&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8719.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=113062&amp;status=done&amp;style=none&amp;taskId=u6b1da675-3e41-4e4e-a60e-5cbd372496b&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747320374-fcd4b4bb-c20f-4499-82ed-dbeec55dbf49.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u1200498b&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8720.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=19641&amp;status=done&amp;style=none&amp;taskId=u4029bb24-1ecf-4c48-8b74-cc9c4ca4c21&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747320908-72776337-5523-4a9c-8976-ad1201fdf367.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uce2ef024&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8721.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=75824&amp;status=done&amp;style=none&amp;taskId=ud2f3fdb3-0658-4a71-9c3f-c8a596d0804&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747320915-9eb70425-12a5-4c0f-96c7-b4ec80bf2e2e.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u16cbe5a0&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8722.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=69297&amp;status=done&amp;style=none&amp;taskId=ued84ff07-1ff6-4257-8cad-5682b6a6782&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747321080-72ecc40b-b111-4684-b5bc-0b11d51158a7.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ufaa91141&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8723.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=144693&amp;status=done&amp;style=none&amp;taskId=u6bee881e-1c8b-4036-8cde-8a96c73798d&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747321393-8be9a8c6-bc39-4d30-a7a3-43df96a3be02.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uc50731bb&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8724.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=59104&amp;status=done&amp;style=none&amp;taskId=u0a259a07-1451-40d9-a06f-36985cb656e&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747321686-2a91e1d2-7010-4547-8df8-19ac3639052e.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uc5cc1fe4&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8725.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=100981&amp;status=done&amp;style=none&amp;taskId=uf84482da-807b-4934-841b-0789b8a61ba&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747322246-b3f0409a-0f99-4eed-bcf7-e11c22988604.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u80694fe9&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8726.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=102052&amp;status=done&amp;style=none&amp;taskId=ue34c8cf1-17d8-4242-a137-22b0e1e0a0c&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747322303-146591c4-7119-458e-83d5-6eac2cb7ada5.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u0c5c0191&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8727.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=109580&amp;status=done&amp;style=none&amp;taskId=u4097c2ad-4625-4987-8f89-a6f715e6b08&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747322393-653fe795-c909-419c-af4a-bafd9a726a4c.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ufe978666&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8728.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=126710&amp;status=done&amp;style=none&amp;taskId=ufd68ae9e-5b49-4d1a-81e1-453db5e421f&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747322985-2389c85e-57b8-48ef-98ef-c085e6f78f1f.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u7df8d7ac&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8729.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=170506&amp;status=done&amp;style=none&amp;taskId=u5c04ff15-b538-4acf-887d-fb4713709e9&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747323056-a04d36df-0ac3-4e7e-b102-5d1a34d9eaf8.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uc223ce92&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8730.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=147593&amp;status=done&amp;style=none&amp;taskId=u5fb35dbb-3f0f-42ce-83b8-484c563ea5e&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747323323-af6b3ca5-f9ce-46f9-86fe-8ec70960d7d9.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u506d66c0&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8731.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=29243&amp;status=done&amp;style=none&amp;taskId=u4df82912-c25f-4a01-a629-3c4bd2fdc2e&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747324011-4b636819-1476-4dc3-b93d-6c636e0d004c.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u24c3e7b1&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8732.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=38527&amp;status=done&amp;style=none&amp;taskId=u5516f15e-8f2c-434c-80e4-111358ba995&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747324174-1c32aa64-fb20-4453-8d28-3d58b80172b9.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u4677e045&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8733.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=101838&amp;status=done&amp;style=none&amp;taskId=u2582f0d6-53d3-4039-adcc-e1900262e36&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747324704-718cf43d-ad58-4120-9d84-a0adf7aed6c9.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ucc1ef782&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8734.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=93378&amp;status=done&amp;style=none&amp;taskId=u6ecb046c-0409-4f23-863a-eb8362f9d2a&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747324776-d6331e34-982b-45a0-a68f-4bdca1638dc5.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ua19e5e28&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8735.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=101266&amp;status=done&amp;style=none&amp;taskId=u789db8fb-df6f-4de6-a381-5c24c616532&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747324928-0f09ad9c-af6e-48d0-9039-a2fd39d623f8.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ufabace49&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8736.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=105044&amp;status=done&amp;style=none&amp;taskId=uefa86d6c-c9b9-4b1e-ad44-7f317cc7bd9&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747324942-7b963e6b-6400-4d55-946c-fd49baa9bfcf.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u3e315c15&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8737.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=97405&amp;status=done&amp;style=none&amp;taskId=ua55d4574-5dcb-49bf-bbf4-d32725cc4c2&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747325975-590267d4-ef3f-4ca6-8911-6783e1a367c5.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=udee900dc&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8738.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=133923&amp;status=done&amp;style=none&amp;taskId=uf4e39f08-cb81-4e65-9d0f-6aa54542b1c&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747326357-321d4ced-ff03-4eb6-b3d5-f27f995e3fcc.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u4c0b02b3&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8739.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=140047&amp;status=done&amp;style=none&amp;taskId=ua4dcf40c-701f-46d1-bc81-6af250b42cf&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747326400-a9fcd188-28af-496c-8363-9b393724568c.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u767c494a&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8740.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=73247&amp;status=done&amp;style=none&amp;taskId=uc3eab5f8-c018-4971-b579-c77e5817017&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747326479-7d59c2d4-bc70-44b1-9232-ef17c5a944a4.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u0467361c&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8741.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=77272&amp;status=done&amp;style=none&amp;taskId=ub50c29c0-a051-438f-ba80-2c2aec24cab&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747326822-2c5b2d87-3ad8-4aec-845e-0bfe174fa7ca.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u28698db5&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8742.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=94672&amp;status=done&amp;style=none&amp;taskId=uc4b74f12-0bdc-4f72-8c97-06f628a5801&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747327001-11f1388c-0dea-47b3-95fb-4c58f31258dc.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ue02fa03c&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8743.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=74897&amp;status=done&amp;style=none&amp;taskId=uba6c92b6-682b-4fd6-a6c7-d7d8665878b&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747327491-127f0b01-3b95-4dbe-af2d-2ae12a067970.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=udd752fd2&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8744.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=101838&amp;status=done&amp;style=none&amp;taskId=u6622d41c-0c27-427a-9342-3966e4c69ec&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747327796-a4fb19d2-a616-4693-8e10-9db7c2b520e7.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ud3ac6e13&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8745.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=97697&amp;status=done&amp;style=none&amp;taskId=u586996e9-8481-4b2a-b6c0-ac286dbc0ee&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747328382-f2fedb11-b377-4b7e-a6bc-c365ae3a30ab.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u987ed1d6&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8746.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=96797&amp;status=done&amp;style=none&amp;taskId=u79d99304-57ef-4bf9-9a35-bcccb9a5393&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747328542-60dd2277-9853-4402-a7fc-6800a740f21c.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u8bcabb32&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8747.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=98752&amp;status=done&amp;style=none&amp;taskId=uf4241f47-b38d-4116-86bb-9fab127b4a4&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747328620-5f33f3d1-9714-4326-b701-fe24eb825eac.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=udab4e848&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8748.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=107601&amp;status=done&amp;style=none&amp;taskId=u669747f7-17f8-4f35-bc80-aaff69861da&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747329032-41b698ac-a333-47ed-b5a9-4c3f6fb97e80.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=udecf1796&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8749.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=107601&amp;status=done&amp;style=none&amp;taskId=u498e8f5d-f079-468d-b67d-d226d91b64e&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747329348-c9db4e10-2bc7-4aad-b975-580922aad016.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ub15c5c96&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8750.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=87830&amp;status=done&amp;style=none&amp;taskId=u59bf49dd-7284-4c1d-ab99-97937ce8d28&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747329370-374e52c5-3a94-418b-9497-866558c5bfe7.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u9557bc72&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8751.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=101378&amp;status=done&amp;style=none&amp;taskId=u893891bb-a5cb-4deb-9bcf-0946e96b18e&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747329689-57d58561-ac64-43da-8c91-1f4ce3c41e42.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u4aa1e957&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8752.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=96900&amp;status=done&amp;style=none&amp;taskId=uef9db638-44c8-4a27-95aa-4713ae3c8f9&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747329769-ddf35b60-3909-4e81-b640-d3f0a3bf10ad.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uea29bb26&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8753.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=95401&amp;status=done&amp;style=none&amp;taskId=u15113b27-9ec4-4ac7-b619-9bfaea5c0a4&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747329899-9b55a89e-9bd3-4645-b21f-3fed683ab7b0.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ua4f6fb64&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8754.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=159422&amp;status=done&amp;style=none&amp;taskId=u8b525fe3-2397-4058-b587-cb6168fa4d4&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747330227-9d6df97f-ff85-4635-9750-244dfa43afe7.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u2ef7844f&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8755.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=99145&amp;status=done&amp;style=none&amp;taskId=u53e136a6-bc4e-4895-bcbe-c3d706b8614&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747330680-e70f867c-ce4f-4c95-b1c8-80f813c2e355.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uc4207067&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8756.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=85768&amp;status=done&amp;style=none&amp;taskId=ue851c2fa-4fef-491f-96ae-0bda25e72a7&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747330729-a629f8f0-734c-4b8f-b12b-128c9aa927e2.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uaf8f1473&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8757.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=107601&amp;status=done&amp;style=none&amp;taskId=u702fa272-4126-4671-8391-deca382fd3d&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747330821-b1ea1cda-8773-48a6-aa6b-5121527250f2.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u78375240&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8758.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=92067&amp;status=done&amp;style=none&amp;taskId=u93317383-b53e-4396-ae5a-910c95334b7&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747330955-b934fe2e-8129-45a4-b986-cdaeee9920f4.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uf2c3e244&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8759.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=104296&amp;status=done&amp;style=none&amp;taskId=u98ba4376-4232-4189-894c-046e5be8088&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747331085-4ded232f-0a50-4744-84c6-59555079f471.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u884dd41a&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8760.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=98917&amp;status=done&amp;style=none&amp;taskId=ua3995d0e-ec3a-44e2-8aef-0ebe4a048f1&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747331600-cdffb8e1-64ef-433e-8a6f-37ea5310e6a0.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uc95917eb&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8761.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=102223&amp;status=done&amp;style=none&amp;taskId=u2cd14c6a-c77b-457a-a139-ba451644ea6&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747331682-0ff5ffad-49c9-4b1a-b564-619268dc4e99.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ue852c5bd&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8762.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=224081&amp;status=done&amp;style=none&amp;taskId=u1b2e89bb-cb54-43ca-acfc-38169048d06&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747331694-86b80f2f-52ff-4393-ae94-95ee2883c68f.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uf5276966&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8763.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=106711&amp;status=done&amp;style=none&amp;taskId=u64855182-0a47-4005-9f84-c2348e87e3b&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747332053-45996985-98a2-49c4-acb8-766e7567852c.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u7ae82879&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8764.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=143511&amp;status=done&amp;style=none&amp;taskId=uf7fc190b-536b-4aad-bdb0-161303ab79d&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747332675-c89505bf-e467-4c3e-9c55-aedd1a9cff66.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u7df99f36&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8765.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=130890&amp;status=done&amp;style=none&amp;taskId=ub43d4a05-e417-4048-98cc-8a7ca037a88&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747332700-6acdeef7-085b-4002-abc6-82fef55329c9.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u9db8636c&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8766.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=193026&amp;status=done&amp;style=none&amp;taskId=u22c6935e-6d91-4612-acf2-51ae883a99c&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747332845-3270b005-3ec2-476f-b5d1-2d1972e12b9a.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ue5723d88&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8767.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=87950&amp;status=done&amp;style=none&amp;taskId=u9d720d78-0aa8-4bc9-bcdf-d6e8b844227&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747333083-f7970ff3-cd9e-49cd-9544-72fa5f223b3e.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uad2de83f&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8768.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=88849&amp;status=done&amp;style=none&amp;taskId=u61249839-957b-40ef-bc05-57c885c750f&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747333136-a41aba42-f843-41d9-b73b-a6ff4ffcf33f.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u4bed6ce5&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8769.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=17770&amp;status=done&amp;style=none&amp;taskId=u1c9c6fd8-d754-4ac9-8f3e-b15f272c8f0&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747333485-cb5cd308-0a78-49f4-9bab-ef4dc50f5066.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ub7e49e83&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8770.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=101117&amp;status=done&amp;style=none&amp;taskId=ua8459f46-d39b-40c6-9405-0172689a877&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747333796-e89442dc-b614-4b6e-ba65-d828694a551d.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u447e0899&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8771.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=120750&amp;status=done&amp;style=none&amp;taskId=u64934fc6-01cb-412c-927d-f99f7c32fe7&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747333798-ff66dcd2-3cc8-4f65-87ca-6f22db7deb3f.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ue73656a4&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8772.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=73632&amp;status=done&amp;style=none&amp;taskId=u617aa810-f74a-429e-b1af-6b17960d3a4&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747333855-6c27e353-e75f-4a37-aa9b-2a76b37cf8a4.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u65dee574&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8773.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=87685&amp;status=done&amp;style=none&amp;taskId=uc3deaad1-bf9a-44ed-90f9-183e0b64415&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747334159-0979b2fb-168e-48fd-9780-a886035e77cf.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u1b1d714b&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8774.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=95532&amp;status=done&amp;style=none&amp;taskId=u9de6e859-b4f6-492f-b777-9cb27cfa131&amp;title=&amp;width=1024">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747334705-98d7767c-5834-489d-b23a-39dcbb139a98.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uaa8a3f58&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8775.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=31923&amp;status=done&amp;style=none&amp;taskId=u182e0533-3208-4bce-9ca8-3371f551063&amp;title=&amp;width=1024">
+<meta property="article:published_time" content="2022-06-09T04:12:24.000Z">
+<meta property="article:modified_time" content="2022-06-09T04:41:23.861Z">
+<meta property="article:author" content="小阿鸣">
+<meta property="article:tag" content="生物信息学课程笔记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747316089-fa27f9c8-e994-4863-bd05-8b4ce58c5a2b.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u40af8fd8&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%871.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=22082&amp;status=done&amp;style=none&amp;taskId=ubcbaac73-ef78-4fe0-8e2f-91d60332d71&amp;title=&amp;width=1024">
+
+
+<link rel="canonical" href="https://fanyiming.life/2022/06/09/%E4%B8%AD%E5%BF%83%E6%B3%95%E5%88%99/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://fanyiming.life/2022/06/09/%E4%B8%AD%E5%BF%83%E6%B3%95%E5%88%99/","path":"2022/06/09/中心法则/","title":"中心法则"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>中心法则 | Eamon 's Blog</title>
+  
+
+
+
+
+<link rel="dns-prefetch" href="https://walineserver-gj4ioln8e-eamonnku.vercel.app/">
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Eamon 's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">生活嘛~那么矫情</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>文章</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-resources"><a href="/resources/" rel="section"><i class="fa fa-download fa-fw"></i>资源</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>留言</a></li><li class="menu-item menu-item-bbtime"><a href="/bb/" rel="section"><i class="fa fa-cloud fa-fw"></i>说说</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">小阿鸣</p>
+  <div class="site-description" itemprop="description">知者不惑，仁者不忧，勇者不惧</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">81</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">18</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="/./about" title="E-Mail → .&#x2F;about"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://fanyiming.life/2022/06/09/%E4%B8%AD%E5%BF%83%E6%B3%95%E5%88%99/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="小阿鸣">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Eamon 's Blog">
+      <meta itemprop="description" content="知者不惑，仁者不忧，勇者不惧">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="中心法则 | Eamon 's Blog">
+      <meta itemprop="description" content="围绕中心法则的生物基础（面向数学学院大二大三的同学）">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          中心法则
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-06-09 12:12:24 / 修改时间：12:41:23" itemprop="dateCreated datePublished" datetime="2022-06-09T12:12:24+08:00">2022-06-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index"><span itemprop="name">生物学基础</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">分子生物学</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">评论数：</span>
+  
+    <a title="waline" href="/2022/06/09/%E4%B8%AD%E5%BF%83%E6%B3%95%E5%88%99/#waline-comments" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" id="/2022/06/09/%E4%B8%AD%E5%BF%83%E6%B3%95%E5%88%99/" data-xid="/2022/06/09/%E4%B8%AD%E5%BF%83%E6%B3%95%E5%88%99/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span id="/2022/06/09/%E4%B8%AD%E5%BF%83%E6%B3%95%E5%88%99/" class="post-meta-item leancloud_visitors" data-flag-title="中心法则" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+  
+</div>
+
+            <div class="post-description">围绕中心法则的生物基础（面向数学学院大二大三的同学）</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p><meta name="referrer" content="no-referrer" /></p>
+<style> .post-body img{width: 100%; max-width: 40em;}</style>
+
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747316089-fa27f9c8-e994-4863-bd05-8b4ce58c5a2b.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u40af8fd8&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%871.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=22082&amp;status=done&amp;style=none&amp;taskId=ubcbaac73-ef78-4fe0-8e2f-91d60332d71&amp;title=&amp;width=1024" alt="幻灯片1.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747316217-233b9501-c929-4e16-911b-59c49cc1a518.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u45b40a4e&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%872.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=165113&amp;status=done&amp;style=none&amp;taskId=u9da5d9d7-a148-4fc8-a897-ee3b0d39bde&amp;title=&amp;width=1024" alt="幻灯片2.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747316181-2db0d3be-71e2-41f4-bf77-eb84dfa749bf.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ufac62286&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%873.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=89121&amp;status=done&amp;style=none&amp;taskId=ucffde262-0048-4bf5-9bb5-082f3b79ff9&amp;title=&amp;width=1024" alt="幻灯片3.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747316181-9de8115f-5975-4775-a01b-664a7b473cf1.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uceee9f69&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%874.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=59290&amp;status=done&amp;style=none&amp;taskId=u8e4015c6-6739-42be-980c-91a462daa4a&amp;title=&amp;width=1024" alt="幻灯片4.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747316197-53a20094-2d23-43a3-b39b-ece2d5fc930b.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uacd92d1c&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%875.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=99311&amp;status=done&amp;style=none&amp;taskId=u1bd5290d-51a8-4413-a850-245d417b1d8&amp;title=&amp;width=1024" alt="幻灯片5.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747317210-77e2adb7-8475-4c58-94f2-747b394fb1cd.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uc0809044&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%876.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=108878&amp;status=done&amp;style=none&amp;taskId=u2d426bd3-4b1b-4c22-9f8e-8383786e1cc&amp;title=&amp;width=1024" alt="幻灯片6.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747317289-69ac2911-0baf-47ff-b703-7b821a256dfa.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u3775e7a3&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%877.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=121997&amp;status=done&amp;style=none&amp;taskId=u690cb6f1-7e08-4e05-bb78-f8bbea4ae25&amp;title=&amp;width=1024" alt="幻灯片7.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747317288-c85f2143-5bd4-4463-b2d2-4f04f89f2b12.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u769c7f41&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%878.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=105200&amp;status=done&amp;style=none&amp;taskId=ue080427d-40fb-4ec2-ab7b-485abe95432&amp;title=&amp;width=1024" alt="幻灯片8.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747317380-24fa72a1-b842-4345-b57d-8a598f2de45c.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ub9cd38ff&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%879.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=64206&amp;status=done&amp;style=none&amp;taskId=u44ffdf84-95cc-46db-b0dd-1a9348e1212&amp;title=&amp;width=1024" alt="幻灯片9.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747317418-50ca8539-0873-4767-86d5-29afab6f156f.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u39ff3993&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8710.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=60896&amp;status=done&amp;style=none&amp;taskId=u05b8f65f-6f8f-4a69-a4c1-99bd39e8907&amp;title=&amp;width=1024" alt="幻灯片10.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747318224-b0074aa0-c845-4b13-bac8-4c69e7dae153.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u8bccc8d2&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8711.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=62233&amp;status=done&amp;style=none&amp;taskId=u236eef1f-ea12-4a43-b5f7-175d9c63cd6&amp;title=&amp;width=1024" alt="幻灯片11.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747318322-d4207d77-844e-4d9b-80a2-68d354f6025f.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u7c3cf632&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8712.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=63397&amp;status=done&amp;style=none&amp;taskId=uce8ce0ce-4b4d-415c-baf6-85bc76eb4d4&amp;title=&amp;width=1024" alt="幻灯片12.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747318638-1aaa6d32-66c9-458a-9024-33ae371fcc65.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u4ebe585b&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8713.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=64634&amp;status=done&amp;style=none&amp;taskId=u2ae113d3-1873-4535-bd51-0ef8743250d&amp;title=&amp;width=1024" alt="幻灯片13.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747318753-571a8296-4cec-4eb2-a4c5-37a7affa8cd2.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u71db448b&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8714.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=65842&amp;status=done&amp;style=none&amp;taskId=u42089d6d-a220-496e-8cf8-84c4433cb31&amp;title=&amp;width=1024" alt="幻灯片14.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747319377-df7d7097-4eb5-4ccc-af23-81c6ebbb5745.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=udc8c815b&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8715.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=66977&amp;status=done&amp;style=none&amp;taskId=u0ed5a828-f898-42a9-b549-84c11c5dc0b&amp;title=&amp;width=1024" alt="幻灯片15.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747319425-a33967f7-856e-476d-9796-5fc2838b14da.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u6d914ae0&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8716.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=119030&amp;status=done&amp;style=none&amp;taskId=u8f6af72b-c583-43a2-9a74-ce2919f0a8e&amp;title=&amp;width=1024" alt="幻灯片16.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747319689-a9df29f8-6033-4195-85ec-9f0bfe95b994.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ub9c9a7c2&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8717.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=93936&amp;status=done&amp;style=none&amp;taskId=u012bb94b-bf47-40f7-b06a-24311a5be31&amp;title=&amp;width=1024" alt="幻灯片17.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747319874-1354815b-28d5-4127-9b92-01aba09611cb.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ub294b5d7&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8718.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=99021&amp;status=done&amp;style=none&amp;taskId=u9ae3670f-6548-4b4f-83fa-4c27bcece7a&amp;title=&amp;width=1024" alt="幻灯片18.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747320216-cf1d71ef-d3ff-4152-b1e8-373e80c7bcd6.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u14103a32&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8719.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=113062&amp;status=done&amp;style=none&amp;taskId=u6b1da675-3e41-4e4e-a60e-5cbd372496b&amp;title=&amp;width=1024" alt="幻灯片19.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747320374-fcd4b4bb-c20f-4499-82ed-dbeec55dbf49.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u1200498b&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8720.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=19641&amp;status=done&amp;style=none&amp;taskId=u4029bb24-1ecf-4c48-8b74-cc9c4ca4c21&amp;title=&amp;width=1024" alt="幻灯片20.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747320908-72776337-5523-4a9c-8976-ad1201fdf367.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uce2ef024&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8721.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=75824&amp;status=done&amp;style=none&amp;taskId=ud2f3fdb3-0658-4a71-9c3f-c8a596d0804&amp;title=&amp;width=1024" alt="幻灯片21.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747320915-9eb70425-12a5-4c0f-96c7-b4ec80bf2e2e.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u16cbe5a0&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8722.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=69297&amp;status=done&amp;style=none&amp;taskId=ued84ff07-1ff6-4257-8cad-5682b6a6782&amp;title=&amp;width=1024" alt="幻灯片22.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747321080-72ecc40b-b111-4684-b5bc-0b11d51158a7.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ufaa91141&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8723.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=144693&amp;status=done&amp;style=none&amp;taskId=u6bee881e-1c8b-4036-8cde-8a96c73798d&amp;title=&amp;width=1024" alt="幻灯片23.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747321393-8be9a8c6-bc39-4d30-a7a3-43df96a3be02.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uc50731bb&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8724.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=59104&amp;status=done&amp;style=none&amp;taskId=u0a259a07-1451-40d9-a06f-36985cb656e&amp;title=&amp;width=1024" alt="幻灯片24.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747321686-2a91e1d2-7010-4547-8df8-19ac3639052e.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uc5cc1fe4&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8725.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=100981&amp;status=done&amp;style=none&amp;taskId=uf84482da-807b-4934-841b-0789b8a61ba&amp;title=&amp;width=1024" alt="幻灯片25.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747322246-b3f0409a-0f99-4eed-bcf7-e11c22988604.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u80694fe9&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8726.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=102052&amp;status=done&amp;style=none&amp;taskId=ue34c8cf1-17d8-4242-a137-22b0e1e0a0c&amp;title=&amp;width=1024" alt="幻灯片26.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747322303-146591c4-7119-458e-83d5-6eac2cb7ada5.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u0c5c0191&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8727.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=109580&amp;status=done&amp;style=none&amp;taskId=u4097c2ad-4625-4987-8f89-a6f715e6b08&amp;title=&amp;width=1024" alt="幻灯片27.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747322393-653fe795-c909-419c-af4a-bafd9a726a4c.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ufe978666&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8728.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=126710&amp;status=done&amp;style=none&amp;taskId=ufd68ae9e-5b49-4d1a-81e1-453db5e421f&amp;title=&amp;width=1024" alt="幻灯片28.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747322985-2389c85e-57b8-48ef-98ef-c085e6f78f1f.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u7df8d7ac&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8729.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=170506&amp;status=done&amp;style=none&amp;taskId=u5c04ff15-b538-4acf-887d-fb4713709e9&amp;title=&amp;width=1024" alt="幻灯片29.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747323056-a04d36df-0ac3-4e7e-b102-5d1a34d9eaf8.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uc223ce92&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8730.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=147593&amp;status=done&amp;style=none&amp;taskId=u5fb35dbb-3f0f-42ce-83b8-484c563ea5e&amp;title=&amp;width=1024" alt="幻灯片30.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747323323-af6b3ca5-f9ce-46f9-86fe-8ec70960d7d9.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u506d66c0&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8731.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=29243&amp;status=done&amp;style=none&amp;taskId=u4df82912-c25f-4a01-a629-3c4bd2fdc2e&amp;title=&amp;width=1024" alt="幻灯片31.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747324011-4b636819-1476-4dc3-b93d-6c636e0d004c.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u24c3e7b1&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8732.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=38527&amp;status=done&amp;style=none&amp;taskId=u5516f15e-8f2c-434c-80e4-111358ba995&amp;title=&amp;width=1024" alt="幻灯片32.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747324174-1c32aa64-fb20-4453-8d28-3d58b80172b9.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u4677e045&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8733.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=101838&amp;status=done&amp;style=none&amp;taskId=u2582f0d6-53d3-4039-adcc-e1900262e36&amp;title=&amp;width=1024" alt="幻灯片33.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747324704-718cf43d-ad58-4120-9d84-a0adf7aed6c9.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ucc1ef782&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8734.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=93378&amp;status=done&amp;style=none&amp;taskId=u6ecb046c-0409-4f23-863a-eb8362f9d2a&amp;title=&amp;width=1024" alt="幻灯片34.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747324776-d6331e34-982b-45a0-a68f-4bdca1638dc5.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ua19e5e28&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8735.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=101266&amp;status=done&amp;style=none&amp;taskId=u789db8fb-df6f-4de6-a381-5c24c616532&amp;title=&amp;width=1024" alt="幻灯片35.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747324928-0f09ad9c-af6e-48d0-9039-a2fd39d623f8.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ufabace49&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8736.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=105044&amp;status=done&amp;style=none&amp;taskId=uefa86d6c-c9b9-4b1e-ad44-7f317cc7bd9&amp;title=&amp;width=1024" alt="幻灯片36.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747324942-7b963e6b-6400-4d55-946c-fd49baa9bfcf.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u3e315c15&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8737.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=97405&amp;status=done&amp;style=none&amp;taskId=ua55d4574-5dcb-49bf-bbf4-d32725cc4c2&amp;title=&amp;width=1024" alt="幻灯片37.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747325975-590267d4-ef3f-4ca6-8911-6783e1a367c5.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=udee900dc&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8738.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=133923&amp;status=done&amp;style=none&amp;taskId=uf4e39f08-cb81-4e65-9d0f-6aa54542b1c&amp;title=&amp;width=1024" alt="幻灯片38.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747326357-321d4ced-ff03-4eb6-b3d5-f27f995e3fcc.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u4c0b02b3&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8739.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=140047&amp;status=done&amp;style=none&amp;taskId=ua4dcf40c-701f-46d1-bc81-6af250b42cf&amp;title=&amp;width=1024" alt="幻灯片39.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747326400-a9fcd188-28af-496c-8363-9b393724568c.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u767c494a&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8740.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=73247&amp;status=done&amp;style=none&amp;taskId=uc3eab5f8-c018-4971-b579-c77e5817017&amp;title=&amp;width=1024" alt="幻灯片40.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747326479-7d59c2d4-bc70-44b1-9232-ef17c5a944a4.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u0467361c&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8741.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=77272&amp;status=done&amp;style=none&amp;taskId=ub50c29c0-a051-438f-ba80-2c2aec24cab&amp;title=&amp;width=1024" alt="幻灯片41.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747326822-2c5b2d87-3ad8-4aec-845e-0bfe174fa7ca.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u28698db5&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8742.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=94672&amp;status=done&amp;style=none&amp;taskId=uc4b74f12-0bdc-4f72-8c97-06f628a5801&amp;title=&amp;width=1024" alt="幻灯片42.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747327001-11f1388c-0dea-47b3-95fb-4c58f31258dc.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ue02fa03c&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8743.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=74897&amp;status=done&amp;style=none&amp;taskId=uba6c92b6-682b-4fd6-a6c7-d7d8665878b&amp;title=&amp;width=1024" alt="幻灯片43.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747327491-127f0b01-3b95-4dbe-af2d-2ae12a067970.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=udd752fd2&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8744.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=101838&amp;status=done&amp;style=none&amp;taskId=u6622d41c-0c27-427a-9342-3966e4c69ec&amp;title=&amp;width=1024" alt="幻灯片44.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747327796-a4fb19d2-a616-4693-8e10-9db7c2b520e7.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ud3ac6e13&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8745.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=97697&amp;status=done&amp;style=none&amp;taskId=u586996e9-8481-4b2a-b6c0-ac286dbc0ee&amp;title=&amp;width=1024" alt="幻灯片45.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747328382-f2fedb11-b377-4b7e-a6bc-c365ae3a30ab.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u987ed1d6&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8746.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=96797&amp;status=done&amp;style=none&amp;taskId=u79d99304-57ef-4bf9-9a35-bcccb9a5393&amp;title=&amp;width=1024" alt="幻灯片46.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747328542-60dd2277-9853-4402-a7fc-6800a740f21c.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u8bcabb32&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8747.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=98752&amp;status=done&amp;style=none&amp;taskId=uf4241f47-b38d-4116-86bb-9fab127b4a4&amp;title=&amp;width=1024" alt="幻灯片47.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747328620-5f33f3d1-9714-4326-b701-fe24eb825eac.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=udab4e848&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8748.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=107601&amp;status=done&amp;style=none&amp;taskId=u669747f7-17f8-4f35-bc80-aaff69861da&amp;title=&amp;width=1024" alt="幻灯片48.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747329032-41b698ac-a333-47ed-b5a9-4c3f6fb97e80.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=udecf1796&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8749.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=107601&amp;status=done&amp;style=none&amp;taskId=u498e8f5d-f079-468d-b67d-d226d91b64e&amp;title=&amp;width=1024" alt="幻灯片49.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747329348-c9db4e10-2bc7-4aad-b975-580922aad016.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ub15c5c96&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8750.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=87830&amp;status=done&amp;style=none&amp;taskId=u59bf49dd-7284-4c1d-ab99-97937ce8d28&amp;title=&amp;width=1024" alt="幻灯片50.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747329370-374e52c5-3a94-418b-9497-866558c5bfe7.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u9557bc72&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8751.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=101378&amp;status=done&amp;style=none&amp;taskId=u893891bb-a5cb-4deb-9bcf-0946e96b18e&amp;title=&amp;width=1024" alt="幻灯片51.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747329689-57d58561-ac64-43da-8c91-1f4ce3c41e42.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u4aa1e957&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8752.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=96900&amp;status=done&amp;style=none&amp;taskId=uef9db638-44c8-4a27-95aa-4713ae3c8f9&amp;title=&amp;width=1024" alt="幻灯片52.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747329769-ddf35b60-3909-4e81-b640-d3f0a3bf10ad.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uea29bb26&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8753.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=95401&amp;status=done&amp;style=none&amp;taskId=u15113b27-9ec4-4ac7-b619-9bfaea5c0a4&amp;title=&amp;width=1024" alt="幻灯片53.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747329899-9b55a89e-9bd3-4645-b21f-3fed683ab7b0.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ua4f6fb64&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8754.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=159422&amp;status=done&amp;style=none&amp;taskId=u8b525fe3-2397-4058-b587-cb6168fa4d4&amp;title=&amp;width=1024" alt="幻灯片54.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747330227-9d6df97f-ff85-4635-9750-244dfa43afe7.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u2ef7844f&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8755.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=99145&amp;status=done&amp;style=none&amp;taskId=u53e136a6-bc4e-4895-bcbe-c3d706b8614&amp;title=&amp;width=1024" alt="幻灯片55.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747330680-e70f867c-ce4f-4c95-b1c8-80f813c2e355.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uc4207067&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8756.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=85768&amp;status=done&amp;style=none&amp;taskId=ue851c2fa-4fef-491f-96ae-0bda25e72a7&amp;title=&amp;width=1024" alt="幻灯片56.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747330729-a629f8f0-734c-4b8f-b12b-128c9aa927e2.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uaf8f1473&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8757.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=107601&amp;status=done&amp;style=none&amp;taskId=u702fa272-4126-4671-8391-deca382fd3d&amp;title=&amp;width=1024" alt="幻灯片57.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747330821-b1ea1cda-8773-48a6-aa6b-5121527250f2.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u78375240&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8758.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=92067&amp;status=done&amp;style=none&amp;taskId=u93317383-b53e-4396-ae5a-910c95334b7&amp;title=&amp;width=1024" alt="幻灯片58.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747330955-b934fe2e-8129-45a4-b986-cdaeee9920f4.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uf2c3e244&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8759.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=104296&amp;status=done&amp;style=none&amp;taskId=u98ba4376-4232-4189-894c-046e5be8088&amp;title=&amp;width=1024" alt="幻灯片59.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747331085-4ded232f-0a50-4744-84c6-59555079f471.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u884dd41a&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8760.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=98917&amp;status=done&amp;style=none&amp;taskId=ua3995d0e-ec3a-44e2-8aef-0ebe4a048f1&amp;title=&amp;width=1024" alt="幻灯片60.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747331600-cdffb8e1-64ef-433e-8a6f-37ea5310e6a0.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uc95917eb&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8761.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=102223&amp;status=done&amp;style=none&amp;taskId=u2cd14c6a-c77b-457a-a139-ba451644ea6&amp;title=&amp;width=1024" alt="幻灯片61.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747331682-0ff5ffad-49c9-4b1a-b564-619268dc4e99.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ue852c5bd&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8762.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=224081&amp;status=done&amp;style=none&amp;taskId=u1b2e89bb-cb54-43ca-acfc-38169048d06&amp;title=&amp;width=1024" alt="幻灯片62.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747331694-86b80f2f-52ff-4393-ae94-95ee2883c68f.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uf5276966&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8763.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=106711&amp;status=done&amp;style=none&amp;taskId=u64855182-0a47-4005-9f84-c2348e87e3b&amp;title=&amp;width=1024" alt="幻灯片63.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747332053-45996985-98a2-49c4-acb8-766e7567852c.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u7ae82879&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8764.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=143511&amp;status=done&amp;style=none&amp;taskId=uf7fc190b-536b-4aad-bdb0-161303ab79d&amp;title=&amp;width=1024" alt="幻灯片64.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747332675-c89505bf-e467-4c3e-9c55-aedd1a9cff66.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u7df99f36&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8765.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=130890&amp;status=done&amp;style=none&amp;taskId=ub43d4a05-e417-4048-98cc-8a7ca037a88&amp;title=&amp;width=1024" alt="幻灯片65.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747332700-6acdeef7-085b-4002-abc6-82fef55329c9.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u9db8636c&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8766.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=193026&amp;status=done&amp;style=none&amp;taskId=u22c6935e-6d91-4612-acf2-51ae883a99c&amp;title=&amp;width=1024" alt="幻灯片66.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747332845-3270b005-3ec2-476f-b5d1-2d1972e12b9a.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ue5723d88&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8767.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=87950&amp;status=done&amp;style=none&amp;taskId=u9d720d78-0aa8-4bc9-bcdf-d6e8b844227&amp;title=&amp;width=1024" alt="幻灯片67.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747333083-f7970ff3-cd9e-49cd-9544-72fa5f223b3e.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uad2de83f&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8768.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=88849&amp;status=done&amp;style=none&amp;taskId=u61249839-957b-40ef-bc05-57c885c750f&amp;title=&amp;width=1024" alt="幻灯片68.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747333136-a41aba42-f843-41d9-b73b-a6ff4ffcf33f.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u4bed6ce5&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8769.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=17770&amp;status=done&amp;style=none&amp;taskId=u1c9c6fd8-d754-4ac9-8f3e-b15f272c8f0&amp;title=&amp;width=1024" alt="幻灯片69.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747333485-cb5cd308-0a78-49f4-9bab-ef4dc50f5066.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ub7e49e83&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8770.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=101117&amp;status=done&amp;style=none&amp;taskId=ua8459f46-d39b-40c6-9405-0172689a877&amp;title=&amp;width=1024" alt="幻灯片70.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747333796-e89442dc-b614-4b6e-ba65-d828694a551d.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u447e0899&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8771.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=120750&amp;status=done&amp;style=none&amp;taskId=u64934fc6-01cb-412c-927d-f99f7c32fe7&amp;title=&amp;width=1024" alt="幻灯片71.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747333798-ff66dcd2-3cc8-4f65-87ca-6f22db7deb3f.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=ue73656a4&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8772.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=73632&amp;status=done&amp;style=none&amp;taskId=u617aa810-f74a-429e-b1af-6b17960d3a4&amp;title=&amp;width=1024" alt="幻灯片72.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747333855-6c27e353-e75f-4a37-aa9b-2a76b37cf8a4.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u65dee574&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8773.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=87685&amp;status=done&amp;style=none&amp;taskId=uc3deaad1-bf9a-44ed-90f9-183e0b64415&amp;title=&amp;width=1024" alt="幻灯片73.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747334159-0979b2fb-168e-48fd-9780-a886035e77cf.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=u1b1d714b&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8774.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=95532&amp;status=done&amp;style=none&amp;taskId=u9de6e859-b4f6-492f-b777-9cb27cfa131&amp;title=&amp;width=1024" alt="幻灯片74.JPG"></p>
+<hr>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/27625712/1654747334705-98d7767c-5834-489d-b23a-39dcbb139a98.jpeg#clientId=ua6ede892-3833-4&amp;crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;from=paste&amp;height=576&amp;id=uaa8a3f58&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%B9%BB%E7%81%AF%E7%89%8775.JPG&amp;originHeight=720&amp;originWidth=1280&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=31923&amp;status=done&amp;style=none&amp;taskId=u182e0533-3208-4bce-9ca8-3371f551063&amp;title=&amp;width=1024" alt="幻灯片75.JPG"></p>
+<hr>
+<script type="text&#x2F;javascript" src="/js/kity.min.js"></script><script type="text&#x2F;javascript" src="/js/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="/js/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="/css/mindmap.min.css">
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div></div>
+  <button>
+    <i class="fa fa-qrcode fa-2x" style="line-height:35px;"></i>
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.png" alt="小阿鸣 微信支付">
+        <span>微信支付</span>
+      </div>
+
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" rel="tag"># 生物信息学课程笔记</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/06/09/%E4%B8%8A%E6%B5%B7%E5%B8%82%E4%BA%BA%E7%A4%BE%E5%B1%80%E3%80%8A%E5%85%B3%E4%BA%8E%E5%8A%A9%E5%8A%9B%E5%A4%8D%E5%B7%A5%E5%A4%8D%E4%BA%A7%E5%AE%9E%E6%96%BD%E4%BA%BA%E6%89%8D%E7%89%B9%E6%AE%8A%E6%94%AF%E6%8C%81%E4%B8%BE%E6%8E%AA%E7%9A%84%E9%80%9A%E7%9F%A5%E3%80%8B/" rel="prev" title="上海市人社局《关于助力复工复产实施人才特殊支持举措的通知》">
+                  <i class="fa fa-chevron-left"></i> 上海市人社局《关于助力复工复产实施人才特殊支持举措的通知》
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/06/09/windows%E6%9F%A5%E7%9C%8B%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/" rel="next" title="windows查看目录结构">
+                  windows查看目录结构 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="waline-comments"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小阿鸣</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/mybutton.js"></script> <script src="/js/utils.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"per_page":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+<script class="next-config" data-name="waline" type="application/json">{"lang":null,"enable":true,"serverURL":"https://walineserver-gj4ioln8e-eamonnku.vercel.app/","placeholder":"在这个框里打字儿","pageSize":10,"visitor":true,"comment_count":true,"requiredMeta":[],"copyright":true,"allowUploadImage":true,"meta":["nick","mail","link"],"qiniuDebug":false,"qiniuDomain":null,"qiniuTokenUrl":null,"emoji":["https://unpkg.com/@waline/emojis@1.0.1/qq"],"avatar":"mm","requiredFields":[],"el":"#waline-comments","libUrl":"/js/my_Waline.min.js","path":"/2022/06/09/%E4%B8%AD%E5%BF%83%E6%B3%95%E5%88%99/","login":"","dark":"auto"}</script>
+<script>
+document.addEventListener('page:loaded', () => {
+  if(!CONFIG.waline.allowUploadImage) {
+    CONFIG.waline.uploadImage = false;
+  }
+  else if(CONFIG.waline.qiniuDomain && CONFIG.waline.qiniuTokenUrl) {
+    CONFIG.waline.uploadImage = qiniuUploadImage;
+  }
+  NexT.utils.loadComments(CONFIG.waline.el).then(() =>
+    NexT.utils.getScript(CONFIG.waline.libUrl, { condition: window.Waline })
+  ).then(() => {
+    new Waline(CONFIG.waline);
+  });
+});
+</script>
+
+</body>
+</html>
+
+<!-- 多级目录 -->
+  <script type="text/javascript" src="/js/category.js"></script>
+</body>
