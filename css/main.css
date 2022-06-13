@@ -2956,6 +2956,9 @@ table th {
   text-align: center; /*内容居中，加上 !important 避免被 Markdown 样式覆盖*/
   background: rgba(158,188,226,0.4); /*背景色*/
 }
+.main-inner .post-block .post-body {
+  font-family: 'Arial', 'SimSun', 'Microsoft YaHei', Lato, 'PingFang SC', sans-serif;
+}
 @-moz-keyframes masked-animation {
   0% {
     background-position: 0 0;

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"fanyiming.life","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.11.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":false}}</script><script src="/js/config.js"></script>
+
+<!-- 导入jquery -->
+<script src="/js/jquery-3.5.1.min.js"></script>
+
+    <meta name="description" content="《分子生物学》第四章 基因表达技术汇总">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基因表达研究技术汇总">
+<meta property="og:url" content="https://fanyiming.life/2022/06/13/%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E7%A0%94%E7%A9%B6%E6%8A%80%E6%9C%AF%E6%B1%87%E6%80%BB/index.html">
+<meta property="og:site_name" content="Eamon &#39;s Blog">
+<meta property="og:description" content="《分子生物学》第四章 基因表达技术汇总">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image002.png">
+<meta property="og:image" content="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image004.png">
+<meta property="og:image" content="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image006.png">
+<meta property="og:image" content="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image008.png">
+<meta property="og:image" content="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image010.png">
+<meta property="og:image" content="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image012.png">
+<meta property="og:image" content="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image014.png">
+<meta property="og:image" content="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image016.jpg">
+<meta property="og:image" content="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image018.jpg">
+<meta property="og:image" content="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image020.png">
+<meta property="og:image" content="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image022.png">
+<meta property="og:image" content="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image024.png">
+<meta property="og:image" content="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image026.png">
+<meta property="og:image" content="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image028.png">
+<meta property="og:image" content="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image030.png">
+<meta property="og:image" content="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image032.png">
+<meta property="article:published_time" content="2022-06-13T04:05:09.000Z">
+<meta property="article:modified_time" content="2022-06-13T05:21:46.129Z">
+<meta property="article:author" content="小阿鸣">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image002.png">
+
+
+<link rel="canonical" href="https://fanyiming.life/2022/06/13/%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E7%A0%94%E7%A9%B6%E6%8A%80%E6%9C%AF%E6%B1%87%E6%80%BB/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://fanyiming.life/2022/06/13/%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E7%A0%94%E7%A9%B6%E6%8A%80%E6%9C%AF%E6%B1%87%E6%80%BB/","path":"2022/06/13/基因表达研究技术汇总/","title":"基因表达研究技术汇总"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>基因表达研究技术汇总 | Eamon 's Blog</title>
+  
+
+
+
+
+<link rel="dns-prefetch" href="https://walineserver-jhhpabubn-eamonnku.vercel.app/">
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Eamon 's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">生活嘛~那么矫情</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>文章</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-resources"><a href="/resources/" rel="section"><i class="fa fa-download fa-fw"></i>资源</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>留言</a></li><li class="menu-item menu-item-bbtime"><a href="/bb/" rel="section"><i class="fa fa-cloud fa-fw"></i>说说</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E7%A0%94%E7%A9%B6%E6%8A%80%E6%9C%AF"><span class="nav-number">1.</span> <span class="nav-text">基因表达研究技术</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AC%E5%BD%95%E7%BB%84%E6%B5%8B%E5%BA%8F%E5%88%86%E6%9E%90%E5%92%8CRNA-Seq"><span class="nav-number">1.1.</span> <span class="nav-text">转录组测序分析和RNA-Seq</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#EST%E6%B5%8B%E5%BA%8F"><span class="nav-number">1.1.1.</span> <span class="nav-text">EST测序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SAGE%E6%B5%8B%E5%BA%8F"><span class="nav-number">1.1.2.</span> <span class="nav-text">SAGE测序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%AB%98%E9%80%9A%E9%87%8F%E6%B5%8B%E5%BA%8F"><span class="nav-number">1.1.3.</span> <span class="nav-text">高通量测序</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RNA%E7%9A%84%E9%80%89%E6%8B%A9%E6%80%A7%E5%89%AA%E6%8E%A5%E7%A0%94%E7%A9%B6"><span class="nav-number">1.2.</span> <span class="nav-text">RNA的选择性剪接研究</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%9F%E4%BD%8D%E6%9D%82%E4%BA%A4%E6%8A%80%E6%9C%AF"><span class="nav-number">1.3.</span> <span class="nav-text">原位杂交技术</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E5%9B%A0%E5%AE%9A%E7%82%B9%E7%AA%81%E5%8F%98%E6%8A%80%E6%9C%AF"><span class="nav-number">1.4.</span> <span class="nav-text">基因定点突变技术</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E7%BB%86%E8%83%9E%E8%BD%AC%E5%BD%95%E7%BB%84%E6%B5%8B%E5%BA%8F"><span class="nav-number">1.5.</span> <span class="nav-text">单细胞转录组测序</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9F%BA%E5%9B%A0%E6%95%B2%E9%99%A4%E6%8A%80%E6%9C%AF"><span class="nav-number">2.</span> <span class="nav-text">基因敲除技术</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86"><span class="nav-number">2.1.</span> <span class="nav-text">基本原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%AB%98%E7%AD%89%E5%8A%A8%E7%89%A9%E5%9F%BA%E5%9B%A0%E6%95%B2%E9%99%A4%E6%8A%80%E6%9C%AF"><span class="nav-number">2.2.</span> <span class="nav-text">高等动物基因敲除技术</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A4%8D%E7%89%A9%E5%9F%BA%E5%9B%A0%E6%95%B2%E9%99%A4%E6%8A%80%E6%9C%AF"><span class="nav-number">2.3.</span> <span class="nav-text">植物基因敲除技术</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E5%9B%A0%E7%BB%84%E7%BC%96%E8%BE%91%E6%8A%80%E6%9C%AF"><span class="nav-number">2.4.</span> <span class="nav-text">基因组编辑技术</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%94%8C%E6%8C%87%E8%9B%8B%E7%99%BD%E6%A0%B8%E9%85%B8%E9%85%B6%EF%BC%88Zinc-finger-nucleases%EF%BC%8CZFN%EF%BC%89"><span class="nav-number">2.4.1.</span> <span class="nav-text">锌指蛋白核酸酶（Zinc finger nucleases，ZFN）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BD%AC%E5%BD%95%E6%BF%80%E6%B4%BB%E5%9B%A0%E5%AD%90%E6%A0%B7%E6%95%88%E5%BA%94%E7%89%A9%E6%A0%B8%E9%85%B8%E9%85%B6%EF%BC%88transcription-activator-like-TAL-effector-nucleases%EF%BC%8CTALEN%EF%BC%89"><span class="nav-number">2.4.2.</span> <span class="nav-text">转录激活因子样效应物核酸酶（transcription activator-like (TAL) effector nucleases，TALEN）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CRISPR-Cas9%E7%B3%BB%E7%BB%9F"><span class="nav-number">2.4.3.</span> <span class="nav-text">CRISPR&#x2F;Cas9系统</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%9B%8B%E7%99%BD%E8%B4%A8%E5%8F%8ARNA%EF%BC%88%E6%A0%B8%E9%85%B8%EF%BC%89%E7%9B%B8%E4%BA%92%E4%BD%9C%E7%94%A8%E6%8A%80%E6%9C%AF"><span class="nav-number">3.</span> <span class="nav-text">蛋白质及RNA（核酸）相互作用技术</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%B5%E6%AF%8D%E5%8D%95%E6%9D%82%E4%BA%A4%E7%B3%BB%E7%BB%9F"><span class="nav-number">3.1.</span> <span class="nav-text">酵母单杂交系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%B5%E6%AF%8D%E5%8F%8C%E6%9D%82%E4%BA%A4%E7%B3%BB%E7%BB%9F"><span class="nav-number">3.2.</span> <span class="nav-text">酵母双杂交系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%9B%8B%E7%99%BD%E8%B4%A8%E7%9B%B8%E4%BA%92%E4%BD%9C%E7%94%A8"><span class="nav-number">3.3.</span> <span class="nav-text">蛋白质相互作用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AD%89%E7%A6%BB%E5%AD%90%E8%A1%A8%E9%9D%A2%E5%85%B1%E6%8C%AF"><span class="nav-number">3.3.1.</span> <span class="nav-text">等离子表面共振</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%8D%E7%96%AB%E5%85%B1%E6%B2%89%E6%B7%80%E6%8A%80%E6%9C%AF"><span class="nav-number">3.3.2.</span> <span class="nav-text">免疫共沉淀技术</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GST%E5%8F%8AGAD%E8%9E%8D%E5%90%88%E8%9B%8B%E7%99%BD%E6%B2%89%E9%99%8D%E6%8A%80%E6%9C%AF"><span class="nav-number">3.3.3.</span> <span class="nav-text">GST及GAD融合蛋白沉降技术</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%86%E8%83%9E%E5%86%85%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%BA%92%E4%BD%9C%E7%A0%94%E7%A9%B6%E2%80%94%E2%80%94%E8%8D%A7%E5%85%89%E5%85%B1%E6%8C%AF%E8%83%BD%E9%87%8F%E8%BD%AC%E7%A7%BB"><span class="nav-number">3.3.4.</span> <span class="nav-text">细胞内蛋白质互作研究——荧光共振能量转移</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%93%E8%89%B2%E8%B4%A8%E5%85%8D%E7%96%AB%E5%85%B1%E6%B2%89%E6%B7%80%E6%8A%80%E6%9C%AF"><span class="nav-number">3.4.</span> <span class="nav-text">染色质免疫共沉淀技术</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RNAi%E6%8A%80%E6%9C%AF"><span class="nav-number">3.5.</span> <span class="nav-text">RNAi技术</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E5%B7%B1%E6%9F%A5%E6%89%BE%E7%9A%84%E6%8A%80%E6%9C%AF%EF%BC%9ACUT-amp-RUN%EF%BC%88cleavage-under-targets-and-release-using-nuclease%EF%BC%89"><span class="nav-number">3.6.</span> <span class="nav-text">自己查找的技术：CUT&amp;RUN（cleavage under targets and release using nuclease）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9C%A8%E9%85%B5%E6%AF%8D%E7%BB%86%E8%83%9E%E4%B8%AD%E9%89%B4%E5%AE%9A%E9%9D%B6%E5%9F%BA%E5%9B%A0%E5%8A%9F%E8%83%BD"><span class="nav-number">4.</span> <span class="nav-text">在酵母细胞中鉴定靶基因功能</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%B5%E6%AF%8D%E5%9F%BA%E5%9B%A0%E8%BD%AC%E5%8C%96%E4%B8%8E%E6%80%A7%E7%8A%B6%E4%BA%92%E8%A1%A5"><span class="nav-number">4.1.</span> <span class="nav-text">酵母基因转化与性状互补</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%96%E6%BA%90%E5%9F%BA%E5%9B%A0%E5%9C%A8%E9%85%B5%E6%AF%8D%E4%B8%AD%E7%9A%84%E5%8A%9F%E8%83%BD%E9%89%B4%E5%AE%9A"><span class="nav-number">4.2.</span> <span class="nav-text">外源基因在酵母中的功能鉴定</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6%E6%8A%80%E6%9C%AF"><span class="nav-number">5.</span> <span class="nav-text">其他分子生物学技术</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%9D%E8%83%B6%E6%BB%9E%E7%BC%93%E5%AE%9E%E9%AA%8C"><span class="nav-number">5.1.</span> <span class="nav-text">凝胶滞缓实验</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%99%AC%E8%8F%8C%E4%BD%93%E5%B1%95%E7%A4%BA%E6%8A%80%E6%9C%AF"><span class="nav-number">5.2.</span> <span class="nav-text">噬菌体展示技术</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%9B%8B%E7%99%BD%E8%B4%A8%E7%A3%B7%E9%85%B8%E5%8C%96%E5%88%86%E6%9E%90%E6%8A%80%E6%9C%AF"><span class="nav-number">5.3.</span> <span class="nav-text">蛋白质磷酸化分析技术</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A3%80%E6%B5%8B%E5%BA%95%E7%89%A9%E8%9B%8B%E7%99%BD%E7%A3%B7%E9%85%B8%E5%8C%96"><span class="nav-number">5.3.1.</span> <span class="nav-text">检测底物蛋白磷酸化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A3%80%E6%B5%8B%E8%9B%8B%E7%99%BD%E6%BF%80%E9%85%B6%E6%B4%BB%E6%80%A7"><span class="nav-number">5.3.2.</span> <span class="nav-text">检测蛋白激酶活性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%9B%8B%E7%99%BD%E8%B4%A8%E5%85%8D%E7%96%AB%E5%8D%B0%E8%BF%B9%E5%AE%9E%E9%AA%8C"><span class="nav-number">5.4.</span> <span class="nav-text">蛋白质免疫印迹实验</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%86%E8%83%9E%E5%AE%9A%E4%BD%8D%E5%8F%8A%E6%9F%93%E8%89%B2%E6%8A%80%E6%9C%AF"><span class="nav-number">5.5.</span> <span class="nav-text">细胞定位及染色技术</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%8D%A7%E5%85%89%E8%9B%8B%E7%99%BD%E6%A0%87%E8%AE%B0"><span class="nav-number">5.5.1.</span> <span class="nav-text">荧光蛋白标记</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%8D%E7%96%AB%E8%8D%A7%E5%85%89%E6%A0%87%E8%AE%B0"><span class="nav-number">5.5.2.</span> <span class="nav-text">免疫荧光标记</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%A8%E5%9F%BA%E5%9B%A0%E7%BB%84%E5%85%B3%E8%81%94%E5%88%86%E6%9E%90%E5%8F%8A%E5%BA%94%E7%94%A8"><span class="nav-number">5.6.</span> <span class="nav-text">全基因组关联分析及应用</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">小阿鸣</p>
+  <div class="site-description" itemprop="description">知者不惑，仁者不忧，勇者不惧</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">85</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">18</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="/./about" title="E-Mail → .&#x2F;about"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://fanyiming.life/2022/06/13/%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E7%A0%94%E7%A9%B6%E6%8A%80%E6%9C%AF%E6%B1%87%E6%80%BB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="小阿鸣">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Eamon 's Blog">
+      <meta itemprop="description" content="知者不惑，仁者不忧，勇者不惧">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="基因表达研究技术汇总 | Eamon 's Blog">
+      <meta itemprop="description" content="《分子生物学》第四章 基因表达技术汇总">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          基因表达研究技术汇总
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-06-13 12:05:09 / 修改时间：13:21:46" itemprop="dateCreated datePublished" datetime="2022-06-13T12:05:09+08:00">2022-06-13</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index"><span itemprop="name">生物学基础</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">分子生物学</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">评论数：</span>
+  
+    <a title="waline" href="/2022/06/13/%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E7%A0%94%E7%A9%B6%E6%8A%80%E6%9C%AF%E6%B1%87%E6%80%BB/#waline-comments" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" id="/2022/06/13/%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E7%A0%94%E7%A9%B6%E6%8A%80%E6%9C%AF%E6%B1%87%E6%80%BB/" data-xid="/2022/06/13/%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E7%A0%94%E7%A9%B6%E6%8A%80%E6%9C%AF%E6%B1%87%E6%80%BB/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span id="/2022/06/13/%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E7%A0%94%E7%A9%B6%E6%8A%80%E6%9C%AF%E6%B1%87%E6%80%BB/" class="post-meta-item leancloud_visitors" data-flag-title="基因表达研究技术汇总" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+  
+</div>
+
+            <div class="post-description">《分子生物学》第四章 基因表达技术汇总</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p><meta name="referrer" content="no-referrer" /></p>
+<style> .post-body img{width: 100%; max-width: 40em;}</style>
+
+
+
+<h1 id="基因表达研究技术"><a href="#基因表达研究技术" class="headerlink" title="基因表达研究技术"></a>基因表达研究技术</h1><h2 id="转录组测序分析和RNA-Seq"><a href="#转录组测序分析和RNA-Seq" class="headerlink" title="转录组测序分析和RNA-Seq"></a>转录组测序分析和RNA-Seq</h2><h3 id="EST测序"><a href="#EST测序" class="headerlink" title="EST测序"></a>EST测序</h3><p>EST全称Expressed Sequence Tag，是上个世纪人类最早使用的大规模cDNA测序方法。它的基本流程是首先富集RNA，经过逆转录和连接克隆载体等步骤构建cDNA文库，随后从cDNA的5’和3’端使用通用引物各进行一次测序，测序的读长取决于用的测序方法。</p>
+<p>参考资料：</p>
+<p>[1] <a target="_blank" rel="noopener" href="https://max.book118.com/html/2016/0313/37517359.shtm">https://max.book118.com/html/2016/0313/37517359.shtm</a> （这个ppt里从上游建库到下游生信分析都有介绍）</p>
+<p>[2] John Parkinson, Mark Blaxter. Expressed Sequence Tags (ESTs): Generation and Analysis[M]. Humana Press, 2009</p>
+<h3 id="SAGE测序"><a href="#SAGE测序" class="headerlink" title="SAGE测序"></a>SAGE测序</h3><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image002.png" alt="img"></p>
+<p>全称Serial Analysis of Gene Expression，基因表达系列分析。富集mRNA，逆转录，anchoring enzyme切一下cDNA，保留3’端的cDNA序列，随后加AB接头，接头上除了PCR引物序列外还有anchoring enzyme的酶切位点以及tagging enzyme的识别位点，tagging enzyme是II型限制性内切酶，识别位点和切割位点是分开的，在下游确定的距离（如14bp）切开，之后使用PCR将A、B接头连接的cDNA尾对尾拼接形成ditags（二联标签），最后还用anchoring enzyme切下接头，暴露粘性末端。体系内所有的cDNA最后都会得到一段相同长度（10bp+10bp）的ditags，它们具有相同的粘性末端，最终形成一长串tags上机测序。</p>
+<p>参考资料：</p>
+<p>[1] Anisimov SV. Serial Analysis of Gene Expression (SAGE): 13 years of application in research. Curr Pharm Biotechnol. 2008 Oct;9(5):338-50. doi: 10.2174/138920108785915148. PMID: 18855686.</p>
+<h3 id="高通量测序"><a href="#高通量测序" class="headerlink" title="高通量测序"></a>高通量测序</h3><p>包括二代测序和三代测序。Illumina二代测序主要利用了其边合成边测序所用的末端荧光信号可逆阻断技术。通过接头序列将cDNA片段连接在基因芯片上进行桥式PCR，每合成一个碱基释放一次荧光信号，之后又加入试剂进行荧光淬灭并去除dNTP 3’ 端的保护使反应继续。由于随PCR长度增加其信号一致性的衰弱，其特点是高通量但读长短。</p>
+<p>nanopore测序是将人工合成的一种多聚合物的膜浸在离子溶液中，多聚合物膜上布满了经改造的穿膜孔的跨膜通道蛋白（纳米孔），也就是Reader蛋白，在膜两侧施加不同的电压产生电压差，DNA链在马达蛋白的牵引下，解螺旋通过纳米孔蛋白，不同的碱基会形成特征性离子电流变化信号。该膜具有非常高的电阻。通过对浸在电化学溶液中的膜上施加电势，可以通过纳米孔产生离子电流。进入纳米孔的单分子引起特征性的电流干扰，这被称为Nanopore信号。纳米孔是对穿过的片段进行测序，而不管DNA片段的长度如何。而不是生成特定长度的序列，这可能是数百个碱基、或者更多个碱基的序列。Nanopore的长序列简化了重复区域的组装和测序，也提高了物种鉴定和宏基因组实验的速度。</p>
+<p>参考资料：</p>
+<p>[1] zhuanlan.zhihu.com: nanopore测序技术专题（四）：纳米孔测序原理</p>
+<h2 id="RNA的选择性剪接研究"><a href="#RNA的选择性剪接研究" class="headerlink" title="RNA的选择性剪接研究"></a>RNA的选择性剪接研究</h2><p>首先，以cDNA两端特异引物或来自不同外显子的引物序列扩增不同组织来源RNA样品中，观察PCR产物是否存在差异。如果发现差异，测序后检测这种差异是否来自于选择性剪接。常用RT-PCR方法在单个基因水平上验证由RNA-seq预测得到的选择性剪接的真实性。</p>
+<p>参考资料：抄的分子生物学课件</p>
+<h2 id="原位杂交技术"><a href="#原位杂交技术" class="headerlink" title="原位杂交技术"></a>原位杂交技术</h2><p>原位杂交（in situ hybridization, ISH）亦称杂交组织化学或细胞学的杂交，用标记的核酸探针经放射自显影或非放射检测体系，在组织、细胞、间期核及染色体上对核酸进行定位和相对定量研究的一种手段。</p>
+<p>RNA原位杂交：用放射性或非放射性(如地高辛、生物素等)标记的特异性探针与被固定的组织切片反应，若细胞中存在与探针互补的mRNA分子，两者杂交产生双链RNA，就可通过检测放射性标记或经酶促免疫显色，对该基因的表达产物在细胞水平上做出定性定量分析。</p>
+<p>染色体原位杂交：也是固相杂交的一种形式，用来确定某一目的DNA顺序在完整染色体上位置。操作时，将染色体固定在载玻片上，并经过处理除去RNA和蛋白质，使染色体DNA变性，在原来的位置上与核酸探针进行杂交。首次应用在确定rDNA在核仁组织中心的位置，现已应用于基因的定位。</p>
+<p>荧光原位杂交(fluorescence in situ hybridization, FISH)技术：首先对寡核苷酸探针做特殊修饰和标记，然后用原位杂交法与靶染色体或DNA上特定序列结合，再通过与荧光素分子相耦联单克隆抗体确定该DNA序列在染色体上位置。不需要放射性同位素，实验周期短，检测灵敏度高，若用经过不同修饰核苷酸分子标记不同的DNA探针，还可能在同一张切片上观察几种DNA探针定位，得到相应位置和排列顺序综合信息。</p>
+<p>参考资料：抄的分子生物学课件</p>
+<h2 id="基因定点突变技术"><a href="#基因定点突变技术" class="headerlink" title="基因定点突变技术"></a>基因定点突变技术</h2><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image004.png" alt="img"></p>
+<div align="center">重叠延伸法</div>
+
+<p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image006.png" alt="img"></p>
+<div align="center">大引物诱变法</div>
+
+<h2 id="单细胞转录组测序"><a href="#单细胞转录组测序" class="headerlink" title="单细胞转录组测序"></a>单细胞转录组测序</h2><p>以Drop-Seq为例，在单个细胞内完成建库步骤，通过微流控技术将0或1个细胞至于油滴内，油滴内除了反应体系的试剂外存在STAMPs，STAMPs上偶联着mRNA捕获接头，由PCR handle，cell barcodes和UMI构成，cellbarcode标记细胞，同一细胞内所有reads的barcode相同，而一个油滴内所有接头上的UMI都不相同，标记不同的mRNA分子。捕获mRNA后进行cDNA第一链和第二链的合成，同时加上illumina测序接头上机测序，通过下游生物信息学分析可以得到单细胞水平的基因表达信息。</p>
+<p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image008.png" alt="img"></p>
+<p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image010.png" alt="img"></p>
+<p>参考资料：</p>
+<p>[1] Macosko EZ, Basu A, Satija R et al. Highly Parallel Genome-wide Expression Profiling of Individual Cells Using Nanoliter Droplets. Cell. 2015 May 21;161(5):1202-1214. doi: 10.1016/j.cell.2015.05.002. PMID: 26000488; PMCID: PMC4481139.</p>
+<h1 id="基因敲除技术"><a href="#基因敲除技术" class="headerlink" title="基因敲除技术"></a>基因敲除技术</h1><h2 id="基本原理"><a href="#基本原理" class="headerlink" title="基本原理"></a>基本原理</h2><p>真核生物基因敲除的技术路线主要包括构建重组基因载体，用电穿孔、显微注射等方法把重组DNA导入胚胎干细胞纯系中，使外源DNA与胚胎干细胞基因组中相应部分发生同源重组，将重组载体中的DNA序列整合到内源基因组中并得以表达。常用PNS法筛选。打靶载体分为全基因敲除，条件性基因敲除，基因敲进，诱导性基因敲除等。</p>
+<p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image012.png" alt="img"></p>
+<div align="center">PNS筛选</div>
+
+
+
+<h2 id="高等动物基因敲除技术"><a href="#高等动物基因敲除技术" class="headerlink" title="高等动物基因敲除技术"></a>高等动物基因敲除技术</h2><p>技术路线主要包括：构建重组基因载体、用电穿孔、显微注射等方法把重组DNA导入胚胎干细胞纯系中，使外源DNA与胚胎干细胞基因组中相应部分发生同源重组，将重组载体中的DNA序列整合到内源基因组中并得以表达。</p>
+<h2 id="植物基因敲除技术"><a href="#植物基因敲除技术" class="headerlink" title="植物基因敲除技术"></a>植物基因敲除技术</h2><p>T-DNA插入失活技术，利用根瘤农杆菌T-DNA介导转化，将一段带有目的基因的DNA序列整合到宿主植物基因组DNA上。原理：植物根部受到损伤后常分泌出酚类物质乙酰丁香酮和羟基乙酰丁香酮，会诱导Vir基因表达，将Ti质粒上T-DNA单链切下，并与农杆菌染色体上操纵子编码的基因产物结合形成复合物并转移进入植物根部细胞的细胞核，最终导致T-DNA被整合到宿主基因组上。</p>
+<p>参考资料：抄的分子生物学课件。</p>
+<h2 id="基因组编辑技术"><a href="#基因组编辑技术" class="headerlink" title="基因组编辑技术"></a>基因组编辑技术</h2><h3 id="锌指蛋白核酸酶（Zinc-finger-nucleases，ZFN）"><a href="#锌指蛋白核酸酶（Zinc-finger-nucleases，ZFN）" class="headerlink" title="锌指蛋白核酸酶（Zinc finger nucleases，ZFN）"></a>锌指蛋白核酸酶（Zinc finger nucleases，ZFN）</h3><p>ZFN有DNA结合domain（ZFP）和核酸内切domain（Fok I）两个结构域，每个ZFP又由3-6个Cys2-His2锌指蛋白串联组成，每个锌指蛋白区结合3’-5’方向DNA链上特异三联体碱基以及5’-3’方向的一个碱基。人为改变其DNA识别序列即可实现定点打靶。</p>
+<p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image014.png" alt="img"></p>
+<div align="center">ZFN结构</div> 
+
+
+
+<h3 id="转录激活因子样效应物核酸酶（transcription-activator-like-TAL-effector-nucleases，TALEN）"><a href="#转录激活因子样效应物核酸酶（transcription-activator-like-TAL-effector-nucleases，TALEN）" class="headerlink" title="转录激活因子样效应物核酸酶（transcription activator-like (TAL) effector nucleases，TALEN）"></a>转录激活因子样效应物核酸酶（transcription activator-like (TAL) effector nucleases，TALEN）</h3><p>TALENs 同样包括两个结构域，一个是DNA Binding，另一个是 FokI nuclease Transcription activator-like effectors (TALEs) 为33–35 amino acid repeats,每一个repeat识别一个碱基对，由中间的第12和13氨基酸决定，称为 repeat variable diresidues (RVDs). 最常用的四组为 Asn-Asn, Asn-Ile, His-Asp and Asn-Gly，分别识别 G, A, C 和T四个碱基。</p>
+<p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image016.jpg" alt="img"></p>
+<div align="center">TALEN</div>
+
+
+
+<h3 id="CRISPR-Cas9系统"><a href="#CRISPR-Cas9系统" class="headerlink" title="CRISPR/Cas9系统"></a>CRISPR/Cas9系统</h3><p>CRISPR是一种细菌降外源 DNA 的免疫机制。Cas9蛋白含有两个核酸酶结构域，可以分别切割DNA 两条单链。PAM序列：NGG，是Cas9结合双链DNA必须组件。sgRNA是crRNA与tracrRNA的组合体。</p>
+<p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image018.jpg" alt="cas9"></p>
+<div align="center">CRISPR/Cas9</div>
+
+
+
+<p>参考资料：抄的李艳君老师的动物细胞工程课件。</p>
+<h1 id="蛋白质及RNA（核酸）相互作用技术"><a href="#蛋白质及RNA（核酸）相互作用技术" class="headerlink" title="蛋白质及RNA（核酸）相互作用技术"></a>蛋白质及RNA（核酸）相互作用技术</h1><h2 id="酵母单杂交系统"><a href="#酵母单杂交系统" class="headerlink" title="酵母单杂交系统"></a>酵母单杂交系统</h2><p>把转录因子GAL4的DNA binding domain（BD）替换成待研究蛋白，其潜在DNA结合序列连在启动子pmin和报告基因前面。如果发生DNA和蛋白相互作用，GAL4的activation domain（AD）就会行使转录增强活性。</p>
+<p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image020.png" alt="img"></p>
+<div align="center">酵母单杂交原理</div>
+
+
+
+<h2 id="酵母双杂交系统"><a href="#酵母双杂交系统" class="headerlink" title="酵母双杂交系统"></a>酵母双杂交系统</h2><p>把GAL4的AD和BD分开表达，分别融合蛋白M和N如果M和N有相互作用，AD和BD就会靠近激活下游报告基因的表达。</p>
+<p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image022.png" alt="img"></p>
+<div align="center">酵母双杂交原理</div>
+
+
+
+<h2 id="蛋白质相互作用"><a href="#蛋白质相互作用" class="headerlink" title="蛋白质相互作用"></a>蛋白质相互作用</h2><h3 id="等离子表面共振"><a href="#等离子表面共振" class="headerlink" title="等离子表面共振"></a>等离子表面共振</h3><p>英文Surface Plamon Resonace technology, SPR.</p>
+<p>将诱饵蛋白结合于葡聚糖表面，再将葡聚糖层固定于金属膜表面。当蛋白质混合物经过时，如果有蛋白质同“诱饵”蛋白发生互作，则金属膜表面的折射率会上升，从而导致共振角度改变。而共振角度的改变与该处的蛋白质浓度成线性关系，由此可以检测蛋白质之间的相互作用。</p>
+<p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image024.png" alt="img"></p>
+<div align="center">等离子表面共振技术</div>
+
+
+
+<p>参考资料：抄的分子生物学课件。</p>
+<h3 id="免疫共沉淀技术"><a href="#免疫共沉淀技术" class="headerlink" title="免疫共沉淀技术"></a>免疫共沉淀技术</h3><p>英文co-immunoprecipitation，CoIP. 把带有标签flag1的融合蛋白flag1-proteinA和带有标签flag2的融合蛋白flag2-proteinB混合孵育，一段时间后使用带有flag1抗体的beads收集flag1-proteinA，如果proteinA和proteinB之间有相互作用，那么flag2-proteinB就会同flag1-proteinA一起被富集，此时通过Western blotting检测到flag2则说明两蛋白确实产生了相互作用。</p>
+<h3 id="GST及GAD融合蛋白沉降技术"><a href="#GST及GAD融合蛋白沉降技术" class="headerlink" title="GST及GAD融合蛋白沉降技术"></a>GST及GAD融合蛋白沉降技术</h3><p>GST pull-down: GST pull-down的实验原理是：将目的基因亚克隆到带有GST基因的原核表达载体中，表达出GST融合蛋白(GST-X)。 把GST融合蛋白挂到带有GST底物的琼脂糖珠上，然后把另一种含目的蛋白(Y) 的溶液加入其中，由于谷胱甘肽琼脂糖球珠能够沉淀GST融合蛋白，如果发生相互作用就会形成GST-X-Y的复合物。这一复合物与琼脂糖珠又结合在一起，被沉淀下来。然后用过量游离的谷胱甘肽洗脱非特异结合的蛋白，经跑胶分离后进行下一步的WB、放射自显影及蛋白质染色分析来鉴定目的蛋白。</p>
+<p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image026.png" alt="img"></p>
+<div align="center">GST pull-down</div>
+
+
+
+<p>参考资料：<a target="_blank" rel="noopener" href="http://zohobio.com/protocol/gst-pulldown.html">http://zohobio.com/protocol/gst-pulldown.html</a> “正和生物”网站里抄的</p>
+<p>GAD是GAL4的AD结构域，只查到课件里的一个与植物相互作用因子（PIF3）融合研究其与光敏素相互作用的例子，但也没有找到文献出处。好像不是个很通用的实验技术。</p>
+<h3 id="细胞内蛋白质互作研究——荧光共振能量转移"><a href="#细胞内蛋白质互作研究——荧光共振能量转移" class="headerlink" title="细胞内蛋白质互作研究——荧光共振能量转移"></a>细胞内蛋白质互作研究——荧光共振能量转移</h3><p>将待研究蛋白proteinA和proteinB分别与荧光探针prob1、prob2构成融合蛋白，并使prob1的发射光波长恰好可以激发prob2，当施加prob1的激发光时，若A和B存在相互作用，则由于荧光共振能量转移，prob1发光减弱，prob2发光增强。</p>
+<p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image028.png" alt="img"></p>
+<div align="center">FRET</div>
+
+
+
+<h2 id="染色质免疫共沉淀技术"><a href="#染色质免疫共沉淀技术" class="headerlink" title="染色质免疫共沉淀技术"></a>染色质免疫共沉淀技术</h2><p>英文Chromatin ImmunoPrecipitation，ChIP. 研究染色质DNA与蛋白质相互作用。收集活细胞，甲醛固定蛋白和染色质的结合状态，使用超声或酶解的方法打断染色质，随后通过蛋白免疫沉淀富集蛋白-DNA复合体，经过纯化得到DNA后建库测序。</p>
+<p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image030.png" alt="img"></p>
+<div align="center">ChIP</div>
+
+
+
+<h2 id="RNAi技术"><a href="#RNAi技术" class="headerlink" title="RNAi技术"></a>RNAi技术</h2><p>利用双链小RNA高效、特异性降解细胞内同源mRNA从而阻断靶基因表达，使细胞出现靶基因缺失的表型。</p>
+<p>实验步骤：<a target="_blank" rel="noopener" href="https://www.biomart.cn/experiment/430/443/728/205660.htm">https://www.biomart.cn/experiment/430/443/728/205660.htm</a></p>
+<h2 id="自己查找的技术：CUT-amp-RUN（cleavage-under-targets-and-release-using-nuclease）"><a href="#自己查找的技术：CUT-amp-RUN（cleavage-under-targets-and-release-using-nuclease）" class="headerlink" title="自己查找的技术：CUT&amp;RUN（cleavage under targets and release using nuclease）"></a>自己查找的技术：CUT&amp;RUN（cleavage under targets and release using nuclease）</h2><p>是ChIP的改进版，2017年问世。细胞经透化处理后与目标抗体孵育，抗体进入核内与目标蛋白结合，细胞再与蛋白A/G连接的微球菌核酸酶（MNase）孵育，目标抗体Fc端结合proteinA-Mnase或proteinA/G-Mnase。然后激活的Mnase切割结合位点两边的染色质，这些切割过的片段扩散到细胞核外，而未切割的部分留在核内，可以大大降低背景，然后从上清液中收集DNA片段并测序。</p>
+<p>参考资料：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/165486393">https://zhuanlan.zhihu.com/p/165486393</a></p>
+<h1 id="在酵母细胞中鉴定靶基因功能"><a href="#在酵母细胞中鉴定靶基因功能" class="headerlink" title="在酵母细胞中鉴定靶基因功能"></a>在酵母细胞中鉴定靶基因功能</h1><h2 id="酵母基因转化与性状互补"><a href="#酵母基因转化与性状互补" class="headerlink" title="酵母基因转化与性状互补"></a>酵母基因转化与性状互补</h2><p>利用Yip (整合型质粒)可以对酵母基因组中任意基因进行精确敲除(置换)，并通过孢子繁殖中四分体分析技术进行观测和研究。带有致死突变位点和可能外源功能互补基因酵母二倍体细胞在饥饿条件下形成四分体孢子，若所引入外源基因具备互补突变位点功能，含有突变基因单倍体可存活，否则就不能存活。</p>
+<p>参考资料：抄的分子生物学课件。</p>
+<h2 id="外源基因在酵母中的功能鉴定"><a href="#外源基因在酵母中的功能鉴定" class="headerlink" title="外源基因在酵母中的功能鉴定"></a>外源基因在酵母中的功能鉴定</h2><p>将外源基因克隆于酵母表达载体上，转化野生型或突变酵母菌株，通过观察酵母表型变化或分析细胞中化学成分的变化即可推测该基因生物学功能。</p>
+<p>参考资料：抄的分子生物学课件。</p>
+<h1 id="其他分子生物学技术"><a href="#其他分子生物学技术" class="headerlink" title="其他分子生物学技术"></a>其他分子生物学技术</h1><h2 id="凝胶滞缓实验"><a href="#凝胶滞缓实验" class="headerlink" title="凝胶滞缓实验"></a>凝胶滞缓实验</h2><p>英文electrophoretic mobility shift assay，EMSA. 用放射性同位素标记待检测DNA片段(DNA探针)，然后与细胞提取物共温育，形成DNA-蛋白质复合物，将该复合物加到非变性聚丙烯酰胺凝胶中进行电泳。通常用32P标记DNA分子，而不标记蛋白质。蛋白质与DNA结合后将大大增加相对分子质量，而凝胶电泳中DNA朝正电极移动距离与其相对分子质量对数成正比，因此，没有结合蛋白质的DNA片段迁移得快，而与蛋白质形成复合物的DNA由于受到阻滞而迁移得慢。</p>
+<p>参考资料：抄的分子生物学课件。</p>
+<h2 id="噬菌体展示技术"><a href="#噬菌体展示技术" class="headerlink" title="噬菌体展示技术"></a>噬菌体展示技术</h2><p>将蛋白与噬菌体外壳上的蛋白融合表达，再通过若干次的生物淘选，可得到具有期望结合特性的噬菌体，同时可用于研究抗原表位的鉴定。</p>
+<h2 id="蛋白质磷酸化分析技术"><a href="#蛋白质磷酸化分析技术" class="headerlink" title="蛋白质磷酸化分析技术"></a>蛋白质磷酸化分析技术</h2><h3 id="检测底物蛋白磷酸化"><a href="#检测底物蛋白磷酸化" class="headerlink" title="检测底物蛋白磷酸化"></a>检测底物蛋白磷酸化</h3><p>一般双向电泳，质谱分析等。</p>
+<h3 id="检测蛋白激酶活性"><a href="#检测蛋白激酶活性" class="headerlink" title="检测蛋白激酶活性"></a>检测蛋白激酶活性</h3><p>常用体外激酶活性分析法，主要分为获取底物蛋白或待检测蛋白激酶和进行蛋白质体外磷酸化反应两步。能十分可靠地鉴定某个蛋白激酶对底物的磷酸化作用，筛查激酶的特异性底物。</p>
+<p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/clip_image032.png" alt="img"></p>
+<div align="center">蛋白激酶体外磷酸化活性分析</div>
+
+
+
+<p>参考资料：抄的分子生物学课件</p>
+<h2 id="蛋白质免疫印迹实验"><a href="#蛋白质免疫印迹实验" class="headerlink" title="蛋白质免疫印迹实验"></a>蛋白质免疫印迹实验</h2><p>即Western blotting，目的是检测样品中是否出现某种特定的蛋白质。样品首先在SDS-PAGE中进行电泳分离，转印至硝酸纤维素上进行非特异性抗原位点封闭、一抗孵育、二抗孵育。二抗偶联的辣根过氧化物酶可催化底物发光，进而判断样品是否含有目的蛋白。</p>
+<h2 id="细胞定位及染色技术"><a href="#细胞定位及染色技术" class="headerlink" title="细胞定位及染色技术"></a>细胞定位及染色技术</h2><h3 id="荧光蛋白标记"><a href="#荧光蛋白标记" class="headerlink" title="荧光蛋白标记"></a>荧光蛋白标记</h3><p>将荧光蛋白（如GFP）的编码序列与目的蛋白构成融合基因，转入受体细胞，荧光显微镜特定波长下观察。</p>
+<h3 id="免疫荧光标记"><a href="#免疫荧光标记" class="headerlink" title="免疫荧光标记"></a>免疫荧光标记</h3><p>不对细胞进行处理，而是设计与待研究蛋白特异性抗体偶联的荧光探针，利用抗原抗体反应进行定位。</p>
+<h2 id="全基因组关联分析及应用"><a href="#全基因组关联分析及应用" class="headerlink" title="全基因组关联分析及应用"></a>全基因组关联分析及应用</h2><p>首先通过SNP分子遗传标记，进行总体关联分析，在全基因组范围内选择遗传变异进行基因分型，比较实验组和对照组之间每个遗传变异及其频率的差异，统计分析每个变异与目标性状之间的关联性大小，选出最相关的遗传变异进行验证，并根据验证结果最终确认其与目标性状之间的相关性。</p>
+<p>参考资料：抄的分子生物学课件。</p>
+<script type="text&#x2F;javascript" src="/js/kity.min.js"></script><script type="text&#x2F;javascript" src="/js/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="/js/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="/css/mindmap.min.css">
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div></div>
+  <button>
+    <i class="fa fa-qrcode fa-2x" style="line-height:35px;"></i>
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.png" alt="小阿鸣 微信支付">
+        <span>微信支付</span>
+      </div>
+
+  </div>
+</div>
+
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/06/11/%E5%91%B3%E8%A7%89%E4%BF%A1%E6%81%AF%E7%BC%96%E7%A0%81/" rel="prev" title="味觉信息编码">
+                  <i class="fa fa-chevron-left"></i> 味觉信息编码
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="waline-comments"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小阿鸣</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/mybutton.js"></script> <script src="/js/utils.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"per_page":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+<script class="next-config" data-name="waline" type="application/json">{"lang":null,"enable":true,"serverURL":"https://walineserver-jhhpabubn-eamonnku.vercel.app/","placeholder":"在这个框里打字儿","pageSize":10,"visitor":true,"comment_count":true,"requiredMeta":[],"copyright":true,"allowUploadImage":true,"meta":["nick","mail","link"],"qiniuDebug":false,"qiniuDomain":null,"qiniuTokenUrl":null,"emoji":["https://unpkg.com/@waline/emojis@1.0.1/qq"],"avatar":"mm","requiredFields":[],"el":"#waline-comments","libUrl":"/js/my_Waline.min.js","path":"/2022/06/13/%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E7%A0%94%E7%A9%B6%E6%8A%80%E6%9C%AF%E6%B1%87%E6%80%BB/","login":"","dark":"auto"}</script>
+<script>
+document.addEventListener('page:loaded', () => {
+  if(!CONFIG.waline.allowUploadImage) {
+    CONFIG.waline.uploadImage = false;
+  }
+  else if(CONFIG.waline.qiniuDomain && CONFIG.waline.qiniuTokenUrl) {
+    CONFIG.waline.uploadImage = qiniuUploadImage;
+  }
+  NexT.utils.loadComments(CONFIG.waline.el).then(() =>
+    NexT.utils.getScript(CONFIG.waline.libUrl, { condition: window.Waline })
+  ).then(() => {
+    new Waline(CONFIG.waline);
+  });
+});
+</script>
+
+</body>
+</html>
+
+<!-- 多级目录 -->
+  <script type="text/javascript" src="/js/category.js"></script>
+</body>
