@@ -2761,7 +2761,7 @@ body {
   font-style: normal;
 }
 body {
-  background-image: url("/images/TB2SNROX4eEJuJjy1XaXXXPhVXa_!!0-martrix_bbs.jpg");
+  background-image: url("https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/blogBackground.jpg");
 }
 .header-inner {
   position: relative;
@@ -2782,7 +2782,7 @@ body {
 .sidebar-inner {
   border-radius: 5px 5px 5px 5px;
   box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
-  background-image: url("/images/webb.png");
+  background-image: url("https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/webb.png");
 }
 .pagination {
   border-radius: 3px 3px 3px 3px;
@@ -2869,7 +2869,7 @@ p.site-subtitle {
   -webkit-animation: masked-animation 6s linear infinite;
 }
 .main-menu.menu {
-  background: url("/images/redhair.png");
+  background: url("https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/redhair.png");
   background-repeat: no-repeat;
   background-size: 75%;
   background-position: 100% 100%;
@@ -2878,7 +2878,7 @@ p.site-subtitle {
 }
 .site-nav-on .main-menu.menu {
   transition: none;
-  background: url("/images/nav-on-bg.png");
+  background: url("https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/nav-on-bg.png");
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: 100% 100%;
@@ -2907,7 +2907,6 @@ p.site-subtitle {
   text-decoration: none;
   box-shadow: 0 2px 0px rgba(0,0,0,0.3);
   cursor: pointer;
-/*border-radius: 50px;*/
   -webkit-tap-highlight-color: transparent;
   border-radius: 2px;
 }
@@ -2922,7 +2921,7 @@ p.site-subtitle {
   display: none;
 }
 #waline-comments.comments .vcards {
-  background-image: url("/images/skelatal_weave.png");
+  background-image: url("https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/skelatal_weave.png");
   border-radius: 0.2em;
 }
 #waline-comments.comments .vcards .vitem {

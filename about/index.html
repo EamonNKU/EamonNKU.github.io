@@ -6,10 +6,10 @@
 <meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.1.0">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/favicon-16x16.png">
+  <link rel="mask-icon" href="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/logo.svg" color="#222">
 
 <link rel="stylesheet" href="/css/main.css">
 
@@ -31,14 +31,13 @@
 <meta property="og:site_name" content="Eamon &#39;s Blog">
 <meta property="og:description" content="联系方式：572464453@qq.com  　　哈喽大可爱，我是你的好朋友小阿鸣。我会在这里分享我在生物方面的学习笔记，也会记录一些琐事和心情。如果你也有个人博客的话，可以跟我商量互相挂对方的友情链接。下面的这个评论区，可以实名登录，也可以免登录匿名发言。有什么话想告诉我直接在下面评论就可以。  My friends:                      .links-content{">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://fanyiming.life/images/31BF30C0474DBF566FE0E2923F30B3AD.jpg">
-<meta property="og:image" content="https://fanyiming.life/images/slime_green.png">
-<meta property="og:image" content="https://fanyiming.life/images/avatar_for_user.jpg">
+<meta property="og:image" content="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/avatar_yefengjun.jpg">
+<meta property="og:image" content="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/avatar_anoms.png">
 <meta property="article:published_time" content="2022-04-05T20:14:46.000Z">
-<meta property="article:modified_time" content="2022-05-30T04:48:06.840Z">
+<meta property="article:modified_time" content="2022-06-13T18:18:02.175Z">
 <meta property="article:author" content="小阿鸣">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://fanyiming.life/images/31BF30C0474DBF566FE0E2923F30B3AD.jpg">
+<meta name="twitter:image" content="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/avatar_yefengjun.jpg">
 
 
 <link rel="canonical" href="https://fanyiming.life/about/">
@@ -296,47 +295,100 @@
          white-space: nowrap;
          }
       </style>
-      <div class="links-content">
-         <div class="link-navigation">
-            <div class="card">
-               <img class="ava" src="/images/31BF30C0474DBF566FE0E2923F30B3AD.jpg">
-               <div class="card-header">
-                  <div>
-                     <a target="_blank" rel="noopener" href="https://zhichaoguo.cn/">夜枫菌的笔下世界</a>
-                  </div>
-                  <div class="info">非编程专业学生党一枚 在努力向编程不秃党靠拢</div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="links-content">
-         <div class="link-navigation">
-            <div class="card">
-               <img class="ava" src="/images/slime_green.png">
-               <div class="card-header">
-                  <div>
-                     <a target="_blank" rel="noopener" href="http://www.anoms.top:84/">ANOMSの另一个小世界</a>
-                  </div>
-                  <div class="info">好好学习，积极生活</div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="links-content">
-         <div class="link-navigation">
-            <div class="card">
-               <img class="ava" src="/images/avatar_for_user.jpg">
-               <div class="card-header">
-                  <div>
-                     <a target="_blank" rel="noopener" href="http://82.157.113.205:1111/">Dear Flower</a>
-                  </div>
-                  <div class="info"></div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</div><script type="text&#x2F;javascript" src="/js/kity.min.js"></script><script type="text&#x2F;javascript" src="/js/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="/js/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="/css/mindmap.min.css">
+
+     <div class="post-body">
+       <div id="links">
+          <style>
+             .links-content{
+        //     margin-top:1rem;
+             }
+             .link-navigation::after {
+             content: " ";
+             display: block;
+             clear: both;
+             }
+             .card {
+             width: 45%;
+             font-size: 1rem;
+             padding: 10px 20px;
+             border-radius: 4px;
+             transition-duration: 0.15s;
+             margin-bottom: 1rem;
+             display:flex;
+             }
+             .card:nth-child(odd) {
+             float: left;
+             }
+             .card:nth-child(even) {
+             float: right;
+             }
+             .card:hover {
+             transform: scale(1.1);
+             box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+             }
+             .card a {
+             border:none;
+             }
+             .card .ava {
+             width: 3rem!important;
+             height: 3rem!important;
+             margin:0!important;
+             margin-right: 1em!important;
+             border-radius:4px;
+             }
+             .card .card-header {
+             font-style: italic;
+             overflow: hidden;
+             width: 100%;
+             }
+             .card .card-header a {
+             font-style: normal;
+             color: #2bbc8a;
+             font-weight: bold;
+             text-decoration: none;
+             }
+             .card .card-header a:hover {
+             color: #d480aa;
+             text-decoration: none;
+             }
+             .card .card-header .info {
+             font-style:normal;
+             color:#a3a3a3;
+             font-size:14px;
+             min-width: 0;
+             overflow: hidden;
+             white-space: nowrap;
+             }
+          </style>
+          <div class="links-content">
+             <div class="link-navigation">
+                <div class="card">
+                   <img class="ava" src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/avatar_yefengjun.jpg">
+                   <div class="card-header">
+                      <div>
+                         <a target="_blank" rel="noopener" href="https://zhichaoguo.cn/">夜枫菌的笔下世界</a>
+                      </div>
+                      <div class="info">非编程专业学生党一枚 在努力向编程不秃党靠拢</div>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="links-content">
+             <div class="link-navigation">
+                <div class="card">
+                   <img class="ava" src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/avatar_anoms.png">
+                   <div class="card-header">
+                      <div>
+                         <a target="_blank" rel="noopener" href="http://www.anoms.top:84/">ANOMSの另一个小世界</a>
+                      </div>
+                      <div class="info">好好学习，积极生活</div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+<script type="text&#x2F;javascript" src="/js/kity.min.js"></script><script type="text&#x2F;javascript" src="/js/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="/js/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="/css/mindmap.min.css">
       </div>
       
       
