@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://fanyiming.life/2022/06/14/Latex%E5%AE%89%E8%A3%85%E5%92%8CVScode%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
+    
+    <lastmod>2022-06-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://fanyiming.life/2022/06/13/%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E7%A0%94%E7%A9%B6%E6%8A%80%E6%9C%AF%E6%B1%87%E6%80%BB/</loc>
     
     <lastmod>2022-06-13</lastmod>
@@ -900,6 +909,13 @@
   </url>
   
   <url>
+    <loc>https://fanyiming.life/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%92%8C%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3/</loc>
+    <lastmod>2022-06-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%94%9F%E7%89%A9%E5%8C%96%E5%AD%A6/</loc>
     <lastmod>2022-06-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -908,13 +924,6 @@
   
   <url>
     <loc>https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A5%9E%E7%BB%8F%E7%94%9F%E7%89%A9%E5%AD%A6/</loc>
-    <lastmod>2022-06-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://fanyiming.life/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%92%8C%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3/</loc>
     <lastmod>2022-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -935,14 +944,7 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%92%8C%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3/linux/</loc>
-    <lastmod>2022-06-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E8%BF%9B%E9%98%B6/</loc>
+    <loc>https://fanyiming.life/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%92%8C%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3/latex/</loc>
     <lastmod>2022-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -950,6 +952,27 @@
   
   <url>
     <loc>https://fanyiming.life/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%92%8C%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3/windows/</loc>
+    <lastmod>2022-06-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://fanyiming.life/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%92%8C%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3/linux/</loc>
+    <lastmod>2022-06-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://fanyiming.life/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%92%8C%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3/%E7%BD%91%E9%A1%B5/</loc>
+    <lastmod>2022-06-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E8%BF%9B%E9%98%B6/</loc>
     <lastmod>2022-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -978,13 +1001,6 @@
   
   <url>
     <loc>https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/%E5%8A%A8%E7%89%A9%E5%AD%A6/</loc>
-    <lastmod>2022-06-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://fanyiming.life/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%92%8C%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3/%E7%BD%91%E9%A1%B5/</loc>
     <lastmod>2022-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
