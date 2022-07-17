@@ -2771,13 +2771,17 @@ body {
   box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
 }
 .site-brand-container {
-  background-image: linear-gradient(to right, #fddbff 0%, #d1fdff 100%);
+  background-image: linear-gradient(to right, #d2d2ff 0%, #fff0fe 100%);
   padding: 0px 0px 0px 0px;
+  border-style: solid;
+  border-width: 0 0 2px 0;
 }
 .pace-done.site-nav-on .site-brand-container {
   border-style: none;
-  background-image: linear-gradient(to bottom right, #ee82ee, #00bfff 100%);
+  background: rgba(255,255,255,0.4);
   box-shadow: none;
+  border-style: solid;
+  border-width: 0 0 2px 0;
 }
 .sidebar-inner {
   border-radius: 5px 5px 5px 5px;
@@ -2799,7 +2803,7 @@ body {
 }
 .main .header-inner {
   z-index: 1;
-  background: #000;
+  background-image: url("https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/20220718004154.jpg");
 }
 .search-active #app .timenode {
   z-index: -1;
@@ -2843,7 +2847,9 @@ body {
 .site-nav {
   animation-duration: 0s;
   padding: 0em 0px 0px 0px;
-  background-image: linear-gradient(to bottom, #242d4d, #373658, #524169, #a85e86, #db6b8f, #eb8197, #ee9f9f, #eabca3);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 .site-meta {
   text-align: left;
