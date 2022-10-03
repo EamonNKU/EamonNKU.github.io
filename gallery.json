@@ -1,0 +1,27 @@
+[
+    {
+    "name": "水木清华",
+    "cover": "https://i.loli.net/2020/10/05/kBcvAf7INgMLaem.jpg",
+    "date": "2017-10",
+    "description": "清华园纪实",
+    "url_name": "水木清华",
+    "album": [
+        {
+            "img_url": "https://i.loli.net/2020/10/05/qtOevHpw5XImS1J.jpg",
+            "title": "水木清华",
+            "describe": "test1"
+        },
+        {
+            "img_url": "https://i.loli.net/2020/10/05/4acvniMKTx8euqp.jpg",
+            "title": "水木清华",
+            "describe": "test2"
+        },
+        {
+            "img_url": "https://i.loli.net/2020/10/05/4acvniMKTx8euqp.jpg",
+            "title": "水木清华",
+            "describe": "test3"
+        }
+      ]
+    }
+  ]
+ 

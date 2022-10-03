@@ -1,0 +1,413 @@
+<script>if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').then(() => {
+    if (localStorage.getItem('install') !== 'true') {
+      localStorage.setItem('install', 'true')
+      location.reload()
+    }
+  })
+}
+
+
+</script><!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>杂七杂八笔记 | Eamon 's Blog</title><meta name="author" content="小阿鸣"><meta name="copyright" content="小阿鸣"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="本页用于未归档的杂项笔记记录">
+<meta property="og:type" content="article">
+<meta property="og:title" content="杂七杂八笔记">
+<meta property="og:url" content="https://fanyiming.life/posts/6dcdcfcf.html">
+<meta property="og:site_name" content="Eamon &#39;s Blog">
+<meta property="og:description" content="本页用于未归档的杂项笔记记录">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg">
+<meta property="article:published_time" content="2022-09-17T11:31:51.000Z">
+<meta property="article:modified_time" content="2022-09-24T06:16:29.384Z">
+<meta property="article:author" content="小阿鸣">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><link rel="shortcut icon" href="/"><link rel="canonical" href="https://fanyiming.life/posts/6dcdcfcf"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="manifest" href="/manifest.json"/><link rel="apple-touch-icon" sizes="180x180" href="/img/pwa/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/img/pwa/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/img/pwa/favicon-16x16.png"/><link rel="mask-icon" href="/img/pwa/safari-pinned-tab.svg" color="#5bbad5"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://unpkg.com/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://unpkg.com/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.json","preload":true,"languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: true,
+    post: false
+  },
+  runtime: 'days',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"Author: 小阿鸣","link":"Link: ","source":"Source: Eamon 's Blog","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source."}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://unpkg.com/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://unpkg.com/flickr-justified-gallery/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '杂七杂八笔记',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-09-24 14:16:29'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom@1.0.1.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiper.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiperstyle.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.1.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">Loading...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">140</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">23</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-lightbulb"></i><span> Posts</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> History Articles</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/MessageBox/"><i class="fa-fw fas fa-comment"></i><span> Message</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> Books</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-camera"></i><span> Gallery</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></li><li><a class="site-page child" href="/resources/"><i class="fa-fw fas fa-download"></i><span> Resources</span></a></li><li><a class="site-page child" href="/bb/"><i class="fa-fw fas fa-cloud"></i><span> bbtime</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-user"></i><span> About</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Eamon 's Blog</a></span><div id="he-plugin-simple"></div><div id="none_space"></div><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-lightbulb"></i><span> Posts</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> History Articles</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/MessageBox/"><i class="fa-fw fas fa-comment"></i><span> Message</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> Books</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-camera"></i><span> Gallery</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></li><li><a class="site-page child" href="/resources/"><i class="fa-fw fas fa-download"></i><span> Resources</span></a></li><li><a class="site-page child" href="/bb/"><i class="fa-fw fas fa-cloud"></i><span> bbtime</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-user"></i><span> About</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">杂七杂八笔记</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-09-17T11:31:51.000Z" title="Created 2022-09-17 19:31:51">2022-09-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-09-24T06:16:29.384Z" title="Updated 2022-09-24 14:16:29">2022-09-24</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E9%9A%8F%E7%AC%94-%E6%9D%82%E8%AE%B0/">随笔&amp;杂记</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">2.7k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>12min</span></span><span class="post-meta-separator">|</span><span id="" data-flag-title="杂七杂八笔记"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span class="waline-pageview-count" data-path="/posts/6dcdcfcf.html"><i class="fa-solid fa-spinner fa-spin"></i></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">Comments:</span><a href="/posts/6dcdcfcf.html#post-comment"><span class="waline-comment-count" data-path="/posts/6dcdcfcf.html"><i class="fa-solid fa-spinner fa-spin"></i></span></a></span></div></div></div></header><main class="layout hide-aside" id="content-inner"><div id="post"><article class="post-content" id="article-container"><div class="note simple"><p>本页用于杂项笔记的记录，可视为草稿本，内容动态更新。不定期会将本页内容分类归档到其他页面后删除。</p>
+</div>
+<ol>
+<li><p>T2A是来源于昆虫病毒(Thosea asigna)的基因序列，编码产生一种具有自我加工能力的23aa短肽。讲两个基因克隆到T2A序列的两侧，构建融合基因，翻译出的多聚蛋白会在编码T2A区域的C端断裂为两个蛋白（T2A可以自剪切），产生C端融合了T2A的上游蛋白和完整的下游蛋白。</p>
+</li>
+<li><p>SV40 (Simian vacuolating virus 40 or Simian virus 40) 是猴空泡病毒40，猿猴病毒40或<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/猴病毒40/3409097?fromModule=lemma_inlink">猴病毒40</a>的缩写，<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/多瘤病毒/12583788?fromModule=lemma_inlink">多瘤病毒</a>科，这是在人类和猴子中都发现的致瘤病毒。SV40病毒的<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/基因组/2746983?fromModule=lemma_inlink">基因组</a>是一种环形双链的<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/DNA/98123?fromModule=lemma_inlink">DNA</a>，基因组5.2kb，病毒的直径45nm，病毒成熟部位<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/细胞核/601964?fromModule=lemma_inlink">细胞核</a>，无<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/被膜/251800?fromModule=lemma_inlink">被膜</a>，62个核<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/壳粒?fromModule=lemma_inlink">壳粒</a><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/亚单位/7382061?fromModule=lemma_inlink">亚单位</a>，这种大小很适于<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/基因操作/9080858?fromModule=lemma_inlink">基因操作</a>。同时它也是第一个完成基因组DNA全序列分析的动物病毒。</p>
+<p>1960年，科学家首次在猴子体内发现了SV40。随后，科学家又在<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/脊髓灰质炎/1163153?fromModule=lemma_inlink">脊髓灰质炎</a>试剂中发现了SV40，其原因是实验室在培养疫苗时使用了从猴子体内分离出的肾脏细胞。</p>
+<p>由于SV40结构简单，被首先应用于<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/真核生物/1398395?fromModule=lemma_inlink">真核生物</a>复制的研究。<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/增强子?fromModule=lemma_inlink">增强子</a>首先发现于SV40基因组内。</p>
+</li>
+<li><p>一个冻存管放500μl冻存液（10%DMSO+90%培养基/FBS），里面存大概1*10^6个细胞</p>
+</li>
+<li><p>细胞离心200g*3min</p>
+</li>
+<li><p>细胞计数：台盼蓝和细胞液1:1混匀，取10μl打进计数板，控制示数在1~2*10^6/ml的结果可信度较高，偏高或偏低可以自行稀释</p>
+</li>
+<li><p>醇沉步骤：1体积的DNA，加入0.1体积的预冷NaAc，再加入2.7体积的预冷无水乙醇（顺序不可颠倒），-20℃过夜，70%乙醇洗。</p>
+</li>
+<li><p>流式细胞仪。</p>
+<p>流式通道主要可以分为散射光通道和荧光通道：散射光通道有两个，包括FSC通道和SSC通道，一般所有的流式细胞仪均有这2个散射光通道；不同型号的流式细胞仪其荧光通道的多少差异较大，有的甚至没有光通道。FSC，即前向角散射，它的值代表细胞的大小。细胞体积越大，其FSC值就越大。所以可以利用细胞的FSC值初步比较细胞的大小，利用FSC值对细胞进行分群和分类。SSC，即侧向角散射，它的值代表细胞的颗粒度（granularity）。细胞越不规则，细胞表面的突起越多，细胞内能够引起激光散射的细胞器或者颗粒性物质越多，其SSC值就越大。所以可以利用细胞的SSC值初步比较细胞的颗粒度，利用SSC值对细胞进行分群和分类。一般在硏究细胞样品时，首先关注的就是样品中细胞的FSC-SSC散点图，x轴代表FSC值，y轴代表SSC值，将细胞都显示于该散点图中，可以初步根据细胞的大小和颗粒度对细胞进行分群和分类。样品细胞不需要标记任何荧光素偶联抗体，直接上样分析就可以得到样品细胞的FSC值和SSC值，其值代表的是细胞的大小和颗粒度这两个基本的物理特征，所以样品的FSC-SSC散点图又称为样品细胞的 “物理图”。</p>
+<p>荧光通道表示的不是细胞特有的物理特征，而是其化学特征。如需要检测样品中是否有细胞表达某一CD分子，则需要标记荧光素偶联的该CD分子的抗体，表达有该CD分子的细胞就会结合荧光素偶联抗的该CD分子的抗体，表达有该CD分子的细胞就会结合荧光素偶联抗体，其中的荧光素被相应的激光激发后产生荧光，该荧光信号通过光路系统被相应的荧光通道接收，就能得到该样品中是否有细胞表达该CD分子，以及有多少比例的细胞表达该CD分子等信息。荧光通道接收到的信号越强，表示细胞上结合的荧光素越多，那么细胞表面表达的该CD分子就越多，因此可根据荧光信号的强弱判断细胞表达该CD分子的相对数量。总之，荧光通道值反映接收到的荧光信号的强弱，从而反映细胞上结合的荧光素的量，进一步反映细胞上表达该CD分子的量，最后间接反映细胞表达某CD分子这一化学特征。</p>
+<p>不同细胞群的FSC值和SSC值最多相差几倍，而荧光信号强弱之间一般相差很大，阴性细胞与阳性细胞之间、强阳性与弱阳性之间有时可以相差几十倍、几百倍，甚至几千倍，呈指数关系。所以，流式图数轴上FSC值和SsC值以“一般数序形式”表示，而荧光通道值常以“对数形式”（logarithmic scale）表示，在识图时需要注意数轴的表示形式。当然，并不是所有的荧光通道值都以“对数形式”表示，当荧光信号值相差不多时，也可以“一般数序形式”表示，如P染色检测细胞内DNA含量以及Hoechst33342染色分析和分选侧群干细胞时，均以“一般数序形式”表示</p>
+</li>
+<li><p>CAG, CMV, EF1α都是强启动子</p>
+</li>
+<li><p>Retrovirus的结构：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.collegedunia.com/public/image/38c304db16e7f5178001c5e01c2ad378.png?tr=w-500,h-366,c-force" alt="img"></p>
+</li>
+</ol>
+<ol>
+<li><strong>Envelop-</strong> It is composed of lipids as well as glycoproteins encoded by env genes. It is responsible for the following three functions.</li>
+</ol>
+<ul>
+<li>The lipid bilayer provides protection to the retrovirus from the extracellular environment.</li>
+<li>It permits the entry and exit of retrovirus through the host’s cell via endothermal membrane trafficking.</li>
+<li>It enables retrovirus to directly enter the cell by fusing with their membrane.</li>
+</ul>
+<ol>
+<li><strong>RNA-</strong> It consists of a dimer RNA which has a 5’ cap at and a 3’ poly-A tail. At the terminal, it has non-coding regions which help in replication. The internal regions encode virion proteins for gene expression.</li>
+<li><strong>Proteins-</strong> It consists of four kinds of proteins, gag proteins, pol proteins, protease, and env proteins.</li>
+</ol>
+<ul>
+<li>Group-specific antigen (gag) proteins- It is the major component of viral capsid and possesses matrix (MA) and nucleocapsid (NC) as the two nucleic acid binding domains. </li>
+<li>Protease- Its appearance is different in different viruses. It is responsible for proteolytic cleavages during virion maturation to form mature gag and pol protein.</li>
+<li>Pol proteins- It functions for the synthesis of viral DNA and integration into host cell DNA after infection.</li>
+<li>Env proteins- It plays the role in the entrance of virion into the host’s cell. It is the env proteins that make the retrovirus infectious.</li>
+</ul>
+<h2 id="Replication-of-retrovirus"><a href="#Replication-of-retrovirus" class="headerlink" title="Replication of retrovirus"></a>Replication of retrovirus</h2><p>Following steps are involved in the life cycle of the retrovirus.</p>
+<ol>
+<li><strong>Binding-</strong> The virus attaches to the surface of the host’s cell. </li>
+<li><strong>Invasion-</strong> The envelope around the virus merges with the membrane of the host’s cell and the viral RNA moves into the cell. </li>
+<li><strong>Reverse Transcription-</strong> Viral RNA turns into the DNA to become compatible with the host’s cell genome. Viral DNA is incorporated into the host’s genome. </li>
+<li><strong>Genome Integration-</strong> Inside the nucleus, a special viral enzyme integrates the viral DNA with the host’s cell DNA.</li>
+<li><strong>Replication-</strong> The virus uses the host’s machinery to transcribe and translate viral genes and produce new viral components. Each end of the viral genome has a repeated sequence of “R” that enhances the integration and the host’s cells transcribe at a faster rate. Packaging signal sequence of “P” in the viral genome allows incorporation of the newly synthesized RNA into the new virus. The host’s ribosome translates the viral gene into protein, translation takes place in the cytosol of the host’s cell.</li>
+</ol>
+<ul>
+<li>gag gene is translated into capsid protein</li>
+<li>pol gene is transcribed into reverse transcriptase</li>
+<li>env gene is translated into envelope protein</li>
+</ul>
+<ol>
+<li><strong>Assembly-</strong> The new viral components formed are assembled near the cell surface and form new viruses.</li>
+<li><strong>Release-</strong> New viruses formed come out of the host’s cell and it can infect other cells of the host. <strong>Infected cells can survive while viruses are being replicated and released.</strong></li>
+</ol>
+<p>Sometimes retrovirus picks up proto-oncogene from the mammalian host and converts it into the oncogene, this causes cancer in animals.</p>
+<hr>
+<h4 id="Transcriptional-structure-of-HML-2-provirus"><a href="#Transcriptional-structure-of-HML-2-provirus" class="headerlink" title="Transcriptional structure of HML-2 provirus"></a>Transcriptional structure of HML-2 provirus</h4><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/image-20220924105411758.png?x-oss-process=style/screenshots" alt="image-20220924105411758"></p>
+<p>HML-2 proviral organization is described in Figure 1. In the proviral form of HML-2, the sequences of the four ORFs overlap, flanked by a 5’ and a 3’ LTR. There are two SD and two splice acceptor (SA) sites. As explained previously, there are two types of proviruses characterized by the presence or absence of a 292 bp-deletion in the pol–env junction. Four mRNAs have been described as products of HML-2 transcription (Hohn et al. 2013) (Figure 1). One transcript has three ORFs to encode polyproteins Gag, protease (Pro) and polymerase (Pol). In this transcript, only gag has a start codon (AUG); pro and pol translation is mediated by two ribosomal frame shifts (–1). As a result, and despite having overlapping DNA sequences, the three proteins do not have any amino acid sequence in common. Gag, Pro and Pol are translated as polyproteins. Gag contains the sequences to form the structural proteins matrix (MA), capsid (CA) and nucleocapsid (NC) and Pol forms the reverse transcriptase (RT), which has Rnase H and polymerase domains, and the integrase (IN). The pro ORF also encodes the enzyme dUTPase. The functional proteins are formed by proteolysis of the polyproteins Gag, Gag-Pro and Gag-Pro-Pol. Another mRNA encodes the protein Env, which has three different domains: the signal peptide (SP), surface unit (SU) and transmembrane domain (TM). The third transcript is the product of alternative splicing of the env ORF and encodes Rec. This transcript is only produced by type 2 HML-2 proviruses, which do not have the 292-bp deletion. Rec has 87 amino acids in common with Env, corresponding to its first exon. The second exon starts in a different frame and therefore the amino acid sequence is not shared with Env. The fourth transcript, np9, is only produced by type 1 proviruses. As a result of the deletion at the pol–env junction, the SD2 site is lost and an alternative SD is used for the splicing (Lower et al. 1995; Armbruester et al. 2002) (Figure 1). Due to this change only the first 14 amino-acids of Np9 are shared with Env and Rec.</p>
+<h4 id="HERV-K-proteins"><a href="#HERV-K-proteins" class="headerlink" title="HERV-K proteins"></a>HERV-K proteins</h4><p>Two -1 ribosomal frameshifts are needed to translate the 160-kDa HML-2 Gag-Pro-Pol precursor protein.</p>
+<ul>
+<li><p>Gag (74kDa polyprotein)</p>
+<ul>
+<li>matrix protein (MA, 15kDa)</li>
+<li>spacer peptide of 14 aa (SP1, 15kDa)</li>
+<li>capsid (CA, 27kDa)</li>
+<li>nucleocapsid (NC, 10kDa)</li>
+<li>QP1 (C-terminally encoded glutamine- and proline-rich peptides, 23aa)</li>
+<li>QP2 (C-terminally encoded glutamine- and proline-rich peptides, 19aa)</li>
+</ul>
+</li>
+<li><p>Pro (Protease)</p>
+<p>In general, in mammalian retroviruses the proteinase is encoded as part of the Gag-Pol polyprotein. In contrast, HML-2 proteinase is encoded by its own reading frame located between gag and pol. It can be translated as Gag-Pro or Gag-Pro-Pol polyproteins. The protease undergoes autocatalytic cleavage into an 18-kDa fragment that cleaves Gag.</p>
+</li>
+<li><p>dUTPase</p>
+<p>May contains the 3’ region of gag and the 5’ region of pro.</p>
+<p>fuctions:</p>
+<ul>
+<li>removes dUTP from the deoxynucleotide pool, reducing the probability of uracil incorporation into the DNA</li>
+<li>produces the dTTP precursor dUMP</li>
+</ul>
+</li>
+<li><p>Pol (polymerase): RT, IN and RNase H</p>
+<ul>
+<li><p>RT (reverse transcriptase)， 逆转录和合成第二条DNA链</p>
+</li>
+<li><p>RNase H，消化模板RNA链</p>
+</li>
+<li><p>IN (integrase)，将合成的DNA双链整合进host基因组</p>
+<p>In the human genome (GRCh38) only eight HML-2 proviruses have intact integrase motifs.</p>
+</li>
+</ul>
+</li>
+<li><p>Env</p>
+<p>Retroviral Env proteins are generally synthesized as precursors that trimerize in the endoplasmic reticulum and are cleaved by cellular furin-proteases in the late Golgi apparatus to generate two subunits: SU, which interacts with the receptor on target cells, and TM, which mediates fusion and is anchored in the viral envelope near its C terminus. After cleavage, SU and TM remain associated either non-covalently or via an intersubunit disulfide bond, resulting in trimers of heterodimers that traffic to the cellular plasma membrane and become part of the envelope in budding viral particles (Henzy and Coffin 2013).</p>
+</li>
+<li><p>Rec (14kDa)</p>
+<ul>
+<li>It is an accessory protein that binds to viral transcripts to facilitate their nucleocytoplasmic transport and incorporation of the viral genome into particles in the cytoplasm.</li>
+<li>accumulates primarily in the nucleoli but is also present in the cytoplasm.</li>
+</ul>
+</li>
+<li><p>Np9</p>
+<p>has no known function in HML-2. Like Rec, Np9 translocates to the nucleoli and can activate several oncogenic pathways.</p>
+</li>
+</ul>
+<blockquote>
+<p>来源：Garcia-Montojo M, Doucet-O’Hare T, Henderson L, Nath A. Human endogenous retrovirus-K (HML-2): a comprehensive review. Crit Rev Microbiol. 2018 Nov;44(6):715-738. doi: 10.1080/1040841X.2018.1501345. Epub 2018 Oct 14. PMID: 30318978; PMCID: PMC6342650.</p>
+</blockquote>
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css"></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="https://fanyiming.life">小阿鸣</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://fanyiming.life/posts/6dcdcfcf.html">https://fanyiming.life/posts/6dcdcfcf.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://unpkg.com/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://unpkg.com/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> Donate</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/image-20220813060933967.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/image-20220813060933967.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/df4eaa5b.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">轮转日记</div></div></a></div><div class="next-post pull-right"><a href="/posts/28551dcd.html"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">挖坑填坑记录</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/footer_bg.webp')"><div id="footer-wrap"><div class="footer_custom_text">如果你喜欢浪漫，这里并非寸草不生</div><div id="running-time"><script>setInterval(()=>{let create_time=Math.round(new Date('2022-03-25 00:00:00').getTime()/1000);let timestamp=Math.round((new Date().getTime()+8*60*60*1000)/1000);let second=timestamp-create_time;let time=new Array(0,0,0,0,0);if(second>=365*24*3600){time[0]=parseInt(second/(365*24*3600));second%=365*24*3600;}if(second>=24*3600){time[1]=parseInt(second/(24*3600));second%=24*3600;}if(second>=3600){time[2]=parseInt(second/3600);second%=3600;}if(second>=60){time[3]=parseInt(second/60);second%=60;}if(second>0){time[4]=second;}currentTimeHtml='本站已安全运行 '+time[0]+' 年 '+time[1]+' 天 '+time[2]+' 时 '+time[3]+' 分 '+time[4]+' 秒';document.getElementById("running-time").innerHTML=currentTimeHtml;},1000);</script></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="refresh-cache" type="button" title="刷新缓存" onclick="refreshCache()"><i class="fas fa-refresh fa-spin"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://unpkg.com/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://unpkg.com/instant.page/instantpage.js" type="module"></script><script src="https://unpkg.com/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://unpkg.com/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadWaline () {
+  function insertCSS () {
+    const link = document.createElement("link")
+    link.rel = "stylesheet"
+    link.href = "https://unpkg.com/@waline/client/dist/waline.css"
+    document.head.appendChild(link)
+  }
+
+  function initWaline () {
+    const waline = Waline.init(Object.assign({
+      el: '#waline-wrap',
+      serverURL: 'https://walineserver.fanyiming.life/',
+      pageview: true,
+      dark: 'html[data-theme="dark"]',
+      path: window.location.pathname,
+      comment: true,
+    }, null))
+  }
+
+  if (typeof Waline === 'function') initWaline()
+  else {
+    insertCSS()
+    getScript('https://unpkg.com/@waline/client/dist/waline.js').then(initWaline)
+  }
+}
+
+if ('Waline' === 'Waline' || !false) {
+  if (false) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
+  else setTimeout(loadWaline, 0)
+} else {
+  function loadOtherComment () {
+    loadWaline()
+  }
+}</script></div><script data-pjax async src="/js/weather.js"></script><script data-pjax src="/js/weather1.js"></script><script data-pjax async src="/js/custom/refresh.js"></script><script src="https://unpkg.com/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('swiper-position') && location.pathname =='/'){
+    
+    var parent = document.getElementById('swiper-position');
+    var child = '<div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/bf51e5cd35f9b9eabef2399423b9fe34e4dcfa1a.jpg@942w_531h_progressive.webp" alt="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/bf51e5cd35f9b9eabef2399423b9fe34e4dcfa1a.jpg@942w_531h_progressive.webp"/></div><div class="blog-slider__content"><span class="blog-slider__code">2022-07-02</span><a class="blog-slider__title" href="posts/f3872a09.html">会说话是艺术啊</a><div class="blog-slider__text">一篇英文邮件的修改前后</div><a class="blog-slider__button" href="posts/f3872a09.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/9d627b30a94d17b6b43672cfcfa3788f74966c44.jpg@942w_660h_progressive.webp" alt="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/9d627b30a94d17b6b43672cfcfa3788f74966c44.jpg@942w_660h_progressive.webp"/></div><div class="blog-slider__content"><span class="blog-slider__code">2022-07-10</span><a class="blog-slider__title" href="posts/25a9c68a.html">做自己尊重的人</a><div class="blog-slider__text">饶毅 2015年 北京大学 本科生毕业典礼 教师代表致辞</div><a class="blog-slider__button" href="posts/25a9c68a.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/cover_lzdbygy.webp" alt="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/cover_lzdbygy.webp"/></div><div class="blog-slider__content"><span class="blog-slider__code">2022-06-27</span><a class="blog-slider__title" href="posts/5a9709cd.html">龙舟队毕业感言</a><div class="blog-slider__text">　</div><a class="blog-slider__button" href="posts/5a9709cd.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/cover_wzwhrz.webp" alt="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/cover_wzwhrz.webp"/></div><div class="blog-slider__content"><span class="blog-slider__code">2022-08-10</span><a class="blog-slider__title" href="posts/cb901750.html">网站维护日志</a><div class="blog-slider__text">　</div><a class="blog-slider__button" href="posts/cb901750.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/8b2c5f50-5a1a-424f-aed1-f1884bed7ef4.png" alt="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/8b2c5f50-5a1a-424f-aed1-f1884bed7ef4.png"/></div><div class="blog-slider__content"><span class="blog-slider__code">2022-07-14</span><a class="blog-slider__title" href="posts/d8914b28.html">记事帖：第五十四届国际化学奥林匹克</a><div class="blog-slider__text">这一个月作为IChO2022组委会国际数据中心“副主任”的一点点杂记</div><a class="blog-slider__button" href="posts/d8914b28.html">详情</a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div>';
+    console.log('已挂载swiper')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script>
+<script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiper.min.js"></script>
+<script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper@0.18/swiper/swiperindex.js"></script>
+<style></style><!-- hexo injector body_end end --></body></html>

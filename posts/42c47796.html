@@ -1,0 +1,402 @@
+<script>if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').then(() => {
+    if (localStorage.getItem('install') !== 'true') {
+      localStorage.setItem('install', 'true')
+      location.reload()
+    }
+  })
+}
+
+
+</script><!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>细胞社会的联系 | Eamon 's Blog</title><meta name="author" content="小阿鸣"><meta name="copyright" content="小阿鸣"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="细胞连接、细胞黏着及其分子基础、细胞外基质">
+<meta property="og:type" content="article">
+<meta property="og:title" content="细胞社会的联系">
+<meta property="og:url" content="https://fanyiming.life/posts/42c47796.html">
+<meta property="og:site_name" content="Eamon &#39;s Blog">
+<meta property="og:description" content="细胞连接、细胞黏着及其分子基础、细胞外基质">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/bc6107b6e3e7cd219f674ef0b36bff911adefd33.jpg@942w_428h_progressive.webp">
+<meta property="article:published_time" content="2022-05-01T17:47:54.000Z">
+<meta property="article:modified_time" content="2022-09-24T12:48:55.279Z">
+<meta property="article:author" content="小阿鸣">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/bc6107b6e3e7cd219f674ef0b36bff911adefd33.jpg@942w_428h_progressive.webp"><link rel="shortcut icon" href="/"><link rel="canonical" href="https://fanyiming.life/posts/42c47796"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="manifest" href="/manifest.json"/><link rel="apple-touch-icon" sizes="180x180" href="/img/pwa/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/img/pwa/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/img/pwa/favicon-16x16.png"/><link rel="mask-icon" href="/img/pwa/safari-pinned-tab.svg" color="#5bbad5"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://unpkg.com/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://unpkg.com/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.json","preload":true,"languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: true,
+    post: false
+  },
+  runtime: 'days',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"Author: 小阿鸣","link":"Link: ","source":"Source: Eamon 's Blog","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source."}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://unpkg.com/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://unpkg.com/flickr-justified-gallery/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '细胞社会的联系',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-09-24 20:48:55'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom@1.0.1.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiper.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiperstyle.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.1.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">Loading...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">140</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">23</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-lightbulb"></i><span> Posts</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> History Articles</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/MessageBox/"><i class="fa-fw fas fa-comment"></i><span> Message</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> Books</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-camera"></i><span> Gallery</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></li><li><a class="site-page child" href="/resources/"><i class="fa-fw fas fa-download"></i><span> Resources</span></a></li><li><a class="site-page child" href="/bb/"><i class="fa-fw fas fa-cloud"></i><span> bbtime</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-user"></i><span> About</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/bc6107b6e3e7cd219f674ef0b36bff911adefd33.jpg@942w_428h_progressive.webp')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Eamon 's Blog</a></span><div id="he-plugin-simple"></div><div id="none_space"></div><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-lightbulb"></i><span> Posts</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> History Articles</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/MessageBox/"><i class="fa-fw fas fa-comment"></i><span> Message</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> Books</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-camera"></i><span> Gallery</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></li><li><a class="site-page child" href="/resources/"><i class="fa-fw fas fa-download"></i><span> Resources</span></a></li><li><a class="site-page child" href="/bb/"><i class="fa-fw fas fa-cloud"></i><span> bbtime</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-user"></i><span> About</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">细胞社会的联系</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-05-01T17:47:54.000Z" title="Created 2022-05-02 01:47:54">2022-05-02</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-09-24T12:48:55.279Z" title="Updated 2022-09-24 20:48:55">2022-09-24</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/">生物学基础</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%BB%86%E8%83%9E%E7%94%9F%E7%89%A9%E5%AD%A6/">细胞生物学</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">1.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>4min</span></span><span class="post-meta-separator">|</span><span id="" data-flag-title="细胞社会的联系"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span class="waline-pageview-count" data-path="/posts/42c47796.html"><i class="fa-solid fa-spinner fa-spin"></i></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">Comments:</span><a href="/posts/42c47796.html#post-comment"><span class="waline-comment-count" data-path="/posts/42c47796.html"><i class="fa-solid fa-spinner fa-spin"></i></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p><meta name="referrer content="no-referrer></p>
+<style> .post-body img{width: 100%; max-width: 40em;}</style>
+
+<blockquote>
+<p>在多细胞生物体内，没有一个细胞是“孤立”的。通过<strong>细胞通讯</strong>、<strong>细胞连接</strong>以及<strong>细胞与胞外基质的相互作用</strong>，细胞与细胞间建立结构、物质和信息的联系。——翟中和《细胞生物学》</p>
+</blockquote>
+<h1 id="细胞连接"><a href="#细胞连接" class="headerlink" title="细胞连接"></a>细胞连接</h1><h2 id="封闭连接"><a href="#封闭连接" class="headerlink" title="封闭连接"></a>封闭连接</h2><p>分布在上皮细胞之间，比如小肠绒毛上皮细胞的紧密连接，在靠近绒毛一侧的细胞之间形成。这样有两个<strong>作用</strong>：第一是小分子想要通过肠壁只能通过胞质，不能通过细胞间的缝隙。第二是维持细胞极性，小肠绒毛上皮细胞的肠腔一侧和对侧细胞膜上的结构是差别很大的，这些膜蛋白同样无法越过紧密连接移动到对侧。<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/xbshdlx_img1.webp" alt="image.png"></p>
+<h2 id="锚定连接"><a href="#锚定连接" class="headerlink" title="锚定连接"></a>锚定连接</h2><ul>
+<li>连接：通过质膜蛋白和细胞骨架</li>
+<li>分类<ul>
+<li>连接中间丝<ul>
+<li>桥粒</li>
+<li>半桥粒</li>
+</ul>
+</li>
+<li>连接肌动蛋白丝<ul>
+<li>黏合带</li>
+<li>黏合斑</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>锚定连接的跟前面的封闭连接的一个重要的区别是它是能够<strong>提供机械张力</strong>的，原因是锚定连接都连接着细胞骨架。之所以叫“锚定”，是因为这种<strong>连接方式很像一个纽扣，形态上长得也像一个纽扣</strong>。四种锚定连接（桥粒、半桥粒、黏合带、黏合斑）的结构都分为三个部分，从细胞内到细胞外分别是<strong>细胞骨架、锚蛋白、跨膜粘连蛋白</strong>。起“胶水”作用的是最外面伸出去的跨膜粘连蛋白。其中桥粒和半桥粒连接的骨架是中间丝，黏合带和黏合斑连接的细胞骨架是肌动蛋白丝。另一种分法：<strong>桥粒和黏合带是细胞间的连接</strong>；而<strong>半桥粒和黏合斑是连接细胞和胞外基质</strong>（胶原和纤连蛋白等）。具体参与的蛋白如下：<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/xbshdlx_img2.webp" alt="image.png"><br>它们的作用：</p>
+<ul>
+<li>桥粒：增强抵抗外界压力和张力的机械强度。</li>
+<li>半桥粒可以将上皮细胞附着在基底膜上。</li>
+<li>黏合带与胚胎发育形态建成有关，如能促使上皮细胞层弯曲形成神经管等结构。它还出现在紧密连接的下方。</li>
+<li>黏合斑：有助于维持细胞在运动中的张力及细胞生长的信号传递。</li>
+</ul>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/xbshdlx_img3.webp" alt="image.png"></p>
+<h2 id="通讯连接"><a href="#通讯连接" class="headerlink" title="通讯连接"></a>通讯连接</h2><p>顾名思义，前面的“封闭连接”和“锚定连接”就只是连接，通讯连接则是<strong>可以相互交换物质</strong>的，有三种：间隙连接、植物的胞间连丝和化学突触。这里注意跟离子通道等物质的跨膜运输区别开。后者更多是指细胞跟细胞外界进行物质交换时讲的，而这里的通讯连接是细胞间连接的一种，是细胞-细胞之间之间的物质交换方式。</p>
+<h3 id="间隙连接"><a href="#间隙连接" class="headerlink" title="间隙连接"></a>间隙连接</h3><h4 id="间隙连接的结构"><a href="#间隙连接的结构" class="headerlink" title="间隙连接的结构"></a>间隙连接的结构</h4><p>基本单位是“连接子”（connexon），每个connexon由6个相同或相似的跨膜连接蛋白（connexin)环状排列形成。相邻细胞各出一个connexon，它们亲个嘴就形成间隙连接了。connexon常常一群一群的出现，形成一块区域。connexin有很多类型，但它们比较保守，都是4次跨膜结构。<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/xbshdlx_img4.webp" alt="image.png"></p>
+<h4 id="间隙连接的功能"><a href="#间隙连接的功能" class="headerlink" title="间隙连接的功能"></a>间隙连接的功能</h4><h5 id="代谢偶联"><a href="#代谢偶联" class="headerlink" title="代谢偶联"></a>代谢偶联</h5><p>意思是细胞共享一些物质，比如合成原料啥的。更厉害的是还能共享一些信号分子，比如一个胰腺腺泡细胞被激活释放了cAMP和Ca2+，然后这些第二信使通过间隙连接跑到相邻细胞了。那就一下子有很多细胞同时开始分泌消化酶。</p>
+<h5 id="电突触"><a href="#电突触" class="headerlink" title="电突触"></a>电突触</h5><p>电突触也是一种间隙连接，直接传递电信号，比化学突触快得多。</p>
+<h5 id="胚胎发育中的作用"><a href="#胚胎发育中的作用" class="headerlink" title="胚胎发育中的作用"></a>胚胎发育中的作用</h5><ul>
+<li>卵泡中卵母细胞和透明带外滤泡细胞、以及滤泡细胞之间的间隙连接。</li>
+<li>胚胎发育早期的“位置信息”可能受间隙连接调控。因为科学家发现小鼠胚胎不同发育时期可能选择性开闭细胞之间的间隙连接，这样就是信号分子局限在“设定好”的细胞群里面了。</li>
+</ul>
+<h4 id="间隙连接通透性的调节"><a href="#间隙连接通透性的调节" class="headerlink" title="间隙连接通透性的调节"></a>间隙连接通透性的调节</h4><h5 id="底物选择性"><a href="#底物选择性" class="headerlink" title="底物选择性"></a>底物选择性</h5><p>如豚鼠耳蜗支持细胞间的间隙连接对阳离子的通透性比阴离子大；耳蜗感觉上皮细胞的间隙连接对正电荷的分子通透性大。</p>
+<h5 id="组织特异性"><a href="#组织特异性" class="headerlink" title="组织特异性"></a>组织特异性</h5><p>不同连接蛋白组成的异聚体连接子，一般具有通透功能，有时没有。如心肌细胞的Cx43和心脏电传导系统细胞的Cx40配对形成的连接子就没有功能。保证了心脏器官不同类型细胞功能的相对独立。</p>
+<h5 id="受pH和钙离子浓度的调节"><a href="#受pH和钙离子浓度的调节" class="headerlink" title="受pH和钙离子浓度的调节"></a>受pH和钙离子浓度的调节</h5><p>RT</p>
+<h5 id="受胞外化学信号的调节"><a href="#受胞外化学信号的调节" class="headerlink" title="受胞外化学信号的调节"></a>受胞外化学信号的调节</h5><p>如cAMP激活蛋白激酶，蛋白激酶磷酸化连接子使它的通透性改变。</p>
+<h3 id="胞间连丝"><a href="#胞间连丝" class="headerlink" title="胞间连丝"></a>胞间连丝</h3><h4 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h4><p>细胞壁打个洞，光面内质网穿进去形成<strong>链样管</strong>(desmotubule)，内质网和细胞壁之间那一圈儿叫<strong>环孔</strong>，内容物就是细胞液。</p>
+<h4 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h4><p><strong>有选择性</strong>的物质交换<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/xbshdlx_img5.webp" alt="image.png"></p>
+<h3 id="化学突触"><a href="#化学突触" class="headerlink" title="化学突触"></a>化学突触</h3><p>这个就略了吧，神经生物学有详细介绍。</p>
+<hr>
+<p>（后面这些以后遇见了再复习吧）</p>
+<h1 id="细胞黏着及其分子基础"><a href="#细胞黏着及其分子基础" class="headerlink" title="细胞黏着及其分子基础"></a>细胞黏着及其分子基础</h1><h2 id="钙黏蛋白"><a href="#钙黏蛋白" class="headerlink" title="钙黏蛋白"></a>钙黏蛋白</h2><h2 id="选择素"><a href="#选择素" class="headerlink" title="选择素"></a>选择素</h2><h2 id="免疫球蛋白超家族"><a href="#免疫球蛋白超家族" class="headerlink" title="免疫球蛋白超家族"></a>免疫球蛋白超家族</h2><h2 id="整联蛋白"><a href="#整联蛋白" class="headerlink" title="整联蛋白"></a>整联蛋白</h2><h1 id="细胞外基质"><a href="#细胞外基质" class="headerlink" title="细胞外基质"></a>细胞外基质</h1><h2 id="胶原"><a href="#胶原" class="headerlink" title="胶原"></a>胶原</h2><h2 id="弹性蛋白"><a href="#弹性蛋白" class="headerlink" title="弹性蛋白"></a>弹性蛋白</h2><h2 id="糖胺聚糖和蛋白聚糖"><a href="#糖胺聚糖和蛋白聚糖" class="headerlink" title="糖胺聚糖和蛋白聚糖"></a>糖胺聚糖和蛋白聚糖</h2><h2 id="纤连蛋白和层粘连蛋白"><a href="#纤连蛋白和层粘连蛋白" class="headerlink" title="纤连蛋白和层粘连蛋白"></a>纤连蛋白和层粘连蛋白</h2><h2 id="基膜与细胞外被"><a href="#基膜与细胞外被" class="headerlink" title="基膜与细胞外被"></a>基膜与细胞外被</h2><h2 id="植物细胞壁"><a href="#植物细胞壁" class="headerlink" title="植物细胞壁"></a>植物细胞壁</h2><hr>
+<h1 id="学英语"><a href="#学英语" class="headerlink" title="学英语"></a>学英语</h1><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>english</th>
+<th>中文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>occluding junction</td>
+<td>封闭连接</td>
+</tr>
+<tr>
+<td>tight junction</td>
+<td>紧密连接</td>
+</tr>
+<tr>
+<td>anchoring junction</td>
+<td>锚定连接</td>
+</tr>
+<tr>
+<td>desmosome</td>
+<td>桥粒</td>
+</tr>
+<tr>
+<td>hemidesmosome</td>
+<td>半桥粒</td>
+</tr>
+<tr>
+<td>adhesion belt</td>
+<td>黏合带</td>
+</tr>
+<tr>
+<td>focal adhesion</td>
+<td>黏合斑</td>
+</tr>
+<tr>
+<td>gap junction</td>
+<td>间隙连接</td>
+</tr>
+<tr>
+<td>chemical synapse</td>
+<td>化学突触</td>
+</tr>
+<tr>
+<td>plasmodesmata/plasmodesma/plasmodesm</td>
+<td>胞间连丝</td>
+</tr>
+<tr>
+<td>desmotubule</td>
+<td>连丝小管/链样管</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id="思维导图"><a href="#思维导图" class="headerlink" title="思维导图"></a>思维导图</h1><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/xbshdlx_img6.webp" style="width: 100%;max-width:100%;"/></p>
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css"></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="https://fanyiming.life">小阿鸣</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://fanyiming.life/posts/42c47796.html">https://fanyiming.life/posts/42c47796.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/bc6107b6e3e7cd219f674ef0b36bff911adefd33.jpg@942w_428h_progressive.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://unpkg.com/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://unpkg.com/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> Donate</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/image-20220813060933967.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/image-20220813060933967.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/98155b6f.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/b41221b51cf7f202998d0540068c201e01c1d9b7.jpg@942w_531h_progressive.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">记一次优秀毕业生评选</div></div></a></div><div class="next-post pull-right"><a href="/posts/cb6563c8.html"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/158c98a9728eb8562e4a455086524dad72361699.jpg@942w_629h_progressive.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Papez环路和边缘系统</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%86%E8%83%9E%E8%BF%9E%E6%8E%A5"><span class="toc-text">细胞连接</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%81%E9%97%AD%E8%BF%9E%E6%8E%A5"><span class="toc-text">封闭连接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%94%9A%E5%AE%9A%E8%BF%9E%E6%8E%A5"><span class="toc-text">锚定连接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%9A%E8%AE%AF%E8%BF%9E%E6%8E%A5"><span class="toc-text">通讯连接</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%B4%E9%9A%99%E8%BF%9E%E6%8E%A5"><span class="toc-text">间隙连接</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%97%B4%E9%9A%99%E8%BF%9E%E6%8E%A5%E7%9A%84%E7%BB%93%E6%9E%84"><span class="toc-text">间隙连接的结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%97%B4%E9%9A%99%E8%BF%9E%E6%8E%A5%E7%9A%84%E5%8A%9F%E8%83%BD"><span class="toc-text">间隙连接的功能</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BB%A3%E8%B0%A2%E5%81%B6%E8%81%94"><span class="toc-text">代谢偶联</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%94%B5%E7%AA%81%E8%A7%A6"><span class="toc-text">电突触</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%83%9A%E8%83%8E%E5%8F%91%E8%82%B2%E4%B8%AD%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-text">胚胎发育中的作用</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%97%B4%E9%9A%99%E8%BF%9E%E6%8E%A5%E9%80%9A%E9%80%8F%E6%80%A7%E7%9A%84%E8%B0%83%E8%8A%82"><span class="toc-text">间隙连接通透性的调节</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BA%95%E7%89%A9%E9%80%89%E6%8B%A9%E6%80%A7"><span class="toc-text">底物选择性</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BB%84%E7%BB%87%E7%89%B9%E5%BC%82%E6%80%A7"><span class="toc-text">组织特异性</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8F%97pH%E5%92%8C%E9%92%99%E7%A6%BB%E5%AD%90%E6%B5%93%E5%BA%A6%E7%9A%84%E8%B0%83%E8%8A%82"><span class="toc-text">受pH和钙离子浓度的调节</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8F%97%E8%83%9E%E5%A4%96%E5%8C%96%E5%AD%A6%E4%BF%A1%E5%8F%B7%E7%9A%84%E8%B0%83%E8%8A%82"><span class="toc-text">受胞外化学信号的调节</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%83%9E%E9%97%B4%E8%BF%9E%E4%B8%9D"><span class="toc-text">胞间连丝</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%93%E6%9E%84"><span class="toc-text">结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD"><span class="toc-text">功能</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%96%E5%AD%A6%E7%AA%81%E8%A7%A6"><span class="toc-text">化学突触</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%86%E8%83%9E%E9%BB%8F%E7%9D%80%E5%8F%8A%E5%85%B6%E5%88%86%E5%AD%90%E5%9F%BA%E7%A1%80"><span class="toc-text">细胞黏着及其分子基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%92%99%E9%BB%8F%E8%9B%8B%E7%99%BD"><span class="toc-text">钙黏蛋白</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E7%B4%A0"><span class="toc-text">选择素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%8D%E7%96%AB%E7%90%83%E8%9B%8B%E7%99%BD%E8%B6%85%E5%AE%B6%E6%97%8F"><span class="toc-text">免疫球蛋白超家族</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B4%E8%81%94%E8%9B%8B%E7%99%BD"><span class="toc-text">整联蛋白</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%86%E8%83%9E%E5%A4%96%E5%9F%BA%E8%B4%A8"><span class="toc-text">细胞外基质</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%83%B6%E5%8E%9F"><span class="toc-text">胶原</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%B9%E6%80%A7%E8%9B%8B%E7%99%BD"><span class="toc-text">弹性蛋白</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B3%96%E8%83%BA%E8%81%9A%E7%B3%96%E5%92%8C%E8%9B%8B%E7%99%BD%E8%81%9A%E7%B3%96"><span class="toc-text">糖胺聚糖和蛋白聚糖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%A4%E8%BF%9E%E8%9B%8B%E7%99%BD%E5%92%8C%E5%B1%82%E7%B2%98%E8%BF%9E%E8%9B%8B%E7%99%BD"><span class="toc-text">纤连蛋白和层粘连蛋白</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E8%86%9C%E4%B8%8E%E7%BB%86%E8%83%9E%E5%A4%96%E8%A2%AB"><span class="toc-text">基膜与细胞外被</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A4%8D%E7%89%A9%E7%BB%86%E8%83%9E%E5%A3%81"><span class="toc-text">植物细胞壁</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%A6%E8%8B%B1%E8%AF%AD"><span class="toc-text">学英语</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE"><span class="toc-text">思维导图</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url('https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/footer_bg.webp')"><div id="footer-wrap"><div class="footer_custom_text">如果你喜欢浪漫，这里并非寸草不生</div><div id="running-time"><script>setInterval(()=>{let create_time=Math.round(new Date('2022-03-25 00:00:00').getTime()/1000);let timestamp=Math.round((new Date().getTime()+8*60*60*1000)/1000);let second=timestamp-create_time;let time=new Array(0,0,0,0,0);if(second>=365*24*3600){time[0]=parseInt(second/(365*24*3600));second%=365*24*3600;}if(second>=24*3600){time[1]=parseInt(second/(24*3600));second%=24*3600;}if(second>=3600){time[2]=parseInt(second/3600);second%=3600;}if(second>=60){time[3]=parseInt(second/60);second%=60;}if(second>0){time[4]=second;}currentTimeHtml='本站已安全运行 '+time[0]+' 年 '+time[1]+' 天 '+time[2]+' 时 '+time[3]+' 分 '+time[4]+' 秒';document.getElementById("running-time").innerHTML=currentTimeHtml;},1000);</script></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button><button id="refresh-cache" type="button" title="刷新缓存" onclick="refreshCache()"><i class="fas fa-refresh fa-spin"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://unpkg.com/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://unpkg.com/instant.page/instantpage.js" type="module"></script><script src="https://unpkg.com/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://unpkg.com/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadWaline () {
+  function insertCSS () {
+    const link = document.createElement("link")
+    link.rel = "stylesheet"
+    link.href = "https://unpkg.com/@waline/client/dist/waline.css"
+    document.head.appendChild(link)
+  }
+
+  function initWaline () {
+    const waline = Waline.init(Object.assign({
+      el: '#waline-wrap',
+      serverURL: 'https://walineserver.fanyiming.life/',
+      pageview: true,
+      dark: 'html[data-theme="dark"]',
+      path: window.location.pathname,
+      comment: true,
+    }, null))
+  }
+
+  if (typeof Waline === 'function') initWaline()
+  else {
+    insertCSS()
+    getScript('https://unpkg.com/@waline/client/dist/waline.js').then(initWaline)
+  }
+}
+
+if ('Waline' === 'Waline' || !false) {
+  if (false) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
+  else setTimeout(loadWaline, 0)
+} else {
+  function loadOtherComment () {
+    loadWaline()
+  }
+}</script></div><script data-pjax async src="/js/weather.js"></script><script data-pjax src="/js/weather1.js"></script><script data-pjax async src="/js/custom/refresh.js"></script><script src="https://unpkg.com/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('swiper-position') && location.pathname =='/'){
+    
+    var parent = document.getElementById('swiper-position');
+    var child = '<div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/bf51e5cd35f9b9eabef2399423b9fe34e4dcfa1a.jpg@942w_531h_progressive.webp" alt="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/bf51e5cd35f9b9eabef2399423b9fe34e4dcfa1a.jpg@942w_531h_progressive.webp"/></div><div class="blog-slider__content"><span class="blog-slider__code">2022-07-02</span><a class="blog-slider__title" href="posts/f3872a09.html">会说话是艺术啊</a><div class="blog-slider__text">一篇英文邮件的修改前后</div><a class="blog-slider__button" href="posts/f3872a09.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/9d627b30a94d17b6b43672cfcfa3788f74966c44.jpg@942w_660h_progressive.webp" alt="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/9d627b30a94d17b6b43672cfcfa3788f74966c44.jpg@942w_660h_progressive.webp"/></div><div class="blog-slider__content"><span class="blog-slider__code">2022-07-10</span><a class="blog-slider__title" href="posts/25a9c68a.html">做自己尊重的人</a><div class="blog-slider__text">饶毅 2015年 北京大学 本科生毕业典礼 教师代表致辞</div><a class="blog-slider__button" href="posts/25a9c68a.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/cover_lzdbygy.webp" alt="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/cover_lzdbygy.webp"/></div><div class="blog-slider__content"><span class="blog-slider__code">2022-06-27</span><a class="blog-slider__title" href="posts/5a9709cd.html">龙舟队毕业感言</a><div class="blog-slider__text">　</div><a class="blog-slider__button" href="posts/5a9709cd.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/cover_wzwhrz.webp" alt="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/cover_wzwhrz.webp"/></div><div class="blog-slider__content"><span class="blog-slider__code">2022-08-10</span><a class="blog-slider__title" href="posts/cb901750.html">网站维护日志</a><div class="blog-slider__text">　</div><a class="blog-slider__button" href="posts/cb901750.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/8b2c5f50-5a1a-424f-aed1-f1884bed7ef4.png" alt="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/8b2c5f50-5a1a-424f-aed1-f1884bed7ef4.png"/></div><div class="blog-slider__content"><span class="blog-slider__code">2022-07-14</span><a class="blog-slider__title" href="posts/d8914b28.html">记事帖：第五十四届国际化学奥林匹克</a><div class="blog-slider__text">这一个月作为IChO2022组委会国际数据中心“副主任”的一点点杂记</div><a class="blog-slider__button" href="posts/d8914b28.html">详情</a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div>';
+    console.log('已挂载swiper')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script>
+<script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiper.min.js"></script>
+<script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper@0.18/swiper/swiperindex.js"></script>
+<style></style><!-- hexo injector body_end end --></body></html>
