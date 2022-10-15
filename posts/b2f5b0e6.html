@@ -1,0 +1,305 @@
+<script>if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').then(() => {
+    if (localStorage.getItem('install') !== 'true') {
+      localStorage.setItem('install', 'true')
+      location.reload()
+    }
+  })
+}
+
+
+</script><!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>内质网应激(ERS)反应 | Eamon 's Blog</title><meta name="author" content="小阿鸣"><meta name="copyright" content="小阿鸣"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Unfolded Protein Response, UPR IRE1&#x2F;HAC1 PERK ATF6    eLife digestProtein folding—the process by which a sequence of amino acids adopts the precise shape that is needed to perform a specific biologica">
+<meta property="og:type" content="article">
+<meta property="og:title" content="内质网应激(ERS)反应">
+<meta property="og:url" content="https://fanyiming.life/posts/b2f5b0e6.html">
+<meta property="og:site_name" content="Eamon &#39;s Blog">
+<meta property="og:description" content="Unfolded Protein Response, UPR IRE1&#x2F;HAC1 PERK ATF6    eLife digestProtein folding—the process by which a sequence of amino acids adopts the precise shape that is needed to perform a specific biologica">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg">
+<meta property="article:published_time" content="2022-10-13T20:58:24.000Z">
+<meta property="article:modified_time" content="2022-10-13T21:35:00.243Z">
+<meta property="article:author" content="小阿鸣">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><link rel="shortcut icon" href="/"><link rel="canonical" href="https://fanyiming.life/posts/b2f5b0e6"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="manifest" href="/manifest.json"/><link rel="apple-touch-icon" sizes="180x180" href="/img/pwa/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/img/pwa/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/img/pwa/favicon-16x16.png"/><link rel="mask-icon" href="/img/pwa/safari-pinned-tab.svg" color="#5bbad5"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://unpkg.com/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://unpkg.com/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.json","preload":true,"languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: true,
+    post: false
+  },
+  runtime: 'days',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"Author: 小阿鸣","link":"Link: ","source":"Source: Eamon 's Blog","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source."}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://unpkg.com/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://unpkg.com/flickr-justified-gallery/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '内质网应激(ERS)反应',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-10-14 05:35:00'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom@1.0.1.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiper.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiperstyle.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.1.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">Loading...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">150</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">24</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-lightbulb"></i><span> Posts</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> History Articles</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/MessageBox/"><i class="fa-fw fas fa-comment"></i><span> Message</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> Books</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-camera"></i><span> Gallery</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></li><li><a class="site-page child" href="/resources/"><i class="fa-fw fas fa-download"></i><span> Resources</span></a></li><li><a class="site-page child" href="/bb/"><i class="fa-fw fas fa-cloud"></i><span> bbtime</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-user"></i><span> About</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Eamon 's Blog</a></span><div id="he-plugin-simple"></div><div id="none_space"></div><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-lightbulb"></i><span> Posts</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> History Articles</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/MessageBox/"><i class="fa-fw fas fa-comment"></i><span> Message</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> Books</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-camera"></i><span> Gallery</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></li><li><a class="site-page child" href="/resources/"><i class="fa-fw fas fa-download"></i><span> Resources</span></a></li><li><a class="site-page child" href="/bb/"><i class="fa-fw fas fa-cloud"></i><span> bbtime</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-user"></i><span> About</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">内质网应激(ERS)反应</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-10-13T20:58:24.000Z" title="Created 2022-10-14 04:58:24">2022-10-14</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-10-13T21:35:00.243Z" title="Updated 2022-10-14 05:35:00">2022-10-14</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/">生物学基础</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%BB%86%E8%83%9E%E7%94%9F%E7%89%A9%E5%AD%A6/">细胞生物学</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">1.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>9min</span></span><span class="post-meta-separator">|</span><span id="" data-flag-title="内质网应激(ERS)反应"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span class="waline-pageview-count" data-path="/posts/b2f5b0e6.html"><i class="fa-solid fa-spinner fa-spin"></i></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">Comments:</span><a href="/posts/b2f5b0e6.html#post-comment"><span class="waline-comment-count" data-path="/posts/b2f5b0e6.html"><i class="fa-solid fa-spinner fa-spin"></i></span></a></span></div></div></div></header><main class="layout hide-aside" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h4 id="Unfolded-Protein-Response-UPR"><a href="#Unfolded-Protein-Response-UPR" class="headerlink" title="Unfolded Protein Response, UPR"></a>Unfolded Protein Response, UPR</h4><ol>
+<li>IRE1/HAC1</li>
+<li>PERK</li>
+<li>ATF6</li>
+</ol>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/image-20221014050404062.png" alt="image-20221014050404062"></p>
+<blockquote>
+<h2 id="eLife-digest"><a href="#eLife-digest" class="headerlink" title="eLife digest"></a>eLife digest</h2><p>Protein folding—the process by which a sequence of amino acids adopts the precise shape that is needed to perform a specific biological function—is one of the most important processes in all of biology. Any sequence of amino acids has the potential to fold into a large number of different shapes, and misfolded proteins can lead to toxicity and other problems. For example, all cells rely on signaling proteins in the membranes that enclose them to monitor their environment so that they can adapt to changing conditions and, in multicellular organisms, communicate with neighboring cells: without properly folded signaling proteins, chaos would ensue. Moreover, many diseases—including diabetes, cancer, viral infection and neurodegenerative disease—have been linked to protein folding processes. It is not surprising, therefore, that cells have evolved elaborate mechanisms to exert exquisite quality control over protein folding.</p>
+<p>One of these mechanisms, called the unfolded protein response (UPR), operates in a compartment within the cell known as the endoplasmic reticulum (ER). The ER is a labyrinthine network of tubes and sacs within all eukaryotic cells, and most proteins destined for the cell surface or outside the cell adopt their properly folded shapes within this compartment. If the ER does not have enough capacity to fold all of the proteins that are delivered there, the UPR switches on to increase the protein folding capacity, to expand the surface area and volume of the compartment, and to degrade misfolded proteins. If the UPR cannot adequately adjust the folding capacity of the ER to meet the demands of the cell, the UPR triggers a program that kills the cell to prevent putting the whole organism at risk.</p>
+<p>Researchers have identified the cellular components that monitor the protein folding conditions inside the ER. All eukaryotic cells, from unicellular yeasts to mammalian cells, contain a highly conserved protein-folding sensor called Ire1. In all species analyzed to date, Ire1 is known to activate the UPR through an messenger RNA (mRNA) splicing mechanism. This splicing event provides the switch that drives a gene expression program in which the production of ER components is increased to boost the protein folding capacity of the compartment.</p>
+<p>Kimmig, Diaz <em>et al.</em> now report the first instance of an organism in which the UPR does not involve mRNA splicing or the initiation of a gene expression program. Rather, the yeast <em>Schizosaccharomyces pombe</em> utilizes Ire1 to an entirely different end. The authors find that <em>the</em> activation of Ire1 in <em>S. pombe</em> leads to the selective <em>decay</em> of a specific class of mRNAs that all encode proteins entering the ER. Thus, rather than increasing the protein folding capacity of the ER when faced with an increased protein folding load, <em>S. pombe</em> cells correct the imbalance by decreasing the load.</p>
+<p>The authors also show that a lone mRNA—the mRNA that encodes the molecular chaperone BiP, which is one of the major protein-folding components in the ER—uniquely escapes this decay. Rather than being degraded, Ire1 truncates BiP mRNA and renders it more stable. By studying the UPR in a divergent organism, the authors shed new light on the evolution of a universally important process and illustrate how conserved machinery has been repurposed.</p>
+<p><strong>DOI:</strong> <a target="_blank" rel="noopener" href="https://doi.org/10.7554/eLife.00048.002">http://dx.doi.org/10.7554/eLife.00048.002</a></p>
+</blockquote>
+<p><br></p>
+<blockquote>
+<p>Kimmig P, Diaz M, Zheng J, Williams CC, Lang A, Aragón T, Li H, Walter P. The unfolded protein response in fission yeast modulates stability of select mRNAs to maintain protein homeostasis. Elife. 2012 Oct 15;1:e00048. doi: 10.7554/eLife.00048. PMID: 23066505; PMCID: PMC3470409.</p>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>Homeostatic control mechanisms are essential to life, allowing cells to balance capacity and demand of numerous physiological processes. One such mechanism, the unfolded protein response (UPR), operates in all eukaryotic cells to adjust the protein folding capacity of the endoplasmic reticulum (ER) according to need. Environmental or physiological demands can lead to an imbalance between the protein folding load and the protein folding capacity in the ER lumen, resulting in an accumulation of unfolded or misfolded proteins, a condition termed ‘ER stress’ (<a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib51">Walter and Ron, 2011</a>). When unmitigated, ER stress is toxic to cells and triggers cell death (<a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib48">Shore et al., 2011</a>; <a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib50">Tabas and Ron, 2011</a>; <a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib17">Hetz, 2012</a>).</p>
+<p>The UPR is a network of evolutionarily conserved signal transduction pathways that monitors the conditions in the ER lumen to induce a transcriptional response. In metazoan cells, three ER-resident transmembrane sensors, Ire1, PERK, ATF6 transmit information into the cytosol. Each sensor activates transcription factors that collaborate to drive expression of UPR target genes (<a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib51">Walter and Ron, 2011</a>), including genes encoding ER-lumenal chaperones, such as BiP, an abundantly expressed Hsp70 family member.</p>
+<p>Ire1 is a bifunctional transmembrane kinase/endoribonuclease that controls expression of the transcription factor XBP1 by a non-conventional splicing of its mRNA. <strong>Ire1 uses its ER-lumenal domain to detect unfolded proteins, and in response activates by homo-oligomerization, <em>trans</em>-autophosphorylation, and allosteric activation of its cytosolic nuclease modality (<a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib25">Korennykh et al., 2009</a>; <a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib10">Gardner and Walter, 2011</a>). Activated Ire1 cleaves the <em>XBP1</em> mRNA at two discrete stem-loop structures, excising a short intron. The two severed exons are then ligated to produce spliced <em>XBP1</em> mRNA, which because of a frame-shift induced by the splicing event, are translated to produce active XBP1</strong> (<a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib52">Yoshida et al., 2001</a>; <a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib3">Calfon et al., 2002</a>).</p>
+<p>Ire1 was first discovered in the budding yeast <em>S. cerevisiae</em>, where it constitutes the core machinery of the cells’ only UPR signaling pathway (<a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib5">Cox et al., 1993</a>; <a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib33">Mori et al., 1993</a>). <strong><em>S. cerevisiae</em> Ire1 splices <em>Hac1</em> mRNA, encoding the yeast ortholog of XBP1, by a mechanism that was later found conserved in all metazoan cells</strong> (<a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib4">Cox and Walter, 1996</a>; <a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib49">Sidrauski et al., 1996</a>). Ire1-mediated mRNA splicing therefore is considered to be the most evolutionary ancient branch of the UPR.</p>
+<p>By first approximation, the three UPR branches collaborate to effect comprehensive transcriptional outputs, thereby enhancing the capacity of the ER according to need. PERK superimposes another layer of control by reducing the load of proteins entering the ER through translational control (<a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib38">Pavitt and Ron, 2012</a>). Similarly, Ire1 is thought to play a dual role in UPR regulation. In particular, <strong><a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib18">Hollien and Weissman (2006)</a> first discovered in <em>Drosophila</em> cells that Ire1 induction not only results in splicing of <em>XBP1</em> mRNA but also mediates enhanced mRNA breakdown. This output of Ire1 activation, termed ‘regulated Ire1-dependent decay’ (RIDD), is conserved in mammalian cells, but not in <em>S. cerevisiae</em>, where transcriptional control via <em>Hac1</em> mRNA splicing remains the only known route of UPR signaling (<a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib36">Niwa et al., 2005</a>; <a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib16">Han et al., 2009</a>; <a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib19">Hollien et al., 2009</a>)</strong>. All identified RIDD target mRNAs are translated by membrane-bound ribosomes at the ER surface, where they are cleaved, most likely by Ire1 directly (<a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib16">Han et al., 2009</a>; <a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib19">Hollien et al., 2009</a>; <a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib6">Cross et al., 2012</a>). Once nicked and no longer protected by their polyA tails and 5′ caps, mRNA fragments are quickly degraded by the RNA surveillance machinery (<a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib18">Hollien and Weissman, 2006</a>; <a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib11">Garneau et al., 2007</a>).</p>
+<p>By contrast to the strictly conserved stem/loop structures found at <em>Hac1/XBP1</em> mRNA splice sites (<a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib13">Gonzalez et al., 1999</a>), RIDD target mRNAs do not contain easily recognizable features in common. Consequently, RIDD is thought to arise by a more promiscuous cleavage mode of Ire1. It is unclear whether RIDD is mediated by an alternate conformation of activated Ire1, or whether it arises in a specific Ire1 oligomerization state, as high-order oligomerization may serve to locally enhance low affinity interactions through avidity effects. RIDD cleavage reactions have been reconstituted in vitro with recombinantly expressed purified Ire1, lending support to the notion that Ire1’s endoribonuclease actvity, rather than another enzyme recruited to it, carries out the initial cleavage reaction (<a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib27">Lee et al., 2011</a>; <a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib6">Cross et al., 2012</a>).</p>
+<p>Because of Ire1’s dual output, the physiological consequences of RIDD have been difficult to decipher. RIDD has been suggested to play cytoprotective roles, such as contributing to important feedback control on proinsulin expression in pancreatic beta-cells or protecting liver cells from acetaminophen toxicity by degrading the mRNAs encoding the cytochrome P450 variants responsible for the drug’s toxification (<a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib29">Lipson et al., 2008</a>; <a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib21">Hur et al., 2012</a>). RIDD has also been suggested to play cytotoxic roles as a major contributor driving cells into apoptosis after prolonged and unmitigated exposure to ER stress (<a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3470409/#bib16">Han et al., 2009</a>).</p>
+<p>Surprisingly, in the work presented here <strong>we found no evidence that Ire1 controls transcription in the UPR of <em>Schizosaccharomyces pombe</em>. Instead, in <em>S. pombe</em> Ire1 maintains ER homeostasis through two post-transcriptional mechanisms: it initiates RIDD of a large, select set of ER-targeted mRNAs and processes <em>Bip1</em> mRNA in an unprecedented way, thereby stabilizing it</strong>. Our studies reveal an unforeseen evolutionary plasticity in maintaining ER homeostasis.</p>
+</blockquote>
+<h4 id="Endoplasmic-reticulum-overload-response-EOR"><a href="#Endoplasmic-reticulum-overload-response-EOR" class="headerlink" title="Endoplasmic reticulum overload response, EOR"></a>Endoplasmic reticulum overload response, EOR</h4><h4 id="SREBP"><a href="#SREBP" class="headerlink" title="SREBP"></a>SREBP</h4><h4 id="Apoptosis"><a href="#Apoptosis" class="headerlink" title="Apoptosis"></a>Apoptosis</h4><hr>
+<p>衣霉素和DTT可以诱导UPR，后者的作用是组织内质网中氨基酸之间二硫键的形成。</p>
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css"></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="https://fanyiming.life">小阿鸣</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://fanyiming.life/posts/b2f5b0e6.html">https://fanyiming.life/posts/b2f5b0e6.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://unpkg.com/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://unpkg.com/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> Donate</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/image-20220813060933967.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/image-20220813060933967.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/3d1415d9.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">mRNA decay</div></div></a></div><div class="next-post pull-right"><a href="/posts/7b9e5580.html"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">生物学的历史框架</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/footer_bg.webp')"><div id="footer-wrap"><div class="footer_custom_text">如果你喜欢浪漫，这里并非寸草不生</div><div id="running-time"><script>setInterval(()=>{let create_time=Math.round(new Date('2022-03-25 00:00:00').getTime()/1000);let timestamp=Math.round((new Date().getTime()+8*60*60*1000)/1000);let second=timestamp-create_time;let time=new Array(0,0,0,0,0);if(second>=365*24*3600){time[0]=parseInt(second/(365*24*3600));second%=365*24*3600;}if(second>=24*3600){time[1]=parseInt(second/(24*3600));second%=24*3600;}if(second>=3600){time[2]=parseInt(second/3600);second%=3600;}if(second>=60){time[3]=parseInt(second/60);second%=60;}if(second>0){time[4]=second;}currentTimeHtml='本站已安全运行 '+time[0]+' 年 '+time[1]+' 天 '+time[2]+' 时 '+time[3]+' 分 '+time[4]+' 秒';document.getElementById("running-time").innerHTML=currentTimeHtml;},1000);</script></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="refresh-cache" type="button" title="刷新缓存" onclick="refreshCache()"><i class="fas fa-refresh fa-spin"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://unpkg.com/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://unpkg.com/instant.page/instantpage.js" type="module"></script><script src="https://unpkg.com/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://unpkg.com/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadWaline () {
+  function insertCSS () {
+    const link = document.createElement("link")
+    link.rel = "stylesheet"
+    link.href = "https://unpkg.com/@waline/client/dist/waline.css"
+    document.head.appendChild(link)
+  }
+
+  function initWaline () {
+    const waline = Waline.init(Object.assign({
+      el: '#waline-wrap',
+      serverURL: 'https://walineserver.fanyiming.life/',
+      pageview: true,
+      dark: 'html[data-theme="dark"]',
+      path: window.location.pathname,
+      comment: true,
+    }, null))
+  }
+
+  if (typeof Waline === 'function') initWaline()
+  else {
+    insertCSS()
+    getScript('https://unpkg.com/@waline/client/dist/waline.js').then(initWaline)
+  }
+}
+
+if ('Waline' === 'Waline' || !false) {
+  if (false) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
+  else setTimeout(loadWaline, 0)
+} else {
+  function loadOtherComment () {
+    loadWaline()
+  }
+}</script></div><script data-pjax async src="/js/weather.js"></script><script data-pjax src="/js/weather1.js"></script><script data-pjax async src="/js/custom/refresh.js"></script><script src="https://unpkg.com/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('swiper-position') && location.pathname =='/'){
+    
+    var parent = document.getElementById('swiper-position');
+    var child = '<div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/bf51e5cd35f9b9eabef2399423b9fe34e4dcfa1a.jpg@942w_531h_progressive.webp" alt="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/bf51e5cd35f9b9eabef2399423b9fe34e4dcfa1a.jpg@942w_531h_progressive.webp"/></div><div class="blog-slider__content"><span class="blog-slider__code">2022-07-02</span><a class="blog-slider__title" href="posts/f3872a09.html">会说话是艺术啊</a><div class="blog-slider__text">一篇英文邮件的修改前后</div><a class="blog-slider__button" href="posts/f3872a09.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/9d627b30a94d17b6b43672cfcfa3788f74966c44.jpg@942w_660h_progressive.webp" alt="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/9d627b30a94d17b6b43672cfcfa3788f74966c44.jpg@942w_660h_progressive.webp"/></div><div class="blog-slider__content"><span class="blog-slider__code">2022-07-10</span><a class="blog-slider__title" href="posts/25a9c68a.html">做自己尊重的人</a><div class="blog-slider__text">饶毅 2015年 北京大学 本科生毕业典礼 教师代表致辞</div><a class="blog-slider__button" href="posts/25a9c68a.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/cover_lzdbygy.webp" alt="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/cover_lzdbygy.webp"/></div><div class="blog-slider__content"><span class="blog-slider__code">2022-06-27</span><a class="blog-slider__title" href="posts/5a9709cd.html">龙舟队毕业感言</a><div class="blog-slider__text">　</div><a class="blog-slider__button" href="posts/5a9709cd.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/cover_wzwhrz.webp" alt="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/cover_wzwhrz.webp"/></div><div class="blog-slider__content"><span class="blog-slider__code">2022-08-10</span><a class="blog-slider__title" href="posts/cb901750.html">网站维护日志</a><div class="blog-slider__text">　</div><a class="blog-slider__button" href="posts/cb901750.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/8b2c5f50-5a1a-424f-aed1-f1884bed7ef4.png" alt="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/8b2c5f50-5a1a-424f-aed1-f1884bed7ef4.png"/></div><div class="blog-slider__content"><span class="blog-slider__code">2022-07-14</span><a class="blog-slider__title" href="posts/d8914b28.html">记事帖：第五十四届国际化学奥林匹克</a><div class="blog-slider__text">这一个月作为IChO2022组委会国际数据中心“副主任”的一点点杂记</div><a class="blog-slider__button" href="posts/d8914b28.html">详情</a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div>';
+    console.log('已挂载swiper')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script>
+<script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiper.min.js"></script>
+<script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper@0.18/swiper/swiperindex.js"></script>
+<style></style><!-- hexo injector body_end end --></body></html>
