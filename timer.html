@@ -62,11 +62,29 @@
         #btns button:not(:first-child) {
             display: none;
         }
+		 .test3{
+			border:1px solid rgba(255,255,255,0.01);/*设置边框1px，实线，边框线色为#a0b3d6 */
+			/*width: 500px;*/
+			/*min-height: 200px;*/
+			font-size: 14px;
+			text-align:center;
+			padding: 4px;
+			color: white;
+			outline:0; /* 当元素获得焦点的时候，焦点框为0.去掉虚线框（或高亮框）*/
+		}
+
+		/* 当输入框为空时，显示默认文字 */
+		.test3:empty::before{
+			content:attr(placeholder); /*获取属性的值 attr（value）,可以获得属性值 */
+			color: #999;
+		}
+
     </style>
 </head>
 
 <body>
     <div class="mainBox">
+        <div class="test3" contenteditable="true" placeholder="请输入计时内容..."></div>
         <div id="time">
             <span>00</span>:
             <span>00</span>:
