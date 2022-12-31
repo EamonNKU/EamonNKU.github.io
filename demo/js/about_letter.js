@@ -6,8 +6,8 @@ $("#open").click(function(){
 	if(!aparted)
 	{
 		var typed = new Typed('.letter', {
-			strings: ["^1000Dear&nbsp;&nbsp;friend", 
-				"My&nbsp;^200friend^700<br><br>Hold fast to dreams.^2000<br>For if dreams die, ^200life is a broken-winged bird, ^600that can never fly. ^1000<br><br>Carry on, ^500carry on, ^500carry on.^1500<br><br><p style='float:right; display:block; width:80px;text-align:middle;'>^1000E^300amon</p>"],
+			strings: ["^1000Dear&nbsp;&nbsp;friend,", 
+				"My&nbsp;^200friend,^700<br><br>Hold fast to dreams.^2000<br>For if dreams die, ^200life is a broken-winged bird, ^600that can never fly. ^1000<br><br>Carry on, ^500carry on, ^500carry on.^1500<br><br><p style='float:right; display:block; width:80px;text-align:middle;'>^1000E^300amon</p>"],
 			typeSpeed: 100,
 			backSpeed: 50
 		});
