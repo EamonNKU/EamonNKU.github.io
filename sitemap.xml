@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://fanyiming.life/books/</loc>
+    
+    <lastmod>2022-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://fanyiming.life/movies/</loc>
+    
+    <lastmod>2022-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://fanyiming.life/posts/df4eaa5b.html</loc>
     
     <lastmod>2022-12-31</lastmod>
@@ -38,15 +56,6 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/movies/</loc>
-    
-    <lastmod>2022-12-31</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://fanyiming.life/MessageBox/</loc>
     
     <lastmod>2022-12-31</lastmod>
@@ -75,15 +84,6 @@
   
   <url>
     <loc>https://fanyiming.life/categories/</loc>
-    
-    <lastmod>2022-12-31</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://fanyiming.life/books/</loc>
     
     <lastmod>2022-12-31</lastmod>
     
@@ -1796,14 +1796,14 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/tags/%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9/</loc>
+    <loc>https://fanyiming.life/tags/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2022-12-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://fanyiming.life/tags/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://fanyiming.life/tags/%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9/</loc>
     <lastmod>2022-12-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1889,7 +1889,7 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/</loc>
+    <loc>https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%94%9F%E7%89%A9%E5%8C%96%E5%AD%A6/</loc>
     <lastmod>2022-12-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1910,14 +1910,14 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/</loc>
     <lastmod>2022-12-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%94%9F%E7%89%A9%E5%8C%96%E5%AD%A6/</loc>
+    <loc>https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2022-12-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1938,21 +1938,7 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E6%8A%80%E6%9C%AF/protocol/</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://fanyiming.life/categories/%E9%9A%8F%E7%AC%94-%E6%9D%82%E8%AE%B0/%E7%A7%91%E5%AD%A6%E5%8F%B2/</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A5%9E%E7%BB%8F%E7%94%9F%E7%89%A9%E5%AD%A6/</loc>
     <lastmod>2022-12-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1966,6 +1952,13 @@
   </url>
   
   <url>
+    <loc>https://fanyiming.life/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%92%8C%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3/%E7%BD%91%E9%A1%B5/</loc>
+    <lastmod>2022-12-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://fanyiming.life/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%92%8C%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3/windows/</loc>
     <lastmod>2022-12-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -1973,7 +1966,14 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%92%8C%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3/%E7%BD%91%E9%A1%B5/</loc>
+    <loc>https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E6%8A%80%E6%9C%AF/protocol/</loc>
+    <lastmod>2022-12-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A5%9E%E7%BB%8F%E7%94%9F%E7%89%A9%E5%AD%A6/</loc>
     <lastmod>2022-12-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1987,14 +1987,14 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/%E8%A1%A8%E8%A7%82%E9%81%97%E4%BC%A0%E5%AD%A6/</loc>
+    <loc>https://fanyiming.life/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%92%8C%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3/latex/</loc>
     <lastmod>2022-12-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://fanyiming.life/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%92%8C%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3/latex/</loc>
+    <loc>https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/%E8%A1%A8%E8%A7%82%E9%81%97%E4%BC%A0%E5%AD%A6/</loc>
     <lastmod>2022-12-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
