@@ -61,3 +61,10 @@
 #recent-posts > .recent-post-item >.recent-post-info > .content {
     -webkit-line-clamp: 4;
 }
+
+/*修改首页双栏显示后的页码不居中问题*/
+/* 翻页按钮居中 */
+#pagination {
+    width: 100%;
+    margin: auto;
+  }
