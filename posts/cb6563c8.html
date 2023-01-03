@@ -244,7 +244,7 @@ if ('Waline' === 'Waline' || !false) {
 }</script></div><script data-pjax async src="/js/weather.js"></script><script data-pjax src="/js/weather1.js"></script><script data-pjax async src="/js/custom/refresh.js"></script><script src="https://unpkg.com/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
 
 var pjax = new Pjax({
-  elements: 'a:not([target="_blank"]):not([href="/bb/"])',
+  elements: 'a:not([target="_blank"]):not([href="/bb/"]):not([href="/charts/"])',
   selectors: pjaxSelectors,
   cacheBust: false,
   analytics: false,
