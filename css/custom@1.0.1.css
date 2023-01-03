@@ -68,3 +68,8 @@
     width: 100%;
     margin: auto;
   }
+/*归档页面行间距缩小*/
+
+.article-sort-item.no-article-cover {
+    height: 40px;
+}

@@ -1,0 +1,537 @@
+<script>if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').then(() => {
+    if (localStorage.getItem('install') !== 'true') {
+      localStorage.setItem('install', 'true')
+      location.reload()
+    }
+  })
+}
+
+
+</script><!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Eamon &apos;s Blog | Eamon &apos;s Blog</title><meta name="author" content="&#x73A9;&#x535A;&#x5BA2;&#x7684;Eamon"><meta name="copyright" content="&#x73A9;&#x535A;&#x5BA2;&#x7684;Eamon"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Eamon &apos;s Blog">
+<meta property="og:url" content="https://fanyiming.life/charts/">
+<meta property="og:site_name" content="Eamon &apos;s Blog">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg">
+<meta property="article:published_time" content="2023-01-03T09:08:41.000Z">
+<meta property="article:modified_time" content="2023-01-03T09:17:30.507Z">
+<meta property="article:author" content="&#x73A9;&#x535A;&#x5BA2;&#x7684;Eamon">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><link rel="shortcut icon" href="/"><link rel="canonical" href="https://fanyiming.life/charts/"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="//busuanzi.ibruce.info"><link rel="manifest" href="/manifest.json"><link rel="apple-touch-icon" sizes="180x180" href="/img/pwa/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/img/pwa/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/img/pwa/favicon-16x16.png"><link rel="mask-icon" href="/img/pwa/safari-pinned-tab.svg" color="#5bbad5"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media=&apos;all&apos;"><link rel="stylesheet" href="https://unpkg.com/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media=&apos;all&apos;"><link rel="stylesheet" href="https://unpkg.com/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media=&apos;all&apos;"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.json","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 玩博客的Eamon","link":"链接: ","source":"来源: Eamon 's Blog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://unpkg.com/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://unpkg.com/flickr-justified-gallery/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Eamon \'s Blog',
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-01-03 17:17:30'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom@1.0.1.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiper.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiperstyle.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css">
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">&#x52A0;&#x8F7D;&#x4E2D;...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/avatar.png" onerror="onerror=null;src=&apos;/img/friend_404.gif&apos;" alt="avatar"></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">&#x6587;&#x7AE0;</div><div class="length-num">179</div></a><a href="/tags/"><div class="headline">&#x6807;&#x7B7E;</div><div class="length-num">14</div></a><a href="/categories/"><div class="headline">&#x5206;&#x7C7B;</div><div class="length-num">28</div></a></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-lightbulb"></i><span> &#x6587;&#x7AE0;</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/charts/"><i class="fa-fw fas fa-chart-simple"></i><span> &#x7EDF;&#x8BA1;</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> &#x6807;&#x7B7E;</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> &#x5206;&#x7C7B;</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/MessageBox/"><i class="fa-fw fas fa-comment"></i><span> &#x7559;&#x8A00;</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://travellings.link"><i class="fa-fw fas fa-subway"></i><span> &#x5F00;&#x5F80;</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> &#x66F4;&#x591A;</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> &#x94FE;&#x63A5;</span></a></li><li><a class="site-page child" href="/resources/"><i class="fa-fw fas fa-download"></i><span> &#x8D44;&#x6E90;</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-user"></i><span> &#x5173;&#x4E8E;</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Eamon &apos;s Blog</a></span><div id="he-plugin-simple"></div><div id="none_space"></div><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> &#x641C;&#x7D22;</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-lightbulb"></i><span> &#x6587;&#x7AE0;</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/charts/"><i class="fa-fw fas fa-chart-simple"></i><span> &#x7EDF;&#x8BA1;</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> &#x6807;&#x7B7E;</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> &#x5206;&#x7C7B;</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/MessageBox/"><i class="fa-fw fas fa-comment"></i><span> &#x7559;&#x8A00;</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://travellings.link"><i class="fa-fw fas fa-subway"></i><span> &#x5F00;&#x5F80;</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> &#x66F4;&#x591A;</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> &#x94FE;&#x63A5;</span></a></li><li><a class="site-page child" href="/resources/"><i class="fa-fw fas fa-download"></i><span> &#x8D44;&#x6E90;</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-user"></i><span> &#x5173;&#x4E8E;</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="page"><h1 class="page-title"></h1><div id="article-container"><script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
+
+<!-- 文章发布时间统计图 -->
+<div id="posts-chart" data-start="2018-11" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
+  <script id="postsChart">
+    var color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4c4948' : 'rgba(255,255,255,0.7)'
+    var postsChart = echarts.init(document.getElementById('posts-chart'), 'light');
+    var postsOption = {
+      title: {
+        text: '文章发布统计图',
+        x: 'center',
+        textStyle: {
+          color: color
+        }
+      },
+      tooltip: {
+        trigger: 'axis'
+      },
+      xAxis: {
+        name: '日期',
+        type: 'category',
+        boundaryGap: false,
+        nameTextStyle: {
+          color: color
+        },
+        axisTick: {
+          show: false
+        },
+        axisLabel: {
+          show: true,
+          color: color
+        },
+        axisLine: {
+          show: true,
+          lineStyle: {
+            color: color
+          }
+        },
+        data: ["2018-11","2018-12","2019-01","2019-02","2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-02","2020-03","2020-04","2020-05","2020-06","2020-07","2020-08","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07","2022-08","2022-09","2022-10","2022-11","2022-12","2023-01"]
+      },
+      yAxis: {
+        name: '文章篇数',
+        type: 'value',
+        nameTextStyle: {
+          color: color
+        },
+        splitLine: {
+          show: false
+        },
+        axisTick: {
+          show: false
+        },
+        axisLabel: {
+          show: true,
+          color: color
+        },
+        axisLine: {
+          show: true,
+          lineStyle: {
+            color: color
+          }
+        }
+      },
+      series: [{
+        name: '文章篇数',
+        type: 'line',
+        smooth: true,
+        lineStyle: {
+            width: 0
+        },
+        showSymbol: false,
+        itemStyle: {
+          opacity: 1,
+          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+            offset: 0,
+            color: 'rgba(128, 255, 165)'
+          },
+          {
+            offset: 1,
+            color: 'rgba(1, 191, 236)'
+          }])
+        },
+        areaStyle: {
+          opacity: 1,
+          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+            offset: 0,
+            color: 'rgba(128, 255, 165)'
+          }, {
+            offset: 1,
+            color: 'rgba(1, 191, 236)'
+          }])
+        },
+        data: [1,1,0,0,2,2,0,0,0,0,1,2,0,0,0,1,0,0,0,0,1,1,0,0,0,0,1,0,0,0,1,0,5,4,2,1,1,0,0,0,2,37,16,10,12,14,20,19,20,1,0],
+        markLine: {
+          data: [{
+            name: '平均值',
+            type: 'average',
+            label: {
+              color: color
+            }
+          }]
+        }
+      }]
+    };
+    postsChart.setOption(postsOption);
+    window.addEventListener('resize', () => { 
+      postsChart.resize();
+    });
+    postsChart.on('click', 'series', (event) => {
+      if (event.componentType === 'series') window.location.href = '/archives/' + event.name.replace('-', '/');
+    });
+  </script>
+<!-- 文章标签统计图 -->
+<div id="tags-chart" data-length="10" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
+  <script id="tagsChart">
+    var color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4c4948' : 'rgba(255,255,255,0.7)'
+    var tagsChart = echarts.init(document.getElementById('tags-chart'), 'light');
+    var tagsOption = {
+      title: {
+        text: 'Top 10 标签统计图',
+        x: 'center',
+        textStyle: {
+          color: color
+        }
+      },
+      tooltip: {},
+      xAxis: {
+        name: '标签',
+        type: 'category',
+        nameTextStyle: {
+          color: color
+        },
+        axisTick: {
+          show: false
+        },
+        axisLabel: {
+          show: true,
+          color: color,
+          interval: 0
+        },
+        axisLine: {
+          show: true,
+          lineStyle: {
+            color: color
+          }
+        },
+        data: ["想法","龙舟","生物信息学课程笔记","生物物理所","molecular biology of the cell","序列比对","时政热点","我又睡不着了","HMM","minecraft"]
+      },
+      yAxis: {
+        name: '文章篇数',
+        type: 'value',
+        splitLine: {
+          show: false
+        },
+        nameTextStyle: {
+          color: color
+        },
+        axisTick: {
+          show: false
+        },
+        axisLabel: {
+          show: true,
+          color: color
+        },
+        axisLine: {
+          show: true,
+          lineStyle: {
+            color: color
+          }
+        }
+      },
+      series: [{
+        name: '文章篇数',
+        type: 'bar',
+        data: [{"name":"想法","value":17,"path":"tags/想法/"},{"name":"龙舟","value":7,"path":"tags/龙舟/"},{"name":"生物信息学课程笔记","value":6,"path":"tags/生物信息学课程笔记/"},{"name":"生物物理所","value":6,"path":"tags/生物物理所/"},{"name":"molecular biology of the cell","value":4,"path":"tags/molecular-biology-of-the-cell/"},{"name":"序列比对","value":3,"path":"tags/序列比对/"},{"name":"时政热点","value":3,"path":"tags/时政热点/"},{"name":"我又睡不着了","value":3,"path":"tags/我又睡不着了/"},{"name":"HMM","value":2,"path":"tags/HMM/"},{"name":"minecraft","value":2,"path":"tags/minecraft/"},{"name":"市创","value":2,"path":"tags/市创/"},{"name":"IChO2022","value":2,"path":"tags/IChO2022/"},{"name":"神经生物学课程笔记","value":1,"path":"tags/神经生物学课程笔记/"},{"name":"细胞培养","value":1,"path":"tags/细胞培养/"}],
+        itemStyle: {
+          borderRadius: [5, 5, 0, 0],
+          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+            offset: 0,
+            color: 'rgba(128, 255, 165)'
+          },
+          {
+            offset: 1,
+            color: 'rgba(1, 191, 236)'
+          }])
+        },
+        emphasis: {
+          itemStyle: {
+            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+              offset: 0,
+              color: 'rgba(128, 255, 195)'
+            },
+            {
+              offset: 1,
+              color: 'rgba(1, 211, 255)'
+            }])
+          }
+        },
+        markLine: {
+          data: [{
+            name: '平均值',
+            type: 'average',
+            label: {
+              color: color
+            }
+          }]
+        }
+      }]
+    };
+    tagsChart.setOption(tagsOption);
+    window.addEventListener('resize', () => { 
+      tagsChart.resize();
+    });
+    tagsChart.on('click', 'series', (event) => {
+      if(event.data.path) window.location.href = '/' + event.data.path;
+    });
+  </script>
+<!-- 文章分类统计图 -->
+<div id="categories-chart" data-parent="true" style="border-radius: 8px;height: 650px; padding: 10px;"></div>
+  <script id="categoriesChart">
+    var color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4c4948' : 'rgba(255,255,255,0.7)'
+    var categoriesChart = echarts.init(document.getElementById('categories-chart'), 'light');
+    var categoryParentFlag = true
+    var categoriesOption = {
+      title: {
+        text: '文章分类统计图',
+        x: 'center',
+        textStyle: {
+          color: color
+        }
+      },
+      legend: {
+        top: 'bottom',
+        data: ["随笔&杂记","生物学基础","计算机和网络相关","分子生物学","生物学技术","生物信息学","windows","R语言","protocol","网页","细胞生物学","生物化学","科学史","学英语","神经生物学","发育生物学","摘抄","linux","遗传学","动物学","研究范式","结构生物学","latex","表观遗传学","免疫学","古生物学","学术规范和职业伦理","微生物学"],
+        textStyle: {
+          color: color
+        }
+      },
+      tooltip: {
+        trigger: 'item'
+      },
+      series: []
+    };
+    categoriesOption.series.push(
+      categoryParentFlag ? 
+      {
+        nodeClick :false,
+        name: '文章篇数',
+        type: 'sunburst',
+        radius: ['15%', '90%'],
+        center: ['50%', '55%'],
+        sort: 'desc',
+        data: [{"name":"随笔&杂记","value":54,"path":"categories/随笔-杂记/","id":"clcg0y691000bs8z3a8s28x9v","parentId":"0","children":[{"name":"科学史","value":5,"path":"categories/随笔-杂记/科学史/","id":"clcg0y6a5003us8z3gtqx3ftd","parentId":"clcg0y691000bs8z3a8s28x9v"},{"name":"摘抄","value":4,"path":"categories/随笔-杂记/摘抄/","id":"clcg0y6b90090s8z3a6ia5uc9","parentId":"clcg0y691000bs8z3a8s28x9v"},{"name":"研究范式","value":2,"path":"categories/随笔-杂记/研究范式/","id":"clcg0y6b20081s8z35cnn30h7","parentId":"clcg0y691000bs8z3a8s28x9v"},{"name":"学术规范和职业伦理","value":1,"path":"categories/随笔-杂记/学术规范和职业伦理/","id":"clcg0y6br00b2s8z3ftgf3zox","parentId":"clcg0y691000bs8z3a8s28x9v"}]},{"name":"生物学基础","value":52,"path":"categories/生物学基础/","id":"clcg0y68y0004s8z31ie93ri2","parentId":"0","children":[{"name":"分子生物学","value":21,"path":"categories/生物学基础/分子生物学/","id":"clcg0y69j001ps8z3e96hdd05","parentId":"clcg0y68y0004s8z31ie93ri2"},{"name":"细胞生物学","value":6,"path":"categories/生物学基础/细胞生物学/","id":"clcg0y6b6008gs8z36crj37ly","parentId":"clcg0y68y0004s8z31ie93ri2"},{"name":"生物化学","value":5,"path":"categories/生物学基础/生物化学/","id":"clcg0y696000ls8z326083j6k","parentId":"clcg0y68y0004s8z31ie93ri2"},{"name":"神经生物学","value":4,"path":"categories/生物学基础/神经生物学/","id":"clcg0y6a80041s8z32ejmgu3w","parentId":"clcg0y68y0004s8z31ie93ri2"},{"name":"发育生物学","value":4,"path":"categories/生物学基础/发育生物学/","id":"clcg0y6b40088s8z3ebfz83qo","parentId":"clcg0y68y0004s8z31ie93ri2"},{"name":"遗传学","value":3,"path":"categories/生物学基础/遗传学/","id":"clcg0y6bf009zs8z3azjq0j4m","parentId":"clcg0y68y0004s8z31ie93ri2"},{"name":"动物学","value":2,"path":"categories/生物学基础/动物学/","id":"clcg0y698000ss8z3gkzhfwpl","parentId":"clcg0y68y0004s8z31ie93ri2"},{"name":"结构生物学","value":1,"path":"categories/生物学基础/结构生物学/","id":"clcg0y69d001as8z3exc9fby1","parentId":"clcg0y68y0004s8z31ie93ri2"},{"name":"表观遗传学","value":1,"path":"categories/生物学基础/表观遗传学/","id":"clcg0y6au006ws8z33igqarej","parentId":"clcg0y68y0004s8z31ie93ri2"},{"name":"免疫学","value":1,"path":"categories/生物学基础/免疫学/","id":"clcg0y6bb009ds8z3glytac47","parentId":"clcg0y68y0004s8z31ie93ri2"},{"name":"古生物学","value":1,"path":"categories/生物学基础/古生物学/","id":"clcg0y6be009us8z31a367pc3","parentId":"clcg0y68y0004s8z31ie93ri2"},{"name":"微生物学","value":1,"path":"categories/生物学基础/微生物学/","id":"clcg0y6c400bvs8z36atd3stp","parentId":"clcg0y68y0004s8z31ie93ri2"}]},{"name":"计算机和网络相关","value":32,"path":"categories/计算机和网络相关/","id":"clcg0y69g001js8z38tmd1hy1","parentId":"0","children":[{"name":"windows","value":10,"path":"categories/计算机和网络相关/windows/","id":"clcg0y6ab004ds8z3g3iubgob","parentId":"clcg0y69g001js8z38tmd1hy1"},{"name":"R语言","value":10,"path":"categories/计算机和网络相关/R语言/","id":"clcg0y6ac004is8z3bdy0eolm","parentId":"clcg0y69g001js8z38tmd1hy1"},{"name":"网页","value":8,"path":"categories/计算机和网络相关/网页/","id":"clcg0y6a3003ks8z37asfh8n2","parentId":"clcg0y69g001js8z38tmd1hy1"},{"name":"linux","value":3,"path":"categories/计算机和网络相关/linux/","id":"clcg0y6at006ps8z343ex3jhp","parentId":"clcg0y69g001js8z38tmd1hy1"},{"name":"latex","value":1,"path":"categories/计算机和网络相关/latex/","id":"clcg0y6a3003fs8z3ci0rfstr","parentId":"clcg0y69g001js8z38tmd1hy1"}]},{"name":"生物学技术","value":20,"path":"categories/生物学技术/","id":"clcg0y69a000zs8z3audd4b3t","parentId":"0","children":[{"name":"protocol","value":9,"path":"categories/生物学技术/protocol/","id":"clcg0y69z0034s8z32tij7wud","parentId":"clcg0y69a000zs8z3audd4b3t"}]},{"name":"生物信息学","value":13,"path":"categories/生物信息学/","id":"clcg0y69v002ms8z37ozcd8bu","parentId":"0"},{"name":"学英语","value":5,"path":"categories/学英语/","id":"clcg0y6bg00a5s8z3drea78z7","parentId":"0"}],
+        itemStyle: {
+          borderColor: '#fff',
+          borderWidth: 2,
+          emphasis: {
+            focus: 'ancestor',
+            shadowBlur: 10,
+            shadowOffsetX: 0,
+            shadowColor: 'rgba(255, 255, 255, 0.5)'
+          }
+        }
+      }
+      :
+      {
+        name: '文章篇数',
+        type: 'pie',
+        radius: [30, 80],
+        roseType: 'area',
+        label: {
+          color: color,
+          formatter: '{b} : {c} ({d}%)'
+        },
+        data: [{"name":"随笔&杂记","value":54,"path":"categories/随笔-杂记/","id":"clcg0y691000bs8z3a8s28x9v","parentId":"0"},{"name":"生物学基础","value":52,"path":"categories/生物学基础/","id":"clcg0y68y0004s8z31ie93ri2","parentId":"0"},{"name":"计算机和网络相关","value":32,"path":"categories/计算机和网络相关/","id":"clcg0y69g001js8z38tmd1hy1","parentId":"0"},{"name":"分子生物学","value":21,"path":"categories/生物学基础/分子生物学/","id":"clcg0y69j001ps8z3e96hdd05","parentId":"clcg0y68y0004s8z31ie93ri2"},{"name":"生物学技术","value":20,"path":"categories/生物学技术/","id":"clcg0y69a000zs8z3audd4b3t","parentId":"0"},{"name":"生物信息学","value":13,"path":"categories/生物信息学/","id":"clcg0y69v002ms8z37ozcd8bu","parentId":"0"},{"name":"windows","value":10,"path":"categories/计算机和网络相关/windows/","id":"clcg0y6ab004ds8z3g3iubgob","parentId":"clcg0y69g001js8z38tmd1hy1"},{"name":"R语言","value":10,"path":"categories/计算机和网络相关/R语言/","id":"clcg0y6ac004is8z3bdy0eolm","parentId":"clcg0y69g001js8z38tmd1hy1"},{"name":"protocol","value":9,"path":"categories/生物学技术/protocol/","id":"clcg0y69z0034s8z32tij7wud","parentId":"clcg0y69a000zs8z3audd4b3t"},{"name":"网页","value":8,"path":"categories/计算机和网络相关/网页/","id":"clcg0y6a3003ks8z37asfh8n2","parentId":"clcg0y69g001js8z38tmd1hy1"},{"name":"细胞生物学","value":6,"path":"categories/生物学基础/细胞生物学/","id":"clcg0y6b6008gs8z36crj37ly","parentId":"clcg0y68y0004s8z31ie93ri2"},{"name":"生物化学","value":5,"path":"categories/生物学基础/生物化学/","id":"clcg0y696000ls8z326083j6k","parentId":"clcg0y68y0004s8z31ie93ri2"},{"name":"科学史","value":5,"path":"categories/随笔-杂记/科学史/","id":"clcg0y6a5003us8z3gtqx3ftd","parentId":"clcg0y691000bs8z3a8s28x9v"},{"name":"学英语","value":5,"path":"categories/学英语/","id":"clcg0y6bg00a5s8z3drea78z7","parentId":"0"},{"name":"神经生物学","value":4,"path":"categories/生物学基础/神经生物学/","id":"clcg0y6a80041s8z32ejmgu3w","parentId":"clcg0y68y0004s8z31ie93ri2"},{"name":"发育生物学","value":4,"path":"categories/生物学基础/发育生物学/","id":"clcg0y6b40088s8z3ebfz83qo","parentId":"clcg0y68y0004s8z31ie93ri2"},{"name":"摘抄","value":4,"path":"categories/随笔-杂记/摘抄/","id":"clcg0y6b90090s8z3a6ia5uc9","parentId":"clcg0y691000bs8z3a8s28x9v"},{"name":"linux","value":3,"path":"categories/计算机和网络相关/linux/","id":"clcg0y6at006ps8z343ex3jhp","parentId":"clcg0y69g001js8z38tmd1hy1"},{"name":"遗传学","value":3,"path":"categories/生物学基础/遗传学/","id":"clcg0y6bf009zs8z3azjq0j4m","parentId":"clcg0y68y0004s8z31ie93ri2"},{"name":"动物学","value":2,"path":"categories/生物学基础/动物学/","id":"clcg0y698000ss8z3gkzhfwpl","parentId":"clcg0y68y0004s8z31ie93ri2"},{"name":"研究范式","value":2,"path":"categories/随笔-杂记/研究范式/","id":"clcg0y6b20081s8z35cnn30h7","parentId":"clcg0y691000bs8z3a8s28x9v"},{"name":"结构生物学","value":1,"path":"categories/生物学基础/结构生物学/","id":"clcg0y69d001as8z3exc9fby1","parentId":"clcg0y68y0004s8z31ie93ri2"},{"name":"latex","value":1,"path":"categories/计算机和网络相关/latex/","id":"clcg0y6a3003fs8z3ci0rfstr","parentId":"clcg0y69g001js8z38tmd1hy1"},{"name":"表观遗传学","value":1,"path":"categories/生物学基础/表观遗传学/","id":"clcg0y6au006ws8z33igqarej","parentId":"clcg0y68y0004s8z31ie93ri2"},{"name":"免疫学","value":1,"path":"categories/生物学基础/免疫学/","id":"clcg0y6bb009ds8z3glytac47","parentId":"clcg0y68y0004s8z31ie93ri2"},{"name":"古生物学","value":1,"path":"categories/生物学基础/古生物学/","id":"clcg0y6be009us8z31a367pc3","parentId":"clcg0y68y0004s8z31ie93ri2"},{"name":"学术规范和职业伦理","value":1,"path":"categories/随笔-杂记/学术规范和职业伦理/","id":"clcg0y6br00b2s8z3ftgf3zox","parentId":"clcg0y691000bs8z3a8s28x9v"},{"name":"微生物学","value":1,"path":"categories/生物学基础/微生物学/","id":"clcg0y6c400bvs8z36atd3stp","parentId":"clcg0y68y0004s8z31ie93ri2"}],
+        itemStyle: {
+          emphasis: {
+            shadowBlur: 10,
+            shadowOffsetX: 0,
+            shadowColor: 'rgba(255, 255, 255, 0.5)'
+          }
+        }
+      }
+    )
+    categoriesChart.setOption(categoriesOption);
+    window.addEventListener('resize', () => { 
+      categoriesChart.resize();
+    });
+    categoriesChart.on('click', 'series', (event) => {
+      if(event.data.path) window.location.href = '/' + event.data.path;
+    });
+  </script><script type="text/javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css"></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/avatar.png" onerror="this.onerror=null;this.src=&apos;/img/friend_404.gif&apos;" alt="avatar"></div><div class="author-info__name">&#x73A9;&#x535A;&#x5BA2;&#x7684;Eamon</div><div class="author-info__description">&#x505A;&#x4E2A;&#x7EAF;&#x7CB9;&#x7684;&#x4EBA;&#xFF01;</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">&#x6587;&#x7AE0;</div><div class="length-num">179</div></a><a href="/tags/"><div class="headline">&#x6807;&#x7B7E;</div><div class="length-num">14</div></a><a href="/categories/"><div class="headline">&#x5206;&#x7C7B;</div><div class="length-num">28</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/EamonNKU" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:572464453@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>&#x6700;&#x65B0;&#x6587;&#x7AE0;</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/cb901750.html" title="&#x7F51;&#x7AD9;&#x7EF4;&#x62A4;&#x65E5;&#x5FD7;">&#x7F51;&#x7AD9;&#x7EF4;&#x62A4;&#x65E5;&#x5FD7;</a><time datetime="2023-01-03T09:20:04.136Z" title="&#x66F4;&#x65B0;&#x4E8E; 2023-01-03 17:20:04">2023-01-03</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/5247627f.html" title="&#x751F;&#x7269;&#x804C;&#x4E1A;&#x4F26;&#x7406;&#x548C;&#x79D1;&#x5B66;&#x9053;&#x5FB7;&#x89C4;&#x8303;&#x8BFE;&#x7A0B;&#x7B14;&#x8BB0;">&#x751F;&#x7269;&#x804C;&#x4E1A;&#x4F26;&#x7406;&#x548C;&#x79D1;&#x5B66;&#x9053;&#x5FB7;&#x89C4;&#x8303;&#x8BFE;&#x7A0B;&#x7B14;&#x8BB0;</a><time datetime="2023-01-03T08:46:17.638Z" title="&#x66F4;&#x65B0;&#x4E8E; 2023-01-03 16:46:17">2023-01-03</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/6dcdcfcf.html" title="&#x6742;&#x4E03;&#x6742;&#x516B;&#x7B14;&#x8BB0;">&#x6742;&#x4E03;&#x6742;&#x516B;&#x7B14;&#x8BB0;</a><time datetime="2023-01-02T10:58:04.266Z" title="&#x66F4;&#x65B0;&#x4E8E; 2023-01-02 18:58:04">2023-01-02</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/df4eaa5b.html" title="&#x8F6E;&#x8F6C;&#x65E5;&#x8BB0;">&#x8F6E;&#x8F6C;&#x65E5;&#x8BB0;</a><time datetime="2023-01-01T14:49:23.674Z" title="&#x66F4;&#x65B0;&#x4E8E; 2023-01-01 22:49:23">2023-01-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/9f2bbbbe.html" title="&#x7814;&#x7A76;RNA&#x4E8C;&#x7EA7;&#x7ED3;&#x6784;&#x7684;&#x5B9E;&#x9A8C;&#x65B9;&#x6CD5;">&#x7814;&#x7A76;RNA&#x4E8C;&#x7EA7;&#x7ED3;&#x6784;&#x7684;&#x5B9E;&#x9A8C;&#x65B9;&#x6CD5;</a><time datetime="2022-12-14T15:37:40.000Z" title="&#x66F4;&#x65B0;&#x4E8E; 2022-12-14 23:37:40">2022-12-14</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>&#x5F52;&#x6863;</span><a class="card-more-btn" href="/archives/" title="&#x67E5;&#x770B;&#x66F4;&#x591A;">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/12/"><span class="card-archive-list-date">&#x5341;&#x4E8C;&#x6708; 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">&#x5341;&#x4E00;&#x6708; 2022</span><span class="card-archive-list-count">20</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/10/"><span class="card-archive-list-date">&#x5341;&#x6708; 2022</span><span class="card-archive-list-count">19</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/09/"><span class="card-archive-list-date">&#x4E5D;&#x6708; 2022</span><span class="card-archive-list-count">20</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/08/"><span class="card-archive-list-date">&#x516B;&#x6708; 2022</span><span class="card-archive-list-count">14</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/07/"><span class="card-archive-list-date">&#x4E03;&#x6708; 2022</span><span class="card-archive-list-count">12</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/06/"><span class="card-archive-list-date">&#x516D;&#x6708; 2022</span><span class="card-archive-list-count">10</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/05/"><span class="card-archive-list-date">&#x4E94;&#x6708; 2022</span><span class="card-archive-list-count">16</span></a></li></ul></div></div></div></main><footer id="footer" style="background-image: url(&apos;https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/footer_bg.webp&apos;)"><div id="footer-wrap"><div class="footer_custom_text">&#x5982;&#x679C;&#x4F60;&#x559C;&#x6B22;&#x6D6A;&#x6F2B;&#xFF0C;&#x8FD9;&#x91CC;&#x5E76;&#x975E;&#x5BF8;&#x8349;&#x4E0D;&#x751F;</div><div id="running-time"><script>setInterval(()=>{let create_time=Math.round(new Date('2022-03-25 00:00:00').getTime()/1000);let timestamp=Math.round((new Date().getTime()+8*60*60*1000)/1000);let second=timestamp-create_time;let time=new Array(0,0,0,0,0);if(second>=365*24*3600){time[0]=parseInt(second/(365*24*3600));second%=365*24*3600;}if(second>=24*3600){time[1]=parseInt(second/(24*3600));second%=24*3600;}if(second>=3600){time[2]=parseInt(second/3600);second%=3600;}if(second>=60){time[3]=parseInt(second/60);second%=60;}if(second>0){time[4]=second;}currentTimeHtml='本站已安全运行 '+time[0]+' 年 '+time[1]+' 天 '+time[2]+' 时 '+time[3]+' 分 '+time[4]+' 秒';document.getElementById("running-time").innerHTML=currentTimeHtml;},1000);</script></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="&#x6D45;&#x8272;&#x548C;&#x6DF1;&#x8272;&#x6A21;&#x5F0F;&#x8F6C;&#x6362;"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="&#x5355;&#x680F;&#x548C;&#x53CC;&#x680F;&#x5207;&#x6362;"><i class="fas fa-arrows-alt-h"></i></button><button id="refresh-cache" type="button" title="&#x5237;&#x65B0;&#x7F13;&#x5B58;" onclick="refreshCache()"><i class="fas fa-refresh fa-spin"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="&#x8BBE;&#x7F6E;"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="&#x56DE;&#x5230;&#x9876;&#x90E8;"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">&#x641C;&#x7D22;</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  &#x6570;&#x636E;&#x5E93;&#x52A0;&#x8F7D;&#x4E2D;</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="&#x641C;&#x7D22;&#x6587;&#x7AE0;" type="text"></div></div><hr><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://unpkg.com/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://unpkg.com/instant.page/instantpage.js" type="module"></script><script src="https://unpkg.com/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://unpkg.com/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"></div><script data-pjax async src="/js/weather.js"></script><script data-pjax src="/js/weather1.js"></script><script data-pjax async src="/js/custom/refresh.js"></script><script src="https://unpkg.com/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/bb/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('swiper-position') && location.pathname =='/'){
+    
+    var parent = document.getElementById('swiper-position');
+    var child = '<div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202210301432070.png?x-oss-process=style/screenshots" alt="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202210301432070.png?x-oss-process=style/screenshots"/></div><div class="blog-slider__content"><span class="blog-slider__code">2022-10-12</span><a class="blog-slider__title" href="posts/7b9e5580.html">生物学的历史框架</a><div class="blog-slider__text">给生物学的历史画几个锚点</div><a class="blog-slider__button" href="posts/7b9e5580.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/9d627b30a94d17b6b43672cfcfa3788f74966c44.jpg@942w_660h_progressive.webp" alt="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/9d627b30a94d17b6b43672cfcfa3788f74966c44.jpg@942w_660h_progressive.webp"/></div><div class="blog-slider__content"><span class="blog-slider__code">2022-07-10</span><a class="blog-slider__title" href="posts/25a9c68a.html">做自己尊重的人</a><div class="blog-slider__text">饶毅 2015年 北京大学 本科生毕业典礼 教师代表致辞</div><a class="blog-slider__button" href="posts/25a9c68a.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/cover_lzdbygy.webp" alt="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/cover_lzdbygy.webp"/></div><div class="blog-slider__content"><span class="blog-slider__code">2022-06-27</span><a class="blog-slider__title" href="posts/5a9709cd.html">龙舟队毕业感言</a><div class="blog-slider__text">　</div><a class="blog-slider__button" href="posts/5a9709cd.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/cover_wzwhrz.webp" alt="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/cover_wzwhrz.webp"/></div><div class="blog-slider__content"><span class="blog-slider__code">2022-08-10</span><a class="blog-slider__title" href="posts/cb901750.html">网站维护日志</a><div class="blog-slider__text">　</div><a class="blog-slider__button" href="posts/cb901750.html">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/8b2c5f50-5a1a-424f-aed1-f1884bed7ef4.png" alt="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/8b2c5f50-5a1a-424f-aed1-f1884bed7ef4.png"/></div><div class="blog-slider__content"><span class="blog-slider__code">2022-07-14</span><a class="blog-slider__title" href="posts/d8914b28.html">记事帖：第五十四届国际化学奥林匹克</a><div class="blog-slider__text">这一个月作为IChO2022组委会国际数据中心“副主任”的一点点杂记</div><a class="blog-slider__button" href="posts/d8914b28.html">详情</a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div>';
+    console.log('已挂载swiper')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script>
+<script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiper.min.js"></script>
+<script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper@0.18/swiper/swiperindex.js"></script>
+<style></style><!-- hexo injector body_end end --></body></html>
