@@ -73,3 +73,22 @@
 .article-sort-item.no-article-cover {
     height: 40px;
 }
+
+/*分类条样式修改*/
+
+#category-bar {
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    width: 100%;
+}
+.category-in-bar-tips {
+    margin-top: 1.3rem;
+}
+
+/*页面宽度拉大，屏幕铺满*/
+
+.layout {
+    max-width: 1400px;
+}
+.layout.hide-aside {
+    max-width: 1400px;

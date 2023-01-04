@@ -49,9 +49,7 @@
     
     
     
-    <category term="随笔&amp;杂记" scheme="https://fanyiming.life/categories/%E9%9A%8F%E7%AC%94-%E6%9D%82%E8%AE%B0/"/>
-    
-    <category term="研究范式" scheme="https://fanyiming.life/categories/%E9%9A%8F%E7%AC%94-%E6%9D%82%E8%AE%B0/%E7%A0%94%E7%A9%B6%E8%8C%83%E5%BC%8F/"/>
+    <category term="生物学途径" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E9%80%94%E5%BE%84/"/>
     
     
   </entry>
@@ -89,10 +87,10 @@
     
     
     
-    <category term="生物学基础" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+    <category term="生物学知识" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
     
-    <category term="生物化学" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%94%9F%E7%89%A9%E5%8C%96%E5%AD%A6/"/>
     
+    <category term="生物化学" scheme="https://fanyiming.life/tags/%E7%94%9F%E7%89%A9%E5%8C%96%E5%AD%A6/"/>
     
   </entry>
   
@@ -113,7 +111,7 @@
     
     
     
-    <category term="随笔&amp;杂记" scheme="https://fanyiming.life/categories/%E9%9A%8F%E7%AC%94-%E6%9D%82%E8%AE%B0/"/>
+    <category term="随笔杂记" scheme="https://fanyiming.life/categories/%E9%9A%8F%E7%AC%94%E6%9D%82%E8%AE%B0/"/>
     
     
   </entry>
@@ -186,10 +184,10 @@
     
     
     
-    <category term="生物学基础" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+    <category term="生物学知识" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
     
-    <category term="结构生物学" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%BB%93%E6%9E%84%E7%94%9F%E7%89%A9%E5%AD%A6/"/>
     
+    <category term="结构生物学" scheme="https://fanyiming.life/tags/%E7%BB%93%E6%9E%84%E7%94%9F%E7%89%A9%E5%AD%A6/"/>
     
   </entry>
   
@@ -233,10 +231,10 @@
     
     
     
-    <category term="生物学基础" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+    <category term="生物学知识" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
     
-    <category term="微生物学" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/%E5%BE%AE%E7%94%9F%E7%89%A9%E5%AD%A6/"/>
     
+    <category term="微生物学" scheme="https://fanyiming.life/tags/%E5%BE%AE%E7%94%9F%E7%89%A9%E5%AD%A6/"/>
     
   </entry>
   
@@ -257,12 +255,12 @@
     
     
     
-    <category term="生物学基础" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
-    
-    <category term="分子生物学" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/"/>
+    <category term="生物学知识" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
     
     
-    <category term="molecular biology of the cell" scheme="https://fanyiming.life/tags/molecular-biology-of-the-cell/"/>
+    <category term="分子生物学" scheme="https://fanyiming.life/tags/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/"/>
+    
+    <category term="MolecularBiologyOfTheCell" scheme="https://fanyiming.life/tags/MolecularBiologyOfTheCell/"/>
     
   </entry>
   
@@ -283,12 +281,12 @@
     
     
     
-    <category term="生物学基础" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
-    
-    <category term="分子生物学" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/"/>
+    <category term="生物学知识" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
     
     
-    <category term="molecular biology of the cell" scheme="https://fanyiming.life/tags/molecular-biology-of-the-cell/"/>
+    <category term="分子生物学" scheme="https://fanyiming.life/tags/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/"/>
+    
+    <category term="MolecularBiologyOfTheCell" scheme="https://fanyiming.life/tags/MolecularBiologyOfTheCell/"/>
     
   </entry>
   
@@ -309,12 +307,12 @@
     
     
     
-    <category term="生物学基础" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
-    
-    <category term="分子生物学" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/"/>
+    <category term="生物学知识" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
     
     
-    <category term="molecular biology of the cell" scheme="https://fanyiming.life/tags/molecular-biology-of-the-cell/"/>
+    <category term="分子生物学" scheme="https://fanyiming.life/tags/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/"/>
+    
+    <category term="MolecularBiologyOfTheCell" scheme="https://fanyiming.life/tags/MolecularBiologyOfTheCell/"/>
     
   </entry>
   
@@ -339,8 +337,8 @@
     
     <category term="生物学技术" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="protocol" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E6%8A%80%E6%9C%AF/protocol/"/>
     
+    <category term="protocol" scheme="https://fanyiming.life/tags/protocol/"/>
     
   </entry>
   
@@ -384,10 +382,10 @@
     
     
     
-    <category term="生物学基础" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+    <category term="生物学知识" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
     
     
-    <category term="molecular biology of the cell" scheme="https://fanyiming.life/tags/molecular-biology-of-the-cell/"/>
+    <category term="MolecularBiologyOfTheCell" scheme="https://fanyiming.life/tags/MolecularBiologyOfTheCell/"/>
     
   </entry>
   
@@ -408,10 +406,10 @@
     
     
     
-    <category term="生物学基础" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+    <category term="生物学知识" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
     
-    <category term="分子生物学" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/"/>
     
+    <category term="分子生物学" scheme="https://fanyiming.life/tags/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/"/>
     
   </entry>
   
@@ -439,10 +437,10 @@
     
     
     
-    <category term="随笔&amp;杂记" scheme="https://fanyiming.life/categories/%E9%9A%8F%E7%AC%94-%E6%9D%82%E8%AE%B0/"/>
+    <category term="生物学途径" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E9%80%94%E5%BE%84/"/>
     
-    <category term="科学史" scheme="https://fanyiming.life/categories/%E9%9A%8F%E7%AC%94-%E6%9D%82%E8%AE%B0/%E7%A7%91%E5%AD%A6%E5%8F%B2/"/>
     
+    <category term="科学史" scheme="https://fanyiming.life/tags/%E7%A7%91%E5%AD%A6%E5%8F%B2/"/>
     
   </entry>
   
@@ -460,10 +458,10 @@
     
     
     
-    <category term="随笔&amp;杂记" scheme="https://fanyiming.life/categories/%E9%9A%8F%E7%AC%94-%E6%9D%82%E8%AE%B0/"/>
+    <category term="生物学途径" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E9%80%94%E5%BE%84/"/>
     
-    <category term="科学史" scheme="https://fanyiming.life/categories/%E9%9A%8F%E7%AC%94-%E6%9D%82%E8%AE%B0/%E7%A7%91%E5%AD%A6%E5%8F%B2/"/>
     
+    <category term="科学史" scheme="https://fanyiming.life/tags/%E7%A7%91%E5%AD%A6%E5%8F%B2/"/>
     
   </entry>
   
@@ -472,7 +470,7 @@
     <link href="https://fanyiming.life/posts/2fb10ed7.html"/>
     <id>https://fanyiming.life/posts/2fb10ed7.html</id>
     <published>2022-11-02T14:52:42.000Z</published>
-    <updated>2022-11-02T15:15:53.816Z</updated>
+    <updated>2023-01-04T10:05:25.754Z</updated>
     
     <content type="html"><![CDATA[<p>虽说实验室有简洁高效的包病毒protocol，还是找到了一份原滋原味的，用来学习学习细节。（不过这里面有些参数好夸张呀，不知道是不是写错了。<br>Downloaded from: <a href="https://www.epfl.ch/labs/tronolab/wp-content/uploads/2019/06/LV_production.pdf">https://www.epfl.ch/labs/tronolab/wp-content/uploads/2019/06/LV_production.pdf</a></p><div class="row"><embed src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/file/LV_production.pdf" width="100%" height="550" type="application/pdf"></div><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
@@ -486,8 +484,8 @@
     
     <category term="生物学技术" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="protocol" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E6%8A%80%E6%9C%AF/protocol/"/>
     
+    <category term="protocol" scheme="https://fanyiming.life/tags/protocol/"/>
     
   </entry>
   
