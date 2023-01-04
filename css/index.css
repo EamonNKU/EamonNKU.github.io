@@ -6012,11 +6012,6 @@ blockquote.pullquote.right {
     width: 100%;
     margin: auto;
   }
-/*归档页面行间距缩小*/
-
-.article-sort-item.no-article-cover {
-    height: 40px;
-}
 
 /*分类条样式修改*/
 
@@ -6120,6 +6115,21 @@ blockquote.pullquote.right {
 }
 #aside-content .card-info .is-center div a i {
 	font-size: 20px;
+}
+
+
+/*说说首页条*/
+#bber-talk {
+	margin-top: 16px;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	padding-left: 1rem !important;
+	padding-right: 1rem !important;
+	min-height: 0 !important;
+	max-height: 30px !important;
+}
+#bber-talk .talk-list {
+	padding: 0 0 0 0;
 }
 .search-dialog {
   position: fixed;
