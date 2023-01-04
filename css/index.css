@@ -2631,7 +2631,7 @@ h1.page-title + .tag-cloud-list {
   text-align: left;
 }
 #aside-content {
-  width: 26%;
+  width: 20%;
 }
 @media screen and (min-width: 900px) {
   #aside-content {
@@ -6032,7 +6032,7 @@ blockquote.pullquote.right {
     max-width: 1500px;
 }
 .layout > div:first-child {
-	width: 85%;
+	width: 80%;
 }
 .layout.hide-aside {
     max-width: 1000px;

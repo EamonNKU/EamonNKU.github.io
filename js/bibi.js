@@ -4,11 +4,12 @@ let nowNum = 0
 let items = []
 let page = 1
 let Url = 'https://kkapi.fanyiming.life/api/ispeak?author=62f986767dea16f35be87804&page=' // 修改api，记得带参数page
-
-
-window.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('pjax:complete', (e) => {
+   window.addEventListener('DOMContentLoaded', () => {
     getNew();
 });
+ });
+
 
 // 获取数据
 function getNew() {
