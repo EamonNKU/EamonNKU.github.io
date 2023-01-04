@@ -6,7 +6,7 @@
   <link href="https://fanyiming.life/atom.xml" rel="self"/>
   
   <link href="https://fanyiming.life/"/>
-  <updated>2022-12-14T15:37:40.000Z</updated>
+  <updated>2023-01-04T14:03:48.000Z</updated>
   <id>https://fanyiming.life/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>系统生物学信口开河</title>
+    <link href="https://fanyiming.life/posts/cc93a7d0.html"/>
+    <id>https://fanyiming.life/posts/cc93a7d0.html</id>
+    <published>2023-01-04T14:03:48.000Z</published>
+    <updated>2023-01-04T14:03:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>“系统生物学是伪概念吗？”这是我听到这个词的第一想法。因为几乎所有的生物学研究者，都因生物系统的完美运行而惊叹，了解这个整体的系统，是每一个从业者的终极目标。而这系统也因体量太过复杂，只能从局部一点一点窥探真相，当局部的真相积累得越来越多，理解“系统”也就是自然而然的事情。基于此，我认为“系统生物学”并不能算作一个单独的学科，因为任何自称系统生物学领域的研究者，终要从局部的研究出发。因此，我在这门课之前的观点是，系统生物学只是一种分析问题的思路，它没有独有的研究方法，也没有人可以自称为“系统生物学家”。</p><p>现在我对它的看法有了改观，如果把系统生物学理解为“网络化”的研究，则一项研究是否属于系统生物学就有了判断标准。目前我的理解是：</p><p>1) 不关注单个元素，而在于多个元素形成的网络本身，或某个元素对整个网络的影响，或网络本身的形成过程、鲁棒性来源等，如用DNaseI方法研究TFs相互调控网络的例子[1]。</p><p>2) 因为网络信息的庞大，一般是实验和计算的结合。</p><p>3) 结论和目的在于提出/预测理论性的观点（顺便/退而求此次提供数据库信息）。</p><p>这样，系统生物学就不止是思路，也是一种研究范式了。</p><p>我认为系统生物学对“逻辑判断”的要求高于其他生物学科，因为网络有不同的形式(random/scale-free/hierarchical)，它们中元素之间的关系就有区别，相关还是因果，上游还是下游，相交还是并行，都是需要仔细分辨的概念，因此学习一些逻辑学知识对我们理解网络很有帮助。</p><p>如果从广义的系统生物学角度展望，我脑海中未来的图景是，一方面，我们在尚未厘清全部细节时得到一些网络化的结论，它们大概是一些普适性的理论模型，能够解释和预测一些局部的生物学现象；另一方面，还原论研究者们把基因组上的所有序列、细胞内的所有生物过程、组织和个人的所有生理现象都有了大致清晰的认识。两方面交汇，那时真正的系统生物学将到来，生物学变得像现在的计算机编程一样，未来的生物学研究生将不再致力于研究现象，而是将全部精力用于改造生物和创造新生物，因为全部的生命现象都有了准确的解释，从业人员只需要从数据库中检索和提取需要的信息就可以了。</p><hr><p>要找个周末好好看一看的文献：</p><p>[1] Neph, S., Vierstra, J., Stergachis, A. <em>et al.</em> An expansive human regulatory lexicon encoded in transcription factor footprints. <em>Nature</em> <strong>489</strong>, 83–90 (2012). <a href="https://doi.org/10.1038/nature11212">https://doi.org/10.1038/nature11212</a></p><p>[2] Basso K, Margolin AA, Stolovitzky G, Klein U, Dalla-Favera R, Califano A. Reverse engineering of regulatory networks in human B cells. Nat Genet. 2005 Apr;37(4):382-90. doi: 10.1038/ng1532. Epub 2005 Mar 20. PMID: 15778709.</p><p>[3] King G. Ensuring the data-rich future of the social sciences. Science. 2011 Feb 11;331(6018):719-21. doi: 10.1126/science.1197872. PMID: 21311013.</p><p>[4] Zhao S, Zheng P, Dong S, Zhan X, Wu Q, Guo X, Hu Y, He W, Zhang S, Fan W, Zhu L, Li D, Zhang X, Chen Q, Zhang H, Zhang Z, Jin X, Zhang J, Yang H, Wang J, Wang J, Wei F. Whole-genome sequencing of giant pandas provides insights into demographic history and local adaptation. Nat Genet. 2013 Jan;45(1):67-71. doi: 10.1038/ng.2494. Epub 2012 Dec 16. PMID: 23242367.</p><p>[5] Basso K, Margolin AA, Stolovitzky G, Klein U, Dalla-Favera R, Califano A. Reverse engineering of regulatory networks in human B cells. Nat Genet. 2005 Apr;37(4):382-90. doi: 10.1038/ng1532. Epub 2005 Mar 20. PMID: 15778709.</p><p>[6] Waltermann C, Klipp E. Information theory based approaches to cellular signaling. Biochim Biophys Acta. 2011 Oct;1810(10):924-32. doi: 10.1016/j.bbagen.2011.07.009. Epub 2011 Jul 23. PMID: 21798319.</p><p>[7] Anastassiou D. Computational analysis of the synergy among multiple interacting genes. Mol Syst Biol. 2007;3:83. doi: 10.1038/msb4100124. Epub 2007 Feb 13. PMID: 17299419; PMCID: PMC1828751.</p><p>[8] Bisikirska BC, Adam SJ, Alvarez MJ, Rajbhandari P, Cox R, Lefebvre C, Wang K, Rieckhof GE, Felsher DW, Califano A. STK38 is a critical upstream regulator of MYC’s oncogenic activity in human B-cell lymphoma. Oncogene. 2013 Nov 7;32(45):5283-91. doi: 10.1038/onc.2012.543. Epub 2012 Nov 26. PMID: 23178486; PMCID: PMC3715597.</p><p>[9] Wang K, Saito M, Bisikirska BC, Alvarez MJ, Lim WK, Rajbhandari P, Shen Q, Nemenman I, Basso K, Margolin AA, Klein U, Dalla-Favera R, Califano A. Genome-wide identification of post-translational modulators of transcription factor activity in human B cells. Nat Biotechnol. 2009 Sep;27(9):829-39. doi: 10.1038/nbt.1563. Epub 2009 Sep 9. PMID: 19741643; PMCID: PMC2753889.</p><p>[10] Arkin AP, Schaffer DV. Network news: innovations in 21st century systems biology. Cell. 2011 Mar 18;144(6):844-9. doi: 10.1016/j.cell.2011.03.008. PMID: 21414475.</p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <summary type="html">此人又不干正事，胡说八道</summary>
+    
+    
+    
+    <category term="随笔杂记" scheme="https://fanyiming.life/categories/%E9%9A%8F%E7%AC%94%E6%9D%82%E8%AE%B0/"/>
+    
+    
+    <category term="想法" scheme="https://fanyiming.life/tags/%E6%83%B3%E6%B3%95/"/>
+    
+    <category term="系统生物学" scheme="https://fanyiming.life/tags/%E7%B3%BB%E7%BB%9F%E7%94%9F%E7%89%A9%E5%AD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>研究RNA二级结构的实验方法</title>
@@ -462,30 +485,6 @@
     
     
     <category term="科学史" scheme="https://fanyiming.life/tags/%E7%A7%91%E5%AD%A6%E5%8F%B2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>慢病毒包装和转导</title>
-    <link href="https://fanyiming.life/posts/2fb10ed7.html"/>
-    <id>https://fanyiming.life/posts/2fb10ed7.html</id>
-    <published>2022-11-02T14:52:42.000Z</published>
-    <updated>2023-01-04T10:05:25.754Z</updated>
-    
-    <content type="html"><![CDATA[<p>虽说实验室有简洁高效的包病毒protocol，还是找到了一份原滋原味的，用来学习学习细节。（不过这里面有些参数好夸张呀，不知道是不是写错了。<br>Downloaded from: <a href="https://www.epfl.ch/labs/tronolab/wp-content/uploads/2019/06/LV_production.pdf">https://www.epfl.ch/labs/tronolab/wp-content/uploads/2019/06/LV_production.pdf</a></p><div class="row"><embed src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/file/LV_production.pdf" width="100%" height="550" type="application/pdf"></div><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;虽说实验室有简洁高效的包病毒protocol，还是找到了一份原滋原味的，用来学习学习细节。（不过这里面有些参数好夸张呀，不知道是不是写错了。&lt;br&gt;Downloaded from: &lt;a href=&quot;https://www.epfl.ch/labs/tronolab/wp-</summary>
-      
-    
-    
-    
-    <category term="生物学技术" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="protocol" scheme="https://fanyiming.life/tags/protocol/"/>
     
   </entry>
   
