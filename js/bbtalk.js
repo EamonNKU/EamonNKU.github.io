@@ -1,7 +1,7 @@
 let jsonUrl = 'https://kkapi.fanyiming.life/api/ispeak?author=62f986767dea16f35be87804' // 在这修改api
 
 document.getElementById('bber-talk').addEventListener('click', () => {
-    window.location.pathname = '/bb/' // 在这修改你的哔哔页面地址
+  window.location.pathname = '/bb/' // 在这修改你的哔哔页面地址
 })
 
 bbtalk();
