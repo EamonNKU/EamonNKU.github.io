@@ -6182,12 +6182,17 @@ blockquote.pullquote.right {
   }
 
 /*分类条样式修改*/
-@media screen and (max-width: 768px) {
 #category-bar {
 	position: relative !important;
-	width: 100%;
+	width: 100% !important;
+	border-radius: 5px !important;
+	text-align: center !important;
 }
+
+#category-bar>* {
+	margin: auto !important;
 }
+
 .category-in-bar-tips {
 
 }
@@ -6302,6 +6307,7 @@ blockquote.pullquote.right {
 	padding-right: 1rem !important;
 	min-height: 0 !important;
 	max-height: 30px !important;
+	border-radius: 5px !important;
 }
 #bber-talk .talk-list {
 	padding: 0 0 0 0;
