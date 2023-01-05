@@ -6139,12 +6139,12 @@ blockquote.pullquote.right {
 #swiper-position
 {
     background: rgba(255,255,255,1);
-    flex-direction: column;
+    display: flex;
+    flex-direction: auto;
     height: auto;
     margin-top: 20px;
     border-radius: 8px;
     background: var(--card-bg);
-    display: flex;
 }
 
 /*修改首页文章摘要显示的行数，由2行改为4行*/
@@ -6286,18 +6286,7 @@ blockquote.pullquote.right {
 }
 
 
-@media screen and (max-width: 768px)
-.blog-slider__pagination {
-	top: 95%;
-}
-@media screen and (max-width: 768px)
-.blog-slider {
-	max-height: 400px;
-}
-@media screen and (max-width: 900px)
-.blog-slider {
-	max-height: 200px;
-}
+
 .search-dialog {
   position: fixed;
   top: 10%;
