@@ -6154,18 +6154,21 @@ blockquote.pullquote.right {
 @media screen and (max-width: 768px){
 	#swiper-position {
 		max-height: 370px !important;
+	}
 	.blog-slider__img {
 		max-height: 400px !important;
+	}
 	#swiper-container {
 		max-height: 350px !important;
-}
-}
+	}
 }
 @media screen and (min-width: 769px){
 	#swiper-position {
 		max-height: 300px !important;
-	#swiper-container: 280px !important;
-}
+	}
+	#swiper-container {
+		max-height: 280px !important;
+	}
 }
 #swiper-container {
 	margin: 0 0 0 0 !important;
