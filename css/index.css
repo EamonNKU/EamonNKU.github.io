@@ -6277,6 +6277,11 @@ blockquote.pullquote.right {
 #bber-talk .talk-list {
 	padding: 0 0 0 0;
 }
+
+
+.blog-slider {
+	padding: 0 0 0 0 !important;
+}
 .search-dialog {
   position: fixed;
   top: 10%;
