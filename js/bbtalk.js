@@ -8,7 +8,6 @@ document.getElementById('bber-talk').addEventListener('click', () => {
 bbtalk();
 
 function bbtalk() {
-    let jsonUrl = 'https://kkapi.fanyiming.life/api/ispeak?author=62f986767dea16f35be87804';// 在这修改api
 
     let data = JSON.parse(localStorage.getItem('bibi'));
     let nowTime = Date.now();
@@ -34,6 +33,7 @@ function bbtalk() {
 }
 
 function getData() {
+    let jsonUrl = 'https://kkapi.fanyiming.life/api/ispeak?author=62f986767dea16f35be87804' // 在这修改api
     fetch(jsonUrl)
         .then(res => res.json())
         .then((data) => {
