@@ -1861,20 +1861,6 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/tags/minecraft/</loc>
-    <lastmod>2023-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://fanyiming.life/tags/%E7%A7%91%E5%AD%A6%E5%8F%B2/</loc>
-    <lastmod>2023-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://fanyiming.life/tags/linux/</loc>
     <lastmod>2023-01-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -1882,7 +1868,21 @@
   </url>
   
   <url>
+    <loc>https://fanyiming.life/tags/minecraft/</loc>
+    <lastmod>2023-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://fanyiming.life/tags/%E5%BA%8F%E5%88%97%E6%AF%94%E5%AF%B9/</loc>
+    <lastmod>2023-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://fanyiming.life/tags/%E7%A7%91%E5%AD%A6%E5%8F%B2/</loc>
     <lastmod>2023-01-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1924,6 +1924,13 @@
   </url>
   
   <url>
+    <loc>https://fanyiming.life/tags/%E5%8F%91%E8%82%B2%E7%94%9F%E7%89%A9%E5%AD%A6/</loc>
+    <lastmod>2023-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://fanyiming.life/tags/%E7%BB%86%E8%83%9E%E7%94%9F%E7%89%A9%E5%AD%A6/</loc>
     <lastmod>2023-01-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -1932,13 +1939,6 @@
   
   <url>
     <loc>https://fanyiming.life/tags/%E6%83%B3%E6%B3%95/</loc>
-    <lastmod>2023-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://fanyiming.life/tags/%E5%8F%91%E8%82%B2%E7%94%9F%E7%89%A9%E5%AD%A6/</loc>
     <lastmod>2023-01-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1994,7 +1994,7 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/tags/%E7%A5%9E%E7%BB%8F%E7%94%9F%E7%89%A9%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://fanyiming.life/tags/%E5%AD%A6%E6%9C%AF%E8%A7%84%E8%8C%83%E5%92%8C%E8%81%8C%E4%B8%9A%E4%BC%A6%E7%90%86/</loc>
     <lastmod>2023-01-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2008,7 +2008,7 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/tags/%E5%AD%A6%E6%9C%AF%E8%A7%84%E8%8C%83%E5%92%8C%E8%81%8C%E4%B8%9A%E4%BC%A6%E7%90%86/</loc>
+    <loc>https://fanyiming.life/tags/%E7%A5%9E%E7%BB%8F%E7%94%9F%E7%89%A9%E5%AD%A6%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2023-01-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2066,14 +2066,14 @@
   </url>
   
   <url>
-    <loc>https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://fanyiming.life/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%92%8C%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2023-01-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://fanyiming.life/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%92%8C%E7%BD%91%E7%BB%9C/</loc>
+    <loc>https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2023-01-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
