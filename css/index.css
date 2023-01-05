@@ -6194,16 +6194,16 @@ blockquote.pullquote.right {
 	}
 }
 
-#slider-position {
+#swiper-position {
 	height: 220px;
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
-	#slider-position {
+	#swiper-position {
 		height: 480px;
 	}
 }
 @media screen and (max-width: 480px) {
-	#slider-position {
+	#swiper-position {
 		height: 370px;
 	}
 }
