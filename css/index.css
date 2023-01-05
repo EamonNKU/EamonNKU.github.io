@@ -6249,6 +6249,10 @@ blockquote.pullquote.right {
 .aside-content .avatar-img {
 	border: 2px solid lightgray;
 }
+.avatar-img.is-center {
+	border: 2px solid lightgray;
+	
+}
 
 /*隐藏侧边栏文章标签分类数量，名字后边加RSS链接*/
 #aside-content .card-info .card-info-data{
@@ -6261,6 +6265,9 @@ blockquote.pullquote.right {
 }
 #aside-content .card-info .is-center div a i {
 	font-size: 20px;
+}
+.sidebar-site-data.site-data.is-center {
+	display: none !important;
 }
 
 
@@ -6279,8 +6286,9 @@ blockquote.pullquote.right {
 }
 
 
-.blog-slider {
-	margin-bottom: 0;
+@media screen and (max-width: 768px)
+.blog-slider__pagination {
+	top: 95%;
 }
 .search-dialog {
   position: fixed;
