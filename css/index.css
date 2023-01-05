@@ -6280,7 +6280,7 @@ blockquote.pullquote.right {
 
 
 .blog-slider {
-	padding: 0 0 0 0 !important;
+	margin-bottom: 0;
 }
 .search-dialog {
   position: fixed;
