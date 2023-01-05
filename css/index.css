@@ -6168,6 +6168,7 @@ blockquote.pullquote.right {
     margin-top: 1rem;
     margin-bottom: 0rem;
     width: 100%;
+    border-radius: 5px;
 }
 .category-in-bar-tips {
     margin-top: 1.3rem;
