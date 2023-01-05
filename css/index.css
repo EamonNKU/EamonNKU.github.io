@@ -6140,14 +6140,14 @@ blockquote.pullquote.right {
 {
     background: rgba(255,255,255,1);
     display: flex;
-    flex-direction: auto;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
     height: auto;
     margin-top: 20px;
     border-radius: 8px;
     background: var(--card-bg);
-    justify-content:space-between;
-    flex-wrap: wrap;
-    align-content: flex-start;/*子元素之间取消空白间隙，并把项目放在容器顶部。*/
+
 }
 
 /*修改首页文章摘要显示的行数，由2行改为4行*/
