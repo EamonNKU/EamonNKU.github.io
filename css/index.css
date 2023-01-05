@@ -6290,6 +6290,14 @@ blockquote.pullquote.right {
 .blog-slider__pagination {
 	top: 95%;
 }
+@media screen and (max-width: 768px)
+.blog-slider {
+	max-height: 400px;
+}
+@media screen and (max-width: 900px)
+.blog-slider {
+	max-height: 200px;
+}
 .search-dialog {
   position: fixed;
   top: 10%;
