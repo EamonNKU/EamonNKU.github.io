@@ -6138,12 +6138,8 @@ blockquote.pullquote.right {
 /*修改首页轮播的css样式*/
 #swiper-position
 {
+	max-height: 230px;
     background: rgba(255,255,255,1);
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: column;
-    -webkit-flex-direction: column;
-    height: auto;
     margin-top: 20px;
     border-radius: 8px;
     background: var(--card-bg);
@@ -6153,40 +6149,16 @@ blockquote.pullquote.right {
 }
 @media screen and (max-width: 768px){
 	#swiper-position {
-		max-height: 370px !important;
-	}
-	.blog-slider__img {
-		max-height: 400px !important;
-	}
-	#swiper-container {
-		max-height: 350px !important;
+		max-height: 450px;
 	}
 }
-@media screen and (min-width: 769px){
+@media screen and @media screen and (max-height: 500px) and (min-width: 992px) {
+
 	#swiper-position {
-		max-height: 300px !important;
-	}
-	#swiper-container {
-		max-height: 280px !important;
+		max-height: 300px;
 	}
 }
-#swiper-container {
-	margin: 0 0 0 0 !important;
-	padding: 0 0 0 0 !important;
-	clear: both !important;
-}
-.blog-slider__button {
-	display: none !important;
-}
-.blog-slider__wrp.swiper-wrapper {
-	margin: 0 0 0 0 !important;
-	padding: 0 0 0 0 !important;
-}
-.blog-slider__pagination.swiper-pagination-clickable.swiper-pagination-bullets {
-	margin: 0 0 0 0 !important;
-	padding: 0 0 0 0 !important;
-	top: 70% !important;	
-}
+
 /*修改首页文章摘要显示的行数，由2行改为4行*/
 #recent-posts > .recent-post-item >.recent-post-info > .content {
     -webkit-line-clamp: 4;
