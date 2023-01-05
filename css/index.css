@@ -6147,28 +6147,43 @@ blockquote.pullquote.right {
     margin-top: 20px;
     border-radius: 8px;
     background: var(--card-bg);
-    overflow: auto;
+    overflow: hidden;
     margin-bottom: 30px;
 
 }
 @media screen and (max-width: 768px){
 	#swiper-position {
-		max-height: 470px !important;
+		max-height: 370px !important;
+	.blog-slider__img {
+		max-height: 400px !important;
+	#swiper-container {
+		max-height: 350px !important;
+}
 }
 }
 @media screen and (min-width: 769px){
 	#swiper-position {
 		max-height: 300px !important;
+	#swiper-container: 280px !important;
 }
 }
 #swiper-container {
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
-	clear: both;
+	margin: 0 0 0 0 !important;
+	padding: 0 0 0 0 !important;
+	clear: both !important;
 }
-
-
-
+.blog-slider__button {
+	display: none !important;
+}
+.blog-slider__wrp.swiper-wrapper {
+	margin: 0 0 0 0 !important;
+	padding: 0 0 0 0 !important;
+}
+.blog-slider__pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+	margin: 0 0 0 0 !important;
+	padding: 0 0 0 0 !important;
+	top: 70% !important;	
+}
 /*修改首页文章摘要显示的行数，由2行改为4行*/
 #recent-posts > .recent-post-item >.recent-post-info > .content {
     -webkit-line-clamp: 4;
