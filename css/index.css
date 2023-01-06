@@ -6152,7 +6152,7 @@ blockquote.pullquote.right {
 	display: flex !important;
 }
 .blog-slider {
-	margin: 10px auto !important;
+	margin: 10px auto 10px auto !important;
 }
 .blog-slider__img {
 	transform: translateY(0px) !important;
@@ -6352,8 +6352,35 @@ blockquote.pullquote.right {
 	padding: 0 0 0 0;
 }
 
-
-
+/*修改手机尺寸下的首页样式*/
+@media screen and (max-width: 480px) {
+	.layout {
+		padding: 0 !important;
+	}
+	.recent-post-item {
+		border-radius: 0 !important;
+		margin: 1px 0 !important;
+	}
+	.recent-post-item > .recent-post-info.no-cover {
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+	.recent-post-item > .recent-post-info.no-cover>a{
+		text-align: center !important;
+	}
+	#category-bar {
+		margin: 0 0 5px 0 !important;
+	}
+	#swiper-position {
+		border-radius: 0 !important;
+		border-radius: 0 !important;
+		margin: 0 0 5px 0 !important;
+	}
+	#bber-talk {
+		margin: 10px 0 8px 0 !important;
+		border-radius: 5px !important;
+	}
+}
 .search-dialog {
   position: fixed;
   top: 10%;
