@@ -6,7 +6,7 @@
   <link href="https://fanyiming.life/atom.xml" rel="self"/>
   
   <link href="https://fanyiming.life/"/>
-  <updated>2023-11-13T15:08:12.000Z</updated>
+  <updated>2023-11-16T18:59:15.000Z</updated>
   <id>https://fanyiming.life/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GLP-1受体激动剂的医学转化</title>
+    <link href="https://fanyiming.life/posts/ba15a10a.html"/>
+    <id>https://fanyiming.life/posts/ba15a10a.html</id>
+    <published>2023-11-16T18:59:15.000Z</published>
+    <updated>2023-11-16T18:59:15.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202311170519109.jpg?x-oss-process=style/screenshots" alt="cb90515e5096d91d514148336fd6d39"></p><p>时间：2023年11月16日</p><blockquote><p>晚上老板催我课题，我说我还有一个小时就要去课上做Presentation了，他震惊于我怎么二年级了还在上课，他要是知道我一年级有一门课挂了还在重修估计会更震惊。这门课叫“转化医学和药物研发”，是罗永章老师上的。他牛逼的地方在于七次课基本上每节课讲的东西都是自己的研究和转化经历，内容丰富。让我想起来大三上遗传学的时候朱正茂老师讲的某一位遗传学家（不好意思我忘记名字了）在十多年潜心研究一篇文章没发之后，被Nature约稿写了一篇巨长的综述性的Research Article，意思就是它这十几年做的东西拼一块就是一篇综述了。罗老师讲了这几个实例：Hsp90α肿瘤标志物、抗肿瘤药物Endostar、创新药物研发VEGF、Insulin大规模高纯制备造厂子、Albumin大规模高纯制备造厂子……最后一节课请了专利方面的行家付彦老师讲专利相关知识。付彦老师是位女士，看起来贼有气质，据说五十多了，但看着像三十多……</p><p>然后这个小组展示准备的也比较仓促，因为随手在朋友圈看到药明康德发的一个推送是有关GLP-1的研究历程的，就顺手转发到了小组群里，后来就变成我们的选题了。虽然是我选的但是准备的也不充分，三个人分了三个部分，说实话我都没看她们俩那两部分讲的啥，甚至PPT是在我们仨上台前10分钟才做好合起来的。。。。。</p><p>行废话完了，下面是知识备忘部分。我就想起来啥写啥了。</p></blockquote><h1 id="GLP-1的“葡萄糖依赖性”降糖-促insulin-作用"><a href="#GLP-1的“葡萄糖依赖性”降糖-促insulin-作用" class="headerlink" title="GLP-1的“葡萄糖依赖性”降糖(促insulin)作用"></a>GLP-1的“葡萄糖依赖性”降糖(促insulin)作用</h1><p>糖尿病主要分两型，Type I是分泌胰岛素的胰岛B细胞受损导致产生不了胰岛素了，Type II是胰岛素的受体对胰岛素敏感性下降了，然后胰岛B细胞可能就一直使劲儿生产胰岛素最后把自己也给累坏了功能受损了。Type II占的比例大一点。人们一直在研究怎么更好地治疗糖尿病。</p><p>糖尿病最主要的一个症状是高血糖。为了降糖，最直接的方法是注射外源的胰岛素。然而直接注射胰岛素有可能会矫枉过正，即反而在一些时候引起低血糖症状。GLP-1这个蛋白就比较神奇，它的全称叫“胰高血糖素样肽-1”，是一种肠道中产生的激素，能够在高血糖时刺激胰岛素大量分泌，注意是在“高血糖”的时候，所以就比单纯注射胰岛素好了很多，因为当血糖下降到正常水平后再激活GLP-1的受体也不会继续增加胰岛素的分泌了，就不会引起低血糖。人们自然就想用这个性质开发能够激活GLP-1受体的药物（就是标题“GLP-1受体激动剂”）。</p><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202311170507416.png?x-oss-process=style/screenshots" alt="image-20231117050655805" style="zoom:50%;" /></p><p>虽然理论上非常之完美，但是GLP-1这个蛋白本身有一个很严重的问题就是它在血浆中的半衰期非常之短，通常只有2~3分钟。所以通过人工注射GLP-1来激活GLP-1受体这种简答无脑的操作是不可行的。</p><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202311170508674.png?x-oss-process=style/screenshots" alt="image-20231117050748061" style="zoom: 80%;" /></p><p>为什么GLP-1的半衰期这么短呢？因为人体中存在一种叫DPP-4的酶，是专门降解GLP-1的，因此，药物开发的方向就转到如何能够抑制DPP-4对GLP-1的降解。方法有很多，比如找到在GLP-1上找到DPP-4识别的那个氨基酸位点把它突变掉，在不影响对GLP-1受体激活活性的情况下抑制DPP-4对它的识别；再比如把GLP-1跟白蛋白Albumin直接融合在一起……</p><blockquote><p>插播：白蛋白Albumin是血浆中最丰富的蛋白质，占血浆蛋白含量的60%。把多肽类药物跟Albumin融合仿佛是一种挺常用的延长半衰期的策略。首先Albumin本身的半衰期就比较长，大概21天好像。原因之一是它能跟Fc receptor结合，利用一种我懒得查的机制绕过endosome的降解途径。药物融合Albumin之后也能通过这个途径减少降解。同时，药物融合Albumin之后分子量变大，甚至可能容易多聚化，而分子越大越不容易透过肾小球被renal elimination。</p><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202311170508577.png?x-oss-process=style/screenshots" alt="image-20231117050811362" style="zoom:50%;" /></p></blockquote><h1 id="两种药物转化实例——Exenatide和Liraglutide"><a href="#两种药物转化实例——Exenatide和Liraglutide" class="headerlink" title="两种药物转化实例——Exenatide和Liraglutide"></a>两种药物转化实例——Exenatide和Liraglutide</h1><p>基于GLP-1类似物的有很多很多药哈，上市的都有十几种了。这里就是随便选了俩举例子。</p><h2 id="Exenatide（艾塞那肽）"><a href="#Exenatide（艾塞那肽）" class="headerlink" title="Exenatide（艾塞那肽）"></a>Exenatide（艾塞那肽）</h2><p>一个叫Eng John的科学家在1992从美国毒蜥（Gila Monster）的毒液中发现一种叫Extendin-4的物质。这是一种与人源GLP-1具有53%同源性的Homologue，但是Eng John博士当时并不是以找GLP-1同源蛋白的目的发现Extendin-4的。而是发现了Extendin-4之后才发现它跟GLP-1很像。随后他又做了一些实验，证明了Extendin-4不但序列跟GLP-1相似，而且确实也能够激活人类的GLP-1 receptor. 那这样它就具有巨大的药物研发价值了，Extendin-4是化学分子的名字，Exenatide是把它制备纯化得到的药物的名字。</p><h3 id="Exenatide的医学转化过程"><a href="#Exenatide的医学转化过程" class="headerlink" title="Exenatide的医学转化过程"></a>Exenatide的医学转化过程</h3><p>Extendin-4在人血浆中的半衰期大概在2.4h，比native GLP-1的2~3min高了数倍不止。半衰期长的原因有以下几点：</p><ol><li>下图中GLP-1从N端开始的第二个氨基酸(A)是DPP-4的识别位点，而Extendin-4的这一位氨基酸替换成了Glycine，所以极大阻碍了DPP-4的识别；</li><li>Extendin-4中间部分的若干氨基酸替换能够抑制它自己被NEP24.11（另一种降解GLP-1的酶）的识别和降解；</li><li>Extendin-4的C端的9个氨基酸链能够增强这个分子的化学稳定性。</li></ol><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202311170510206.png?x-oss-process=style/screenshots" alt="image-20231117051046199" style="zoom:67%;" /></p><p>从1992年发现开始，Eng John博士于1994年成功申请到了Extendin-4的专利。1996年的时候，他去参加美国一个糖尿病相关的年会，在会上展示了一个poster，然后当时在研究相关药物的Amylin公司的技术人员看到了，于是一拍即合开始介入资本的力量正式开始了Extendin-4的医学转化。2002年的时候，伴随着Amylin的财务危机，另一个更牛逼的公司Eli Lilly加入了Exenatide的研发。2005年，Exenatide被FDA批准上市。此时，距离Eng John从美国毒蜥中发现Extendin-4已经过去了13年。2009年，Extenatide进入中国市场，名字是Byetta/百泌达。</p><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202311170511858.png?x-oss-process=style/screenshots" alt="image-20231117051103761" style="zoom:50%;" /></p><h3 id="长效Exenatide的医学转化过程"><a href="#长效Exenatide的医学转化过程" class="headerlink" title="长效Exenatide的医学转化过程"></a>长效Exenatide的医学转化过程</h3><p>2005年上市的Exenatide是GLP-1类似物相关药物中的第一个上市的药物（First-in-class），它需要病人<strong>每天打两针</strong>才能维持药效。</p><p>显然，对于一个长期药物，每天打两针对于病人来说是一个很大的身体和精神负担。所以Amylin没有止步不前，而是在Exenatide的基础上继续开放更长效的药物。</p><p>2012年，long-term Exenatide批准上市，药名叫Bydureon，它只需要<strong>每周打一针</strong>。</p><p>Bydureon用的其实还是Extendin-4，据我的理解应该是分子式一点都没变，但是在外面加了一层Glycolic acid和Lactic acid的聚合物形成的微囊，于是制成了缓释剂。这一药物的成功依赖于Amylin和药物缓释剂专家Alkermes公司的合作。Bydureon在血浆中的半衰期达到了恐怖的以星期为单位。</p><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202311170511255.png?x-oss-process=style/screenshots" alt="image-20231117051137135" style="zoom:50%;" /></p><h3 id="Exenatide的缺点"><a href="#Exenatide的缺点" class="headerlink" title="Exenatide的缺点"></a>Exenatide的缺点</h3><p>Exenatide毕竟是跨物种从蜥蜴那里来的，它与GLP-1的序列相似性只有53%。实验证明，有40%的病人在经过Exenatide治疗后产生了针对这种分子的中和抗体。产生抗体本身显然对药效有副作用，还存在潜在的诱发免疫反应的后果。</p><h2 id="Liraglutide（利拉鲁肽）"><a href="#Liraglutide（利拉鲁肽）" class="headerlink" title="Liraglutide（利拉鲁肽）"></a>Liraglutide（利拉鲁肽）</h2><p>在Exenatide长达13年的研发过程中，赛道中显然不只有Amylin和Eli Lilly这两家公司，另一个糖尿病巨头公司Novo Nordisk（诺和诺德）也在争分夺秒研发GLP-1类似物药物，抢占市场。诺和诺德的科学家也意识到了Extendin-4容易诱发免疫反应的问题，他们坚持从人源GLP-1为基础，对它进行改造修饰来延长半衰期。</p><h3 id="Liraglutide的医学转化过程"><a href="#Liraglutide的医学转化过程" class="headerlink" title="Liraglutide的医学转化过程"></a>Liraglutide的医学转化过程</h3><p>一句话概括：给GLP-1加上一个脂肪酸链，后者可以非共价地结合Albumin，然后就达到了类似上面方框里写的融合Albumin的延长半衰期效果。</p><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202311170512480.png?x-oss-process=style/screenshots" alt="image-20231117051221079" style="zoom:50%;" /></p><p>稍微细节一点的点：</p><ol><li>脂肪酸链通过自己的羟基和GLP-1上Lysine的侧链氨基发生酰化反应连接上去，而GLP-1上有两个Lysine，所以把第二个Lysine突变成了Arginine（据罗老师说这是个保守突变），这样就消除了酰化位点的选择性。</li><li>脂肪酸链和Lysine之间还加了一个γ-Glutamate，据说刚开始没加这个glutamate，分子特别粘稠，纯化的时候无法从色谱柱上洗脱下来。后来加了这个谷氨酸之后，可能是因为引入了一个羧基（谷氨酸侧链有一个额外的羧基）？所以水溶性好多了。同时，有文献表明，增加一个羧基也能增强脂肪酸链与白蛋白的非共价结合能力。</li></ol><p>Liraglutide的半衰期从native GLP-1的2~3min延长到了12h，它需要病人<strong>每天注射一针</strong>。</p><p>一些时间节点：</p><ul><li>2009, Liraglutide (1.2/1.8 mg), approved by EMA (for type II diabetes).</li><li>2010, Liraglutide (1.2/1.8 mg), approved by FDA (for type II diabetes).</li><li>2014, Liraglutide (1.2/1.8 mg) approved by FDA (for adult obesity). //没错GLP-1还有抑制食欲减轻体重的作用</li><li>2020, Liraglutide (3.0 mg) approved by FDA (for obesity of 12-17 year-old patients).</li></ul><h3 id="Liraglutide的缺点"><a href="#Liraglutide的缺点" class="headerlink" title="Liraglutide的缺点"></a>Liraglutide的缺点</h3><p>Dominant <strong>gastrointestinal side effects（肠胃道副作用）</strong>, such as nausea (恶心), diarrhea (腹泻), vomiting (呕吐), and constipation (便秘).</p><p>怎么解决的这个问题呢？用”Dose titration”的方法，就是从低剂量开始让病人敏感性降低，等病人适应了这个剂量不会产生明显副作用后，再一点点提高剂量。</p><p>Dose titration of Liraglutide:</p><ul><li>Starting dose: <strong>0.6 mg</strong> once daily, <strong>at least 1 week</strong>.</li><li>Incease dose to <strong>1.2 mg</strong> once daily, <strong>at least 1 week</strong>.</li><li>A further dose to <strong>1.8 mg</strong> once daily, higher dose is not recommended.</li></ul><h1 id="八卦"><a href="#八卦" class="headerlink" title="八卦"></a>八卦</h1><p>你可以看到上面的时间节点是有重合的，但是市场就地球一个市场，所以中间会有不同公司的之间的良性或恶性竞争，比如在对比疗效的论文里使一点心机把对手的剂量降低……</p><p>Exenatide自1992发现，2005年才转化成功，然而Liraglutide 2009~2010年就上市了，后来比Exenatide更受欢迎。所以Exenatide的销售黄金期可能就4~5年的样子。后面Exenatide推出了长效版本，诺和诺德的Liraglutide也推出了长效版本Semaglutide。</p><blockquote><p>Semaglutide把Liraglutide的N端那个易被DPP-4识别的氨基酸替换成了一个自然界不存在的人工氨基酸AIB，然后脂肪酸从16碳换成了18碳，并在脂肪酸链的游离端又添了一个羧基。半衰期达到160h，于是也可以一周注射一次了。</p></blockquote><p>当然还有好多Player，Roche、Pfizer、诚益生物等等……然后有关专利、疗效、市场的八卦故事也有好多……这部分是“哦莫”同学讲的，我懒得整理了。后面的方向据说是小分子药物，如果能找到一个能够激活GLP-1 receptor的小分子，就不用去考虑什么DPP-4降解、免疫原性、胃肠道消化等等问题了。辉瑞有个小分子正在二期临床。另外2019年上市了口服版本的Semaglutide，病人不用打针了，不过市场占有率多少我不知道……</p><p>就这样吧</p><hr><h1 id="拓展资料"><a href="#拓展资料" class="headerlink" title="拓展资料"></a>拓展资料</h1><ol><li><a href="https://zhuanlan.zhihu.com/p/420271868">GLP-1的前世今生——追寻Best-in-Class GLP-1RA的爱恨情仇 - 知乎 (zhihu.com)</a></li><li><a href="https://mp.weixin.qq.com/s/btkXlBt5qNq4bzssIPVExw">重磅GLP-1药物诞生记——这名女性科学家如何带来减重疗法新时代</a></li><li>一篇综述<br>Tan Q, Akindehin SE, Orsso CE, et al. Recent Advances in Incretin-Based Pharmacotherapies for the Treatment of Obesity and Diabetes. Front Endocrinol (Lausanne). 2022;13:838410. Published 2022 Mar 1. doi:10.3389/fendo.2022.838410</li><li>Knudsen LB, Lau J. The Discovery and Development of Liraglutide and Semaglutide. Front Endocrinol (Lausanne). 2019;10:155. Published 2019 Apr 12. doi:10.3389/fendo.2019.00155</li><li>Müller TD, Clemmensen C, Finan B, DiMarchi RD, Tschöp MH. Anti-Obesity Therapy: from Rainbow Pills to Polyagonists. Pharmacol Rev. 2018 Oct;70(4):712-746. doi: 10.1124/pr.117.014803. PMID: 30087160.</li><li>DeYoung MB, MacConell L, Sarin V, Trautmann M, Herbert P. Encapsulation of exenatide in poly-(D,L-lactide-co-glycolide) microspheres produced an investigational long-acting once-weekly formulation for type 2 diabetes. Diabetes Technol Ther. 2011 Nov;13(11):1145-54. doi: 10.1089/dia.2011.0050. Epub 2011 Jul 13. PMID: 21751887; PMCID: PMC3202891.</li><li>Wilding JPH, Batterham RL, Calanna S, Davies M, Van Gaal LF, Lingvay I, et al. Once-Weekly Semaglutide in Adults With Overweight or besity. N Engl J Med (2021) 384(11):989. doi: 10.1056/NEJMoa2032183</li><li>Gough SC. Liraglutide: from clinical trials to clinical practice. Diabetes Obes Metab. 2012 Apr;14 Suppl 2:33-40. doi: 10.1111/j.1463-1326.2012.01576.x. PMID: 22405267.</li></ol><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202311170519109.jpg?x-oss-process=style/screenshots&quot; alt=&quot;cb90515e5096d91d5</summary>
+      
+    
+    
+    
+    <category term="生物学途径" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E9%80%94%E5%BE%84/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>2023赛季总结大会经验贴</title>
@@ -479,33 +501,6 @@
     
     
     <category term="遗传学" scheme="https://fanyiming.life/tags/%E9%81%97%E4%BC%A0%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关于给蛋白加tag</title>
-    <link href="https://fanyiming.life/posts/b4b3036c.html"/>
-    <id>https://fanyiming.life/posts/b4b3036c.html</id>
-    <published>2023-04-26T03:03:12.000Z</published>
-    <updated>2023-06-25T08:57:38.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Q. 如何判断加了tag之后，自己的目的蛋白的折叠是否受到了影响呢？</p><ol><li>HA-tag是常见tag里面最小的，对目的蛋白的折叠产生负面影响的概率最小，可以优先考虑。</li><li>用anti-tag的抗体和anti-target protein的抗体同时进行免疫荧光，如果都正常发光并且共定位了，一定程度上可以说明目的蛋白正常表达且没有影响折叠。（做Western blot只能证明表达了，不能反映折叠正确与否，但是因为免疫荧光的抗原抗体反应是天然构象，因此可以作为折叠不错的证据。当然，仍然是必要不充分条件）</li><li>从功能上进行回补实验应该是最可靠的方法，虽然这非常麻烦。将目的蛋白敲除后，观察出现何种表型，在mutant中回补加了tag的原蛋白，看是否能够在功能上回补。如果可以，说明这个蛋白加了tag之后的功能依然正常。</li></ol><p>构建完加tag的质粒，记得IF/WB验证，是必须验证！</p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Q. 如何判断加了tag之后，自己的目的蛋白的折叠是否受到了影响呢？&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;HA-tag是常见tag里面最小的，对目的蛋白的折叠产生负面影响的概率最小，可以优先考虑。&lt;/li&gt;
-&lt;li&gt;用anti-tag的抗体和anti-target protein的抗</summary>
-      
-    
-    
-    
-    <category term="生物学方法" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E6%96%B9%E6%B3%95/"/>
-    
-    
-    <category term="分子生物学" scheme="https://fanyiming.life/tags/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/"/>
     
   </entry>
   
