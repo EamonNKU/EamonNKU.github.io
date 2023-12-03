@@ -6,7 +6,7 @@
   <link href="https://fanyiming.life/atom.xml" rel="self"/>
   
   <link href="https://fanyiming.life/"/>
-  <updated>2023-11-16T18:59:15.000Z</updated>
+  <updated>2023-12-03T20:47:42.000Z</updated>
   <id>https://fanyiming.life/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>冬季校园迷你马拉松</title>
+    <link href="https://fanyiming.life/posts/84df053.html"/>
+    <id>https://fanyiming.life/posts/84df053.html</id>
+    <published>2023-12-03T20:47:42.000Z</published>
+    <updated>2023-12-03T20:47:42.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class="note success modern"><p>没啥想说的，单纯发图 :-)</p></div><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202312040448698.jpg?x-oss-process=style/screenshots" alt="DSC00350"></p><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202312040449015.jpg?x-oss-process=style/screenshots" alt="DSC00275"></p><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202312040449327.jpg?x-oss-process=style/screenshots" alt="DSC00276"></p><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202312040449150.jpg?x-oss-process=style/screenshots" alt="DSC00339"></p><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202312040450018.jpg?x-oss-process=style/screenshots" alt="DSC00371"></p><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202312040451017.jpg?x-oss-process=style/screenshots" alt="DSC00377_1"></p><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202312040451196.jpg?x-oss-process=style/screenshots" alt="DSC00387"></p><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202312040451966.jpg?x-oss-process=style/screenshots" alt="DSC00344"></p><hr><div class="fj-gallery"><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202312040452847.jpg?x-oss-process=style/screenshots" alt="DSC00395"></p><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202312040452234.jpg?x-oss-process=style/screenshots" alt="DSC00415_1"></p><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202312040452167.jpg?x-oss-process=style/screenshots" alt="DSC00420"></p><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202312040452574.jpg?x-oss-process=style/screenshots" alt="DSC00419"></p><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202312040453644.jpg?x-oss-process=style/screenshots" alt="DSC00429"></p><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202312040453483.jpg?x-oss-process=style/screenshots" alt="DSC00436"></p>          </div><hr><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202312040453890.jpg?x-oss-process=style/screenshots" alt="DSC00406"></p><hr><p>有一说一，发的这件短袖不错，特别修身，可以考虑问问是哪个厂子做的，订一批队服。</p><p><br><br></p><p align = "right">2023-12-3</p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;note success modern&quot;&gt;&lt;p&gt;没啥想说的，单纯发图 :-)&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/2023120404486</summary>
+      
+    
+    
+    
+    <category term="随笔杂记" scheme="https://fanyiming.life/categories/%E9%9A%8F%E7%AC%94%E6%9D%82%E8%AE%B0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>GLP-1受体激动剂的医学转化</title>
@@ -473,35 +497,6 @@
     
     
     <category term="想法" scheme="https://fanyiming.life/tags/%E6%83%B3%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何证明蛋白的新功能不依赖于旧功能所在的通路</title>
-    <link href="https://fanyiming.life/posts/75382bd.html"/>
-    <id>https://fanyiming.life/posts/75382bd.html</id>
-    <published>2023-04-26T03:13:07.000Z</published>
-    <updated>2023-06-25T08:57:38.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>设A1, A2, A3, B1, B2, B3均代表一个蛋白。已知，A1, B1, A2, A3形成一条已被证明的通路：</p><ul><li>A通路：(A1+B1)→A2→A3</li></ul><p>即A1和B1同时存在才能激活A2，然后激活A3.</p><p>现在，我们对蛋白B1进行研究，发现它可能参与一条新的通路：</p><ul><li>B通路：B1→B2→B3</li></ul><p>如何设计实验，证明蛋白B1在这条新的通路发挥的功能不依赖于旧有通路呢？</p><hr><p>方法一：敲除A1，如果不出现B通路受阻产生的表型b，说明B通路不依赖于A通路。</p><p>方法二：敲除B1，出现表型a和表型b，在敲除B1的基础上回补A2，如果只拯救表型a，不拯救表型b，说明B通路不依赖于A通路。</p><p>逻辑上两个方法二选一即可，都是充分的。但是因为还存在潜在的CDEFG，以及除了促进的箭头还存在抑制性的箭头的可能，两个都做。</p><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202304270846964.png?x-oss-process=style/screenshots" alt="image-20230427084640351" style="zoom:50%;" /></p><p>实例：发现RTCB（B1）可能参与抑制神经元轴突再生（B通路），RTCB mutant中轴突再生增强（表型b）。而已有的历史研究表明，RTCB参与内质网应激UPR途径中的IRE1→XBP1分枝（A通路）。IRE1（A1）响应内质网压力后激活XBP1的剪接，使XBP1从未剪接的XBP1u（also A1）形式转换为剪接后的XBP1s（A2）形式，RTCB参与剪接过程中XBP1 mRNA的连接。作者通过实验证实，XBP1 mutant引起神经元轴突”dysmorphic”的表型（不同于RTCB mutant的表型b）。在RTCB mutant中表达人为连接好的XBP1s（回补A2），UPR途径可以正常激活了（rescue了表型a），但对轴突再生没有影响（不能rescue表型b）。Archease（also A1）对RTCB连接XBP1的mRNA是必需的。而Archease mutant对于轴突再生也无影响（KO A1不产生表型b）。综上，RTCB调控轴突再生的通路独立于它在UPR途径中参与的通路。</p><p>实例原文：</p><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202304271006354.png?x-oss-process=style/screenshots" alt="image-20230427100637386"></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;设A1, A2, A3, B1, B2, B3均代表一个蛋白。已知，A1, B1, A2, A3形成一条已被证明的通路：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A通路：(A1+B1)→A2→A3&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;即A1和B1同时存在才能激活A2，然后激活A3.&lt;/p&gt;
-&lt;p</summary>
-      
-    
-    
-    
-    <category term="生物学方法" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E6%96%B9%E6%B3%95/"/>
-    
-    
-    <category term="遗传学" scheme="https://fanyiming.life/tags/%E9%81%97%E4%BC%A0%E5%AD%A6/"/>
     
   </entry>
   
