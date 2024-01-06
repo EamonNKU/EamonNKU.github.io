@@ -6,7 +6,7 @@
   <link href="https://fanyiming.life/atom.xml" rel="self"/>
   
   <link href="https://fanyiming.life/"/>
-  <updated>2023-12-10T15:31:33.000Z</updated>
+  <updated>2024-01-06T21:31:20.000Z</updated>
   <id>https://fanyiming.life/</id>
   
   <author>
@@ -15,6 +15,55 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>RIP-seq Protocol</title>
+    <link href="https://fanyiming.life/posts/712b2e5e.html"/>
+    <id>https://fanyiming.life/posts/712b2e5e.html</id>
+    <published>2024-01-06T21:31:20.000Z</published>
+    <updated>2024-01-06T21:31:20.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>做了一个网页模板，感觉这样做实验的时候，能一直翻页看到实验进度在往前走，有那么一点炫酷。</p></blockquote><p><a href="/protocol/RIP-seq/RIP-seq.html">RIP-seq Protocol</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;做了一个网页模板，感觉这样做实验的时候，能一直翻页看到实验进度在往前走，有那么一点炫酷。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;/protocol/RIP-seq/RIP-seq.html&quot;&gt;RIP-seq Protocol&lt;</summary>
+      
+    
+    
+    
+    <category term="生物学方法" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E6%96%B9%E6%B3%95/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>APEX2-based Protein Proximal Labeling</title>
+    <link href="https://fanyiming.life/posts/13526e9f.html"/>
+    <id>https://fanyiming.life/posts/13526e9f.html</id>
+    <published>2024-01-03T11:14:30.000Z</published>
+    <updated>2024-01-03T11:14:30.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>APEX2 Proximal Labeling Protocol</p><h1 id="Advantage"><a href="#Advantage" class="headerlink" title="Advantage"></a>Advantage</h1><ol><li>Capture weak or transient interactive proteins.</li><li>Detect proteome at “inaccessible” regions of interest which can not be purified, such as mitochondrial intermembrane space (IMS).</li></ol><h1 id="Plasmid"><a href="#Plasmid" class="headerlink" title="Plasmid"></a>Plasmid</h1><p>APEX2-V5-POI</p><blockquote><p>POI: proteins of interest</p></blockquote><h1 id="Buffer"><a href="#Buffer" class="headerlink" title="Buffer"></a>Buffer</h1><ol><li><p>500mM Biotin-phenol母液</p><p>称取0.05g Biotin-phenol，溶于278μL DSMO，分装（每管30μL）后-20℃储存.</p><p> <img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202401031924139.png?x-oss-process=style/screenshots" alt="image-20240103192439471" style="zoom:100%;" /></p></li><li><p>500μM Biotin-phenol in 新鲜培养基<br> 1:1000在新鲜培养基中加入500mM Biotin-phenol母液.</p></li><li><p>5mM H2O2 in 新鲜培养基（第3步快结束时现配）<br> 5.11μL*30%过氧化氢，加入10 mL新鲜培养基中.</p></li><li><p>反应终止液(PBS with 10mM sodium ascorbate, 5mM TROLOX, <font color=gray>10mM sodium azide</font>)<br> 先配置储液0.198g sodium ascorbate in 1mL water (100X), 0.125g TROLOX to 1mL DMSO.</p><blockquote><p>注意这两个储液也不能真的去“储”，使用时现配！</p></blockquote><p>   使用时按1:100加入100mL PBS中.</p><p> <img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202401031932627.png?x-oss-process=style/screenshots" alt="image-20240103193233674"></p></li><li><p>RIPA buffer (现加cocktail和PMSF)<br> 50 mM Tris, 150 mM NaCl, 0.1% SDS, 0.5% sodium deoxycholate, 1% Triton X-100, 使用时现加cocktail和PMSF)</p><blockquote><p>有的Protocol推荐：RIPA lysis buffer supplemented with 1× protease inhibitor cocktail, 1 mM PMSF and quenchers (10 mM sodium azide, 10 mM sodium ascorbate and 5 mM Trolox)  </p></blockquote></li><li><p>1M KCl溶液</p></li><li><p>0.1M Na2CO3溶液</p></li><li><p>2M尿素 in 10mM Tris-HCl, pH8.0</p></li><li><p>洗脱液(3x protein loading buffer supplemented with 20mM DTT and 2mM biotin)</p><p> <img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202401031937253.png?x-oss-process=style/screenshots" alt="image-20240103193710105"></p></li></ol><h1 id="Procedure"><a href="#Procedure" class="headerlink" title="Procedure"></a>Procedure</h1><h2 id="Biotin-labeling"><a href="#Biotin-labeling" class="headerlink" title="Biotin labeling"></a>Biotin labeling</h2><ol><li><p>细胞传至2个10cm板长满</p></li><li><p>弃培养基，每个10cm板加入4mL (500μM Biotin-phenol in 新鲜培养基)</p></li><li><p>放入37℃ CO2培养箱静置30min</p></li><li><p>现配1mL (5mM H2O2 in 新鲜培养基)，立刻从培养箱中取出细胞，迅速将1mL (5mM H2O2 in 新鲜培养基)加入10cm板中(H2O2终浓度1mM)，在手中温柔摇晃孵育1min.</p><blockquote><p>不要同时操作超过2盘细胞。</p></blockquote></li><li><p>迅速弃上清，迅速加入4mL反应终止液(PBS with 10mM sodium ascorbate, 5mM TROLOX).</p></li><li><p>温柔摇晃5s，弃上清，加入4mL反应终止液.</p></li><li><p>温柔摇晃5s，弃上清，加入4mL反应终止液.</p></li><li><p>温柔摇晃5s，弃上清，加入2mL预冷的PBS.</p></li><li><p>吹打细胞，收集至15mL离心管（两个板2mL+2mL）.</p></li><li><p>3000 x g, 4℃, 离心5cm，弃上清，细胞pellet冻存-80℃.</p></li></ol><h2 id="Streptavidin-beads-enrichment-of-biotinylated-proteins"><a href="#Streptavidin-beads-enrichment-of-biotinylated-proteins" class="headerlink" title="Streptavidin beads enrichment of biotinylated proteins"></a>Streptavidin beads enrichment of biotinylated proteins</h2><ol><li>冰上解冻细胞.</li><li>加入1.5mL RIPA buffer，吹打混匀，4℃慢速旋转裂解5min.</li><li>15,000 x g, 4℃离心10min，收集上清液，测蛋白浓度.</li><li>取450 μL Streptavidin-coated magnetic beads (Pierce)，RIPA Buffer洗两次.</li><li>弃上清，向beads沉淀中加入8mg蛋白溶液，室温慢速旋转孵育1h或4℃慢速旋转孵育过夜.</li><li>1mL RIPA buffer洗两次.</li><li>1mL 1M KCl溶液洗一次.</li><li>1mL 0.1M Na2CO3溶液洗一次.</li><li>1mL (2M尿素 in 10mM Tris-HCl, pH8.0)洗一次.</li><li>1mL RIPA Buffer洗两次.</li><li>加入75μL (3x protein loading buffer supplemented with 20mM DTT and 2mM biotin)，跑SDS-PAGE和Strep-WB.</li><li>质谱分析.</li></ol><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202401031939010.png?x-oss-process=style/screenshots" alt="image-20240103193940564"></p><h1 id="Optimization"><a href="#Optimization" class="headerlink" title="Optimization"></a>Optimization</h1><h2 id="Control-1-—-Negative-control-no-H2O2-or-no-BP-biotin-phenol"><a href="#Control-1-—-Negative-control-no-H2O2-or-no-BP-biotin-phenol" class="headerlink" title="Control 1 — Negative control [no-H2O2 or no-BP (biotin-phenol)]"></a>Control 1 — Negative control [no-H2O2 or no-BP (biotin-phenol)]</h2><p><img src="https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/202401031947018.png?x-oss-process=style/screenshots" alt="image-20240103194706550" style="zoom: 50%;" /></p><h2 id="Control-2-—-Mass-spectrometry-control"><a href="#Control-2-—-Mass-spectrometry-control" class="headerlink" title="Control 2 —  Mass spectrometry control"></a>Control 2 —  Mass spectrometry control</h2><p>根据具体的目标蛋白定位来选择，单纯的no-APEX2 or no-H2O2 Control或者别的蛋白construct的Control</p><h2 id="Imaging-APEX2-V5-POI-localization"><a href="#Imaging-APEX2-V5-POI-localization" class="headerlink" title="Imaging APEX2-V5-POI localization"></a>Imaging APEX2-V5-POI localization</h2><h2 id="Optimize-Streptavidin-pull-down"><a href="#Optimize-Streptavidin-pull-down" class="headerlink" title="Optimize Streptavidin pull-down"></a>Optimize Streptavidin pull-down</h2><p>原文推荐：360 µg (~90 µl) of each whole-cell lysate sample with 30 µl of streptavidin magnetic beads  (Pierce).</p><p>可以使用小样（6-well plate的一孔细胞，大概2.5Million）进行条件摸索。</p><h1 id="Critical-points"><a href="#Critical-points" class="headerlink" title="Critical points"></a>Critical points</h1><ol><li>不能使用BCA法对蛋白进行定量，Quench buffer中的成分对BCA法有干扰；</li><li>不要在fusion construct中使用HA标签，HA标签可能因为被标记biotin而失效；</li><li>不要同时操作2盘以上细胞，以免影响H2O2标记时间，无法及时终止；</li><li>抗坏血酸钠和TROLOX一定要从干粉现配现用，不能存；</li><li>H2O2要在开始使用前几分钟现配，以免分解；</li></ol><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;APEX2 Proximal Labeling Protocol&lt;/p&gt;
+&lt;h1 id=&quot;Advantage&quot;&gt;&lt;a href=&quot;#Advantage&quot; class=&quot;headerlink&quot; title=&quot;Advantage&quot;&gt;&lt;/a&gt;Advantage&lt;/h1&gt;&lt;ol&gt;
+</summary>
+      
+    
+    
+    
+    <category term="生物学方法" scheme="https://fanyiming.life/categories/%E7%94%9F%E7%89%A9%E5%AD%A6%E6%96%B9%E6%B3%95/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>snow</title>
@@ -436,57 +485,6 @@
 &lt;p&gt;晚上练了200个引体。&lt;/p&gt;
 &lt;p&gt;6.20&lt;/p&gt;
 &lt;p&gt;下午四点才起床出门，早上十一点醒的，前</summary>
-      
-    
-    
-    
-    <category term="随笔杂记" scheme="https://fanyiming.life/categories/%E9%9A%8F%E7%AC%94%E6%9D%82%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>20230618bw_life_report</title>
-    <link href="https://fanyiming.life/posts/e8c156a8.html"/>
-    <id>https://fanyiming.life/posts/e8c156a8.html</id>
-    <published>2023-06-19T06:41:11.000Z</published>
-    <updated>2023-07-22T15:10:58.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Biweek life report</p><p>6.10</p><p>首高赛前去后海最后一练</p><p>晚上做了支原体检测的PCR</p><p>6.11</p><p>首高比赛，比了一上午。晚上顺势喝了小酒。</p><p>聚餐前把前一天PCR的产物跑了胶</p><p>6.12</p><p>找了杨新苗老师面谈跟北京市水务局协调训练场地的事情。</p><p>晚上去了北大，跟着他们的龙舟队训练了一次，还被请吃了一顿火锅（这辈子第一次进燕园）。</p><p>做了一点L1 deletion的PCR验证。</p><p>把在冰箱里放了好几天的切胶给回收了，怀疑还能不能用</p><p>6.13</p><p>上午赖床了，玩了一上午荒野乱斗。</p><p>晚上在跑廊训练。</p><p>把RIP的片段分选做了</p><p>6.14</p><p>组织为队里的2023届毕业生送行，统计时间。</p><p>晚上去单双杠练了引体。</p><p>中午被冯老师约谈，说我不该自作主张涉手商业合作。</p><p>挑菌鉴定没问题，送测了，但是无信号。</p><p>6.15</p><p>把RIP的PCR文库扩增做了。</p><p>晚上去跑廊训练。</p><p>6.16</p><p>做了RNA-seq的一半。</p><p>晚上单杠拉了150个引体。</p><p>给毕业生准备礼物，淘宝和京东做了定制的帽子和衣服。</p><p>把RIP的PCR产物回收了。</p><p>6.17</p><p>做了RNA-seq的另一半，但是没来得及送出去。</p><p>在志宏的施压下开始组织暑期集训的事情。</p><p>6.18</p><p>送出去了RNA-seq和RIP-seq文库。</p><p>开始做第二次构质粒。</p><p>仓促地在ddl前用在线软件写完了代谢组学的期末作业。</p><p>总结：我从5月10号接手龙舟队以后就无心科研了，到6月11号去比赛，整整一个月，虽然成绩不出色，但一个月把两船新人教会划船、带去比赛、顺利完赛，并且拿了奖牌，我一个月前想都不敢想。现在的问题是如何收心到科研上，同时，仍然分出一部分经历投入队伍的长期发展建设中。原来我的博士阶段只有科研一件事，现在有两件了。我不想分一个先后，一边是个人的主业，另一边要对几十个人负责。为何不能全都要。</p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Biweek life report&lt;/p&gt;
-&lt;p&gt;6.10&lt;/p&gt;
-&lt;p&gt;首高赛前去后海最后一练&lt;/p&gt;
-&lt;p&gt;晚上做了支原体检测的PCR&lt;/p&gt;
-&lt;p&gt;6.11&lt;/p&gt;
-&lt;p&gt;首高比赛，比了一上午。晚上顺势喝了小酒。&lt;/p&gt;
-&lt;p&gt;聚餐前把前一天PCR的产物跑了胶&lt;/p</summary>
-      
-    
-    
-    
-    <category term="随笔杂记" scheme="https://fanyiming.life/categories/%E9%9A%8F%E7%AC%94%E6%9D%82%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>一个月，我组了两船人去比赛</title>
-    <link href="https://fanyiming.life/posts/2a94376.html"/>
-    <id>https://fanyiming.life/posts/2a94376.html</id>
-    <published>2023-06-16T04:40:38.000Z</published>
-    <updated>2023-07-22T15:14:20.000Z</updated>
-    
-    <content type="html"><![CDATA[<ol><li><p>我是怎么稀里糊涂当上队长的：一个平平无奇的中午，大老师告诉我有个比赛邀请了清华大学，问我想不想参加。我一听，“好啊！”毕竟清华龙舟队的实力我还是知道的，菜的抠脚，虽然咱一整年没摸过桨了，跟他们上船还是没啥压力的。就当是周末去“划水”放松了，于是想都没想就答应了。但毕竟咱只能算个边缘队员，这学期来了基本就没在队里训练过。于是我把邀请函转发了当初带我入队练了几次的席泽。嗯，他说可以，队里人看了都说好。真好，能回去见见南开的老朋友了，我心想。我一听，“好啊！”毕竟清华龙舟队的实力我还是知道的，菜的抠脚，虽然咱一整年没摸过桨了，跟他们上船还是没啥压力的。就当是周末去“划水”放松了，于是想都没想就答应了。但毕竟咱只能算个边缘队员，这学期来了基本就没在队里训练过。于是我把邀请函转发了当初带我入队练了几次的席泽。嗯，他说可以，队里人看了都说好。真好，能回去见见南开的老朋友了，我心想。“西湖游泳池”，来清华一年了第一次听这个名词，冯老师挺自来熟，第一次见面就热情的很。直接对着赛艇队的队长介绍我说，“这，是清华大学龙舟队的，队长……&amp;*%&amp;”</p><p>我：——————？？？——————— 虽然我慌忙解释，我不是队长，我不是队长，我也不知道我为什么会出现在这里，更不知道为什么是我出现在这里！但他好像没听见一样，直接让我跟赛艇队长对接，开始承担复建清华龙舟的任务，还给了个时间节点。“6月份有个首都高校龙舟赛，咱们清华绝对不能在龙舟上缺项，总分一定要压过北大！你们几个赛艇队的队长要帮助他尽快抽调人马，把龙舟代表队组建起来！”说完就骑车子走了。留下完全没有心理准备一脸懵逼的我。懵归懵，在老大大、冯老师、赛艇队的苗队长多方裹挟下，马上开始商量起具体的行动方案来。先从同为水上项目的赛艇队拉人，当晚做了个极其简陋的问卷发到了赛艇群。另一方面，清华人家本来是有龙舟队的呀，虽然因为疫情冲击这几年已经没几个人了，但咱这么大张旗鼓自立山头也说不过去啊。于是赶紧联系张队长向组织靠拢。两顿饭下来，队长表示：“我们正发愁没有人接班呢，你当队长我们完全没有任何意见。”……w-t-f-?……</p><p>我可是必将成为大科学家的男人，怎么能置身于这种管理社团的琐事当中！但是任务已经莫名奇妙地放在我的肩上了，我甚至不知道是谁给我的任务，我该向谁拒绝？当晚就有个游泳队的杨老师加我微信，上来就是“你是龙舟协会的会长对吗？”我根本不知道这个杨老师是谁，但我又感觉我好像不能说“我不是”，随后冯老师就赶鸭子上架似的开始拉群，把不知道从什么武术、游泳、越野之类的学生汇聚到一个群里，然后把群主转移给了我。。。。。可能就是在这个时候我已经认命了，人已经给我拉过来了，我难道这时候能在群里说我不是队长你们别找我吗。。。。随后开始主动加这些同学的微信，嗯，行吧，同学你好，我就是龙舟队队长，感谢你们对龙舟运动感兴趣，欢迎你们加入龙舟队，今后一起努力……</p></li><li><p>5月10号我开始跟冯老师接触，5月21号开始组建首都高校龙舟赛代表队，6月11号比赛，这一个月真惊心动魄。我和席泽组织了这么多次训练：荷塘训练每天两场：5.22, 5.23, 5.24, 5.29, 5.30, 5.31, 6.1；天津练兵：6.2~6.3；西湖游泳池每天两场：6.4, 6.5, 6.6, 6.7, 6.9；后海划船：5.25, 6.1, 6.8, 6.10；稻香湖划船：5.20, 5.21, 5.27, 5.28。在荷塘和西湖游泳池划静水时，为了让大家尽可能的参与，我们每天抽两个时间段组织训练。</p></li><li><p>去天津比赛，见到很多故人。牛哥、牛V、欢欢都很认真地让我有困难一定说，欢哥一句“别他妈什么事都自己一个人扛着”一下就把我给整流泪了。我拉了一个“清华龙伟大复兴教练组”，组里的人出奇地负责和积极。冯老师也很负责，虽然之前没有接触过龙舟，但我相信有他的带领我们会发展地很快。后海好贵，还不开发票，不知道能不能报销的了。我找了晖哥和尚臻拉赞助，因为听说之前大事小事都是队员自己掏钱，我不想这样。但冯老师不允许我们沾染任何商业行为，所以都叫停了。一天自然端午节要搞活动，我没经冯老师就答应了。他很生气，后来告诉王总不许在宣传中包含任何设计清华大学商标、名字、logo的内容。以及收到很多比赛的邀请，大部分都会拒绝。含宜和雨涵在做宣传，黄嘉惠在管理财务。涂曦文全程设计和制作了衣服。我不是孤军奋战。</p></li><li><p>冯老师联系了水利馆的杨老师，后者据说可以沟通北京市税务局长（校友）给我们提供训练场地，当然这件事中，人人各有所图。不知道结果会如何。</p></li><li><p>搬船那天，遇到了煞笔货拉拉中介，前一天中午突然告诉我他联系不到车。我紧急找别人，又说市区白天不让大货车走，需要晚上十二点以后，可是大龙没有20个人根本搬不动，我当时有点崩溃。但是很多人在短时间内站出来，赛艇队的人、冯老师、席泽动员我都不认识的老队员、群里还没见过面的新生……一直忙到晚上三点半，我们做到了，成功把一条龙、三条艇送达。17米长车学校很多门不让进，进来绕了很多门，出去又绕了很多门。</p></li><li><p>我做了一个网站放大家的照片，果然没用的技能不知道会在什么时候派上用场。<a href="https://thudbt.github.io/">https://thudbt.github.io/</a></p></li><li><p>首高比完有个叫高运会的排名，计分规则有一条是不能让留学生参加，没人告诉过我，我很懵逼。</p></li><li><p>认识了好多北大龙舟队的人。</p></li><li><p>和尚臻约了22号比引体，我说我挂20公斤，但我感觉我恢复不到那个水平。愁。</p></li><li><p>暑假怎么安排训练，怎么打卡。愁。</p></li><li><p>怎么减少队员流失。愁。</p></li><li><p>招新时我们会是怎样的精气神，能不能吸引来心声。愁。</p></li><li><p>清华要承办亚洲大学联盟龙舟邀请赛（清华是亚洲大学联盟主席），那之前怎么提高竞技水平。愁。</p></li><li><p>我们没有龙舟机和卧拉架（只有1个）。愁。</p></li><li><p>定了21号毕业聚，除了吃饭还要干点啥活动比较好，以及吃饭的场所也没有预定，更要命的是当天同一时间我要开组会，，，如果我不在，交给谁组织好一点。愁。</p></li></ol><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;我是怎么稀里糊涂当上队长的：一个平平无奇的中午，大老师告诉我有个比赛邀请了清华大学，问我想不想参加。我一听，“好啊！”毕竟清华龙舟队的实力我还是知道的，菜的抠脚，虽然咱一整年没摸过桨了，跟他们上船还是没啥压力的。就当是周末去“划水”放松了，于是想都没想就答</summary>
       
     
     

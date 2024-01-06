@@ -1,0 +1,310 @@
+{
+  "steps": [
+    {
+      "title": "1. cell cuture",
+      "substeps": [
+        {
+          "title": "1.1",
+          "content": "NCCIT细胞每个样品养到6孔板的两个孔长满，大概5~6百万细胞",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "title": "2. Beads preparation",
+      "substeps": [
+        {
+          "title": "2.1",
+          "content": "每个样品用40μl ProteinG Dyna beads，取样品数 * 40μL",
+          "image": ""
+        },
+        {
+          "title": "2.2",
+          "content": "加0.9 mL Lysis Buffer (加1% protease inhibitor cocktail III)洗四次",
+          "image": ""
+        },
+        {
+          "title": "2.3",
+          "content": "用200μL Lysis Buffer (加1% protease inhibitor cocktail III)重悬，每40 μL beads添加5 μg抗体",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "title": "3. UV cross-linking",
+      "substeps": [
+        {
+          "title": "3.1",
+          "content": "从培养箱中取出细胞，弃去培养基，加0.5 mL 预冷的PBS （这里的PBS可以不加protease inhibitor）",
+          "image": ""
+        },
+        {
+          "title": "3.2",
+          "content": "吸弃PBS，敞开盖子，细胞裸露在空气中，放入UV交联仪",
+          "image": ""
+        },
+        {
+          "title": "3.3",
+          "content": "400 mJ/cm 交联。（对于本实验室仪器，点energy，输入4000，然后Start）",
+          "image": ""
+        },
+        {
+          "title": "3.4",
+          "content": "每个孔加入1mL PBS(＋protease inhibitor)，对于NCCIT来说，直接用枪头吹打，收集到2mL EP管中。",
+          "image": ""
+        },
+        {
+          "title": "3.5",
+          "content": "台盼蓝法对细胞进行计数，记细胞总数，死活都要。",
+          "image": ""
+        },
+        {
+          "title": "3.6",
+          "content": "每个样品取用5M细胞，4℃，5000rpm离心5min收集",
+          "image": ""
+        }
+      ]
+    },
+    {
+
+      "title": "4 细胞裂解和免疫沉淀",
+      "substeps": [
+        {
+          "title": "4.1",
+          "content": "离心结束后，弃上清，每个管子加入150 μL lysis buffer (＋cocktail)，转移到1.5 mL lowBind EP管中。（因为下一步要震荡，我们实验室的那个机器只能用1.5mL的管子），冰上放置5min。",
+          "image": ""
+        },
+        {
+          "title": "4.2",
+          "content": "每管加入14 μL Turbo DNase (Ambion, AM2238)和7.5 μL RNase Inhibitor，37℃下1100rpm震荡5min.",
+          "image": ""
+        },
+        {
+          "title": "4.3",
+          "content": "4℃, 14000g离心10min，小心取出，保持沉淀在底部。",
+          "image": ""
+        },
+        {
+          "title": "4.4",
+          "content": "准备新的EP管，取出2~3μL作为Input，放到-20℃暂存。",
+          "image": ""
+        },
+        {
+          "title": "4.5",
+          "content": "把包好抗体的beads分成每20μL最初的beads体积一个1.5mL EP管，磁力架放置1min，弃上清。",
+          "image": ""
+        },
+        {
+          "title": "4.6",
+          "content": "每个含有beads的EP管中加入75μL lysates （每个样品2个replicates），4℃慢速旋转孵育2h~4h。",
+          "image": ""
+        },
+        {
+          "title": "4.7",
+          "content": "用High Stringent Buffer（＋cocktail）洗beads，一次，4℃慢速旋转10min。",
+          "image": ""
+        },
+        {
+          "title": "4.8",
+          "content": "用High Salt Buffer（＋cocktail）洗beads，一次，4℃慢速旋转10min。",
+          "image": ""
+        },
+        {
+          "title": "4.9",
+          "content": "用Low Salt Buffer（＋cocktail）洗beads，一次，4℃慢速旋转10min。",
+          "image": ""
+        },
+        {
+          "title": "4.10",
+          "content": "把Input从冰箱中取出，跟刚才洗好的replicate1和replicate2一起，用50 μL Proteinase K digestion Buffer (＋ 2.5μL RNase Inhibitor和5μL proteinase K)重悬beads，50℃, 1100rpm振荡 2h。\n （beads就呆在管子里，之后RNAC抽提的时候会跑到phase-lock tubes的底部。）",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "title": "5 RNA抽提",
+      "substeps": [
+        {
+          "title": "5.1",
+          "content": "准备Phase-Lock tubes, 室温16000g离心30s。",
+          "image": ""
+        },
+        {
+          "title": "5.2",
+          "content": "把样品取出，加150μl lysis Buffer(+cocktail)补全体积到200μL。",
+          "image": ""
+        },
+        {
+          "title": "5.3",
+          "content": "加入200 μL RNA抽提液(25:24:1)，剧烈震荡50次，室温13200rpm离心5min。",
+          "image": ""
+        },
+        {
+          "title": "5.4",
+          "content": "加入200μL氯仿，剧烈震荡50次，室温13200rpm离心5min。",
+          "image": ""
+        },
+        {
+          "title": "5.5",
+          "content": "上清液转移到新的1.5mL LowBind EP管中。",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "title": "6 DNA消化后再次抽提",
+      "substeps": [
+        {
+          "title": "6.1",
+          "content": "每管加入18μL Turbo DNase，37℃, 1100rpm振荡15min。",
+          "image": ""
+        },
+        {
+          "title": "6.2",
+          "content": "准备Phase-Lock tubes, 室温16000g离心30s。",
+          "image": ""
+        },
+        {
+          "title": "6.3",
+          "content": "反应结束后，转移全部溶液（大约200μL）至Phase-Lock tubes中。",
+          "image": ""
+        },
+        {
+          "title": "6.4",
+          "content": "加入200 μL RNA抽提液(25:24:1)，剧烈震荡50次，室温13200rpm离心5min。",
+          "image": ""
+        },
+        {
+          "title": "6.5",
+          "content": "加入200μL氯仿，剧烈震荡50次，室温13200rpm离心5min。",
+          "image": ""
+        },
+        {
+          "title": "6.6",
+          "content": "上清液转移到新的1.5mL LowBind EP管中。",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "title": "7 核酸醇沉",
+      "substeps": [
+        {
+          "title": "7.1",
+          "content": "加入20μL 3M NaAc和1μL Glycogen (20μg/μL)，混匀。",
+          "image": ""
+        },
+        {
+          "title": "7.2",
+          "content": "加入600 μL预冷的无水乙醇。",
+          "image": ""
+        },
+        {
+          "title": "7.3",
+          "content": "混匀后，放-80℃醇沉（大于2h，长则一星期）。",
+          "image": ""
+        },
+        {
+          "title": "7.4",
+          "content": "4℃, 14000g离心20min。",
+          "image": ""
+        },
+        {
+          "title": "7.5",
+          "content": "弃上清，加500μl预冷的75%乙醇。4摄氏度，14000rpm，离心5min。",
+          "image": ""
+        },
+        {
+          "title": "7.6",
+          "content": "弃上清，4摄氏度，14000rpm，离心1min，用10μl枪头吸干上清。",
+          "image": ""
+        },
+        {
+          "title": "7.7",
+          "content": "风干3min，加适量体积的Nuclease-Free Water，溶解。（对于本RIP-seq来说加12μL洗脱）",
+          "image": ""
+        },
+        {
+          "title": "7.8",
+          "content": "用NanoDrop测浓度",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "title": "8 二代测序建库",
+      "substeps": [     
+        {
+          "title": "8.1打断",
+          "content": "按浓度最低的取3μL至八联排，其他取跟它相同的ng数，用RNase-Free Water补全至3μL。每管加入3μL Frag/Elute Buffer。94℃打断8min，4℃ hold",
+          "image": ""
+        },
+        {
+          "title": "8.2一链合成",
+          "content": "每管加入4.8μL RT strand specificity Reagent ＋ 1.2μL First Strand synthesis enzyme mix，可先预混。\n 25℃,10min → 42℃,15min → 70℃,15min → 4℃,hold",
+          "image": ""
+        },
+        {
+          "title": "8.3二链合成",
+          "content": "每管加入22μL RNase-Free Water ＋ 4μL second strand synthesis reaction buffer with dUTP ＋ 2μL Second strand synthesis enzyme mix，可先预混，总体积40μL。16℃孵育1h",
+          "image": ""
+        },
+        {
+          "title": "8.4用beads纯化",
+          "content": "每管加入72μL NFTmag NGS DNA clean Beads，混匀，室温静置5min，磁力架静置5min，弃上清。\n将tube保持在磁力架上，加入100μL 80%乙醇，放30s，弃上清。再加入100μL 80%乙醇，放30s，弃上清。室温干燥3min，加入19.5μL low-EDTA TE，吹打混匀，室温静置2min，磁力架1min，吸取18.5μL上清至另一八联排中",
+          "image": ""
+        },
+        {
+          "title": "8.5末端修复",
+          "content": "上一步的Tube中，每管加入5μL End-Prep Buffer和1.5μL End-Prep enzymes（总体积25μL）。20℃,30min → 65℃,30min → 4℃,hold",
+          "image": ""
+        },
+        {
+          "title": "8.6接头连接",
+          "content": "上一步的Tube中，每管加入8.25μL Ligation buffer，1.5μL Ligase Mix和1.25μL Truncated Adapter。其中，Truncated Adapter不要跟另外二者预混，最后单独加，以免形成接头二聚体。22℃反应15min（总体积36μL，热盖关闭）",
+          "image": ""
+        },
+        {
+          "title": "8.7片段分选",
+          "content": "上一步的Tube中，加入14μL Nuclease-Free Water，成50μL体系。加15μL beads，混匀，室温静置5min，磁力架5min。转移上清至另一八联排中（！！不要丢掉上清！！），加10μL beads混匀，室温静置5min，磁力架5min，弃上清。100μL 80%乙醇洗两次。风干3min，加10.5 μL low-EDTA TE，吹打混匀，室温静置2min，磁力架1min，吸取10 μL上清至另一八联排中",
+          "image": ""
+        },
+        {
+          "title": "8.8PCR文库扩增",
+          "content": "取新的八联排，每管加入6.25μL 2XPCR mix和0.125μL UDG enzyme（可以看出后者用量非常小，二者先预混）。然后分别加入4.875μL上一步得到的“片段分选产物”，再各自加入不同的Dual-index primer 1.25 μL，在实验记录本上记清楚加了哪几个primer，分别对应哪个样品。37℃,10min → 98℃,1min → 98℃,10s → 60℃,15s → 72℃,30s (goto step3, 8X) → 72℃,1min → 4℃,hold。返回去8次，即9个cycles",
+          "image": ""
+        },
+        {
+          "title": "8.9跑胶检测扩增效果",
+          "content": "提前配置1%琼脂糖凝胶，取2μL PCR产物跑胶。根据结果，看是否有个别样品需要多加1~2个循环。加完心里有数的话就不用再跑胶了。",
+          "image": ""
+        },
+        {
+          "title": "8.10 PCR产物回收",
+          "content": "按体积加1:1的beads，混匀，室温5min，磁力架5min，弃上清，100μL 80%乙醇洗两次，风干2min，加15μL low-EDTA TE混匀，室温2min，磁力架1min，吸取上清至新的八联排。",
+          "image": ""
+        },
+        {
+          "title": "8.11 Qubit核酸定量",
+          "content": "每个Qubit管中加入199μL Qubit反应液体，加入1μL样品，混匀。放入仪器检测，读数，记录",
+          "image": ""
+        },
+        {
+          "title": "8.12混样",
+          "content": "最低浓度的样品取一半（保证有一次失误补救的机会），其他取相同ng数（至少大于5ng）。可以几个一组混样（而不是全部混成1个样）方便加测。要注意记录每个样品取了几微升，然后按照总体积的80%加入beads，混匀，室温5min，磁力架5min，弃上清，100μL 80%乙醇洗两次，风干2min，加20μL Low-EDTA TE洗脱（如果样品数少，减少洗脱体积）",
+          "image": ""
+        },
+        {
+          "title": "8.13再次Qubit定量",
+          "content": "因为填测序订单需要写浓度，所以需要再测一遍Qubit，199μL Qubit反应液体，加入1μL样品，混匀。放入仪器检测，读数，记录",
+          "image": ""
+        },
+        {
+          "title": "8.14填写订单，送测",
+          "content": "麻烦易出错的地方在于填好每个子样品对应的Dual-Index Primer，错了不只耽误自己同时还耽误一起上机的其他人。",
+          "image": ""
+        }
+      ]
+    }
+  ]
+}
