@@ -23,15 +23,15 @@
     <published>2024-01-06T21:31:20.000Z</published>
     <updated>2024-01-06T21:31:20.000Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>做了一个网页模板，感觉这样做实验的时候，能一直翻页看到实验进度在往前走，有那么一点炫酷。</p></blockquote><p><a href="/protocol/RIP-seq/RIP-seq.html">RIP-seq Protocol</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<blockquote><p>引导ChatGPT做了一个网页模板，感觉这样做实验的时候，能一直翻页看到实验进度在往前走，有那么一点炫酷。</p></blockquote><p>效果：<a href="/protocol/RIP-seq/RIP-seq.html">RIP-seq Protocol</a></p><p>不同的实验可以套用相同代码，在Json文件中改实验步骤就可以了。还保留了插入图片的功能，但是懒得放图了。</p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
       
       
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;做了一个网页模板，感觉这样做实验的时候，能一直翻页看到实验进度在往前走，有那么一点炫酷。&lt;/p&gt;
+&lt;p&gt;引导ChatGPT做了一个网页模板，感觉这样做实验的时候，能一直翻页看到实验进度在往前走，有那么一点炫酷。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;/protocol/RIP-seq/RIP-seq.html&quot;&gt;RIP-seq Protocol&lt;</summary>
+&lt;p&gt;效果：&lt;a href=&quot;/protocol/RIP-seq/RIP-seq.html&quot;&gt;RIP-s</summary>
       
     
     
