@@ -1,0 +1,67 @@
+{
+  "title": "向PX458质粒中构建sgRNA (Golden Gate Assembly)",
+  "steps": [
+    {
+      "title": "1. sgRNA靶点选择和设计",
+      "substeps": [
+        {
+          "title": "1.1",
+          "content": "Manually search for 23bp target sites (5'-N(20)NGG-3') within exons of genomic DNA sequence of genes of interest (https://crispor.tefor.net/)",
+          "image": ""
+        },{
+          "title": "1.2",
+          "content": "Evaluate target specificities on the website of potential off-target finder. (The target site, which is in the front of genomic DNA sequence, more possibly results in frameshift mutation.)",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "title": "2. 设计克隆引物",
+      "substeps": [
+        {
+          "title": "2.1",
+          "content": "Oligo-F: 5'-CACC N(19) -3';    Oligo-R: 5'-AAAC N(19)-3'",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "title": "3. 上下游引物杂交",
+      "substeps": [
+        {
+          "title": "3.1",
+          "content": "按照下表配体系（体系减半，按蓝字的体积加），按下图右侧程序在PCR仪中反应",
+          "image": "https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/cb0023089330c72692680f447d82435.jpg"
+        },{
+          "title": "3.2",
+          "content": "将产物1:250稀释（用水），取2μL用于下一步",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "title": "4. Golden Gate Assembly",
+      "substeps": [
+        {
+          "title": "4.1",
+          "content": "按照下表配体系（体系减半，按蓝字的体积加），注意核对所用质粒上的酶切位点是否是Bbs I (Bpi I)，对于PX458-SpCas9而言，是Bbs I (Bpi I)。按下图右侧程序在PCR仪中反应",
+          "image": "https://eamonimgbed.oss-cn-beijing.aliyuncs.com/img/e88f84216578491db6c72db70b7cc71.jpg"
+        }
+      ]
+    },
+    {
+      "title": "5. GGA产物转化感受态，涂板",
+      "substeps": [
+        {
+          "title": "5.1转化感受态",
+          "content": "取2μl GGA产物，转化20μL Stbl3感受态，混匀冰上静置10min，42℃热激1min，冰浴2min，涂板Amp+",
+          "image": ""
+        },{
+          "title": "5.2挑菌测序",
+          "content": "这个成功率很高，不用菌落PCR鉴定，直接挑菌后送菌液测序就行，用通用引物hU6-F (5'-GAGGGCCTATTTCCCATGATT-3')",
+          "image": ""
+        }
+      ]
+    }
+  ]
+}
